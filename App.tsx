@@ -25,6 +25,11 @@ const App: React.FC = () => {
             <Route index element={<Home />} />
             <Route path="about" element={<About />} />
             <Route path="products" element={<Products />} />
+            // 你的代码应该长这样：
+<Route path="products" element={<Products />} />
+
+{/* 👇 新增这一行：产品详情页路由 */}
+<Route path="products/:id" element={<ProductDetail />} />
             <Route path="solutions" element={<Solutions />} />
             {/* Dynamic Route for Solution Details */}
             <Route path="solutions/:slug" element={<SolutionDetail />} />
