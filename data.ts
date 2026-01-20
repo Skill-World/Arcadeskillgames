@@ -46,7 +46,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   {
     id: 'vertical-dual-screen-cabinet',
     name: '21.5" Dual Screen Vertical Skill Cabinet (Metal Shell)',
-    category: 'empty_cabinets',
+    category: 'cabinet_only',
     description: 'The industry standard for Link-style skill games. Features dual PCAP touchscreens and immersive LED Halo lighting. Built for route operators who demand durability.',
     imageUrl: 'https://picsum.photos/400/800', // 请替换为你的真实立式机图片
     features: ['Dual 21.5" FHD Screens', 'Halo LED Lighting', '1.2mm Cold Rolled Steel', 'Nudge Board Ready'],
