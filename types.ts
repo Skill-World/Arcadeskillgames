@@ -1,12 +1,53 @@
 
+// src/types.ts
+
+// 定义坦克页需要的复杂子结构
+export interface ProductPainPoint {
+  icon: string; // 图标名称
+  title: string;
+  description: string;
+}
+
+export interface ProductComparison {
+  competitorLabel: string;
+  rows: { feature: string; us: string; them: string }[];
+}
+
+export interface ProductFAQ {
+  question: string;
+  answer: string;
+}
+
 export interface Product {
   id: string;
   name: string;
-  category: 'complete_machine' | 'cabinet_only' | 'game_board';
+  category: 'complete_machine' | 'game_board' | 'cabinet_only';
   description: string;
   imageUrl: string;
   features: string[];
+  
+  // 🔥 新增：坦克页专属字段 (可选)
+  tankPage?: {
+    headline: string; // AIDA: Attention
+    subHeadline: string;
+    videoUrl?: string; // 产品视频
+    painPoints: ProductPainPoint[]; // 痛点分析
+    technicalSpecs: { label: string; value: string }[]; // 详细参数
+    comparison: ProductComparison; // 对比表格
+    buyerGuide: { title: string; content: string }[]; // 买家指南
+    faqs: ProductFAQ[]; // FAQ
+    ctaText: string; // CTA 按钮文案
+    pdfUrl?: string; // 留资下载 PDF
+    caseStudy?: { title: string; content: string; author: string }; // 案例
+    seo: {
+      metaTitle: string;
+      metaDescription: string;
+      keywords: string[];
+    };
+  };
 }
+
+// ... 其他接口保持不变
 
 // --- NEW BLOG ARCHITECTURE TYPES ---
 
