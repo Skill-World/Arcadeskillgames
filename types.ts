@@ -18,10 +18,13 @@ export interface ProductFAQ {
   answer: string;
 }
 
+// src/types.ts
+
 export interface Product {
   id: string;
   name: string;
-  category: 'complete_machines' | 'empty_cabinets' | 'game_kits_&_boards';
+  // 🔴 修正这里：必须和 data.ts 以及 Products.tsx 里的 id 一模一样
+  category: 'complete_machine' | 'cabinet_only' | 'game_board'; 
   description: string;
   imageUrl: string;
   features: string[];
