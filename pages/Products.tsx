@@ -29,10 +29,29 @@ const Products: React.FC = () => {
     : allProducts.filter(p => p.category === filter);
 
   const categories = [
-    { id: 'all', label: 'All Products', seoTitle: 'Skill Game Machines & Parts' },
-    { id: 'complete_machine', label: t(currentLang, 'nav.cat.machines'), seoTitle: 'Turnkey Skill Machines (Ready-to-Play)', desc: t(currentLang, 'cat.desc.machines') },
-    { id: 'cabinet_only', label: t(currentLang, 'nav.cat.cabinets'), seoTitle: 'Empty Arcade Cabinets (No Board)', desc: t(currentLang, 'cat.desc.cabinets') },
-    { id: 'game_board', label: t(currentLang, 'nav.cat.boards'), seoTitle: 'Skill Game Boards & Kits', desc: t(currentLang, 'cat.desc.boards') },
+    { 
+      id: 'all', 
+      label: 'All Products', 
+      seoTitle: 'Skill Game Machines & Parts' 
+    },
+    { 
+      id: 'complete_machine', 
+      label: 'Complete Machines', // 对应文档: Complete Machines
+      seoTitle: 'Turnkey Skill Machines (Ready-to-Play)', 
+      desc: t(currentLang, 'cat.desc.machines') 
+    },
+    { 
+      id: 'cabinet_only', 
+      label: 'Empty Cabinets', // ✅ 修改：强制显示文档要求的 "Empty Cabinets"
+      seoTitle: 'Empty Arcade Cabinets (No Board)', 
+      desc: t(currentLang, 'cat.desc.cabinets') 
+    },
+    { 
+      id: 'game_board', 
+      label: 'Game Kits / Boards', // ✅ 修改：强制显示文档要求的 "Game Kits / Boards"
+      seoTitle: 'Skill Game Boards & Kits', 
+      desc: t(currentLang, 'cat.desc.boards') 
+    },
   ];
 
   const currentCategory = categories.find(c => c.id === filter) || categories[0];
