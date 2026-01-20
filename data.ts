@@ -45,85 +45,92 @@ export const getProducts = (lang: LanguageCode): Product[] => [
     imageUrl: 'https://picsum.photos/400/800', 
     features: ['Dual 21.5" FHD Screens', 'Halo LED Lighting', '1.2mm Cold Rolled Steel', 'Nudge Board Ready'],
     
-    // 🔥 重点检查这里：必须有 tankPage 这一大块数据，页面才会显示丰富内容
+    // 🔥 坦克页数据更新（替换原有的 tankPage 内容）
     tankPage: {
-      headline: 'Build Your Profitable Route with the Ultimate Vertical Cabinet',
-      subHeadline: 'Stop replacing cheap wood cabinets. Upgrade to our anti-theft steel housing designed for high-traffic venues.',
+      headline: 'The Ultimate Vertical Cabinet for High-Performance Routes',
+      subHeadline: 'Dominate your territory with the "Vegas-Grade" metal cabinet designed specifically for Nudge and Link skill games. Engineered for 24/7 uptime in smoke shops, gas stations, and game rooms.',
       
       painPoints: [
         { 
           icon: 'ShieldAlert', 
-          title: 'Security Vulnerability', 
-          description: 'Wooden cabinets are easily pried open. Our 1.2mm steel body prevents break-ins.' 
+          title: 'Stop Theft & Break-ins', 
+          description: 'Standard wood cabinets are a security risk. Our cabinet uses 1.2mm Cold Rolled Steel with a 3-point locking bar system that makes prying virtually impossible.' 
         },
         { 
           icon: 'Monitor', 
-          title: 'Screen Failure', 
-          description: 'Generic screens lose touch sensitivity. We use industrial-grade PCAP bonded glass.' 
+          title: 'Eliminate Touch Failures', 
+          description: 'Cheap IR screens drift and fail in dusty environments. We use sealed PCAP (Projected Capacitive) Touch glass—the same tech found in casino slots—for pixel-perfect accuracy.' 
         },
         { 
           icon: 'Zap', 
-          title: 'Wiring Nightmares', 
-          description: 'Messy harnesses cause downtime. Our cabinets come pre-wired with labeled 36/10 pin connectors.' 
+          title: 'Plug-and-Play Wiring', 
+          description: 'Don\'t waste hours soldering. Every cabinet comes pre-harnessed with labeled 36/10 Pin connectors (Nudge Standard) and includes drops for Bill Acceptors and Printers.' 
         }
       ],
 
       technicalSpecs: [
-        { label: 'Displays', value: '2x 21.5" LED IPS (1920x1080) with PCAP Touch' },
-        { label: 'Material', value: '1.2mm Cold Rolled Steel + Powder Coat Finish' },
-        { label: 'Lighting', value: 'Addressable RGB Halo (Remote Controlled)' },
-        { label: 'Compatibility', value: 'Standard 36/10 Pin or JAMMA (Nudge/Link Games)' },
-        { label: 'Peripherals', value: 'Pre-cut for ICT A6/PA7 Bill Acceptors & Printer' },
-        { label: 'Dimensions', value: 'H: 72" x W: 24" x D: 20" (Slim Profile)' }
+        { label: 'Dual Displays', value: '2x 21.5" FHD (1920x1080) IPS Panels' },
+        { label: 'Touch System', value: 'PCAP Multi-Touch (Chemically Bonded Glass)' },
+        { label: 'Construction', value: '1.2mm Industrial Steel + Powder Coat' },
+        { label: 'Lighting', value: 'App-Controlled RGB Halo (Syncs to Game)' },
+        { label: 'IO Interface', value: '36/10 Pin Nudge Harness / SAS Ready' },
+        { label: 'Dimensions', value: '72" (H) x 23" (W) x 20" (D) - Slim Footprint' }
       ],
 
       comparison: {
-        competitorLabel: 'Generic Import Cabinets',
+        competitorLabel: 'Generic Imports',
         rows: [
-          { feature: 'Touch Technology', us: 'PCAP (Smartphone style)', them: 'IR / Resistive (Old tech)' },
-          { feature: 'Harness Wiring', us: 'UL Certified Copper', them: 'Thin Aluminum Mix' },
-          { feature: 'Warranty', us: '1 Year Local Support', them: 'No Warranty / DOA' }
+          { feature: 'Touch Response', us: '< 5ms (PCAP)', them: '> 20ms (IR Frame)' },
+          { feature: 'Security', us: 'Steel Drill-Proof Body', them: 'Plywood / Particle Board' },
+          { feature: 'Warranty', us: '1 Year Full Replacement', them: 'None / DOA Only' }
         ]
       },
 
       buyerGuide: [
         { 
-          title: 'Choosing the Right Harness', 
-          content: 'If you are running "Nudge" games (PA/GA markets), select our 36/10 Pin harness. For older arcade boards, choose JAMMA.' 
+          title: '1. Verify Your Game Board Connection', 
+          content: 'Before ordering, check if your game board uses a standard 36/10 Pin harness (common for Nudge games) or JAMMA. We can pre-wire the cabinet for either.' 
         },
         { 
-          title: 'Button Configuration', 
-          content: 'We offer standard 5-button or 7-button decks. Custom button mapping available for orders of 10+ units.' 
+          title: '2. Select Your Bill Acceptor', 
+          content: 'The door is pre-cut to fit standard ICT A6 or Pyramid 7600 bill validators. If you use MEI, let us know so we can include the correct mounting bracket.' 
+        },
+        { 
+          title: '3. Plan Your Floor Space', 
+          content: 'At only 23 inches wide, you can fit 4 of these cabinets in the same space as 3 standard wide-bodies. Perfect for maximizing revenue per square foot.' 
         }
       ],
 
       caseStudy: {
-        title: 'How Mike Saved $5,000 on Hardware',
-        content: '"I used to buy complete machines for $2,800. Now I buy these empty metal cabinets and install my own boards. My cost per unit dropped to $1,400, and the build quality is actually better."',
-        author: 'Mike D., Route Operator in Ohio'
+        title: 'Doubled Revenue in 3 Months',
+        content: '"I replaced my old wood cabinets with these metal verticals. The LED halo lighting draws people in from the street, and I haven\'t had a single bill jam or screen failure in 90 days. My collections are up 40% purely due to uptime."',
+        author: 'Mike D., Master Route Operator'
       },
 
       faqs: [
         { 
-          question: 'Does this come with the game board?', 
-          answer: 'No, this is a "Shell Only" product. You must install your own game board (PCB). We sell compliant boards separately in our Game Board section.' 
+          question: 'Does this cabinet come with the game board included?', 
+          answer: 'No, this is a "Shell Only" product. You must install your own game board (PCB). We sell compliant boards separately in our Game Board section, or you can use your own.' 
         },
         { 
-          question: 'What is the shipping cost?', 
-          answer: 'We ship palletized freight. Approx $150-$300 per unit depending on your US location. MOQ 5 units for wholesale shipping rates.' 
+          question: 'Is it compatible with Banilla / Fusion games?', 
+          answer: 'Yes, the 21.5" vertical screen format and 36/10 pin harness are the industry standard for most Nudge and Skill titles, including popular clones.' 
+        },
+        { 
+          question: 'What is the shipping cost for a pallet?', 
+          answer: 'We can fit up to 4 units on a single pallet. Shipping typically ranges from $250-$400 depending on your zone in the USA.' 
         }
       ],
 
-      ctaText: 'Get Wholesale Pricing List',
-      pdfUrl: '/downloads/specs/vertical-cabinet-v2.pdf',
+      ctaText: 'Get Wholesale Pricing',
+      pdfUrl: '#',
       
       seo: {
         metaTitle: 'Vertical Skill Game Cabinet | 21.5" Dual Screen Metal Housing',
         metaDescription: 'Factory direct vertical skill gaming cabinets. Dual 21.5" touchscreens, metal body, Nudge/Link game compatible. Wholesale empty cabinets for operators.',
-        keywords: ['Vertical Skill Game Cabinet', 'Dual Screen Arcade Cabinet Shell']
+        keywords: ['Vertical Skill Game Cabinet', 'Dual Screen Arcade Cabinet', 'Metal Nudge Cabinet', 'Skill Game Machine Shell']
       }
     }
-  }
 ];
 
 // ... 下面保持 getBlogs 和 getSolutions 不变 ...
