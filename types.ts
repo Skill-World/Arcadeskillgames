@@ -21,7 +21,7 @@ export interface ProductFAQ {
 export interface Product {
   id: string;
   name: string;
-  category: 'complete_machine' | 'game_board' | 'cabinet_only';
+  category: 'complete_machines' | 'empty_cabinets' | 'game_kits_&_boards';
   description: string;
   imageUrl: string;
   features: string[];
