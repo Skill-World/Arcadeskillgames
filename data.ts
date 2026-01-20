@@ -36,28 +36,91 @@ export const getProducts = (lang: LanguageCode): Product[] => [
     features: ['Empty Metal Cabinet', 'Button Panel Included', 'Pre-Wired Harness (36/10 Pin)', 'No Monitor / No Game Board']
   },
   // 👇 你的坦克页新产品
+  // 👇 请复制这段完整的代码，替换 data.ts 里原来的这个产品
   {
     id: 'vertical-dual-screen-cabinet',
     name: '21.5" Dual Screen Vertical Skill Cabinet (Metal Shell)',
-    category: 'cabinet_only', // ✅ 对应：cabinet_only (必须和 types.ts 一致)
-    description: 'The industry standard for Link-style skill games. Features dual PCAP touchscreens and immersive LED Halo lighting.',
+    category: 'cabinet_only', 
+    description: 'The industry standard for Link-style skill games. Features dual PCAP touchscreens and immersive LED Halo lighting. Built for route operators who demand durability.',
     imageUrl: 'https://picsum.photos/400/800', 
     features: ['Dual 21.5" FHD Screens', 'Halo LED Lighting', '1.2mm Cold Rolled Steel', 'Nudge Board Ready'],
     
-    // ... tankPage 数据保持你原来的不变，太长了这里省略，记得保留 ...
+    // 🔥 重点检查这里：必须有 tankPage 这一大块数据，页面才会显示丰富内容
     tankPage: {
       headline: 'Build Your Profitable Route with the Ultimate Vertical Cabinet',
       subHeadline: 'Stop replacing cheap wood cabinets. Upgrade to our anti-theft steel housing designed for high-traffic venues.',
-      painPoints: [], // 这里放你之前的 painPoints 数据
-      technicalSpecs: [], // 这里放你之前的 specs 数据
-      comparison: { competitorLabel: '', rows: [] }, // 这里放 comparison
-      buyerGuide: [], // 这里放 buyerGuide
-      faqs: [], // 这里放 faqs
+      
+      painPoints: [
+        { 
+          icon: 'ShieldAlert', 
+          title: 'Security Vulnerability', 
+          description: 'Wooden cabinets are easily pried open. Our 1.2mm steel body prevents break-ins.' 
+        },
+        { 
+          icon: 'Monitor', 
+          title: 'Screen Failure', 
+          description: 'Generic screens lose touch sensitivity. We use industrial-grade PCAP bonded glass.' 
+        },
+        { 
+          icon: 'Zap', 
+          title: 'Wiring Nightmares', 
+          description: 'Messy harnesses cause downtime. Our cabinets come pre-wired with labeled 36/10 pin connectors.' 
+        }
+      ],
+
+      technicalSpecs: [
+        { label: 'Displays', value: '2x 21.5" LED IPS (1920x1080) with PCAP Touch' },
+        { label: 'Material', value: '1.2mm Cold Rolled Steel + Powder Coat Finish' },
+        { label: 'Lighting', value: 'Addressable RGB Halo (Remote Controlled)' },
+        { label: 'Compatibility', value: 'Standard 36/10 Pin or JAMMA (Nudge/Link Games)' },
+        { label: 'Peripherals', value: 'Pre-cut for ICT A6/PA7 Bill Acceptors & Printer' },
+        { label: 'Dimensions', value: 'H: 72" x W: 24" x D: 20" (Slim Profile)' }
+      ],
+
+      comparison: {
+        competitorLabel: 'Generic Import Cabinets',
+        rows: [
+          { feature: 'Touch Technology', us: 'PCAP (Smartphone style)', them: 'IR / Resistive (Old tech)' },
+          { feature: 'Harness Wiring', us: 'UL Certified Copper', them: 'Thin Aluminum Mix' },
+          { feature: 'Warranty', us: '1 Year Local Support', them: 'No Warranty / DOA' }
+        ]
+      },
+
+      buyerGuide: [
+        { 
+          title: 'Choosing the Right Harness', 
+          content: 'If you are running "Nudge" games (PA/GA markets), select our 36/10 Pin harness. For older arcade boards, choose JAMMA.' 
+        },
+        { 
+          title: 'Button Configuration', 
+          content: 'We offer standard 5-button or 7-button decks. Custom button mapping available for orders of 10+ units.' 
+        }
+      ],
+
+      caseStudy: {
+        title: 'How Mike Saved $5,000 on Hardware',
+        content: '"I used to buy complete machines for $2,800. Now I buy these empty metal cabinets and install my own boards. My cost per unit dropped to $1,400, and the build quality is actually better."',
+        author: 'Mike D., Route Operator in Ohio'
+      },
+
+      faqs: [
+        { 
+          question: 'Does this come with the game board?', 
+          answer: 'No, this is a "Shell Only" product. You must install your own game board (PCB). We sell compliant boards separately in our Game Board section.' 
+        },
+        { 
+          question: 'What is the shipping cost?', 
+          answer: 'We ship palletized freight. Approx $150-$300 per unit depending on your US location. MOQ 5 units for wholesale shipping rates.' 
+        }
+      ],
+
       ctaText: 'Get Wholesale Pricing List',
+      pdfUrl: '/downloads/specs/vertical-cabinet-v2.pdf',
+      
       seo: {
-          metaTitle: 'Vertical Skill Game Cabinet',
-          metaDescription: 'Factory direct vertical skill gaming cabinets.',
-          keywords: ['Vertical Skill Game Cabinet']
+        metaTitle: 'Vertical Skill Game Cabinet | 21.5" Dual Screen Metal Housing',
+        metaDescription: 'Factory direct vertical skill gaming cabinets. Dual 21.5" touchscreens, metal body, Nudge/Link game compatible. Wholesale empty cabinets for operators.',
+        keywords: ['Vertical Skill Game Cabinet', 'Dual Screen Arcade Cabinet Shell']
       }
     }
   }
