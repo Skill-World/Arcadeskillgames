@@ -131,8 +131,13 @@ const Products: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredProducts.map((product) => (
             <article key={product.id} className="bg-brand-800 rounded-xl overflow-hidden border border-slate-700 shadow-lg hover:shadow-brand-500/10 transition-all flex flex-col h-full">
-              <div className="h-72 overflow-hidden bg-black relative">
-                 <img src={product.imageUrl} alt={product.name} className="w-full h-full object-cover opacity-90" />
+              {/* 旧代码：<div className="h-72 ..."> <img ... /> </div> */}
+
+{/* ✅ 新代码： */}
+<Link to={product.id} className="h-72 overflow-hidden bg-black relative block group">
+   <img src={product.imageUrl} alt={product.name} className="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500" />
+   {/* ... Badge 保持不变 ... */}
+</Link>
                  
                  {/* Category Badge */}
                  <div className="absolute top-4 right-4 bg-brand-900/90 backdrop-blur px-3 py-1 rounded text-xs font-bold uppercase border border-brand-500/30 shadow-lg text-brand-400">
@@ -140,7 +145,12 @@ const Products: React.FC = () => {
                  </div>
               </div>
               <div className="p-8 flex flex-col flex-grow">
-                <h2 className="text-2xl font-bold text-white mb-3">{product.name}</h2>
+                <h2 className="text-2xl font-bold text-white mb-3">
+  {/* ✅ 新代码： */}
+  <Link to={product.id} className="hover:text-brand-400 transition-colors">
+    {product.name}
+  </Link>
+</h2>
                 <p className="text-slate-400 mb-6 flex-grow">{product.description}</p>
                 
                 <div className="mb-8">
@@ -155,9 +165,15 @@ const Products: React.FC = () => {
                   </ul>
                 </div>
 
-                <button className="w-full bg-slate-700 hover:bg-brand-500 text-white py-3 rounded-lg font-semibold transition-colors mt-auto">
-                  Request Pricing
-                </button>
+                {/* 旧代码：<button ...>Request Pricing</button> */}
+
+{/* ✅ 新代码： */}
+<Link 
+  to={product.id}
+  className="w-full bg-slate-700 hover:bg-brand-500 text-white py-3 rounded-lg font-semibold transition-colors mt-auto text-center block"
+>
+  View Details & Pricing
+</Link>
               </div>
             </article>
           ))}
