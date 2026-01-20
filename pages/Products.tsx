@@ -1,3 +1,5 @@
+// 确保这里有 Link
+import { Link } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
 import { useParams, useSearchParams } from 'react-router-dom';
 import { getProducts } from '../data';
