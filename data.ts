@@ -1,37 +1,38 @@
-
 import { Product, BlogPost, Solution, LanguageCode } from './types';
 import { t } from './utils/i18n';
 
 export const getProducts = (lang: LanguageCode): Product[] => [
   {
     id: 'p1',
-    name: t(lang, 'prod.p1.name'),
+    // ✅ SEO优化: 避开 Slot，使用 "Vertical Skill Cabinet"
+    name: 'Vegas Pro Vertical Nudge Cabinet (43" 4K Touch)',
     category: 'complete_machine',
-    description: t(lang, 'prod.p1.desc'),
+    // ✅ 合规优化: 强调 "Nudge" (微调) 技巧玩法
+    description: 'USA market compliant skill gaming cabinet. Features "Pre-Reveal" and "Nudge" mechanics requiring player intervention to complete winning patterns. Not a game of chance.',
     imageUrl: 'https://picsum.photos/400/600',
-    features: ['Skill "Nudge" Mechanics', '43" Touchscreen', 'ICT Bill Validator Included', 'Pre-Wired & Tested']
+    features: ['Mandatory Skill Nudge Mechanics', 'Anti-Cheat Metal Housing', 'ICT Bill Validator Ready', 'PA/GA Compliance Mode']
   },
   {
     id: 'p2',
-    name: t(lang, 'prod.p2.name'),
+    name: 'Titan Skill Board (Nudge Series)',
     category: 'game_board',
-    description: t(lang, 'prod.p2.desc'),
+    description: 'High-retention game board logic. Replaces traditional RNG with player-controlled stop/nudge protocols. Ideal for route operators upgrading existing cabinets.',
     imageUrl: 'https://picsum.photos/400/300',
-    features: ['Game Board PCB Only', 'Standard JAMMA/IO Harness', 'High Volatility Math', 'Adjustable Difficulty']
+    features: ['Player Reflex Logic', 'Standard 36/10 Pin Harness', 'Touchscreen Support', 'Non-Volatile Memory']
   },
   {
     id: 'p3',
-    name: t(lang, 'prod.p3.name'),
+    name: 'Countertop Reflex Kiosk',
     category: 'complete_machine',
-    description: t(lang, 'prod.p3.desc'),
+    description: 'Compact skill amusement device for limited counter space. Players use quick reflexes to stop the prize wheel. 100% skill-based outcome.',
     imageUrl: 'https://picsum.photos/400/400',
     features: ['Compact Countertop Form Factor', 'Plug-and-Play', 'Reaction-Based Gameplay', 'Cashless Ready']
   },
   {
     id: 'p4',
-    name: t(lang, 'prod.p4.name'),
+    name: 'Pro-Metal Gaming Cabinet (Shell Only)',
     category: 'cabinet_only',
-    description: t(lang, 'prod.p4.desc'),
+    description: 'Industrial grade steel cabinet ready for your game kit. Pre-wired for standard skill harnesses. Durable powder-coated finish.',
     imageUrl: 'https://picsum.photos/400/600',
     features: ['Empty Metal Cabinet', 'Button Panel Included', 'Pre-Wired Harness (36/10 Pin)', 'No Monitor / No Game Board']
   }
@@ -41,35 +42,31 @@ export const getProducts = (lang: LanguageCode): Product[] => [
 export const getBlogs = (lang: LanguageCode): BlogPost[] => [
   {
     id: 'b1',
-    slug: 'skill-game-compliance-guide-2024',
-    title: t(lang, 'blog.b1.title'),
-    excerpt: t(lang, 'blog.b1.excerpt'),
+    slug: 'skill-game-compliance-guide',
+    // ✅ 内容营销：解决客户最大的痛点——合法性
+    title: 'Distributor Guide: The Legal Difference Between "Skill" and "Chance"',
+    excerpt: 'Protect your route. Understand the technical distinction between Nudge/Shooting mechanics and prohibited RNG devices.',
     date: 'Oct 12, 2024',
     author: {
       name: 'Robert Vance',
       role: 'Chief Engineer',
       avatar: 'R',
-      bio: 'Robert has spent 25 years designing coin-op hardware. He specializes in regulatory compliance frameworks for US markets and consults for major legislative boards.'
+      bio: 'Robert has spent 25 years designing coin-op hardware. He specializes in regulatory compliance frameworks for US markets.'
     },
     category: 'Compliance',
     readingTime: '8 min read',
     imageUrl: 'https://picsum.photos/1200/600?random=101',
     seo: {
-      metaTitle: 'Skill Game Compliance Guide: Nudge & Video Shooting Legitimacy',
-      metaDescription: 'A technical deep dive into Nudge and Shooting mechanics. How hand-eye coordination features distinguish amusement devices from prohibited games of chance.',
-      keywords: ['Pennsylvania Skill Games', 'Nudge Machine', 'Skill Based Amusement', 'Compliance Mode', 'Legal Coin Op'],
-      schema: {
-        "@context": "https://schema.org",
-        "@type": "Article",
-        "headline": "Defining 'Skill': The Legal Distinction",
-        "author": { "@type": "Person", "name": "Robert Vance" },
-        "datePublished": "2024-10-12"
-      }
+      // ✅ SEO 布局
+      metaTitle: 'Skill Game vs. Chance: Legal Compliance Guide for Distributors',
+      metaDescription: 'Why Nudge games and Fish tables are legally distinct from casino devices. Understanding the Predominance Test and hand-eye coordination mechanics.',
+      keywords: ['skill game compliance', 'nudge mechanics legality', 'predominance of skill', 'amusement device laws', 'PA skill games']
     },
     blocks: [
       {
         type: 'paragraph',
-        content: 'In the rapidly evolving landscape of Coin-Op amusement, the line between <strong>"Skill"</strong> and <strong>"Chance"</strong> is the most critical factor for your business survival. <a href="/en/solutions/game-agents" class="text-brand-400 hover:underline font-bold">Game Agents</a> and venue owners must understand why "Reel-Based Skill Games" are legally distinct from traditional chance-based devices.'
+        // ✅ 核心合规文案
+        content: 'For distributors, the most common question is: "Is this legal?" The answer lies in the mechanics. Unlike traditional devices where a chip decides the outcome, our <strong>Skill Amusement Devices</strong> require the player to intervene. Whether it is aiming a cannon in a Fish Game or using the Nudge feature to align symbols, the <strong>outcome is controlled by the player\'s action</strong>.'
       },
       {
         type: 'h2',
@@ -77,7 +74,7 @@ export const getBlogs = (lang: LanguageCode): BlogPost[] => [
       },
       {
         type: 'paragraph',
-        content: 'Legal precedents in most jurisdictions rely on the "Predominance Test". Does the player\'s input affect the outcome more than random variables? Our "Nudge" engines are built with this specifically in mind. A knowledgeable player can utilize the "Nudge" or "Swap" feature to align winning symbols manually.'
+        content: 'Legal precedents in most jurisdictions rely on the "Predominance Test". Does the player\'s input affect the outcome more than random variables? Our "Nudge" engines are built with this specifically in mind.'
       },
       {
         type: 'table',
@@ -90,32 +87,20 @@ export const getBlogs = (lang: LanguageCode): BlogPost[] => [
             ['Reward Type', 'Tickets / Plush', 'Redemption Points / Cash Value']
           ]
         }
-      },
-      {
-        type: 'callout',
-        content: 'Fact: In a true skill game, the result is determined by the player\'s dexterity and mental acuity. Every puzzle has a solution.'
-      },
-      {
-        type: 'h2',
-        content: 'Video Shooting Mechanics'
-      },
-      {
-        type: 'paragraph',
-        content: 'For <a href="/en/solutions/arcades" class="text-brand-400 hover:underline">Fish Tables</a> and video shooting games, the "Skill" element is even more visible. Players must calculate bullet trajectory, target value, and resource management. This creates a "Pay-to-Play" amusement model similar to esports, rather than a wager.'
       }
     ]
   },
   {
     id: 'b2',
     slug: 'maintenance-guide-bill-acceptors',
-    title: t(lang, 'blog.b2.title'),
-    excerpt: t(lang, 'blog.b2.excerpt'),
+    title: 'Arcade Maintenance: Keeping Bill Validators Running',
+    excerpt: 'Reduce downtime on your route. Step-by-step cleaning guides for ICT and Pyramid validators to prevent bill jams.',
     date: 'Sept 28, 2024',
     author: {
       name: 'Tech Support Team',
       role: 'Support',
       avatar: 'T',
-      bio: 'Our dedicated factory support team, available 24/7 to help distributors and operators keep their routes running smoothly.'
+      bio: 'Our dedicated factory support team, available 24/7.'
     },
     category: 'Maintenance',
     readingTime: '5 min read',
@@ -129,52 +114,28 @@ export const getBlogs = (lang: LanguageCode): BlogPost[] => [
     blocks: [
       {
         type: 'paragraph',
-        content: 'A jammed bill acceptor on a Friday night means hundreds of dollars in lost revenue. This guide covers the preventative maintenance schedule for the ICT A6 and Pyramid 7600 series validators used in our <a href="/en/products?category=complete_machine" class="text-brand-400 hover:underline">Vertical Cabinets</a>.'
-      },
-      {
-        type: 'video',
-        content: 'Maintenance Tutorial',
-        url: 'https://www.youtube.com/embed/dummy-video-id', // Placeholder
-        caption: 'Video: Cleaning the sensor array in under 2 minutes.'
-      },
-      {
-        type: 'h2',
-        content: 'Common Error Codes'
+        content: 'A jammed bill acceptor means lost revenue. This guide covers the preventative maintenance schedule for the ICT A6 and Pyramid 7600 series validators.'
       },
       {
         type: 'list',
         content: [
           '<strong>2 Flashes:</strong> Stacker Full or Jammed. Check the gear box.',
-          '<strong>3 Flashes:</strong> Sensor Dirty. Use compressed air and a specialized cleaning card.',
-          '<strong>7 Flashes:</strong> Motor Failure. Requires part replacement.'
+          '<strong>3 Flashes:</strong> Sensor Dirty. Use compressed air and a specialized cleaning card.'
         ]
-      },
-      {
-        type: 'h3',
-        content: 'The 30-Day Checklist'
-      },
-      {
-        type: 'paragraph',
-        content: 'Every time you collect cash, perform these three quick checks to ensure your hardware lasts for years.'
-      },
-      {
-        type: 'cta',
-        content: 'Order Spare Bill Validators',
-        url: '/en/contact'
       }
     ]
   },
   {
     id: 'b3',
     slug: 'player-psychology-replay-value',
-    title: t(lang, 'blog.b3.title'),
-    excerpt: t(lang, 'blog.b3.excerpt'),
+    title: 'The Psychology of Skill Games: Why Players Return',
+    excerpt: 'Understanding the difference between "Near Miss" and "Skill Miss". Why players prefer games where their dexterity determines the payout.',
     date: 'Sept 15, 2024',
     author: {
       name: 'Sarah Jenkins',
       role: 'Game Designer',
       avatar: 'S',
-      bio: 'Sarah leads the math and logic design team. She has a background in behavioral psychology and applies it to create engaging game loops.'
+      bio: 'Sarah leads the math and logic design team.'
     },
     category: 'Player Psychology',
     readingTime: '6 min read',
@@ -189,28 +150,6 @@ export const getBlogs = (lang: LanguageCode): BlogPost[] => [
       {
         type: 'paragraph',
         content: 'Why do players sit at a <a href="/en/solutions/arcades" class="text-brand-400 hover:underline">Fish Table</a> for 4 hours? The answer lies in the "Illusion of Control" versus "Actual Control". In our games, the control is real.'
-      },
-      {
-        type: 'h2',
-        content: 'Visualizing Engagement'
-      },
-      {
-        type: 'paragraph',
-        content: 'In our Ocean King series, the "Boss Battle" mechanic requires team coordination. This social element creates a sticky environment that solo games cannot replicate.'
-      },
-      {
-        type: 'image',
-        content: 'https://picsum.photos/800/400?random=105',
-        alt: 'Players gathering around a fish table',
-        caption: 'Social proof: Crowds attract more crowds.'
-      },
-      {
-        type: 'h3',
-        content: 'The "Practice Makes Perfect" Loop'
-      },
-      {
-        type: 'paragraph',
-        content: 'Because the outcome depends on reflexes, a loss feels like a personal failure to execute, rather than bad luck. This triggers a psychological drive to "try again and do it better", which drives coin-in without relying on chance mechanics.'
       }
     ]
   }
@@ -349,11 +288,12 @@ export const getSolutions = (lang: LanguageCode): Solution[] => [
   },
   {
     id: 'game-rooms',
-    title: t(lang, 'sol.gameroom.title'),
-    targetAudience: t(lang, 'sol.gameroom.audience'),
-    description: t(lang, 'sol.gameroom.desc'),
-    fullDescription: t(lang, 'sol.gameroom.full'),
-    benefits: ['Link-Ready Banks', 'Community Jackpots', 'High-Impact Visuals'],
+    // ✅ 避开 Casino，使用 Adult Arcade / Game Room
+    title: 'Equipment for Adult Arcades & Game Rooms',
+    targetAudience: 'Entertainment Centers',
+    description: 'Build a legal skill gaming destination. Linked vertical cabinets and multiplayer fish tables that keep players engaged for hours.',
+    fullDescription: 'Modern adult arcades require equipment that offers genuine gameplay depth. Our "Ocean King" style fish tables and Nudge cabinets create a social, competitive environment where players compete against the machine or each other using hand-eye coordination.',
+    benefits: ['Multiplayer Social Play', 'Linked Progressive Rewards', 'High-End LED Visuals'],
     icon: 'Gamepad2',
     recommendedCategory: 'complete_machine',
     painPoints: [
@@ -384,9 +324,9 @@ export const getSolutions = (lang: LanguageCode): Solution[] => [
       { quote: "The linked signage draws people in from the street. It changed the vibe of our room completely.", author: "Elena G.", role: "Venue Owner", location: "Florida" }
     ],
     seo: {
-      metaTitle: 'Adult Game Room Equipment | Linked Skill Cabinets',
-      metaDescription: 'Outfit your gaming center with linked progressive skill games. High-revenue vertical cabinets with synchronized signage displays.',
-      keywords: ['adult game room machines', 'linked arcade games', 'progressive skill games', 'game room cabinets']
+      metaTitle: 'Adult Arcade Machines | Skill Game Room Equipment Manufacturer',
+      metaDescription: 'Outfit your game room with compliant skill games. Multiplayer fish arcade tables and vertical nudge cabinets. Direct factory OEM.',
+      keywords: ['adult arcade machines', 'skill game room equipment', 'fish table arcade game', 'multiplayer shooting game', 'entertainment center cabinets']
     }
   },
   {
@@ -433,16 +373,17 @@ export const getSolutions = (lang: LanguageCode): Solution[] => [
   },
   {
     id: 'gas-stations',
-    title: t(lang, 'sol.gas.title'),
-    targetAudience: t(lang, 'sol.gas.audience'),
-    description: t(lang, 'sol.gas.desc'),
-    fullDescription: t(lang, 'sol.gas.full'),
-    benefits: ['Security Reinforced', 'Small Footprint', 'Automated Operation'],
+    // ✅ 痛点：被动收入，而不是“赌博机”
+    title: 'Automated Amusement Kiosks for C-Stores',
+    targetAudience: 'Gas Stations & Convenience Stores',
+    description: 'Turn 3sqft of dead floor space into high-margin passive revenue with unattended skill amusement machines.',
+    fullDescription: 'Convenience store owners face thin margins on retail items. Our skill-based amusement kiosks provide a new revenue stream that requires zero staff interaction. Unlike prohibited devices, these machines reward player dexterity and mental acuity.',
+    benefits: ['100% Passive Revenue', 'Small 20" Footprint', 'Theft-Resistant Steel Body'],
     icon: 'Zap',
     recommendedCategory: 'complete_machine',
     painPoints: [
-      { title: 'Dead Space', description: 'Empty corners generating zero revenue.', icon: 'Maximize' },
-      { title: 'Security Risks', description: 'Fear of break-ins for cash equipment.', icon: 'Lock' }
+      { title: 'Low Margins', description: 'Retail products offer pennies in profit.', icon: 'TrendingDown' },
+      { title: 'Dead Space', description: 'Unused corners generating zero cash flow.', icon: 'Maximize' }
     ],
     comparison: {
       competitorLabel: 'ATM Machine',
@@ -468,9 +409,10 @@ export const getSolutions = (lang: LanguageCode): Solution[] => [
       { quote: "I put one next to the ice machine. It pays my utility bill every month.", author: "Raj P.", role: "Owner", location: "Convenience Store" }
     ],
     seo: {
-      metaTitle: 'Gas Station Skill Games | Passive Revenue Kiosks',
-      metaDescription: 'Maximize C-store profits with compact amusement machines. Security-reinforced cabinets designed specifically for gas stations and truck stops.',
-      keywords: ['gas station arcade game', 'convenience store skill games', 'passive revenue kiosks', 'c-store gaming']
+      // ✅ SEO 布局：完全避开 gamble
+      metaTitle: 'Gas Station Skill Games | Passive Income Amusement Machines',
+      metaDescription: 'Buy compact skill gaming cabinets for gas stations. Legal amusement devices that generate passive income per square foot. Wholesale pricing.',
+      keywords: ['gas station skill games', 'c-store amusement machine', 'coin operated skill game', 'passive income kiosk', 'legal skill cabinet']
     }
   },
   {
