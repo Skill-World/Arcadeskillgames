@@ -35,16 +35,6 @@ export const getProducts = (lang: LanguageCode): Product[] => [
     }
   },
   {
-    id: 'j-curve-43-cabinet',
-    name: '43" J-Curve 4K Elite Skill Cabinet (Empty Shell)',
-    category: 'cabinet_only',
-    description: 'Features a massive 43-inch J-Curved 4K display for premium venues.',
-    imageUrl: 'https://picsum.photos/800/1200?random=431',
-    features: ['43" 4K J-Curve Display', 'Pro-Grade PCAP Multi-Touch']
-  }
-
-// ... 保持 getBlogs 和 getSolutions 不变
-  {
     id: 'p4',
     name: '43" 4K Titan Vertical Skill Cabinet (Empty Shell)',
     category: 'cabinet_only',
@@ -159,9 +149,6 @@ export const getProducts = (lang: LanguageCode): Product[] => [
       }
     }
   },
-  // src/data.ts
-
-// 在 getProducts 数组中添加以下对象
 {
   id: 'j-curve-43-cabinet',
   name: '43" J-Curve 4K Elite Skill Cabinet (Empty Shell)',
@@ -276,9 +263,6 @@ export const getProducts = (lang: LanguageCode): Product[] => [
     }
   }
 },
-// src/data.ts
-
-// 在 getProducts 数组中添加以下对象
 {
   id: 'slant-top-43-curved',
   name: '43" 4K Slant Top Curved Skill Cabinet (Empty Shell)',
@@ -393,9 +377,6 @@ export const getProducts = (lang: LanguageCode): Product[] => [
     }
   }
 },
-// src/data.ts
-
-// 在 getProducts 数组中添加以下对象
 {
   id: 'vertical-43-cabinet-pro',
   name: '43" 4K Vertical Elite Skill Cabinet (Empty Shell)',
@@ -510,9 +491,6 @@ export const getProducts = (lang: LanguageCode): Product[] => [
     }
   }
 },
-
-  // 👇 你的坦克页新产品
-  // 👇 请复制这段完整的代码，替换 data.ts 里原来的这个产品
   {
     id: 'vertical-dual-screen-cabinet',
     name: '21.5" Dual Screen Vertical Skill Cabinet (Metal Shell)',
@@ -1241,4 +1219,5 @@ export const getSolutions = (lang: LanguageCode): Solution[] => [
       metaDescription: 'High-end furniture grade gaming cabinets. 4K screens, gold trim, and leather armrests for VIP lounges and private clubs.',
       keywords: ['slant top amusement cabinet', 'luxury gaming machine', 'vip lounge arcade', 'high end entertainment cabinet']
     }
+  }
 ];
