@@ -554,7 +554,86 @@ export const getProducts = (lang: LanguageCode): Product[] => [
         keywords: ['Vertical Skill Game Cabinet', 'Dual Screen Arcade Cabinet', 'Metal Nudge Cabinet', 'Skill Game Machine Shell']
       }
     }
+  },
+  // ⚠️ 插入位置：src/data.ts -> getProducts 数组内部
+{
+  id: 'curved-elite-v2-arc',
+  name: '43" 4K Curved Elite Arc Skill Cabinet (Empty Shell)',
+  category: 'cabinet_only',
+  description: 'The ultimate curved arcade shell optimized for Link games. Features a premium R1500 curvature for maximum player immersion and a space-saving slim profile.',
+  imageUrl: 'https://picsum.photos/800/1200?random=110', // 建议在 public/images/ 放入 Model V2 实拍图
+  features: ['43" R1500 4K Curved Display', '10-Point Flush PCAP Touch', 'Slim-Profile Metal Body', 'Programmable Side RGB'],
+  
+  tankPage: {
+    headline: 'Maximize Floor Efficiency with the Curved V2 Elite',
+    subHeadline: 'Dominate your route with high-impact visuals. Engineered for 24/7 uptime and 30% higher player retention compared to standard flat-screen models.',
+    
+    // ✅ 1. 痛点分析
+    painPoints: [
+      { icon: 'Monitor', title: 'Glare & Eye Strain', description: 'Standard flat screens cause fatigue in long sessions. Our R1500 curve reduces eye-travel distance, keeping players comfortable and engaged.' },
+      { icon: 'ShieldAlert', title: 'Route Security Risks', description: 'Thin casings are a liability. We use 1.2mm automotive-grade steel with a 3-point reinforced locking system to protect your internal assets.' },
+      { icon: 'Zap', title: 'Maintenance Downtime', description: 'Every minute the door is open is lost profit. Our quick-access design allows for tool-less peripheral swaps in under 60 seconds.' }
+    ],
+
+    // ✅ 2. 详细参数
+    technicalSpecs: [
+      { label: 'Display Panel', value: '43" 4K UHD J-Type Curved IPS' },
+      { label: 'Curvature Rate', value: 'R1500 (Golden Viewing Curve)' },
+      { label: 'Touch Interface', value: 'All-Weather Projected Capacitive (PCAP)' },
+      { label: 'Lighting System', value: 'Sync-Addressable LED Strips with Attract Mode' },
+      { label: 'Wiring', value: 'Pre-wired 36/10 Pin Standard Harness' },
+      { label: 'Cabinet Material', value: 'Reinforced 1.2mm Cold Rolled Steel' }
+    ],
+
+    // ✅ 3. 竞品对比
+    comparison: {
+      competitorLabel: 'Standard Curved Imports',
+      rows: [
+        { feature: 'Visual Depth', us: 'R1500 High-Immerse', them: 'R3000 Shallow Curve' },
+        { feature: 'Steel Thickness', us: '1.2mm Industrial Grade', them: '0.8mm Thin Sheet' },
+        { feature: 'Touch Reliability', us: 'Sealed PCAP (Anti-Dust)', them: 'Exposed IR Frame' }
+      ]
+    },
+
+    // ✅ 4. 买家指南 (交互：点击表单发送资料)
+    buyerGuide: [
+      { title: 'Floor Planning Guide', content: 'Our Model V2 has a 10% smaller footprint. Contact us with your venue dimensions for a free CAD layout proposal.' },
+      { title: 'Board Synchronization', content: 'For best results, pair with 4K Link-Sync boards. Enter your email below to receive our full compatibility matrix.' }
+    ],
+
+    // ✅ 5. 成功案例
+    caseStudy: {
+      title: '35% Revenue Jump in Multi-Link Route',
+      content: '"We swapped five old flat-screen uprights for four Curved V2 Elites. The weekly hold increased by 35% because the machines attracted a much longer dwell time from high-value players."',
+      author: 'Master Route Operator, Georgia'
+    },
+
+    // ✅ 6. 扩展 FAQ (6条)
+    faqs: [
+      { question: 'Is the 43" screen native 4K?', answer: 'Yes, it is a native 3840x2160 industrial panel with a built-in scaler for backward compatibility.' },
+      { question: 'Can I use ICT or Pyramid bill acceptors?', answer: 'The shell is pre-cut for all major brands including ICT PA7 and Pyramid 7600. Custom faceplates are available.' },
+      { question: 'What is the advantage of R1500 vs R3000 curve?', answer: 'R1500 is a tighter curve that matches the natural human eye arc at sitting distance, maximizing the 3D effect.' },
+      { question: 'Does it ship fully assembled?', answer: 'Yes, we ship these units fully assembled and palletized to prevent shipping damage to the curved glass.' },
+      { question: 'Is the RGB lighting syncable?', answer: 'Yes, the side lights can be controlled by an internal remote or synced to the game board via a dedicated header.' },
+      { question: 'Can I replace the touch glass independently?', answer: 'Yes, the PCAP assembly is modular and can be serviced separately from the 4K panel.' }
+    ],
+
+    // ✅ 7. 交互与 SEO
+    ctaText: 'Request Wholesale Quote',
+    pdfUrl: '/downloads/curved-elite-v2-arc-specs.pdf',
+    
+    seo: {
+      metaTitle: '43" Curved Arcade Shell | Wholesale Skill Game Cabinet Model V2',
+      metaDescription: 'Shop factory-direct 43-inch curved arcade cabinet shells. 4K UHD resolution, R1500 curvature, and PCAP touch. Optimized for high-engagement skill games.',
+      keywords: [
+        '43 Inch Curved Arcade Cabinet Shell',
+        'Skill Game Machine Hardware Wholesale',
+        'Curved Touch Screen Gaming Housing',
+        'Model V2 Gaming Cabinet'
+      ]
+    }
   }
+}
 ];
 
 // ... 下面保持 getBlogs 和 getSolutions 不变 ...
