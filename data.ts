@@ -968,6 +968,428 @@ export const getProducts = (lang: LanguageCode): Product[] => [
       ]
     }
   }
+},
+{
+  id: 'fish-table-86-10player-welded',
+  name: '86" Deluxe 10-Player Fully Welded Table Shell (Non-Dismantle)',
+  category: 'cabinet_only',
+  description: 'The definitive high-capacity multiplayer shell. Featuring a massive 86-inch 4K monitor and a fully welded 1.5mm steel body for maximum structural integrity and professional venue aesthetics.',
+  imageUrl: 'https://picsum.photos/1200/800?random=10pw', // 建议在 public/images/ 放入产品图
+  features: ['Industrial 86" 4K UHD Display', '10-Player Station Capacity', 'Fully Welded 1.5mm Steel Shell', '5mm Tempered Safety Glass'],
+  
+  tankPage: {
+    headline: 'Dominate the Floor with the 86" 10-Player Welded Titan',
+    subHeadline: 'Why settle for modular when you can have the strength of a fully welded shell? Engineered for elite venues and the highest possible revenue throughput.',
+    
+    // ✅ 1. 痛点分析 (Pain Point Section)
+    painPoints: [
+      { icon: 'Users', title: 'Revenue Bottlenecks', description: 'Standard 6-player tables lead to waiting lines and lost revenue during peak hours. Our 10-player welded titan increases your peak capacity by 25%, ensuring you capture every available dollar in the venue without requiring additional floor space management.' },
+      { icon: 'ShieldAlert', title: 'Physical Vulnerability', description: 'Wooden or thin-metal cabinets are easily breached in unattended locations. This unit features a fully welded 1.5mm steel vault system and a secondary locking bar for the massive 86-inch monitor, providing the highest physical security for your logic boards and cash flow.' },
+      { icon: 'Wrench', title: 'Structural Degradation', description: 'Dismantle units can rattle and loosen over years of intense public play. Our fully welded automotive-grade steel chassis eliminates structural fatigue, ensuring the machine feels solid and high-end for the life of the product, reducing long-term maintenance costs and technician calls.' }
+    ],
+
+    // ✅ 2. 详细参数 (Parameters Section)
+    technicalSpecs: [
+      { label: 'Display Panel', value: '86" 4K UHD (3840 x 2160) Industrial IPS Grade' },
+      { label: 'Player Capacity', value: '10 Dedicated Stations (Configured for 36/10 Pin)' },
+      { label: 'Body Material', value: '1.5mm Reinforced Cold Rolled Steel (One-Piece Welded)' },
+      { label: 'Glass Safety', value: '5mm Thick Chemically-Tempered Safety Glass' },
+      { label: 'Lighting System', value: 'Full-Perimeter Addressable RGB LED (Attract Mode Sync)' },
+      { label: 'Wiring Harness', value: 'Industrial-Grade Daisy-Chain Power & 10-Player I/O Loom' }
+    ],
+
+    // ✅ 3. 竞品对比 (Comparison Section)
+    comparison: {
+      competitorLabel: 'Standard 8-Player Dismantle Models',
+      rows: [
+        { feature: 'Structural Strength', us: 'Max (Fully Welded Chassis)', them: 'Medium (Bolted Joints)' },
+        { feature: 'Peak Throughput', us: '10 Players (+25% Capacity)', them: '8 Players Max' },
+        { feature: 'Setup Speed', us: 'Instant (No Assembly)', them: 'Slow (2+ Hours Assembly)' }
+      ]
+    },
+
+    // ✅ 4. 买家指南 (Buyer's Guide)
+    buyerGuide: [
+      { title: 'Doorway Verification', content: 'As this is a non-dismantle unit, please verify that your location has at least a 34-inch wide doorway to accommodate the cabinet during installation. We recommend commercial double-doors for the easiest access.' },
+      { title: 'Floor Space Planning', content: 'Allow for a 12ft x 9ft clearance zone to ensure players can move comfortably around the table. Click the button below to download our full Site Preparation CAD drawing and receive it instantly via email.' }
+    ],
+
+    // ✅ 5. 成功案例 (Case Study Section)
+    caseStudy: {
+      title: 'Location Collects Rose by 45%',
+      content: '"We replaced two aging 4-player wooden cabinets with one of these 86-inch 10-player welded units. The visual impact was immediate; foot traffic turned into game time, and the social vibe of 10 people playing together kept customers in the seats 40% longer per session. ROI was hit in 14 weeks."',
+      author: 'David K., Multi-Route Operator'
+    },
+
+    // ✅ 6. 常见问题 (FAQ Section)
+    faqs: [
+      { question: 'Does the cabinet ship as a single piece?', answer: 'Yes, this is our "Welded Elite" version, meaning it is shipped fully assembled. This ensures the highest possible structural integrity and eliminates assembly labor for your route technicians.' },
+      { question: 'What is the monitor warranty?', answer: 'We provide a comprehensive 12-month factory replacement warranty on the 86-inch 4K panel and its associated driver electronics to ensure your venue experiences zero downtime.' },
+      { question: 'Which bill acceptors does it support?', answer: 'The cabinet features 10 universal faceplates pre-cut for ICT PA7 and Pyramid 7600 bill validators. Custom faceplates for ticket printers or MEI units are available for bulk wholesale orders.' },
+      { question: 'How is the monitor glass protected?', answer: 'The unit is fitted with a 5mm thick chemically-tempered safety glass cover. It is scratch-resistant and liquid-proof, designed specifically for high-traffic food-and-drink environments.' },
+      { question: 'What are the power requirements?', answer: 'The unit draws roughly 6.0A at peak load. We recommend a dedicated 20A circuit with surge protection to handle the display and 10 player touch interfaces safely.' },
+      { question: 'How do you prevent shipping damage?', answer: 'We ship every 86-inch welded unit in a custom-built international plywood crate with molded high-density foam inserts, maintaining a near-zero damage rate on LTL shipments across the USA.' }
+    ],
+
+    // ✅ 7. 互动配置与 SEO
+    ctaText: 'Get Factory-Direct Quote',
+    pdfUrl: '/downloads/welded-86-10player-specs.pdf',
+    
+    seo: {
+      metaTitle: '86" 10-Player Fish Table Arcade Cabinet | Wholesale Welded Shell',
+      metaDescription: 'Shop factory-direct 10-player arcade housing with a massive 86-inch 4K monitor. Fully welded steel construction for maximum route durability. Inquire for B2B wholesale pricing.',
+      keywords: [
+        '10 player arcade table housing',
+        '86 inch fish game machine shell',
+        'wholesale multiplayer amusement cabinet',
+        'welded arcade cabinet manufacturer'
+      ]
+    }
+  }
+},
+{
+  id: 'fish-table-65-10player-royal-welded',
+  name: '65" Royal 10-Player Fully Welded Table Shell (Non-Dismantle)',
+  category: 'cabinet_only',
+  description: 'The premier choice for premium venues. Featuring a massive 65-inch 4K monitor and a high-end fully welded 1.5mm steel body for ultimate stability and "Vegas-grade" aesthetics.',
+  imageUrl: '/images/65-10player-royal.jpg', // 请在 public/images/ 放入对应的图片
+  features: ['65" Industrial 4K UHD Display', 'Royal 10-Player Layout', 'One-Piece Fully Welded Steel', 'Custom dynamic RGB Halo'],
+  
+  tankPage: {
+    headline: 'Royal Prestige, Maximum ROI: The 65" 10-Player Master',
+    subHeadline: 'Why settle for modular when you can have the permanence of a Royal welded shell? Engineered for high-traffic routes that demand 24/7 uptime and elite visual impact.',
+    
+    // ✅ 痛点分析
+    painPoints: [
+      { icon: 'Users', title: 'Lost Revenue from Waiting lines', description: 'During peak weekend hours, smaller 6-player tables often turn away interested customers. Our 10-player Royal layout increases your peak capacity by 25% or more, ensuring you capture every available dollar on the floor without requiring additional linear wall space.' },
+      { icon: 'ShieldAlert', title: 'Security & Structural Weakness', description: 'Wooden or thin-metal housings are prone to structural rattling and are easy targets for tampering. The Royal series features a fully welded 1.5mm steel chassis that provides the highest physical security for your game boards and cash boxes in unattended environments.' },
+      { icon: 'Wrench', title: 'Complex Ongoing Maintenance', description: 'Loose joints and complex wiring lead to frequent technician calls. Our one-piece welded design eliminates structural fatigue, while the pre-labeled industrial harnesses allow your team to perform 60-second peripheral swaps to maintain 99% uptime.' }
+    ],
+
+    // ✅ 详细参数
+    technicalSpecs: [
+      { label: 'Display Technology', value: '65" 4K UHD (3840 x 2160) IPS Industrial Grade' },
+      { label: 'Player Capacity', value: '10 Independent Stations (36/10 Pin Config)' },
+      { label: 'Body Construction', value: '1.5mm Reinforced Cold Rolled Steel (Fully Welded)' },
+      { label: 'Glass Interface', value: '5mm Thick Chemically-Tempered Safety Glass' },
+      { label: 'Lighting System', value: 'Royal-Sync Addressable RGB LED (Programmable)' },
+      { label: 'Security System', value: 'Triple-Point Reinforced Internal Vault Locking' }
+    ],
+
+    // ✅ 竞品对比
+    comparison: {
+      competitorLabel: 'Standard 8-Player Modular Tables',
+      rows: [
+        { feature: 'Body Rigidity', us: 'Max (One-Piece Welded)', them: 'Medium (Bolted Parts)' },
+        { feature: 'Visual Real Estate', us: '100% 4K Industrial 65"', them: 'Generic 55" or 1080P' },
+        { feature: 'Service Life', us: '10+ Years (Automotive Steel)', them: '3-5 Years (Plywood/Thin Metal)' }
+      ]
+    },
+
+    // ✅ 买家指南 (互动：点击发送 PDF)
+    buyerGuide: [
+      { title: 'Logistics Planning', content: 'As a non-dismantle unit, please ensure your location has a clear 34-inch doorway. We recommend professional white-glove delivery for this 550lb high-value asset.' },
+      { title: 'Site Electrical Prep', content: 'Requires a dedicated 20A circuit for optimal performance of the 4K panel and 10 stations. Click the button below to get our full Site Preparation CAD drawing sent to your email.' }
+    ],
+
+    // ✅ 成功案例
+    caseStudy: {
+      title: 'Location Profit Jumped 42%',
+      content: '"We replaced two 4-player wood cabinets with one 65-inch 10-player Royal. The social vibe of 10 people playing together kept players in the seats 40% longer. ROI was hit in 12 weeks."',
+      author: 'Master Route Operator, Pennsylvania'
+    },
+
+    // ✅ FAQ (6条)
+    faqs: [
+      { question: 'Does the cabinet ship fully assembled?', answer: 'Yes, the Royal Welded edition ships fully assembled and palletized to maintain its superior structural integrity and save you hours of labor.' },
+      { question: 'What is the standard warranty on the display?', answer: 'We offer a 12-month factory replacement warranty on the industrial 65-inch 4K panel and its associated driver electronics.' },
+      { question: 'Which bill validators are supported?', answer: 'The cabinet features 10 universal faceplates pre-cut for ICT PA7 and Pyramid 7600 series. Custom mounts for MEI are available on request.' },
+      { question: 'Is the monitor glass replaceable?', answer: 'Yes, although it is chemically-tempered, the glass is modular and can be replaced independently if damaged in high-traffic venues.' },
+      { question: 'Can the LED lighting sync to the game?', answer: 'Yes, the RGB Halo system includes a 12V sync header that connects directly to your game board for dynamic win/loss animations.' },
+      { question: 'What is the shipping weight and protection?', answer: 'The unit weighs approx 550 lbs and is shipped in a custom-built international plywood crate with molded foam to ensure 0% arrival damage.' }
+    ],
+
+    // ✅ SEO 与 Meta
+    ctaText: 'Get Factory Direct Quote',
+    pdfUrl: '/downloads/65-10player-royal-specs.pdf',
+    
+    seo: {
+      metaTitle: '10 Player Arcade Cabinet Shell | 65" Royal Welded Fish Table Housing',
+      metaDescription: 'Shop factory-direct 10-player Royal arcade housings. 65-inch 4K display, fully welded 1.5mm steel body for maximum durability. Ideal for skill game routes.',
+      keywords: [
+        '10 Player Arcade Cabinet Shell',
+        '65 Inch Fish Table Housing',
+        'Commercial Skill Game Cabinet Wholesale',
+        'Royal Series Gaming Shell'
+      ]
+    }
+  }
+},
+{
+  id: 'fish-table-86-10player-royal-welded',
+  name: '86" Royal 10-Player Fully Welded Table Shell (Non-Dismantle)',
+  category: 'cabinet_only',
+  description: 'The premier choice for luxury venues. Featuring a massive 86-inch 4K monitor and a high-end fully welded 1.5mm steel body for ultimate stability and "Vegas-grade" aesthetics.',
+  imageUrl: '/images/86-10player-royal-welded.jpg', // 请在 public/images/ 放入对应的图片
+  features: ['65" Industrial 4K UHD Display', 'Royal 10-Player Layout', 'One-Piece Fully Welded Steel', 'Custom dynamic RGB Halo'],
+  
+  tankPage: {
+    headline: 'Royal Prestige, Maximum ROI: The 86" 10-Player Master',
+    subHeadline: 'Why settle for modular when you can have the permanence of a Royal welded shell? Engineered for high-traffic routes that demand 24/7 uptime and elite visual impact.',
+    
+    // ✅ 痛点分析
+    painPoints: [
+      { icon: 'Users', title: 'Lost Revenue from Waiting lines', description: 'During peak weekend hours, smaller tables often turn away interested customers. Our 10-player Royal layout increases your peak capacity by 25%, ensuring you capture every available dollar on the floor without requiring additional linear floor space.' },
+      { icon: 'ShieldAlert', title: 'Security & Structural Weakness', description: 'Wooden or thin-metal housings are prone to structural rattling and are easy targets for tampering. The Royal series features a fully welded 1.5mm steel chassis that provides the highest physical security for your logic boards and cash boxes in unattended environments.' },
+      { icon: 'Wrench', title: 'Complex Ongoing Maintenance', description: 'Loose joints and complex wiring lead to frequent technician calls. Our one-piece welded design eliminates structural fatigue, while the pre-labeled industrial harnesses allow your team to perform 60-second peripheral swaps to maintain 99% uptime.' }
+    ],
+
+    // ✅ 详细参数
+    technicalSpecs: [
+      { label: 'Display Technology', value: '86" 4K UHD (3840 x 2160) IPS Industrial Grade' },
+      { label: 'Player Capacity', value: '10 Independent Stations (36/10 Pin Config)' },
+      { label: 'Body Construction', value: '1.5mm Reinforced Cold Rolled Steel (Fully Welded)' },
+      { label: 'Glass Interface', value: '5mm Thick Chemically-Tempered Safety Glass' },
+      { label: 'Lighting System', value: 'Royal-Sync Addressable RGB LED (Programmable)' },
+      { label: 'Security System', value: 'Triple-Point Reinforced Internal Vault Locking' }
+    ],
+
+    // ✅ 竞品对比
+    comparison: {
+      competitorLabel: 'Standard 8-Player Modular Tables',
+      rows: [
+        { feature: 'Body Rigidity', us: 'Max (One-Piece Welded)', them: 'Medium (Bolted Parts)' },
+        { feature: 'Visual Real Estate', us: '100% 4K Industrial 86"', them: 'Generic 55" or 1080P' },
+        { feature: 'Service Life', us: '10+ Years (Automotive Steel)', them: '3-5 Years (Plywood/Thin Metal)' }
+      ]
+    },
+
+    // ✅ 买家指南
+    buyerGuide: [
+      { title: 'Logistics Planning', content: 'As a non-dismantle unit, please ensure your location has a clear 34-inch doorway. We recommend professional white-glove delivery for this 600lb high-value asset.' },
+      { title: 'Site Electrical Prep', content: 'Requires a dedicated 20A circuit for optimal performance of the 4K panel and 10 stations. Click the button below to get our full Site Preparation CAD drawing sent to your email.' }
+    ],
+
+    // ✅ 成功案例
+    caseStudy: {
+      title: 'Location Profit Jumped 42%',
+      content: '"We replaced two 4-player wood cabinets with one 86-inch 10-player Royal. The social vibe of 10 people playing together kept players in the seats 40% longer. ROI was hit in 14 weeks."',
+      author: 'Master Route Operator, Pennsylvania'
+    },
+
+    // ✅ FAQ (6条)
+    faqs: [
+      { question: 'Does the cabinet ship fully assembled?', answer: 'Yes, the Royal Welded edition ships fully assembled and palletized to maintain its superior structural integrity and save you hours of labor.' },
+      { question: 'What is the standard warranty on the display?', answer: 'We offer a 12-month factory replacement warranty on the industrial 86-inch 4K panel and its associated driver electronics.' },
+      { question: 'Which bill validators are supported?', answer: 'The cabinet features 10 universal faceplates pre-cut for ICT PA7 and Pyramid 7600 series. Custom mounts for MEI are available on request.' },
+      { question: 'Is the monitor glass replaceable?', answer: 'Yes, although it is chemically-tempered, the glass is modular and can be replaced independently if damaged in high-traffic venues.' },
+      { question: 'Can the LED lighting sync to the game?', answer: 'Yes, the RGB Halo system includes a 12V sync header that connects directly to your game board for dynamic win/loss animations.' },
+      { question: 'What is the shipping weight and protection?', answer: 'The unit weighs approx 600 lbs and is shipped in a custom-built international plywood crate with molded foam to ensure 0% arrival damage.' }
+    ],
+
+    // ✅ SEO 与 Meta
+    ctaText: 'Get Factory Direct Quote',
+    pdfUrl: '/downloads/86-10player-royal-welded-specs.pdf',
+    
+    seo: {
+      metaTitle: '10 Player Arcade Table Housing | 86" Royal Welded Fish Table Housing',
+      metaDescription: 'Shop factory-direct 10-player Royal arcade housings. 86-inch 4K display, fully welded 1.5mm steel body for maximum durability. Ideal for skill game routes.',
+      keywords: [
+        '10 Player Arcade Table Housing',
+        '86 Inch Fish Table Housing',
+        'Commercial Skill Game Cabinet Wholesale',
+        'Royal Series Gaming Shell'
+      ]
+    }
+  }
+},
+{
+  id: 'fish-table-86-10player-royal-v2-welded',
+  name: '86" Royal V2 10-Player Fully Welded Table Shell (Non-Dismantle)',
+  category: 'cabinet_only',
+  description: 'The premier luxury flagship for high-end routes. Featuring a massive 86-inch 4K monitor and a high-end fully welded 1.5mm steel body with Halo-Eclipse RGB effects.',
+  imageUrl: '/images/86-10player-royal-v2.jpg', // 请在 public/images/ 放入对应的图片
+  features: ['Industrial 86" 4K UHD Display', 'Royal V2 10-Player Layout', 'One-Piece Fully Welded 1.5mm Steel', 'Halo-Eclipse RGB Lighting'],
+  
+  tankPage: {
+    headline: 'Elite Visuals, Maximum ROI: The 86" Royal V2 10-Player Master',
+    subHeadline: 'Why settle for modular when you can have the structural permanence of a Royal welded shell? Engineered for high-traffic routes that demand zero maintenance and elite impact.',
+    
+    // ✅ 痛点分析
+    painPoints: [
+      { 
+        icon: 'Users', 
+        title: 'Lost Revenue from Seat Bottlenecks', 
+        description: 'During peak weekend hours, smaller tables result in customer lines and lost collection opportunities. Our 10-player Royal layout increases your peak capacity by 25%, ensuring you capture every available dollar on the floor without increasing the linear linear wall space requirements.' 
+      },
+      { 
+        icon: 'ShieldAlert', 
+        title: 'Security & Structural Vulnerability', 
+        description: 'Wooden or thin-metal housings are prone to structural rattling and are soft targets for tampering. The Royal V2 series features a fully welded 1.5mm reinforced steel chassis that provides the highest physical security for your logic boards and cash boxes in high-risk, unattended environments.' 
+      },
+      { 
+        icon: 'Wrench', 
+        title: 'Complex Maintenance & Loose Joints', 
+        description: 'Joint fatigue and complex wiring lead to frequent, costly technician calls. Our one-piece welded design eliminates structural issues entirely, while the pre-labeled industrial harnesses allow your team to perform 60-second peripheral swaps to maintain 99.9% route uptime.' 
+      }
+    ],
+
+    // ✅ 详细参数
+    technicalSpecs: [
+      { label: 'Display Technology', value: '86" 4K UHD (3840 x 2160) IPS Industrial Flagship' },
+      { label: 'Player Capacity', value: '10 Dedicated High-Performance Stations' },
+      { label: 'Body Construction', value: '1.5mm Automotive Grade Cold Rolled Steel (Full Weld)' },
+      { label: 'Glass Interface', value: '5mm Thick Chemically-Tempered Safety Glass Cover' },
+      { label: 'Lighting System', value: 'Halo-Eclipse Addressable RGB LED (Remote Sync)' },
+      { label: 'Security System', value: 'Triple-Point Reinforced Internal Vault Locking Bar' }
+    ],
+
+    // ✅ 竞品对比
+    comparison: {
+      competitorLabel: 'Generic 8-Player Modular Tables',
+      rows: [
+        { feature: 'Body Rigidity', us: 'Max (One-Piece Welded)', them: 'Medium (Bolted Parts)' },
+        { feature: 'Visual Real Estate', us: '100% 4K Industrial 86"', them: 'Generic 65" or 1080P' },
+        { feature: 'Service Life', us: '10+ Years (Automotive Steel)', them: '3-5 Years (Plywood/Thin Metal)' }
+      ]
+    },
+
+    // ✅ 买家指南 (交互点：下载 PDF)
+    buyerGuide: [
+      { title: 'Logistics Planning', content: 'As a non-dismantle unit, please ensure your location has a clear 34-inch doorway. We recommend white-glove professional delivery for this 600lb high-value route asset.' },
+      { title: 'Site Electrical Prep', content: 'Requires a dedicated 20A circuit for optimal stability of the massive 4K panel and 10 player stations. Click below to get our full Site Preparation CAD drawing and station map.' }
+    ],
+
+    // ✅ 成功案例
+    caseStudy: {
+      title: 'Location Net Profit Jumped 48%',
+      content: '"We replaced two 4-player units with one 86-inch 10-player Royal V2. The social atmosphere of 10 people playing together kept players in the seats 40% longer per session. Total ROI was hit in 13 weeks."',
+      author: 'Master Route Operator, Pennsylvania Hub'
+    },
+
+    // ✅ FAQ (6条)
+    faqs: [
+      { question: 'Does the cabinet ship fully assembled?', answer: 'Yes, the Royal V2 Welded edition ships fully assembled and palletized to maintain its superior structural integrity and eliminate site assembly labor.' },
+      { question: 'What is the standard warranty on the display?', answer: 'We provide a comprehensive 12-month factory replacement warranty on the industrial 86-inch 4K panel and its associated driver electronics.' },
+      { question: 'Which bill validators are supported?', answer: 'The cabinet features 10 universal faceplates pre-cut for ICT PA7, Pyramid 7600, and MEI series. Custom faceplates are available for bulk orders.' },
+      { question: 'Is the monitor glass liquid-proof?', answer: 'Yes, the 5mm tempered glass is sealed against spills, making it perfect for food and drink environments like convenience stores and taverns.' },
+      { question: 'Can the LED lighting sync to the game?', answer: 'Yes, the Halo-Eclipse system includes a 12V sync header that connects directly to your game board for dynamic win/loss animations.' },
+      { question: 'What is the shipping weight and protection?', answer: 'The unit weighs approx 600 lbs and is shipped in a custom-built international plywood crate with molded foam to ensure zero arrival damage.' }
+    ],
+
+    // ✅ SEO 与 Meta 撰写
+    ctaText: 'Get Factory Direct Quote',
+    pdfUrl: '/downloads/royal-86-v2-welded-specs.pdf',
+    
+    seo: {
+      metaTitle: '10 Player Multiplayer Arcade Cabinet | 86" 4K Royal V2 Housing',
+      metaDescription: 'Shop factory-direct 10-player Royal V2 arcade housings. 86-inch 4K display, fully welded 1.5mm steel body for maximum durability. Ideal for high-traffic skill game routes.',
+      keywords: [
+        '10 Player Multiplayer Arcade Cabinet',
+        '86 Inch 4K Skill Game Housing',
+        'Commercial Game Table Shell Wholesale',
+        'Royal Series V2 Gaming Shell'
+      ]
+    }
+  }
+},
+  // ⚠️ 插入位置：src/data.ts -> getProducts 数组内部末尾
+
+{
+  id: 'fish-table-8-classic-welded',
+  name: '8-Player Classic Black Fully Welded Table Shell (Non-Dismantle)',
+  category: 'cabinet_only',
+  description: 'The industry workhorse for high-retention routes. Featuring a 55-inch display support and a fully welded 1.5mm steel body for maximum security and zero-maintenance durability.',
+  imageUrl: '/images/8-player-classic-black.jpg', // 请在 public/images/ 放入对应的图片
+  features: ['Fits 55" Industrial 4K Monitor', 'Classic 8-Player Stand-Up Layout', '1.5mm Reinforced Steel Body', 'Anti-Pry Vault Security System'],
+  
+  tankPage: {
+    headline: 'Reliability Meets Revenue: The 8-Player Classic Black Elite',
+    subHeadline: 'Why settle for modular when you can have the strength of a fully welded shell? Engineered for high-traffic routes that demand 24/7 uptime and zero structural fatigue.',
+    
+    // ✅ 痛点分析
+    painPoints: [
+      { 
+        icon: 'ShieldAlert', 
+        title: 'Tampering & Security Risks', 
+        description: 'Wooden or thin-metal housings are soft targets for break-ins. The Classic Black series features a fully welded 1.5mm reinforced steel chassis and a 3-point locking vault that provides the highest physical security for your game boards and cash boxes in unattended environments.' 
+      },
+      { 
+        icon: 'Wrench', 
+        title: 'Joint Fatigue & Noise', 
+        description: 'Dismantle units often rattle and loosen over years of intense public play. Our one-piece welded design eliminates structural fatigue and loose joints entirely, ensuring the machine feels solid and high-end for its entire service life, reducing long-term maintenance costs.' 
+      },
+      { 
+        icon: 'TrendingDown', 
+        title: 'Lost Revenue from Bottlenecks', 
+        description: 'During peak weekend hours, smaller cabinets often turn away interested customers. Our 8-player layout maximizes peak-hour throughput, ensuring you capture every available dollar on the floor without requiring the massive floor space of a 10-player unit.' 
+      }
+    ],
+
+    // ✅ 详细参数
+    technicalSpecs: [
+      { label: 'Display Support', value: 'Optimized for 55" 4K UHD Industrial Monitors' },
+      { label: 'Player Capacity', value: '8 Independent High-Performance Stations' },
+      { label: 'Body Construction', value: '1.5mm Automotive Grade Cold Rolled Steel (Full Weld)' },
+      { label: 'Glass Protection', value: '5mm Thick Chemically-Tempered Safety Glass Cover' },
+      { label: 'Lighting System', value: 'Integrated RGB Side Accents with Attract Mode' },
+      { label: 'Wiring Protocol', value: '8-Station Standard 36/10 Pin Copper Core Harness' }
+    ],
+
+    // ✅ 竞品对比
+    comparison: {
+      competitorLabel: 'Standard 8-Player Modular Shells',
+      rows: [
+        { feature: 'Structural Integrity', us: 'Max (One-Piece Welded)', them: 'Medium (Bolted/Screwed)' },
+        { feature: 'Setup Time', us: 'Instant (Ships Assembled)', them: 'Slow (2+ Hours Field Labor)' },
+        { feature: 'Service Life', us: '10+ Years (Heavy Steel)', them: '3-5 Years (Thin Metal/Plywood)' }
+      ]
+    },
+
+    // ✅ 买家指南 (交互点：下载 PDF)
+    buyerGuide: [
+      { 
+        title: 'Logistics and Move-in', 
+        content: 'As this is a non-dismantle unit, please ensure your location has a clear 34-inch doorway. We recommend using a professional pallet jack for installation. Click below to receive our full "8-Player Site Prep CAD" drawing via email.' 
+      },
+      { 
+        title: 'Electrical Planning', 
+        content: 'Requires a grounded dedicated 15A or 20A circuit for optimal performance. Enter your email to download our "Power Distribution Map" for high-density venues.' 
+      }
+    ],
+
+    // ✅ 成功案例
+    caseStudy: {
+      title: 'NC Operator Achieves ROI in 10 Weeks',
+      content: '"We replaced old wood units with these Classic Black steel tables. The collection increased by 35% because the social atmosphere kept players engaged longer. We had zero maintenance calls for structural issues."',
+      author: 'Master Route Owner, North Carolina'
+    },
+
+    // ✅ FAQ (6条)
+    faqs: [
+      { question: 'Does it come with a bill acceptor?', answer: 'This is an "Empty Shell" product. It is pre-cut for ICT PA7 and Pyramid 7600 acceptors. We can pre-install them for an additional fee upon request.' },
+      { question: 'What is the standard warranty?', answer: 'We provide a 12-month factory replacement warranty on all structural components and the internal wiring harness.' },
+      { question: 'Can the cabinet be customized with our logo?', answer: 'Yes, for wholesale orders of 5+ units, we offer custom silk-screened acrylic headers and side panel decals to match your branding.' },
+      { question: 'Is the wiring harness compatible with Banilla games?', answer: 'Yes, the pre-installed 36/10 pin harness is the industry standard for Banilla, Fusion, and most Skill Nudge titles.' },
+      { question: 'How is it protected during shipping?', answer: 'Every unit is shipped in a custom-built international plywood crate with high-density foam padding to ensure 0% arrival damage.' },
+      { question: 'Can I add a thermal printer later?', answer: 'The cabinet includes pre-cut slots and mounting brackets for standard ICT or Nanoptix thermal printers, making field upgrades easy.' }
+    ],
+
+    // ✅ SEO 与 Meta 撰写
+    ctaText: 'Get Wholesale Quote',
+    pdfUrl: '/downloads/8-player-classic-specs.pdf',
+    
+    seo: {
+      metaTitle: '8 Player Fish Game Machine Cabinet | Classic Black Skill Arcade Shell',
+      metaDescription: 'Shop factory-direct 8-player Classic Black arcade housings. Optimized for 55-inch monitors, fully welded 1.5mm steel body for maximum durability. Ideal for high-traffic routes.',
+      keywords: [
+        '8 Player Fish Game Machine Cabinet',
+        'Classic Arcade Table Shell',
+        'Wholesale Skill Gaming Housing',
+        '8 Station Arcade Housing Manufacturer'
+      ]
+    }
+  }
 }
 ];
 
