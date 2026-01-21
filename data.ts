@@ -27,7 +27,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
     imageUrl: 'https://picsum.photos/400/400',
     features: ['Compact Countertop Form Factor', 'Plug-and-Play']
   },
-  /* --- 43" 垂直平屏机柜 (Titan 版) --- */
+  /* --- 1. 43" 垂直平屏机柜 (Titan 版) --- */
   {
     id: 'p4',
     name: '43" 4K Titan Vertical Skill Cabinet (Empty Shell)',
@@ -81,13 +81,13 @@ export const getProducts = (lang: LanguageCode): Product[] => [
       }
     }
   },
-  /* --- 43" J型曲面屏机柜 --- */
+  /* --- 2. 43" J型曲面屏机柜 --- */
   {
     id: 'j-curve-43-cabinet',
     name: '43" J-Curve 4K Elite Skill Cabinet (Empty Shell)',
     category: 'cabinet_only',
     description: 'The ultimate immersive experience for premium venues. Features a massive 43-inch J-Curved 4K display.',
-    imageUrl: 'https://picsum.photos/800/1200?random=431',
+    imageUrl: '/images/j-curve.jpg',
     features: ['43" 4K J-Curve Display', 'Pro-Grade PCAP Multi-Touch', 'Sync-LED RGB Lighting'],
     tankPage: {
       headline: 'Redefine Your Revenue with the 43" J-Curve 4K Elite',
@@ -122,7 +122,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
       }
     }
   },
-  /* --- 43" 垂直平屏 (Elite版) --- */
+  /* --- 3. 43" 垂直平屏 (Elite版) --- */
   {
     id: 'vertical-43-cabinet-pro',
     name: '43" 4K Vertical Elite Skill Cabinet (Empty Shell)',
@@ -141,7 +141,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
       ],
       comparison: {
         competitorLabel: 'Generic 43"',
-        rows: [{ feature: 'Body Material', us: '1.2mm Steel', them: 'Thin Metal or Plastic' }]
+        rows: [{ feature: 'Body Material', us: 'Industrial Steel', them: 'Thin Metal or Plastic' }]
       },
       buyerGuide: [{ title: 'Board Choice', content: 'Optimized for 4K Nudge/Link boards.' }],
       faqs: [
@@ -150,7 +150,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
         { question: 'Compatible with 36/10 pin?', answer: '100% compatible with industry standard harnesses.' },
         { question: 'Viewing angle?', answer: 'Premium IPS panel with 178-degree wide angles.' },
         { question: 'LTL shipping?', answer: 'Fits 2 units per double pallet.' },
-        { question: 'RGB colors?', answer: 'Side RGB is addressable and remote controlled.' }
+        { question: 'Are custom LED colors available?', answer: 'The side RGB lighting is addressable and remote controlled.' }
       ],
       ctaText: 'Get Wholesale Quote',
       seo: {
@@ -160,7 +160,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
       }
     }
   },
-  /* --- 43" 斜面曲面屏 (Slant Top) --- */
+  /* --- 4. 43" 斜面曲面屏 (Slant Top) --- */
   {
     id: 'slant-top-43-curved',
     name: '43" 4K Slant Top Curved Skill Cabinet (Empty Shell)',
@@ -198,7 +198,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
       }
     }
   },
-  /* --- 21.5" 双屏机柜 --- */
+  /* --- 5. 21.5" 双屏机柜 --- */
   {
     id: 'vertical-dual-screen-cabinet',
     name: '21.5" Dual Screen Vertical Skill Cabinet (Metal Shell)',
@@ -227,6 +227,11 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   }
 ];
 
-// 下面保持你的 getBlogs 和 getSolutions 不变...
-export const getBlogs = (lang: LanguageCode): BlogPost[] => [ /* 保持你的博客内容 */ ];
-export const getSolutions = (lang: LanguageCode): Solution[] => [ /* 保持你的解决方案内容 */ ];
+// --- 以下内容保持 getBlogs 和 getSolutions 不变 ---
+export const getBlogs = (lang: LanguageCode): BlogPost[] => [
+  /* 你的博客内容 */
+];
+
+export const getSolutions = (lang: LanguageCode): Solution[] => [
+  /* 你的解决方案内容 */
+];
