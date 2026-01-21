@@ -5,30 +5,6 @@ import { t } from './utils/i18n';
 
 export const getProducts = (lang: LanguageCode): Product[] => [
   {
-    id: 'p1',
-    name: 'Vegas Pro Vertical Nudge Cabinet (43" 4K Touch)',
-    category: 'complete_machine',
-    description: 'USA market compliant skill gaming cabinet. Features "Pre-Reveal" and "Nudge" mechanics.',
-    imageUrl: 'https://picsum.photos/400/600',
-    features: ['Mandatory Skill Nudge Mechanics', 'Anti-Cheat Metal Housing']
-  },
-  {
-    id: 'p2',
-    name: 'Titan Skill Board (Nudge Series)',
-    category: 'game_board',
-    description: 'High-retention game board logic. Replaces traditional RNG with player-controlled protocols.',
-    imageUrl: 'https://picsum.photos/400/300',
-    features: ['Player Reflex Logic', 'Standard 36/10 Pin Harness']
-  },
-  {
-    id: 'p3',
-    name: 'Countertop Reflex Kiosk',
-    category: 'complete_machine',
-    description: 'Compact skill amusement device for limited counter space.',
-    imageUrl: 'https://picsum.photos/400/400',
-    features: ['Compact Countertop Form Factor', 'Plug-and-Play']
-  },
-  {
     id: 'vertical-43-cabinet-pro', // ✅ 确保此 ID 唯一，且分类正确
     name: '43" 4K Vertical Elite Skill Cabinet (Empty Shell)',
     category: 'cabinet_only', 
@@ -1266,6 +1242,4 @@ export const getSolutions = (lang: LanguageCode): Solution[] => [
       metaDescription: 'High-end furniture grade gaming cabinets. 4K screens, gold trim, and leather armrests for VIP lounges and private clubs.',
       keywords: ['slant top amusement cabinet', 'luxury gaming machine', 'vip lounge arcade', 'high end entertainment cabinet']
     }
-   }
-  }
 ];
