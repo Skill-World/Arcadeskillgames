@@ -100,14 +100,30 @@ export const getProducts = (lang: LanguageCode): Product[] => [
 
       // ✅ FAQ
       faqs: [
-        { 
-          question: 'Do you offer custom branding?', 
-          answer: 'Yes! For orders over 10 units, we offer custom vinyl wraps and LED boot screens for your brand.' 
-        },
-        { 
-          question: 'Is the screen curved or flat?', 
-          answer: 'This model features a high-visibility flat UHD panel. Curved options are available in our Premium series.' 
-        }
+      { 
+        question: 'How do I adjust the hold/payout percentage on this unit?', 
+        answer: 'Hold percentages are controlled via your game board settings. Our pre-wired 36/10 harness includes a service button inside the door that grants you instant access to the on-screen setup menu for adjustments.' 
+      },
+      { 
+        question: 'Is the 4K monitor compatible with older game boards?', 
+        answer: 'Yes. Our 43" monitor includes an industrial scaler that automatically detects and optimizes signals from 1080P, 720P, and even legacy VGA boards, ensuring no stretching or distortion.' 
+      },
+      { 
+        question: 'What are the power requirements for a 43-inch cabinet?', 
+        answer: 'A single Titan 43" cabinet draws roughly 350-400W during peak play. We recommend a dedicated 15A or 20A circuit for every 3-4 machines to maintain electrical safety and prevent interference.' 
+      },
+      { 
+        question: 'How durable is the touchscreen glass in high-traffic areas?', 
+        answer: 'The screen is protected by 3mm tempered, chemically-strengthened glass. It is anti-glare, anti-fingerprint, and rated for 50 million+ touches—designed specifically for unattended public venues.' 
+      },
+      { 
+        question: 'Does the LED Halo lighting sync with the game play?', 
+        answer: 'Yes! The addressable RGB Halo lighting can be connected directly to your game board\'s LED header, allowing the colors to change and flash in sync with wins, bonuses, and attract modes.' 
+      },
+      { 
+        question: 'What is the shipping weight and how many fit on a pallet?', 
+        answer: 'Each Titan 43" cabinet weighs approx 145 lbs (66kg). We ship them fully assembled on standard pallets. For maximum shipping efficiency, we can fit 2 units per pallet for LTL freight.' 
+      }
       ],
 
       // ✅ 交互与 SEO
