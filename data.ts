@@ -302,7 +302,124 @@ export const getProducts = (lang: LanguageCode): Product[] => [
     }
   }
 },
-  // src/data.ts
+// src/data.ts
+
+// 在 getProducts 数组中添加以下对象
+{
+  id: 'slant-top-43-curved',
+  name: '43" 4K Slant Top Curved Skill Cabinet (Empty Shell)',
+  category: 'cabinet_only',
+  description: 'The ultimate luxury ergonomic gaming shell. 4K J-Curve display with a slant-top design optimized for high-end VIP lounges and long-session play.',
+  imageUrl: '/images/slant-top-43.jpg', 
+  features: ['43" 4K Curved PCAP Touch', 'Ergonomic Slant-Top Design', 'Premium 2.1 Sound System', 'Anti-Pry 1.2mm Steel Body'],
+  
+  tankPage: {
+    headline: 'High-End Comfort, Higher Revenue: The Slant Top 4K Elite',
+    subHeadline: 'Upgrade your route with the most ergonomic cabinet in the industry. Designed to keep players comfortable and engaged for hours.',
+    
+    // ✅ 痛点分析
+    painPoints: [
+      { 
+        icon: 'Armchair', 
+        title: 'Player Fatigue', 
+        description: 'Standard upright cabinets cause neck strain over time. Our slant-top angle is mathematically designed for peak ergonomic comfort.' 
+      },
+      { 
+        icon: 'Eye', 
+        title: 'Light Reflection', 
+        description: 'Glossy flat screens in gas stations create blinding glare. The R1500 curve and AG coating ensure a perfect view from any sitting position.' 
+      },
+      { 
+        icon: 'ShieldAlert', 
+        title: 'Security Risk', 
+        description: 'Generic cabinets lack internal protection. Our shell features a secondary internal vault for game boards and cash boxes.' 
+      }
+    ],
+
+    // ✅ 详细参数
+    technicalSpecs: [
+      { label: 'Monitor', value: '43" 4K UHD J-Curve Industrial Display' },
+      { label: 'Ergonomics', value: '15-Degree Slant-Top Operating Surface' },
+      { label: 'Touch Panel', value: 'Zero-Bezel PCAP Multi-Touch (3mm Tempered)' },
+      { label: 'Audio', value: 'Built-in 2.1 Channel Stereo with Bass Subwoofer' },
+      { label: 'Wiring', value: 'Pre-wired 36/10 Pin Nudge Harness + LAN Support' },
+      { label: 'Security', value: 'Dual High-Security Tubular Locks' }
+    ],
+
+    // ✅ 竞品对比
+    comparison: {
+      competitorLabel: 'Standard Upright Cabinets',
+      rows: [
+        { feature: 'Player Comfort', us: 'High (Sit-Down Slant)', them: 'Low (Standing/Bar Stool)' },
+        { feature: 'Display Quality', us: '4K Curved J-Type', them: '1080P Flat Panel' },
+        { feature: 'Body Build', us: 'Automotive Grade Steel', them: 'Thin Iron or Wood' }
+      ]
+    },
+
+    // ✅ 买家指南
+    buyerGuide: [
+      { 
+        title: '1. Venue Floor Planning', 
+        content: 'This unit has a larger footprint than upright models (approx 24" deep). Ensure you have adequate aisle space for chairs.' 
+      },
+      { 
+        title: '2. Game Board Sync', 
+        content: 'Works best with 4K-ready Link and Nudge boards. We can provide custom cable adapters for VGA legacy boards upon request.' 
+      }
+    ],
+
+    // ✅ 成功案例
+    caseStudy: {
+      title: 'VIP Lounge Hold Increase',
+      content: '"We replaced four bar-top units with two 43-inch Slant Tops. Even with fewer machines, our net revenue increased because players stayed at the machines 3x longer than before."',
+      author: 'Mark T., Route Distributor'
+    },
+
+    // ✅ FAQ (6条)
+    faqs: [
+      { 
+        question: 'Does it come with the bill acceptor?', 
+        answer: 'No, this is an empty shell. It is pre-cut for ICT and Pyramid validators. We can pre-install them for a surcharge.' 
+      },
+      { 
+        question: 'Is the screen glass replaceable?', 
+        answer: 'Yes, the 3mm PCAP touch glass is modular and can be replaced independently of the 4K panel if damaged.' 
+      },
+      { 
+        question: 'Can I use a Link board in this cabinet?', 
+        answer: 'Yes, the high-resolution vertical 4K screen is ideal for modern Link titles. The wiring is fully compatible.' 
+      },
+      { 
+        question: 'What is the power draw?', 
+        answer: 'Approx 4.2A peak including screen, LED lighting, and sound system. We recommend a surge-protected outlet.' 
+      },
+      { 
+        question: 'Is shipping fully assembled?', 
+        answer: 'Yes, we ship these units fully assembled on specialized foam-padded pallets to prevent any damage to the curved glass.' 
+      },
+      { 
+        question: 'Can the LED colors be customized?', 
+        answer: 'The RGB strips are addressable. You can use the internal controller to set any solid color or sync them to the game music.' 
+      }
+    ],
+
+    // ✅ SEO 与交互
+    ctaText: 'Get Wholesale Quote',
+    pdfUrl: '/downloads/slant-top-43-specs.pdf',
+    
+    seo: {
+      metaTitle: '43" Slant Top Curved Skill Cabinet | Premium VIP Gaming Shell',
+      metaDescription: 'Shop the most ergonomic 43-inch curved slant top skill game cabinet. Factory direct pricing for route operators. 4K UHD PCAP touch and steel body.',
+      keywords: [
+        'Slant Top Skill Cabinet',
+        '43 Inch Curved Gaming Shell',
+        'Professional Arcade Housing Wholesale',
+        'VIP Lounge Gaming Cabinet'
+      ]
+    }
+  }
+},
+// src/data.ts
 
 // 在 getProducts 数组中添加以下对象
 {
