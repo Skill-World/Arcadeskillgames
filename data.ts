@@ -67,7 +67,6 @@ export const getProducts = (lang: LanguageCode): Product[] => [
     imageUrl: 'https://picsum.photos/800/1200?random=431',
     features: ['43" 4K J-Curve Display', 'Pro-Grade PCAP Multi-Touch']
   }
-];
 
 // ... 保持 getBlogs 和 getSolutions 不变
   {
