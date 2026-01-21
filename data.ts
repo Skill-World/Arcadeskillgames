@@ -1223,5 +1223,6 @@ export const getSolutions = (lang: LanguageCode): Solution[] => [
       metaDescription: 'High-end furniture grade gaming cabinets. 4K screens, gold trim, and leather armrests for VIP lounges and private clubs.',
       keywords: ['slant top amusement cabinet', 'luxury gaming machine', 'vip lounge arcade', 'high end entertainment cabinet']
     }
+   }
   }
 ];
