@@ -259,6 +259,123 @@ export const getProducts = (lang: LanguageCode): Product[] => [
     }
   }
 },
+  // src/data.ts
+
+// 在 getProducts 数组中添加以下对象
+{
+  id: 'vertical-43-cabinet-pro',
+  name: '43" 4K Vertical Elite Skill Cabinet (Empty Shell)',
+  category: 'cabinet_only',
+  description: 'The definitive 43-inch vertical gaming platform. A seamless 4K visual experience designed for Link and Nudge games. Built for durability and high-impact visual attraction.',
+  imageUrl: '/images/vertical-43-pro.jpg', // 建议在 public/images/ 放入图片
+  features: ['43" 4K Vertical UHD Display', 'Industrial PCAP Touchscreen', 'Custom RGB Side Lighting', 'Heavy-Duty 1.2mm Steel Shell'],
+  
+  tankPage: {
+    headline: 'Upgrade to 4K: The Future of High-Yield Skill Gaming',
+    subHeadline: 'Dominate your location with the 43" Vertical Elite. Engineered for the professional route operator who refuses to compromise on security and player experience.',
+    
+    // ✅ 1. 痛点分析
+    painPoints: [
+      { 
+        icon: 'Monitor', 
+        title: 'Screen Lag and Mis-touches', 
+        description: 'Cheaper IR frames struggle with lighting interference. Our sealed PCAP touch technology ensures 100% accuracy, essential for skill-based "Nudge" actions.' 
+      },
+      { 
+        icon: 'ShieldAlert', 
+        title: 'Vulnerability to Theft', 
+        description: 'Standard cabinets use thin metal or wood. Our cabinet features a 1.2mm reinforced steel body with a triple-point locking bar to prevent unauthorized access.' 
+      },
+      { 
+        icon: 'Zap', 
+        title: 'Maintenance Complexity', 
+        description: 'Cramped interiors lead to wiring errors and overheating. We provide a spacious internal layout with pre-labeled 36/10 pin harnesses for 5-minute board swaps.' 
+      }
+    ],
+
+    // ✅ 2. 详细参数
+    technicalSpecs: [
+      { label: 'Monitor Size', value: '43" Diagonal Vertical (Portrait Mode)' },
+      { label: 'Resolution', value: '3840 x 2160 UHD (4K) Industrial IPS' },
+      { label: 'Touch System', value: '10-Point PCAP Multi-Touch (3mm Tempered)' },
+      { label: 'Body Construction', value: '1.2mm Cold Rolled Steel with Powder Coat' },
+      { label: 'Cooling System', value: 'Dual 120mm Silent Ball-Bearing Fans' },
+      { label: 'Pre-Wiring', value: 'Standard 36/10 Pin + Service/Volume Buttons' }
+    ],
+
+    // ✅ 3. 竞品对比
+    comparison: {
+      competitorLabel: 'Standard 21.5" or Generic 43" Imports',
+      rows: [
+        { feature: 'Visual Real Estate', us: '100% 4K Vertical Surface', them: 'Dual 21" or 1080P Stretched' },
+        { feature: 'Body Material', us: 'Industrial Grade Steel', them: 'Plastic / Thin Aluminum' },
+        { feature: 'Technical Support', us: 'Lifetime Component Access', them: 'No After-Sales Parts' }
+      ]
+    },
+
+    // ✅ 4. 买家指南
+    buyerGuide: [
+      { 
+        title: 'Choosing Your Board', 
+        content: 'This cabinet is optimized for 4K. Ensure your game board (Link or Nudge) supports HDMI output at 3840x2160 for the sharpest graphics and highest player attraction.' 
+      },
+      { 
+        title: 'Customizing Your Branding', 
+        content: 'We offer custom acrylic headers and side panel decals for bulk orders. Contact us to get your logo pre-installed before shipping.' 
+      }
+    ],
+
+    // ✅ 5. 成功案例
+    caseStudy: {
+      title: 'Location Profit Growth of 48%',
+      content: '"We swapped out four old 21-inch machines for three of these 43-inch Elites in our Pennsylvania route. The weekly hold increased by 48% because players gravitated toward the high-definition visuals and comfortable screen height."',
+      author: 'Chris L., Master Route Operator'
+    },
+
+    // ✅ 6. 扩展 FAQ (6条)
+    faqs: [
+      { 
+        question: 'Does the cabinet come with a bill acceptor pre-installed?', 
+        answer: 'This is an "Empty Shell" product. It is pre-punched for ICT A6, PA7, and Pyramid 7600. We can pre-install your choice of acceptor for an additional fee upon request.' 
+      },
+      { 
+        question: 'What is the standard warranty on the 43" monitor?', 
+        answer: 'We provide a 1-year factory warranty on the 4K display and touch controller. Replacement parts are stocked in our US-based distribution centers for fast shipping.' 
+      },
+      { 
+        question: 'Can I use my existing 36/10 pin game board?', 
+        answer: 'Yes! The internal harness is 100% compatible with industry-standard 36/10 pin connectors used in most Nudge and Skill titles.' 
+      },
+      { 
+        question: 'Is the monitor visible from wide angles?', 
+        answer: 'We use premium IPS panels with 178/178 degree viewing angles. This ensures the game looks vibrant and sharp to spectators from all sides of the location.' 
+      },
+      { 
+        question: 'How many units fit in a standard LTL shipment?', 
+        answer: 'We can fit 2 fully assembled 43" units per standard double pallet. For wholesale orders of 10+ units, we optimize freight for the lowest possible per-unit cost.' 
+      },
+      { 
+        question: 'Are custom LED colors available?', 
+        answer: 'The side RGB lighting is addressable. You can change the lighting patterns and colors to match your specific branding using the internal remote controller.' 
+      }
+    ],
+
+    // ✅ 7. 互动与 SEO
+    ctaText: 'Get Wholesale Quote',
+    pdfUrl: '/downloads/elite-43-vertical-specs.pdf',
+    
+    seo: {
+      metaTitle: '43" Vertical Skill Game Cabinet | 4K Touch Gaming Shell',
+      metaDescription: 'Wholesale 43-inch vertical arcade cabinets. Factory direct metal shells with 4K UHD touchscreens. Perfect for Link and Nudge games. Inquire for pricing.',
+      keywords: [
+        '43 Inch Vertical Arcade Cabinet',
+        'Touch Screen Skill Game Shell',
+        'Commercial Amusement Device Housing',
+        'Wholesale Gaming Kiosk'
+      ]
+    }
+  }
+},
   // 👇 你的坦克页新产品
   // 👇 请复制这段完整的代码，替换 data.ts 里原来的这个产品
   {
