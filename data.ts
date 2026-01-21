@@ -788,6 +788,186 @@ export const getProducts = (lang: LanguageCode): Product[] => [
       ]
     }
   }
+},
+{
+  id: 'fish-table-98-10player',
+  name: '98" Deluxe 10-Player Dismantle Table Shell (Empty Cabinet)',
+  category: 'cabinet_only',
+  description: 'The ultimate revenue engine for large-scale venues. Featuring a massive 98-inch 4K display and a modular dismantle design for easy global shipping and installation.',
+  imageUrl: 'https://picsum.photos/1200/800?random=10player', // 建议在 public/images/ 放入 98寸桌机实拍图
+  features: ['Industrial 98" 4K UHD Display', '10-Player Modular Design', 'Reinforced 1.5mm Steel Shell', 'Sync-Addressable Halo Lighting'],
+  
+  tankPage: {
+    headline: 'Double Your ROI with the 98" 10-Player Dismantle Elite',
+    subHeadline: 'Dominate your venue with a massive 4K visual center-piece. Engineered for route operators who demand maximum player capacity and minimal shipping costs.',
+    
+    // ✅ 1. 痛点分析 (Pain Points)
+    painPoints: [
+      { icon: 'Truck', title: 'High Shipping & Entry Costs', description: 'Large 10-player tables are usually expensive to ship and wont fit through standard doors. Our dismantle design reduces shipping volume by 40% and allows for easy installation in any venue without remodeling your entryways.' },
+      { icon: 'ShieldAlert', title: 'Physical Security Vulnerabilities', description: 'Wooden cabinets in high-traffic arcades are easy targets for physical tampering. Our machine is constructed from 1.5mm automotive-grade cold-rolled steel with a reinforced vault system to secure your game boards and cash income.' },
+      { icon: 'Users', title: 'Stagnant Player Throughput', description: 'Standard 8-player tables limit your peak-hour revenue potential. By adding 2 additional stations in the same footprint, the 10-player Arc Master increases your gross income per square foot by up to 25% during busy weekend shifts.' }
+    ],
+
+    // ✅ 2. 详细参数 (Parameters)
+    technicalSpecs: [
+      { label: 'Display Panel', value: '98" 4K UHD (3840 x 2160) Industrial IPS Grade' },
+      { label: 'Player Capacity', value: '10 Stations (Configurable for 4, 6, 8, or 10)' },
+      { label: 'Body Construction', value: '1.5mm Reinforced Cold Rolled Steel with Powder Coat' },
+      { label: 'Lighting System', value: 'Full-Perimeter Addressable RGB LED (Music Sync Ready)' },
+      { label: 'Assembly Type', value: 'Full Dismantle (Modular Body & Monitor Frame)' },
+      { label: 'Wiring Harness', value: 'Pre-wired 10-Player Multi-Link Copper Harness' }
+    ],
+
+    // ✅ 3. 竞品对比 (Comparison)
+    comparison: {
+      competitorLabel: 'Standard 8-Player Non-Dismantle Tables',
+      rows: [
+        { feature: 'Logistics', us: 'Dismantle (Standard Doorway)', them: 'One-Piece (Double Door Required)' },
+        { feature: 'Revenue Potential', us: '10 Players (+25% Capacity)', them: '8 Players Max' },
+        { feature: 'Shipping Cost', us: 'LTL Modular (Lower)', them: 'Oversized Freight (Higher)' }
+      ]
+    },
+
+    // ✅ 4. 买家指南 (Interaction Hooks)
+    buyerGuide: [
+      { title: 'Choosing Your Peripherals', content: 'For a 10-player setup, we recommend the ICT PA7 bill acceptors. Enter your email to download our "10-Player Peripheral Mapping Guide" for optimized station layout and power daisy-chaining.' },
+      { title: 'Floor Space Optimization', content: 'The 98" table requires a 12ft x 10ft clearance for comfortable player movement. Click the button below to get a free CAD floor plan layout for your specific room dimensions.' }
+    ],
+
+    // ✅ 5. 成功案例 (Case Study)
+    caseStudy: {
+      title: 'Florida Venue Boosts Revenue by 45%',
+      content: '"We replaced two 6-player fish tables with one of these 98-inch 10-player units. Not only did we save on floor space, but the massive 4K screen became a spectator magnet. Total collections for the month rose by 45% as casual observers became regular players."',
+      author: 'Rodriguez A., Arcade Operations Manager'
+    },
+
+    // ✅ 6. 常见问题 (FAQ - 6条)
+    faqs: [
+      { question: 'Is the 98" screen native 4K?', answer: 'Yes, it features a native 3840x2160 industrial panel with a 60Hz refresh rate, ensuring that high-speed skill game graphics remain fluid and crisp across the entire massive surface.' },
+      { question: 'What is the shipping weight of the modular parts?', answer: 'The total shipping weight is approximately 650 lbs, but since it is dismantled, the heaviest individual component is the 98-inch monitor frame, making it manageable for standard warehouse teams.' },
+      { question: 'Does the cabinet support ICT or MEI acceptors?', answer: 'The cabinet is pre-cut with 10 universal faceplates that support ICT, Pyramid, and MEI bill validators. Custom faceplates for ticket printers are available upon request.' },
+      { question: 'How do you handle monitor protection?', answer: 'The monitor is protected by 5mm thick chemically-tempered glass that is bonded to the frame to prevent dust and liquid ingress, making it ideal for food-and-drink environments.' },
+      { question: 'Can the LED colors be synced to the game?', answer: 'Yes, the RGB controller supports a 12V sync header that connects directly to the game board, allowing the machine to flash or change colors based on wins or attract modes.' },
+      { question: 'How much power does the 10-player table draw?', answer: 'The complete setup, including the 98" display and 10 players, draws roughly 750W-800W. We recommend using a surge-protected outlet with a dedicated 20A circuit breaker.' }
+    ],
+
+    // ✅ 7. 互动配置与 SEO
+    ctaText: 'Get Quote & Floor Plan PDF',
+    pdfUrl: '/downloads/10player-98inch-table-specs.pdf',
+    
+    seo: {
+      metaTitle: '10-Player 98" Fish Table Arcade Cabinet | Wholesale Multiplayer Shell',
+      metaDescription: 'Shop factory-direct 10-player arcade housing with a massive 98-inch 4K monitor. Dismantle design for reduced shipping costs. Heavy-duty metal construction for skill game routes.',
+      keywords: [
+        '10 Player Arcade Machine Housing',
+        '98 Inch Fish Table Shell',
+        'Wholesale Multiplayer Game Cabinet',
+        'Multiplayer Skill Game Housing Manufacturer'
+      ]
+    }
+  }
+},
+{
+  id: 'fish-table-86-10player-dismantle',
+  name: '86" Deluxe 10-Player Dismantle Table Shell (Empty Cabinet)',
+  category: 'cabinet_only',
+  description: 'The ultimate visual flagship for high-traffic game rooms. Featuring a massive 86-inch 4K display and a modular dismantle design to reduce shipping and installation costs by 45%.',
+  imageUrl: '/images/86-10player-dismantle.jpg', // 建议在 public/images/ 放入对应的86寸机箱图
+  features: ['Industrial 86" 4K UHD Display', '10-Player High-Capacity Layout', 'Modular "Dismantle" Structure', 'Reinforced 1.5mm Steel Shell'],
+  
+  tankPage: {
+    headline: 'Dominate Your Venue with the 86" 10-Player Dismantle Titan',
+    subHeadline: 'Why sacrifice revenue for space? Our Model 86-D10 combines massive visual impact with a space-efficient modular design that fits through any standard door.',
+    
+    // ✅ 1. 痛点分析 (Pain Points Section)
+    painPoints: [
+      { 
+        icon: 'Truck', 
+        title: 'High Freight & Handling Costs', 
+        description: 'Large multiplayer cabinets are usually a shipping nightmare. Our patented dismantle design reduces international freight volume by 45% and allows standard LTL carriers to deliver directly to your venue, saving you thousands in specialized logistics and crane rentals.' 
+      },
+      { 
+        icon: 'ShieldAlert', 
+        title: 'Physical Breaches & Theft', 
+        description: 'Standard cabinets with simple locks are vulnerable to prying. Our 10-player shell features an internal steel vault system and a secondary locking bar for the 86-inch monitor, ensuring that your logic boards and cash boxes remain secure in unattended high-traffic locations.' 
+      },
+      { 
+        icon: 'Users', 
+        title: 'Limited Revenue Throughput', 
+        description: '6-player or 8-player tables often result in "waiting lines" during peak hours, which leads to lost collections. By accommodating 10 simultaneous players, the Arc Master increases your gross income per square foot by up to 25% without significantly increasing the floor space footprint.' 
+      }
+    ],
+
+    // ✅ 2. 详细参数 (Parameters Section)
+    technicalSpecs: [
+      { label: 'Display Technology', value: '86" 4K UHD (3840 x 2160) IPS Industrial Grade' },
+      { label: 'Player Stations', value: '10 Independent Control Decks (Configurable)' },
+      { label: 'Body Material', value: '1.5mm Automotive Grade Laser-Cut Cold Rolled Steel' },
+      { label: 'Structure Type', value: 'Modular Dismantle (Knock-Down) for Narrow Entry' },
+      { label: 'Lighting System', value: 'Programmable RGB Sync-LED with Attract Cycle' },
+      { label: 'Glass Protection', value: '5mm Chemically Strengthened Tempered Safety Glass' }
+    ],
+
+    // ✅ 3. 竞品对比 (Comparison Section)
+    comparison: {
+      competitorLabel: 'Generic 86" One-Piece Cabinets',
+      rows: [
+        { feature: 'Shipping Volume', us: 'Modular (Standard Pallet)', them: 'Oversized (Double Freight)' },
+        { feature: 'Door Entry', us: 'Standard Single Door (28")', them: 'Double-Wide Door Only' },
+        { feature: 'Body Build', us: '1.5mm Steel Vault', them: '1.0mm or Plywood' }
+      ]
+    },
+
+    // ✅ 4. 买家指南 (Interactivity: Email for PDF)
+    buyerGuide: [
+      { 
+        title: 'Pre-Order Site Planning', 
+        content: 'The Model 86-D10 requires a 12ft x 9ft clearance for optimal player comfort. Enter your email below to receive our "86-Inch Site Preparation Guide" PDF which includes electrical specs and CAD floor layouts.' 
+      },
+      { 
+        title: 'Peripheral Compatibility', 
+        content: 'This shell is pre-cut for standard ICT PA7 acceptors. If you use MEI or Global Bill Acceptors, please request our "Universal Faceplate Kit" during the quote phase to ensure a 5-minute install.' 
+      }
+    ],
+
+    // ✅ 5. 成功案例 (Case Study Section)
+    caseStudy: {
+      title: 'Location ROI Achieved in 11 Weeks',
+      content: '"We swapped out two aging 6-player fish tables for one 86-inch 10-player unit in our Florida FEC. Not only did the floor traffic increase because of the screen size, but the 10-player capacity allowed us to handle peak Friday night rushes that we used to miss out on. The ROI was realized in under 3 months."',
+      author: 'A. Miller, Route Operations Manager'
+    },
+
+    // ✅ 6. 常见问题 (FAQ - 6 entries)
+    faqs: [
+      { question: 'Is the 86-inch screen a native 4K industrial panel?', answer: 'Yes, we use LG/Samsung industrial panels with a 3840x2160 resolution and 500 nits brightness, ensuring crystal clear graphics and a 178-degree wide viewing angle for all 10 players.' },
+      { question: 'What is the shipping lead time for US warehouses?', answer: 'We maintain inventory in our US hubs. Shipping typically takes 3-7 business days via LTL freight. For international orders, sea freight lead time is approximately 25-30 days.' },
+      { question: 'Does the cabinet include the game board kit?', answer: 'This product is an "Empty Shell" only. It includes the monitor, wiring, and steel body. You can purchase compatible multiplayer game boards in our Game Kits section separately.' },
+      { question: 'How is the power handled for 10 player stations?', answer: 'Every cabinet includes a pre-wired industrial-grade daisy-chain power loom with fused protection for each station, preventing a single short-circuit from bringing down the entire table.' },
+      { question: 'Can the LED lighting be customized or turned off?', answer: 'The RGB halo lighting is addressable. You can change colors, patterns, or sync it to the game audio via the internal remote controller or board-link header.' },
+      { question: 'Is the monitor glass replaceable if it breaks?', answer: 'Yes, the 5mm tempered glass is modular. We stock replacement glass units in our warehouses for immediate 24-hour dispatch to minimize venue downtime.' }
+    ],
+
+    // ✅ 7. 评论版块 (Reviews Section)
+    reviews: [
+      { author: 'Steve V.', rating: 5, comment: 'The dismantle feature is a lifesaver. We were able to get this huge table into our basement location through a normal door.' },
+      { author: 'Mike G.', rating: 5, comment: 'Visual impact is insane. Players gravitate to this over any other machine in the room. Definitely getting another one.' }
+    ],
+
+    // ✅ 8. 交互与 SEO 配置
+    ctaText: 'Get Quote & Layout Guide',
+    pdfUrl: '/downloads/86-10player-dismantle-specs.pdf',
+    
+    seo: {
+      metaTitle: '10 Player Fish Game Housing | 86" Dismantle Arcade Cabinet Shell',
+      metaDescription: 'Wholesale 86-inch 10-player multiplayer game table shells. Dismantle design for easy shipping. 4K industrial screen and 1.5mm steel body. Inquire for pricing.',
+      keywords: [
+        '10 Player Fish Game Housing',
+        '86 Inch Multiplayer Game Table Shell',
+        'Dismantle Arcade Machine Cabinet',
+        'Multiplayer Skill Game Housing Manufacturer'
+      ]
+    }
+  }
 }
 ];
 
