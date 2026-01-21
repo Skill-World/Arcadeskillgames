@@ -4,7 +4,7 @@ import { t } from './utils/i18n';
 
 export const getProducts = (lang: LanguageCode): Product[] => [
   {
-    id: 'p4',
+    id: '4K-Titan-Vertical-Skill-43-cabinet',
     name: '43" 4K Titan Vertical Skill Cabinet (Empty Shell)',
     category: 'cabinet_only',
     description: 'Premier 43-inch 4K UHD gaming cabinet shell. Designed for maximum player engagement with addressable RGB Halo lighting and industrial-grade steel construction.',
