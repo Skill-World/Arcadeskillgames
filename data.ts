@@ -632,6 +632,162 @@ export const getProducts = (lang: LanguageCode): Product[] => [
       ]
     }
   }
+},
+{
+  id: 'slim-vertical-43-v5',
+  name: '43" Slim 4K Vertical Link Cabinet (Empty Shell)',
+  category: 'cabinet_only',
+  description: 'A space-saving 43-inch vertical gaming shell with an ultra-slim bezel. Engineered for high-density venues to maximize revenue per square foot without compromising visual impact.',
+  imageUrl: 'https://picsum.photos/800/1200?random=v5', // 请替换为真实 Model 5 图片
+  features: ['Ultra-Slim 24" Chassis', '4K Industrial PCAP Touch', 'Enhanced Vault Security', 'High-Efficiency Airflow'],
+  
+  tankPage: {
+    headline: 'Maximize Your Floor Potential with the V5 Slim Vertical',
+    subHeadline: 'Why settle for less? Fit 5 units where you used to fit 4. The V5 is the ultimate choice for high-traffic, limited-space locations.',
+    
+    // ✅ 痛点分析
+    painPoints: [
+      { icon: 'Maximize', title: 'Limited Floor Space', description: 'Standard cabinets are too wide for many convenience store layouts. Our V5 Slim chassis allows you to add extra machines to your route.' },
+      { icon: 'ShieldAlert', title: 'Physical Security Concerns', description: 'Unattended machines are targets. We use a recessed door system and 1.2mm cold-rolled steel that leaves zero pry points for intruders.' },
+      { icon: 'Zap', title: 'Technical Downtime', description: 'Complex wiring ruins productivity. The V5 features a "Slide-and-Lock" harness tray for 30-second logic board installations.' }
+    ],
+
+    // ✅ 详细参数
+    technicalSpecs: [
+      { label: 'Monitor Size', value: '43" Portrait Industrial Display' },
+      { label: 'Resolution', value: '3840 x 2160 UHD 4K' },
+      { label: 'Chassis Width', value: 'Only 24 Inches (Ultra-Slim Bezel)' },
+      { label: 'Touch Coating', value: 'Oleophobic Anti-Fingerprint Layer' },
+      { label: 'Cooling', value: 'High-Static Pressure Internal Fans' },
+      { label: 'Acceptor Ready', value: 'Pre-punched for ICT PA7 and Pyramid 7600' }
+    ],
+
+    // ✅ 竞品对比
+    comparison: {
+      competitorLabel: 'Standard 43" Vertical Imports',
+      rows: [
+        { feature: 'Overall Width', us: '24 Inches', them: '28-30 Inches' },
+        { feature: 'Touch Reliability', us: 'Nano-Coated PCAP', them: 'Generic IR Frame' },
+        { feature: 'Locking System', us: '3-Point Electronic Bolt', them: 'Standard Cam Lock' }
+      ]
+    },
+
+    // ✅ 买家指南 (互动：点击发送 PDF)
+    buyerGuide: [
+      { title: '1. Revenue Optimization', content: 'For C-stores, we recommend banking 3 units. Click "Download Layout Guide" to receive a free PDF floor plan via email.' },
+      { title: '2. Grounding Requirements', content: 'Always ensure your AC outlet is grounded to protect the high-sensitivity PCAP screen.' }
+    ],
+
+    // ✅ 成功案例
+    caseStudy: {
+      title: 'C-Store Route Revenue Up 22%',
+      content: '"By swapping standard cabinets for the V5 Slim, I was able to fit one additional machine into 6 of my gas station locations. My total route revenue jumped 22% immediately."',
+      author: 'Kevin L., Route Owner'
+    },
+
+    // ✅ FAQ (6条)
+    faqs: [
+      { question: 'Does it fit standard 36/10 pin boards?', answer: 'Yes, it comes pre-wired with a standard harness compatible with Banilla, Fusion, and most Skill titles.' },
+      { question: 'What is the screen response time?', answer: 'The PCAP touch panel has a response time of <8ms, perfect for fast-paced skill games.' },
+      { question: 'Can I add a printer?', answer: 'Yes, it includes a pre-cut slot and mounting brackets for the ICT GP-58 or similar thermal printers.' },
+      { question: 'Is the monitor 4K native?', answer: 'Absolutely. It is a native 3840x2160 IPS panel with 178-degree viewing angles.' },
+      { question: 'How do you ship them?', answer: 'We ship 2 units per double-pallet, fully assembled and wrapped in protective foam to prevent scratches.' },
+      { question: 'Are the LED bezels customizable?', answer: 'Yes, the side LED strips are addressable. You can sync them to your game board software.' }
+    ],
+
+    // ✅ SEO 与交互
+    ctaText: 'Get Quote & Layout PDF',
+    pdfUrl: '/downloads/slim-v5-vertical-specs.pdf',
+    
+    seo: {
+      metaTitle: '43" Slim Vertical Arcade Cabinet Shell | Wholesale Skill Game Machine',
+      metaDescription: 'Shop the slim 43-inch vertical arcade cabinet shell. 4K UHD touch screen, reinforced security, and compact design for high-density routes.',
+      keywords: [
+        'Vertical Arcade Cabinet Shell',
+        '43 Inch Touch Screen Game Machine Housing',
+        'Skill Game Cabinet Wholesale',
+        'Slim Arcade Housing Manufacturer'
+      ]
+    }
+  }
+},
+{
+  id: 'vertical-43-aura-v7',
+  name: '43" 4K Aura Elite Vertical Skill Cabinet (Model 7)',
+  category: 'cabinet_only',
+  description: 'The premier choice for high-end routes. Features the signature Aura dynamic lighting system and a native 4K PCAP touch display for maximum player immersion.',
+  imageUrl: '/images/model-7-aura.jpg', 
+  features: ['43" 4K Ultra-HD Portrait Display', 'Signature Aura RGB Halo Lighting', 'Heavy-Duty 1.2mm Steel Vault Shell', 'Precision 10-Point PCAP Touch'],
+  
+  tankPage: {
+    headline: 'Command Attention, Increase Revenue: The Aura Model 7',
+    subHeadline: 'Elevate your location from ordinary to extraordinary. The 43" Aura Series is designed to drive 30%+ higher player retention through immersive 4K visuals and dynamic lighting.',
+    
+    // ✅ 痛点分析 (Pain Point Section)
+    painPoints: [
+      { icon: 'Monitor', title: 'Low Player Retention', description: 'Small screens fail to engage players. Our 43" 4K UHD display provides a cinematic experience that keeps players seated and engaged for much longer sessions.' },
+      { icon: 'ShieldAlert', title: 'Security Vulnerabilities', description: 'Wooden cabinets are liability magnets. Our Model 7 features a 1.2mm laser-cut steel shell with a triple-locking bar system that renders prying attempts useless.' },
+      { icon: 'Zap', title: 'Complicated Maintenance', description: 'Minutes lost are dollars lost. The Aura Series features a quick-swap internal layout with labeled wiring, allowing your team to clear jams or swap boards in under 60 seconds.' }
+    ],
+
+    // ✅ 详细参数 (Parameters Section)
+    technicalSpecs: [
+      { label: 'Monitor', value: '43" 4K UHD (3840 x 2160) Industrial IPS Grade' },
+      { label: 'Touch System', value: '10-Point Projected Capacitive (PCAP) with 3mm Tempered' },
+      { label: 'Body Build', value: 'Automotive Grade 1.2mm Cold Rolled Steel' },
+      { label: 'Lighting', value: 'Aura-Dynamic Programmable RGB (Software Sync Ready)' },
+      { label: 'Harnessing', value: 'Standard 36/10 Pin Copper Core with Service Buttons' },
+      { label: 'Cooling', value: 'Dual High-Static Pressure Silent Exhaust Fans' }
+    ],
+
+    // ✅ 竞品对比 (Comparison Section)
+    comparison: {
+      competitorLabel: 'Generic 43" Upright Cabinets',
+      rows: [
+        { feature: 'Display Quality', us: 'True 4K UHD Industrial', them: '1080P Stretched Panel' },
+        { feature: 'Touch Type', us: 'Sealed PCAP (Dust-Proof)', them: 'Exposed IR Frame (Sensitive)' },
+        { feature: 'Build Material', us: '1.2mm Reinforced Steel', them: '0.8mm Metal or Plywood' }
+      ]
+    },
+
+    // ✅ 买家指南 (Buyer's Guide Section)
+    buyerGuide: [
+      { title: 'Choosing Your Peripherals', content: 'The Aura Model 7 is pre-punched for ICT PA7 and Pyramid bill validators. For distributors using MEI Cashflow, please request the custom mounting plate at checkout.' },
+      { title: 'Revenue Optimization', content: 'Our "Slim-Fit" chassis allows you to fit 5 units in a standard 10ft bank. Enter your email to get our "Route Layout Efficiency Guide" PDF sent to your inbox instantly.' }
+    ],
+
+    // ✅ 成功案例 (Case Study Section)
+    caseStudy: {
+      title: 'Location Net Rev Rose by 38%',
+      content: '"We replaced six bar-top units with four Aura Model 7s. The foot traffic increased significantly as spectators were drawn to the vibrant 4K screens. Our ROI was achieved in record time."',
+      author: 'Master Distributor, Georgia Route'
+    },
+
+    // ✅ FAQ (6条)
+    faqs: [
+      { question: 'Is the monitor compatible with 1080P game boards?', answer: 'Yes, the monitor includes an industrial scaler that automatically optimizes 1080P, 720P, and VGA signals for a sharp, clear image.' },
+      { question: 'What is the standard warranty coverage?', answer: 'We offer a 1-year factory warranty on the 4K panel and touch assembly. Replacement parts are stocked in our US warehouse for immediate shipping.' },
+      { question: 'Does it support Sas or Sas-Link protocols?', answer: 'The cabinet internal harness is sas-ready. We can include the Sas harness adapter upon request for route accounting integration.' },
+      { question: 'How is the unit shipped to prevent glass damage?', answer: 'We use double-layered shock-absorbing foam and ship units on specialized heavy-duty pallets to ensure 0% arrival damage.' },
+      { question: 'Can the LED Halo colors be customized?', answer: 'Yes, the internal RGB controller allows you to choose between 20 solid colors or dynamic cycles to match your venue\'s branding.' },
+      { question: 'What bill validators are pre-wired?', answer: 'The unit comes pre-wired for standard 12V pulse acceptors, including ICT, Pyramid, and MEI series.' }
+    ],
+
+    // ✅ SEO 逻辑与 Meta 字段
+    ctaText: 'Get Wholesale Quote Today',
+    pdfUrl: '/downloads/aura-v7-full-specs.pdf',
+    
+    seo: {
+      metaTitle: '43" Vertical Skill Game Cabinet Model 7 | Aura Series Shell',
+      metaDescription: 'Shop wholesale 43-inch vertical skill gaming cabinets. Aura series features 4K UHD touchscreens, 1.2mm steel bodies, and dynamic halo lighting. Perfect for route operators.',
+      keywords: [
+        '43 Inch Vertical Skill Game Cabinet',
+        'Vertical Arcade Cabinet Wholesale',
+        '4K Skill Machine Housing',
+        'Aura Gaming Cabinet Model 7'
+      ]
+    }
+  }
 }
 ];
 
