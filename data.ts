@@ -4,37 +4,6 @@ import { t } from './utils/i18n';
 
 export const getProducts = (lang: LanguageCode): Product[] => [
   {
-    id: 'vertical-43-cabinet-pro', // ✅ 确保此 ID 唯一，且分类正确
-    name: '43" 4K Vertical Elite Skill Cabinet (Empty Shell)',
-    category: 'cabinet_only', 
-    description: 'The definitive 43-inch vertical gaming platform. A seamless 4K visual experience designed for Link and Nudge games.',
-    imageUrl: '/images/vertical-43-pro.jpg',
-    features: ['43" 4K Vertical UHD Display', 'Industrial PCAP Touchscreen', 'Custom RGB Side Lighting', 'Heavy-Duty 1.2mm Steel Shell'],
-    tankPage: {
-      headline: 'Upgrade to 4K: The Future of High-Yield Skill Gaming',
-      subHeadline: 'Dominate your location with the 43" Vertical Elite.',
-      painPoints: [
-        { icon: 'Monitor', title: 'Screen Lag', description: 'Our sealed PCAP touch ensures 100% accuracy.' }
-      ],
-      technicalSpecs: [
-        { label: 'Monitor Size', value: '43" Diagonal Vertical' },
-        { label: 'Resolution', value: '3840 x 2160 UHD (4K)' }
-      ],
-      comparison: {
-        competitorLabel: 'Generic 43" Imports',
-        rows: [{ feature: 'Visuals', us: '100% 4K Vertical', them: '1080P Stretched' }]
-      },
-      buyerGuide: [{ title: 'Choosing Board', content: 'Optimized for 4K Nudge boards.' }],
-      faqs: [{ question: 'Warranty?', answer: '1-year factory warranty.' }],
-      ctaText: 'Get Wholesale Quote',
-      seo: {
-        metaTitle: '43" Vertical Elite Skill Cabinet',
-        metaDescription: 'Factory direct 4K vertical shells.',
-        keywords: ['vertical skill cabinet', '43 inch gaming shell']
-      }
-    }
-  },
-  {
     id: 'p4',
     name: '43" 4K Titan Vertical Skill Cabinet (Empty Shell)',
     category: 'cabinet_only',
