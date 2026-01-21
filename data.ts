@@ -131,6 +131,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
         keywords: ['Vertical Skill Game Cabinet', 'Dual Screen Arcade Cabinet', 'Metal Nudge Cabinet', 'Skill Game Machine Shell']
       }
     }
+  }
 ];
 
 // ... 下面保持 getBlogs 和 getSolutions 不变 ...
