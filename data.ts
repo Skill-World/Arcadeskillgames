@@ -555,7 +555,6 @@ export const getProducts = (lang: LanguageCode): Product[] => [
       }
     }
   },
-  // ⚠️ 插入位置：src/data.ts -> getProducts 数组内部
 {
   id: 'curved-elite-v2-arc',
   name: '43" 4K Curved Elite Arc Skill Cabinet (Empty Shell)',
