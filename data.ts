@@ -142,6 +142,123 @@ export const getProducts = (lang: LanguageCode): Product[] => [
       }
     }
   },
+  // src/data.ts
+
+// 在 getProducts 数组中添加以下对象
+{
+  id: 'j-curve-43-cabinet',
+  name: '43" J-Curve 4K Elite Skill Cabinet (Empty Shell)',
+  category: 'cabinet_only',
+  description: 'The ultimate immersive experience for premium venues. Features a massive 43-inch J-Curved 4K display with high-fidelity PCAP touch and dynamic sync-lighting.',
+  imageUrl: 'https://picsum.photos/800/1200?random=431', // 建议替换为真实的 J-Curve 机柜图
+  features: ['43" 4K J-Curve Display', 'Pro-Grade PCAP Multi-Touch', 'Sync-LED RGB Lighting', 'Dual-Lock Security Body'],
+  
+  tankPage: {
+    headline: 'Redefine Your Revenue with the 43" J-Curve 4K Elite',
+    subHeadline: 'Elevate your route from "Basic" to "Premium". The J-Curve design is proven to increase play time by 30% through superior ergonomics and immersion.',
+    
+    // ✅ 1. 痛点分析
+    painPoints: [
+      { 
+        icon: 'Monitor', 
+        title: 'Glare & Reflection Issues', 
+        description: 'Traditional flat screens suffer from harsh overhead lighting reflections. Our J-curve design and AG coating eliminate glare, keeping the focus on the game.' 
+      },
+      { 
+        icon: 'LayoutGrid', 
+        title: 'Outdated Aesthetic', 
+        description: 'Old wooden cabinets fail to attract younger, tech-savvy players. The Titan J-Curve offers a futuristic, casino-grade aesthetic that demands attention.' 
+      },
+      { 
+        icon: 'ShieldAlert', 
+        title: 'Screen Vulnerability', 
+        description: 'Most curved screens are fragile. We use 3mm chemically-strengthened glass with a Mohs hardness of 7H to withstand the toughest locations.' 
+      }
+    ],
+
+    // ✅ 2. 详细参数
+    technicalSpecs: [
+      { label: 'Monitor Type', value: '43" J-Curve 4K UHD Industrial LED' },
+      { label: 'Curvature Rate', value: 'R1500 Optimized for Eye-Comfort' },
+      { label: 'Touch System', value: 'Projected Capacitive (PCAP) with <5ms Response' },
+      { label: 'Chassis Material', value: '1.2mm Cold Rolled Steel (Reinforced Structure)' },
+      { label: 'Audio System', value: 'Dual 20W Full-Range Speakers + Dedicated Subwoofer' },
+      { label: 'Wiring', value: 'Pre-wired 36/10 Pin + 3x Serial Ports + LAN' }
+    ],
+
+    // ✅ 3. 竞品对比
+    comparison: {
+      competitorLabel: 'Standard Flat 43" Imports',
+      rows: [
+        { feature: 'Visual Immersion', us: 'J-Curve 1500R (High)', them: 'Flat Panel (Low)' },
+        { feature: 'Glass Durability', us: '3mm Tempered PCAP', them: '1.5mm Generic Glass' },
+        { feature: 'Lighting Sync', us: 'Software-Integrated RGB', them: 'Static LED Strips' }
+      ]
+    },
+
+    // ✅ 4. 买家指南
+    buyerGuide: [
+      { 
+        title: 'Monitor Calibration', 
+        content: 'Our J-Curve screens are factory-calibrated for high brightness. Ensure your game board supports 4K resolution to take full advantage of the pixel density.' 
+      },
+      { 
+        title: 'Power Distribution', 
+        content: 'Due to the large 4K panel and audio sub-woofer, this unit draws peak 4.5A. Use a surge-protected power strip for high-density deployments.' 
+      }
+    ],
+
+    // ✅ 5. 成功案例
+    caseStudy: {
+      title: 'Luxury Lounge Transition Success',
+      content: '"We replaced six 21-inch units with four of these J-Curve Elites in our lounge area. The collection doubled within the first month because players felt they were getting a high-end experience worth their time."',
+      author: 'Mark S., Vending Route Owner'
+    },
+
+    // ✅ 6. 扩展 FAQ (6条)
+    faqs: [
+      { 
+        question: 'What is the difference between J-Curve and C-Curve?', 
+        answer: 'J-Curve features a straight lower section and a curved top, making it ideal for vertical skill games where the main interface is at eye level. C-Curve is fully curved and typically used for specific cinematic titles.' 
+      },
+      { 
+        question: 'Can the LED lighting be turned off or changed?', 
+        answer: 'Yes. The RGB Halo is controlled by an internal remote or can be synced via software to match your specific branding or game theme.' 
+      },
+      { 
+        question: 'Does the curved screen require special mounting?', 
+        answer: 'No. The monitor is securely integrated into our custom steel chassis. The entire cabinet is as stable as any standard upright unit.' 
+      },
+      { 
+        question: 'Is this cabinet compatible with Link-style games?', 
+        answer: 'Absolutely. It is specifically designed to handle the high-resolution graphics of modern "Link" and "Fusion" style skill games.' 
+      },
+      { 
+        question: 'What happens if the glass is damaged?', 
+        answer: 'The glass is modular. Unlike cheap imports, you can replace the PCAP touch glass assembly without replacing the entire 4K panel, saving you $500+ in repairs.' 
+      },
+      { 
+        question: 'How is the unit shipped safely?', 
+        answer: 'We use heavy-duty double-layered pallets with custom foam inserts for the curved section. Shipping damage rate is less than 0.5%.' 
+      }
+    ],
+
+    // ✅ 7. 互动与 SEO
+    ctaText: 'Inquire for Elite Pricing',
+    pdfUrl: '/downloads/elite-43-jcurve.pdf',
+    
+    seo: {
+      metaTitle: '43" J-Curve 4K Elite Skill Cabinet | Immersive Arcade Shell',
+      metaDescription: 'Maximize venue revenue with the 43-inch J-curve curved skill game cabinet. 4K resolution, PCAP touch, factory-direct wholesale pricing for operators.',
+      keywords: [
+        '43 Inch Curved Skill Cabinet',
+        'J-Curve Arcade Machine Shell',
+        'Curved Touch Screen Gaming Cabinet',
+        'High-end Skill Game Cabinet'
+      ]
+    }
+  }
+},
   // 👇 你的坦克页新产品
   // 👇 请复制这段完整的代码，替换 data.ts 里原来的这个产品
   {
