@@ -29,11 +29,102 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   },
   {
     id: 'p4',
-    name: 'Pro-Metal Gaming Cabinet (Shell Only)',
-    category: 'cabinet_only', // ✅ 对应：cabinet_only
-    description: 'Industrial grade steel cabinet ready for your game kit. Pre-wired for standard skill harnesses.',
-    imageUrl: 'https://picsum.photos/400/600',
-    features: ['Empty Metal Cabinet', 'Button Panel Included', 'Pre-Wired Harness (36/10 Pin)', 'No Monitor / No Game Board']
+    name: '43" 4K Titan Vertical Skill Cabinet (Empty Shell)',
+    category: 'cabinet_only',
+    description: 'Premier 43-inch 4K UHD gaming cabinet shell. Designed for maximum player engagement with addressable RGB Halo lighting and industrial-grade steel construction.',
+    imageUrl: 'https://picsum.photos/800/1200?random=43', // 建议替换为真实的43寸立式机图片
+    features: ['43" 4K UHD PCAP Touch', 'Addressable LED Halo Lighting', '1.2mm Cold Rolled Steel', '36/10 Pin Pre-Wired'],
+    
+    // 🔥 坦克页深度内容升级
+    tankPage: {
+      headline: 'Dominating Revenue: The 43" 4K Vertical Titan Cabinet',
+      subHeadline: 'Why settle for 1080P? Give your players the immersive experience they demand and watch your location revenue skyrocket.',
+      
+      // ✅ 痛点分析
+      painPoints: [
+        { 
+          icon: 'ShieldAlert', 
+          title: 'Physical Security Issues', 
+          description: 'Standard wooden cabinets are easily breached. Our 1.2mm laser-cut steel body with a triple-locking bar is built to withstand high-traffic environments.' 
+        },
+        { 
+          icon: 'Monitor', 
+          title: 'Unresponsive Touchscreens', 
+          description: 'Say goodbye to "ghost touches." Our industrial PCAP screens remain accurate even after 50 million taps, reducing downtime significantly.' 
+        },
+        { 
+          icon: 'Zap', 
+          title: 'Complex Maintenance', 
+          description: 'Minutes lost are dollars lost. Our "Easy-Access" swing-out door allows you to swap game boards or clear bill jams in under 60 seconds.' 
+        }
+      ],
+
+      // ✅ 详细参数
+      technicalSpecs: [
+        { label: 'Monitor', value: '43-inch 4K UHD (3840 x 2160) Industrial LCD' },
+        { label: 'Touch Type', value: '10-Point Capacitive (PCAP) with 3mm Tempered Glass' },
+        { label: 'Cabinet Material', value: '1.2mm Cold Rolled Steel + UV Resistant Powder Coat' },
+        { label: 'Lighting', value: 'Smart Addressable RGB LED (Sync-Ready)' },
+        { label: 'Power Supply', value: 'Pre-installed 450W Gaming Grade PSU' },
+        { label: 'Compatibility', value: 'Plug-and-Play for 36/10 Pin Nudge Boards' }
+      ],
+
+      // ✅ 竞品对比
+      comparison: {
+        competitorLabel: 'Standard 43" Import Cabinets',
+        rows: [
+          { feature: 'Resolution', us: 'True 4K Ultra HD', them: '1080P Upscaled' },
+          { feature: 'Touch Tech', us: 'Sealed PCAP (Anti-Dust)', them: 'Exposed IR Frame' },
+          { feature: 'Wiring', us: 'Labeled UL Copper Wire', them: 'Non-labeled Generic Mix' }
+        ]
+      },
+
+      // ✅ 买家指南
+      buyerGuide: [
+        { 
+          title: 'Step 1: Check your Game Dimensions', 
+          content: 'Ensure your game board supports 4K resolution output via HDMI for the best visual results. We can provide converters if needed.' 
+        },
+        { 
+          title: 'Step 2: Peripheral Selection', 
+          content: 'This shell is pre-punched for ICT A6/PA7 and Pyramid 7600. For MEI acceptors, please request a custom faceplate.' 
+        }
+      ],
+
+      // ✅ 成功案例
+      caseStudy: {
+        title: '40% Growth in C-Store Revenue',
+        content: '"We replaced three 21-inch units with two of these 43-inch Titans. The footprint stayed the same, but our weekly hold increased by 40% because people simply prefer the big screen."',
+        author: 'David K., Route Distributor'
+      },
+
+      // ✅ FAQ
+      faqs: [
+        { 
+          question: 'Do you offer custom branding?', 
+          answer: 'Yes! For orders over 10 units, we offer custom vinyl wraps and LED boot screens for your brand.' 
+        },
+        { 
+          question: 'Is the screen curved or flat?', 
+          answer: 'This model features a high-visibility flat UHD panel. Curved options are available in our Premium series.' 
+        }
+      ],
+
+      // ✅ 交互与 SEO
+      ctaText: 'Get Wholesale Quote Today',
+      pdfUrl: '/downloads/titan-43-specs.pdf',
+      
+      seo: {
+        metaTitle: '43" Vertical Skill Game Cabinet | 4K Touch Gaming Shell',
+        metaDescription: 'Shop our wholesale 43-inch vertical skill gaming cabinets. Factory direct metal shells with 4K UHD PCAP touchscreens. Perfect for Nudge and Skill games.',
+        keywords: [
+          '43 Inch Vertical Skill Cabinet',
+          '4K Touch Screen Gaming Shell',
+          'Wholesale Nudge Game Cabinets',
+          'Empty Arcade Cabinet Manufacturer'
+        ]
+      }
+    }
   },
   // 👇 你的坦克页新产品
   // 👇 请复制这段完整的代码，替换 data.ts 里原来的这个产品
