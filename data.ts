@@ -1,5 +1,4 @@
 // src/data.ts
-// src/data.ts
 import { Product, BlogPost, Solution, LanguageCode } from './types';
 import { t } from './utils/i18n';
 
