@@ -169,4 +169,21 @@ export function isLanguageCode(code: string): code is LanguageCode {
   return LANGUAGES.some(l => l.code === code);
 }
 
+
+// utils/i18n.ts
+
+// ... 前面的 i18n.init 代码保持不变 ...
+
+/**
+ * ✅ 核心修复：手动导出 t 函数，供 data.ts 等逻辑文件使用
+ * 它会根据传入的 lang 参数，从 i18next 引擎中提取对应的翻译内容
+ */
+export const t = (lang: string, key: string): string => {
+  return i18n.t(key, { lng: lang });
+};
+
+export function isLanguageCode(code: string): code is LanguageCode {
+  return LANGUAGES.some(l => l.code === code);
+}
+
 export default i18n;
