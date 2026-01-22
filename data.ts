@@ -3406,6 +3406,390 @@ export const getProducts = (lang: LanguageCode): Product[] => [
       ]
     }
   }
+},
+{
+  id: 'redemption-game-PCB-wild-link',
+  name: 'Redemption Game PCB Wild Link',
+  category: 'skill_based_game_board',
+  description: 'The cinematic jungle-themed skill gaming software kit. Featuring native 4K UHD graphics, a proprietary 30-level skill window adjustment, and industrial-grade 36/10 pin hardware.',
+  imageUrl: '/images/wild-link-board.jpg', // 请在 public/images/ 放入图片
+  features: ['Cinematic 3D Jungle Graphics', 'Native 4K UHD @ 60FPS Support', '30-Level Skill Calibration Logic', 'Universal 36/10 Pin Interface'],
+  
+  tankPage: {
+    headline: 'Wild Link: Unleash the Power of Skill-Based Connectivity',
+    subHeadline: 'Ditch the legacy boards. Upgrade to the most immersive 3D Nudge Game Board and experience up to 45% revenue growth per location.',
+    
+    // ✅ 1. 痛点分析
+    painPoints: [
+      { 
+        icon: 'Zap', 
+        title: 'Hardware Instability & Downtime', 
+        description: 'Unbranded game boards often suffer from memory crashes and thermal instability, leading to expensive field service calls. Wild Link utilizes industrial-grade solid-state capacitors and non-volatile F-RAM to ensure 99.9% uptime and zero data loss during power surges.' 
+      },
+      { 
+        icon: 'ShieldAlert', 
+        title: 'Audit and Compliance Risks', 
+        description: 'Poor accounting systems lead to location disputes and regulatory issues. Our board features full SAS-link support and a secure, password-protected audit menu, providing the transparency and professional-grade asset protection that serious route operators demand for daily operation.' 
+      },
+      { 
+        icon: 'Users', 
+        title: 'Player Boredom & Location Churn', 
+        description: 'Players have become tired of repetitive legacy themes, leading to shorter play sessions. Wild Link offers a cinematic 4K environment that attracts players instantly, while the responsive Nudge interface keeps them engaged for significantly longer periods of time.' 
+      }
+    ],
+
+    // ✅ 2. 详细参数
+    technicalSpecs: [
+      { label: 'Display Output', value: 'VGA / HDMI / DP Multi-Resolution Support (Up to 4K UHD)' },
+      { label: 'Interface Type', value: 'Industry Standard Gold-Plated 36/10 Pin Edge' },
+      { label: 'Logic Protocol', value: 'Nudge-Based Skill Logic & Pre-Reveal Protocol' },
+      { label: 'Touch Interface', value: 'Full Compatibility with 3M and Elo Touch Protocols' },
+      { label: 'ESD Protection', value: 'Enhanced 15KV Static Circuit for High-Traffic Routes' },
+      { label: 'Memory Tech', value: 'Non-Volatile F-RAM (Instant Game State Recovery)' }
+    ],
+
+    // ✅ 3. 竞品对比
+    comparison: {
+      competitorLabel: 'Standard Legacy 8-Liner Boards',
+      rows: [
+        { feature: 'Visual Quality', us: 'Native 4K UHD 60FPS', them: 'Upscaled 1080P / Stretched' },
+        { feature: 'Reliability', us: 'Industrial Grade (99.9%)', them: 'Frequent Memory Crashes' },
+        { feature: 'Hold Stability', us: '30-Level Skill Adjust + SAS', them: 'Fixed Logic / Analog Only' }
+      ]
+    },
+
+    // ✅ 4. 买家指南
+    buyerGuide: [
+      { 
+        title: 'Retrofit and Installation', 
+        content: 'Upgrading your existing vertical cabinet is straightforward. Ensure your power supply is rated at least 450W and check your touch screen calibration. Enter your email below to receive our full "Skill Game Retrofit Manual" PDF instantly.' 
+      },
+      { 
+        title: 'Optimizing Revenue Hold', 
+        content: 'We recommend starting at Level 15 for new locations to build player confidence. Our technical support team provides free consultations on skill-window optimization for all wholesale partners to ensure peak profitability.' 
+      }
+    ],
+
+    // ✅ 5. 成功案例
+    caseStudy: {
+      title: 'Pennsylvania Route Collections Jumped 45%',
+      content: '"After swapping aging legacy software for Wild Link, our weekly hold increased by 45%. The cinematic 4K visuals attracted a younger, more competitive demographic. ROI was achieved in 12 days of peak operation."',
+      author: 'M. Thompson, Master Route Operator'
+    },
+
+    // ✅ 6. 常见问题
+    faqs: [
+      { question: 'Is the Wild Link kit compatible with my current cabinet wiring?', answer: 'Yes, the board utilizes the industry-standard 36/10 pin gold-plated edge connector. This allows for a direct plug-and-play replacement in most existing 8-liner or vertical skill-game cabinets, ensuring your technicians can complete the hardware upgrade in under 15 minutes without any complex re-wiring.' },
+      { question: 'How does the Nudge feature work to ensure the game is skill-based?', answer: 'The software includes a refined Nudge mechanic where players must manually interact with the reels after a spin to move them into a winning position. This requires hand-eye coordination and reflex timing, ensuring the game outcome is determined by player skill rather than pure chance.' },
+      { question: 'Can I adjust the hold percentage to match my specific location needs?', answer: 'Absolutely. The board features a password-protected operator menu with 30 distinct levels of skill-window calibration. This allows you to fine-tune the difficulty to match the skill level of your local players while maintaining a healthy and predictable profit margin.' },
+      { question: 'What happens to player credits if the location suffers a sudden power outage?', answer: 'Every board is equipped with non-volatile F-RAM memory technology. This advanced feature saves every player credit, game progress state, and operator log instantly. When power is restored, the machine resumes exactly where it left off, preventing player disputes.' },
+      { question: 'Does the PCB support modern touch screen monitor interfaces?', answer: 'Yes, this Universal Game Logic Board is fully compatible with most standard 3M and Elo touch screen protocols. This enables a more engaging and modern social gaming experience, allowing players to interact directly with the game elements on the screen for enhanced immersion.' },
+      { question: 'How do you protect the board from static electricity?', answer: 'Our boards feature an enhanced 15KV ESD protection circuit designed specifically for environments with static-prone carpets. This prevents environmental static from resetting the processor or damaging sensitive logic components, ensuring zero technical interruptions throughout the busy weekend hours.' }
+    ],
+
+    // ✅ 7. SEO 与交互配置
+    ctaText: 'Get Wholesale Quote Today',
+    pdfUrl: '/downloads/wild-link-specs.pdf',
+    
+    seo: {
+      metaTitle: 'Redemption Game PCB Wild Link | Skill-Based Game Board Wholesale',
+      metaDescription: 'Shop factory-direct Wild Link Nudge boards. Featuring native 4K UHD graphics, 30-level skill adjustment, and 15KV ESD protection. Wholesale Skill-Based Game Boards.',
+      keywords: [
+        'Redemption Game PCB Wild Link',
+        'Skill-Based Game Board Wholesale',
+        'Nudge Game Board Software Kit',
+        'Universal Game Logic Board'
+      ]
+    }
+  }
+},
+{
+  id: 'nudge-game-board-panda-link',
+  name: 'Nudge Game Board Panda Link',
+  category: 'skill_based_game_board',
+  description: 'The cinematic oriental-themed skill gaming platform. Featuring immersive 4K Panda Link graphics, a proprietary 30-level skill window, and industrial-grade 36/10 pin hardware.',
+  imageUrl: '/images/panda-link-board.jpg', // 请在 public/images/ 放入图片
+  features: ['Cinematic 4K UHD Graphics', 'Nudge-Based Skill Logic', '30-Level Skill Calibration', 'Enhanced 15KV ESD Protection'],
+  
+  tankPage: {
+    headline: 'Panda Link: Command Your Route with 4K Oriental Power',
+    subHeadline: 'Ditch the legacy boards. Upgrade to the most immersive 3D Nudge Game Board and experience up to 42% revenue growth per location.',
+    
+    // ✅ 1. 痛点分析
+    painPoints: [
+      { 
+        icon: 'Zap', 
+        title: 'Hardware Instability & Downtime', 
+        description: 'Unbranded game boards often suffer from memory crashes and thermal instability, leading to expensive field service calls. Panda Link utilizes industrial-grade solid-state capacitors and non-volatile F-RAM to ensure 99.9% uptime and zero data loss during power surges.' 
+      },
+      { 
+        icon: 'ShieldAlert', 
+        title: 'Audit and Compliance Risks', 
+        description: 'Poor accounting systems lead to location disputes and regulatory issues. Our board features full SAS-link support and a secure, password-protected audit menu, providing the transparency and professional-grade asset protection that serious route operators demand for daily operation.' 
+      },
+      { 
+        icon: 'Users', 
+        title: 'Player Boredom & Location Churn', 
+        description: 'Players have become tired of repetitive legacy themes, leading to shorter play sessions. Panda Link offers a cinematic 4K environment and oriental theme that attracts players instantly, while the responsive Nudge interface keeps them engaged for significantly longer periods of time.' 
+      }
+    ],
+
+    // ✅ 2. 详细参数
+    technicalSpecs: [
+      { label: 'Display Output', value: 'VGA / HDMI / DP Multi-Resolution Support (Up to 4K UHD)' },
+      { label: 'Interface Type', value: 'Industry Standard Gold-Plated 36/10 Pin Edge' },
+      { label: 'Logic Protocol', value: 'Nudge-Based Skill Logic & Redemption Protocol' },
+      { label: 'Touch Interface', value: 'Full Compatibility with 3M and Elo Touch Protocols' },
+      { label: 'ESD Protection', value: 'Enhanced 15KV Static Circuit for High-Traffic Routes' },
+      { label: 'Memory Tech', value: 'Non-Volatile F-RAM (Instant Game State Recovery)' }
+    ],
+
+    // ✅ 3. 竞品对比
+    comparison: {
+      competitorLabel: 'Standard Legacy 8-Liner Boards',
+      rows: [
+        { feature: 'Visual Quality', us: 'Native 4K UHD 60FPS', them: 'Upscaled 1080P / Stretched' },
+        { feature: 'Reliability', us: 'Industrial Grade (99.9%)', them: 'Frequent Memory Crashes' },
+        { feature: 'Hold Stability', us: '30-Level Skill Adjust + SAS', them: 'Fixed Logic / Analog Only' }
+      ]
+    },
+
+    // ✅ 4. 买家指南 (互动点：发送 PDF)
+    buyerGuide: [
+      { 
+        title: 'Retrofit and Installation', 
+        content: 'Upgrading your existing vertical cabinet is straightforward. Ensure your power supply is rated at least 450W and check your touch screen calibration. Enter your email below to receive our full "Skill Game Retrofit Manual" PDF instantly.' 
+      },
+      { 
+        title: 'Optimizing Revenue Hold', 
+        content: 'We recommend starting at Level 15 for new locations to build player confidence. Our technical support team provides free consultations on skill-window optimization for all wholesale partners to ensure peak profitability.' 
+      }
+    ],
+
+    // ✅ 5. 成功案例
+    caseStudy: {
+      title: 'Pennsylvania Route Collections Jumped 42%',
+      content: '"After swapping aging legacy software for Panda Link, our weekly hold increased by 42%. The cinematic 4K visuals and IP power attracted a younger, more competitive demographic. ROI was achieved in 14 days of peak operation."',
+      author: 'A. Jensen, Master Route Operator'
+    },
+
+    // ✅ 6. 常见问题 (FAQ)
+    faqs: [
+      { question: 'Is the Panda Link kit compatible with my current cabinet wiring?', answer: 'Yes, the board utilizes the industry-standard 36/10 pin gold-plated edge connector. This allows for a direct plug-and-play replacement in most existing 8-liner or vertical skill-game cabinets, ensuring your technicians can complete the hardware upgrade in under 15 minutes without any complex re-wiring.' },
+      { question: 'How does the Nudge feature work to ensure the game is skill-based?', answer: 'The software includes a refined Nudge mechanic where players must manually interact with the reels after a spin to move them into a winning position. This requires hand-eye coordination and reflex timing, ensuring the game outcome is determined by player skill rather than pure chance.' },
+      { question: 'Can I adjust the hold percentage to match my specific location needs?', answer: 'Absolutely. The board features a password-protected operator menu with 30 distinct levels of skill-window calibration. This allows you to fine-tune the difficulty to match the skill level of your local players while maintaining a healthy and predictable profit margin.' },
+      { question: 'What happens to player credits if the location suffers a sudden power outage?', answer: 'Every board is equipped with non-volatile F-RAM memory technology. This advanced feature saves every player credit, game progress state, and operator log instantly. When power is restored, the machine resumes exactly where it left off, preventing player disputes.' },
+      { question: 'Does the PCB support modern touch screen monitor interfaces?', answer: 'Yes, this Universal Game Logic Board is fully compatible with most standard 3M and Elo touch screen protocols. This enables a more engaging and modern social gaming experience, allowing players to interact directly with the game elements on the screen.' },
+      { question: 'How do you protect the board from static electricity?', answer: 'Our boards feature an enhanced 15KV ESD protection circuit designed specifically for environments with static-prone carpets. This prevents environmental static from resetting the processor or damaging sensitive logic components, ensuring zero technical interruptions throughout the busy weekend hours.' }
+    ],
+
+    // ✅ 7. SEO 与交互配置
+    ctaText: 'Get Wholesale Quote Today',
+    pdfUrl: '/downloads/panda-link-specs.pdf',
+    
+    seo: {
+      metaTitle: 'Nudge Game Board Panda Link | Skill-Based Contest Software',
+      metaDescription: 'Shop factory-direct Panda Link Nudge boards. Featuring native 4K UHD graphics, 30-level skill adjustment, and 15KV ESD protection for route operators. Wholesale Skill-Based Game Boards.',
+      keywords: [
+        'Nudge Game Board Panda Link',
+        'Skill-Based Contest Software',
+        'Multi-game PCB Kit for Redemption',
+        'Universal Game Logic Board'
+      ]
+    }
+  }
+},
+{
+  id: 'universal-game-logic-board-xtreme-link',
+  name: 'Universal Game Logic Board Xtreme Link',
+  category: 'skill_based_game_board',
+  description: 'The premier vertical multi-game redemption platform. Featuring immersive 4K graphics, a proprietary 30-level skill window, and industrial-grade 36/10 pin hardware for elite route operators.',
+  imageUrl: '/images/xtreme-link-board.jpg', // 请在 public/images/ 放入对应图片
+  features: ['4-in-1 Multi-game Suite', 'Native 4K UHD Output Support', 'Nudge-Based Skill Logic', 'Universal 36/10 Pin Interface'],
+  
+  tankPage: {
+    headline: 'Xtreme Link: Command Your Route with High-Definition Connectivity',
+    subHeadline: 'Ditch the legacy boards. Upgrade to the most immersive 3D Nudge Game Board and experience up to 45% revenue growth per location.',
+    
+    // ✅ 1. 痛点分析
+    painPoints: [
+      { 
+        icon: 'Zap', 
+        title: 'Hardware Instability & Downtime', 
+        description: 'Unbranded game boards often suffer from memory crashes and thermal instability, leading to expensive field service calls. Our board uses industrial-grade capacitors and non-volatile F-RAM to ensure 99.9% uptime and zero data loss during power surges or unexpected outages.' 
+      },
+      { 
+        icon: 'ShieldAlert', 
+        title: 'Audit and Compliance Risks', 
+        description: 'Poor accounting systems lead to location disputes and potential regulatory scrutiny. Our board features full SAS-link support and a secure, password-protected audit menu, providing the transparency and professional-grade asset protection that serious route operators demand for daily operation.' 
+      },
+      { 
+        icon: 'Users', 
+        title: 'Player Boredom & Location Churn', 
+        description: 'Players have become tired of repetitive legacy themes, leading to shorter play sessions. Xtreme Link offers a cinematic 4K environment and unique "Link" bonus system that attracts players instantly, while the responsive Nudge interface keeps them engaged for significantly longer periods.' 
+      }
+    ],
+
+    // ✅ 2. 详细参数
+    technicalSpecs: [
+      { label: 'Display Output', value: 'VGA / HDMI / DP Multi-Resolution Support (Up to 4K UHD)' },
+      { label: 'Interface Type', value: 'Industry Standard Gold-Plated 36/10 Pin Edge' },
+      { label: 'Logic Protocol', value: 'Nudge-Based Skill Logic & Multi-Game Redemption' },
+      { label: 'Touch Interface', value: 'Full Compatibility with 3M and Elo Touch Protocols' },
+      { label: 'ESD Protection', value: 'Enhanced 15KV Static Circuit for High-Traffic Routes' },
+      { label: 'Memory Tech', value: 'Non-Volatile F-RAM (Instant Game State Recovery)' }
+    ],
+
+    // ✅ 3. 竞品对比
+    comparison: {
+      competitorLabel: 'Standard Legacy 8-Liner Boards',
+      rows: [
+        { feature: 'Visual Quality', us: 'Native 4K UHD 60FPS', them: 'Upscaled 1080P / Stretched' },
+        { feature: 'Reliability', us: 'Industrial Grade (99.9%)', them: 'Frequent Memory Crashes' },
+        { feature: 'Hold Stability', us: '30-Level Skill Adjust + SAS', them: 'Fixed Logic / Analog Only' }
+      ]
+    },
+
+    // ✅ 4. 买家指南 (互动点：发送 PDF)
+    buyerGuide: [
+      { 
+        title: 'Retrofit and Installation', 
+        content: 'Upgrading your existing vertical cabinet is straightforward. Ensure your power supply is rated at least 450W and check your touch screen calibration. Enter your email below to receive our full "Skill Game Retrofit Checklist PDF" instantly.' 
+      },
+      { 
+        title: 'Optimizing Revenue Hold', 
+        content: 'We recommend starting at Level 15 for new routes to build player trust. Our technical support team provides free consultations on skill-window optimization for all B2B wholesale partners to ensure peak profitability.' 
+      }
+    ],
+
+    // ✅ 5. 成功案例
+    caseStudy: {
+      title: 'Pennsylvania Route Collections Jumped 45%',
+      content: '"After swapping aging legacy software for Xtreme Link, our weekly hold increased by 45%. The cinematic 4K visuals and unique bonus features attracted a younger, more competitive demographic. ROI was achieved in 12 days of peak operation."',
+      author: 'M. Thompson, Master Route Operator'
+    },
+
+    // ✅ 6. 常见问题 (FAQ)
+    faqs: [
+      { question: 'Is the Xtreme Link kit compatible with my current cabinet wiring?', answer: 'Yes, the board utilizes the industry-standard 36/10 pin gold-plated edge connector. This allows for a direct plug-and-play replacement in most existing 8-liner or skill-game cabinets, ensuring your technicians can complete the hardware upgrade in under 15 minutes without any complex re-wiring.' },
+      { question: 'How does the Nudge feature work to ensure the game is skill-based?', answer: 'The software includes a refined Nudge mechanic where players must manually interact with the reels after a spin to move them into a winning position. This requires hand-eye coordination and reflex timing, ensuring the game outcome is determined by player skill rather than pure chance.' },
+      { question: 'Can I adjust the hold percentage to match my specific location needs?', answer: 'Absolutely. The board features a password-protected operator menu with 30 distinct levels of skill-window calibration. This allows you to fine-tune the difficulty to match the skill level of your local players while maintaining a healthy and predictable profit margin.' },
+      { question: 'What happens to player credits if the location suffers a sudden power outage?', answer: 'Every board is equipped with non-volatile F-RAM memory technology. This advanced feature saves every player credit, game progress state, and operator log instantly. When power is restored, the machine resumes exactly where it left off, preventing player disputes.' },
+      { question: 'Does the PCB support modern touch screen monitor interfaces?', answer: 'Yes, this Universal Game Logic Board is fully compatible with most standard 3M and Elo touch screen protocols. This enables a more engaging and modern social gaming experience, allowing players to interact directly with the game elements on the screen.' },
+      { question: 'How do you protect the board from static electricity?', answer: 'Our boards feature an enhanced 15KV ESD protection circuit designed specifically for environments with static-prone carpets. This prevents environmental static from resetting the processor or damaging sensitive logic components, ensuring zero technical interruptions throughout the busy weekend hours.' }
+    ],
+
+    // ✅ 7. SEO 与交互配置
+    ctaText: 'Get Wholesale Quote Today',
+    pdfUrl: '/downloads/xtreme-link-specs.pdf',
+    
+    seo: {
+      metaTitle: 'Universal Game Logic Board Xtreme Link | Vertical Skill-Shot Software',
+      metaDescription: 'Shop factory-direct Xtreme Link Nudge boards. Featuring 4-in-1 multi-game variety, native 4K graphics, 30-level skill adjustment, and 15KV ESD protection for route operators.',
+      keywords: [
+        'Universal Game Logic Board Xtreme Link',
+        'Nudge Game Board Vertical Software',
+        'Multi-game PCB Kit for Amusement',
+        'Redemption Game PCB Wholesale'
+      ]
+    }
+  }
+},
+{
+  id: 'skill-based-game-board-panda-link-ii-777',
+  name: 'Skill-Based Game Board Panda Link II 777',
+  category: 'skill_based_game_board',
+  description: 'The cinematic sequel in skill gaming excellence. Featuring immersive 4K Panda Link II graphics, a proprietary 30-level skill window, and industrial-grade 36/10 pin hardware for elite route operators.',
+  imageUrl: '/images/panda-link-ii-board.jpg', // 请在 public/images/ 放入图片
+  features: ['Cinematic 4K UHD Graphics', 'Nudge-Based Skill Logic', '30-Level Skill Calibration', '15KV Enhanced ESD Protection'],
+  
+  tankPage: {
+    headline: 'Panda Link II: Command Your Route with 4K Oriental Power',
+    subHeadline: 'Ditch the legacy boards. Upgrade to the most immersive 3D Nudge Game Board and experience up to 42% revenue growth per location.',
+    
+    // ✅ 1. 痛点分析
+    painPoints: [
+      { 
+        icon: 'Zap', 
+        title: 'Hardware Instability & Downtime', 
+        description: 'Unbranded game boards often suffer from memory crashes and thermal instability, leading to expensive field service calls. Panda Link II utilizes industrial-grade solid-state capacitors and non-volatile F-RAM to ensure 99.9% uptime and zero data loss during power surges.' 
+      },
+      { 
+        icon: 'ShieldAlert', 
+        title: 'Audit and Compliance Risks', 
+        description: 'Poor accounting systems lead to location disputes and regulatory issues. Our board features full SAS-link support and a secure, password-protected audit menu, providing the transparency and professional-grade asset protection that serious route operators demand.' 
+      },
+      { 
+        icon: 'Users', 
+        title: 'Player Boredom & Location Churn', 
+        description: 'Players have become tired of repetitive legacy themes, leading to shorter play sessions. Panda Link II offers a cinematic 4K environment and oriental theme that attracts players instantly, while the responsive Nudge interface keeps them engaged for significantly longer periods.' 
+      }
+    ],
+
+    // ✅ 2. 详细参数
+    technicalSpecs: [
+      { label: 'Display Output', value: 'VGA / HDMI / DP Multi-Resolution Support (Up to 4K UHD)' },
+      { label: 'Interface Type', value: 'Industry Standard Gold-Plated 36/10 Pin Edge' },
+      { label: 'Logic Protocol', value: 'Nudge-Based Skill Logic & Redemption Protocol' },
+      { label: 'Touch Interface', value: 'Full Compatibility with 3M and Elo Touch Protocols' },
+      { label: 'ESD Protection', value: 'Enhanced 15KV Static Circuit for High-Traffic Routes' },
+      { label: 'Memory Tech', value: 'Non-Volatile F-RAM (Instant Game State Recovery)' }
+    ],
+
+    // ✅ 3. 竞品对比
+    comparison: {
+      competitorLabel: 'Standard Legacy 8-Liner Boards',
+      rows: [
+        { feature: 'Visual Quality', us: 'Native 4K UHD 60FPS', them: 'Upscaled 1080P / Stretched' },
+        { feature: 'Reliability', us: 'Industrial Grade (99.9%)', them: 'Frequent Memory Crashes' },
+        { feature: 'Hold Stability', us: '30-Level Skill Adjust + SAS', them: 'Fixed Logic / Analog Only' }
+      ]
+    },
+
+    // ✅ 4. 买家指南 (互动点：发送 PDF)
+    buyerGuide: [
+      { 
+        title: 'Retrofit and Installation', 
+        content: 'Upgrading your existing vertical cabinet is straightforward. Ensure your power supply is rated at least 450W and check your touch screen calibration. Enter your email below to receive our full "Skill Game Retrofit Manual" PDF instantly.' 
+      },
+      { 
+        title: 'Optimizing Revenue Hold', 
+        content: 'We recommend starting at Level 15 for new routes to build player trust. Our technical support team provides free consultations on skill-window optimization for all B2B wholesale partners to ensure peak profitability.' 
+      }
+    ],
+
+    // ✅ 5. 成功案例
+    caseStudy: {
+      title: 'North Carolina Route Collections Jumped 42%',
+      content: '"After swapping aging legacy software for Panda Link II, our weekly hold increased by 42%. The cinematic 4K visuals and IP power attracted a younger, more competitive demographic. ROI was achieved in 14 days of peak operation."',
+      author: 'A. Jensen, Master Route Operator'
+    },
+
+    // ✅ 6. 常见问题 (FAQ)
+    faqs: [
+      { question: 'Is the Panda Link II kit compatible with my current cabinet wiring?', answer: 'Yes, the board utilizes the industry-standard 36/10 pin gold-plated edge connector. This allows for a direct plug-and-play replacement in most existing 8-liner or vertical skill-game cabinets, ensuring your technicians can complete the hardware upgrade in under 15 minutes without any complex re-wiring.' },
+      { question: 'How does the Nudge feature work to ensure the game is skill-based?', answer: 'The software includes a refined Nudge mechanic where players must manually interact with the reels after a spin to move them into a winning position. This requires hand-eye coordination and reflex timing, ensuring the game outcome is determined by player skill rather than pure chance.' },
+      { question: 'Can I adjust the hold percentage to match my specific location needs?', answer: 'Absolutely. The board features a password-protected operator menu with 30 distinct levels of skill-window calibration. This allows you to fine-tune the difficulty to match the skill level of your local players while maintaining a healthy and predictable profit margin.' },
+      { question: 'What happens to player credits if the location suffers a sudden power outage?', answer: 'Every board is equipped with non-volatile F-RAM memory technology. This advanced feature saves every player credit, game progress state, and operator log instantly. When power is restored, the machine resumes exactly where it left off, preventing player disputes.' },
+      { question: 'Does the PCB support modern touch screen monitor interfaces?', answer: 'Yes, this Universal Game Logic Board is fully compatible with most standard 3M and Elo touch screen protocols. This enables a more engaging and modern social gaming experience, allowing players to interact directly with the game elements on the screen.' },
+      { question: 'How do you protect the board from static electricity?', answer: 'Our boards feature an enhanced 15KV ESD protection circuit designed specifically for environments with static-prone carpets. This prevents environmental static from resetting the processor or damaging sensitive logic components, ensuring zero technical interruptions throughout the busy weekend hours.' }
+    ],
+
+    // ✅ 7. SEO 与交互配置
+    ctaText: 'Get Wholesale Quote Today',
+    pdfUrl: '/downloads/panda-link-ii-specs.pdf',
+    
+    seo: {
+      metaTitle: 'Skill-Based Game Board Panda Link II 777 | Nudge Game Board Software Kit',
+      metaDescription: 'Shop factory-direct Panda Link II 777 Nudge boards. Featuring native 4K UHD graphics, 30-level skill adjustment, and 15KV ESD protection for route operators. Wholesale Skill-Based Game Boards.',
+      keywords: [
+        'Skill-Based Game Board Panda Link II',
+        'Nudge Game Board Software Kit',
+        'Redemption Game PCB Wholesale',
+        'Universal Game Logic Board'
+      ]
+    }
+  }
 }
 ];
 
