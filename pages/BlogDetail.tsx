@@ -4,7 +4,7 @@ import { useParams, Navigate, Link } from 'react-router-dom';
 import { getBlogs } from '../data';
 import { LanguageCode, ContentBlock, ChartData, TableData } from '../types';
 import { DEFAULT_LANG } from '../utils/i18n';
-import SEO from '../components/SEO';
+import { SEO } from '../components/SEO';
 import { Calendar, User, Clock, ChevronLeft, ArrowRight, Play, ExternalLink, Facebook, Twitter, Linkedin, Share2, List, Hash, Send, MessageSquare } from 'lucide-react';
 
 const BlogDetail: React.FC = () => {
