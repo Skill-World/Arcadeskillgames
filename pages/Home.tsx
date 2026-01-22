@@ -3,7 +3,7 @@ import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { TrendingUp, ShieldCheck, DollarSign, ArrowRight } from 'lucide-react';
 import { getProducts } from '../data';
-import Seo from '../components/SEO';
+import {SEO} from '../components/SEO';
 import { t, DEFAULT_LANG } from '../utils/i18n';
 import { LanguageCode } from '../types';
 
@@ -28,7 +28,7 @@ const Home: React.FC = () => {
   return (
     <div className="animate-fade-in">
       {/* 1. SEO Head Injection */}
-      <Seo 
+      <SEO 
         title={t(currentLang, 'hero.title')}
         description={t(currentLang, 'hero.subtitle')}
         schema={homeSchema}
