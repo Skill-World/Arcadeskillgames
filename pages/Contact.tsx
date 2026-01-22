@@ -5,7 +5,7 @@ import { getGameRecommendation } from '../services/geminiService';
 import { useParams } from 'react-router-dom';
 import { t, DEFAULT_LANG } from '../utils/i18n';
 import { LanguageCode } from '../types';
-import Seo from '../components/SEO';
+import { SEO } from '../components/SEO';
 import { getSolutions } from '../data';
 
 const Contact: React.FC = () => {
@@ -42,7 +42,7 @@ const Contact: React.FC = () => {
 
   return (
     <div className="bg-brand-900 min-h-screen py-20 animate-fade-in">
-      <Seo 
+      <SEO
         title={t(currentLang, 'contact.title')}
         description={t(currentLang, 'contact.subtitle')}
       />

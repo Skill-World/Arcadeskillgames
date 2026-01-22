@@ -5,7 +5,7 @@ import { getSolutions, getProducts } from '../data';
 import { Check, ArrowRight, HelpCircle, Quote, BarChart, ChevronDown, ChevronUp, AlertTriangle, ShieldCheck, TrendingUp, X, Lock, Maximize, Minimize, Coins, Clock, Users, Palette, Smartphone, Eye, Battery, Copy, Moon, LayoutGrid, User, Wrench, DollarSign, ShieldAlert, TrendingDown, Phone, Mail, MessageCircle } from 'lucide-react';
 import { LanguageCode } from '../types';
 import { DEFAULT_LANG, t } from '../utils/i18n';
-import Seo from '../components/SEO';
+import { SEO } from '../components/SEO';
 
 // Helper to map icon string to Component
 const IconMap: Record<string, React.FC<any>> = {
@@ -59,7 +59,7 @@ const SolutionDetail: React.FC = () => {
 
   return (
     <div className="bg-brand-900 min-h-screen animate-fade-in text-slate-200 pb-24 md:pb-0">
-      <Seo 
+      <SEO 
         title={solution.seo?.metaTitle || `${solution.title} | ${t(currentLang, 'hero.title')}`}
         description={solution.seo?.metaDescription || solution.description}
         keywords={solution.seo?.keywords}

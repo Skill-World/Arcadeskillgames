@@ -5,7 +5,7 @@ import { getBlogs } from '../data';
 import { Calendar, Tag, ArrowRight } from 'lucide-react';
 import { LanguageCode } from '../types';
 import { t, DEFAULT_LANG } from '../utils/i18n';
-import Seo from '../components/SEO';
+import { SEO } from '../components/SEO';
 
 const Blog: React.FC = () => {
   const { lang } = useParams();
@@ -14,7 +14,7 @@ const Blog: React.FC = () => {
 
   return (
     <div className="bg-brand-900 min-h-screen py-20">
-      <Seo 
+      <SEO 
         title={t(currentLang, 'nav.blog')}
         description="Latest news, compliance updates, and revenue strategies for the skill game industry."
       />

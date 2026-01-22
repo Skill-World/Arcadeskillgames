@@ -4,7 +4,7 @@ import { useParams, Navigate, Link } from 'react-router-dom';
 import { getBlogs } from '../data';
 import { LanguageCode, ContentBlock, ChartData, TableData } from '../types';
 import { DEFAULT_LANG } from '../utils/i18n';
-import Seo from '../components/SEO';
+import SEO from '../components/SEO';
 import { Calendar, User, Clock, ChevronLeft, ArrowRight, Play, ExternalLink, Facebook, Twitter, Linkedin, Share2, List, Hash, Send, MessageSquare } from 'lucide-react';
 
 const BlogDetail: React.FC = () => {
@@ -197,7 +197,7 @@ const BlogDetail: React.FC = () => {
 
   return (
     <div className="bg-brand-900 min-h-screen text-slate-200 animate-fade-in">
-      <Seo 
+      <SEO 
         title={post.seo.metaTitle}
         description={post.seo.metaDescription}
         schema={post.seo.schema}
