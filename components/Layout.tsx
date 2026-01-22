@@ -23,7 +23,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 
   // Product Sub-Categories for Dropdown
   const productCategories = [
-    { name: t(currentLang, 'nav.cat.machines'), id: 'complete_machine' },
+    { name: t(currentLang, 'nav.cat.machines'), id: 'skill_based_game_board' },
     { name: t(currentLang, 'nav.cat.cabinets'), id: 'cabinet_only' },
     { name: t(currentLang, 'nav.cat.boards'), id: 'game_board' },
   ];
