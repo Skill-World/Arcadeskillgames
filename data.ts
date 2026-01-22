@@ -1729,9 +1729,52 @@ export const getProducts = (lang: LanguageCode): Product[] => [
         { feature: 'Resolution', us: 'Native 4K Pro assets', them: 'Upscaled 1080P' },
         { feature: 'Data Security', us: 'SAS 6.0 + Encrypted Keys', them: 'Limited / No Accounting' }
       ]
-      }
-     }
     },
+        // ✅ 4. 买家指南 (互动：点击发送 PDF)
+    buyerGuide: [
+      { 
+        title: 'Installation & Compatibility', 
+        content: 'Upgrading your existing cabinet is straightforward. Ensure your power supply is rated at least 450W and check your HDMI 2.0 cables. Enter your email to download our "Air Strike 3 Master Pinout & Retrofit Manual" PDF instantly.' 
+      },
+      { 
+        title: 'Calibrating for ROI', 
+        content: 'We recommend starting at Level 18 for new routes to build player confidence. Our technical support team provides free consultations on math setting optimization for all B2B wholesale partners.' 
+      }
+    ],
+
+    // ✅ 5. 成功案例
+    caseStudy: {
+      title: 'Pennsylvania Route Revenue Up 42%',
+      content: '"By swapping our aging fish boards for the Air Strike 3 Elite kits, we saw an immediate 42% jump in total collections. The visual quality attracted a completely new demographic of competitive players. ROI was achieved in 14 days."',
+      author: 'Master Route Operator, PA Hub'
+    },
+
+    // ✅ 6. 常见问题 (FAQ - 6 entries)
+    faqs: [
+      { question: 'Is the kit compatible with ICT PA7 bill acceptors?', answer: 'Yes, the AS3 PCB is designed with a universal 12V pulse protocol. The included wiring harness features pre-labeled drops that allow for a plug-and-play connection to all major bill validator brands, ensuring zero-configuration setup for your technicians.' },
+      { question: 'Can we switch between 4, 8, and 10 player configurations?', answer: 'Absolutely. The Air Strike 3 software is dynamically configurable through the internal operator menu. This allows you to move the kit between different cabinet sizes, from compact 4-player desks to massive 10-player tables, without needing a software re-flash.' },
+      { question: 'How does the Skill Window adjustment ensure compliance?', answer: 'The board features a password-protected setup menu where you can adjust the hit-sensitivity and reflex-timing across 30 distinct levels. This allows you to fine-tune the game mechanics to ensure the skill element predominates, meeting the legal requirements of various jurisdictions.' },
+      { question: 'What happens to credits if the power goes out?', answer: 'Every Air Strike 3 board is equipped with non-volatile Ferroelectric RAM (F-RAM). This technology saves all active credits, game progress, and operator history instantly. When power is restored, the game resumes exactly where it left off, preventing player disputes.' },
+      { question: 'Does the 4K output require specialized cables?', answer: 'While AS3 supports native 4K, it includes an industrial scaler for 1080P compatibility. However, to maximize player attraction, we recommend using a 4K IPS monitor and a certified HDMI 2.0 cable to deliver the fluid 60FPS combat animations without flickering.' },
+      { question: 'Can I sync cabinet LED lighting with gameplay?', answer: 'Yes, the kit includes an addressable RGB control header. When connected to compatible LED strips, the cabinet lighting will flash red during Incoming Strike warnings and change colors based on the current BOSS battle, creating a fully immersive environment.' }
+    ],
+
+    // ✅ 7. SEO 与交互配置
+    ctaText: 'Get Wholesale Quote Today',
+    pdfUrl: '/downloads/airstrike-3-elite-specs.pdf',
+    
+    seo: {
+      metaTitle: 'Air Strike 3 Fish Game Board | 4K Skill Shooting Kit Upgrade',
+      metaDescription: 'Shop factory-direct Air Strike 3 fish table game kits. Featuring native 4K graphics, 30-level skill settings, and SAS 6.0 accounting for route operators. Wholesale pricing.',
+      keywords: [
+        'Air Strike 3 Game Board',
+        'Fish Table Game Software Upgrade',
+        '4K Skill Based Shooting Kit',
+        'Multiplayer Fish Arcade Software Wholesale'
+      ]
+    }
+  }
+},
 {
   id: 'fish-game-board-crab-king-3-ultra',
   name: 'Crab King 3 Ultimate 3D Skill Game Kit (4K Ultra)',
@@ -1824,52 +1867,6 @@ export const getProducts = (lang: LanguageCode): Product[] => [
         'Multiplayer Fish Shooting Game Board',
         'Skill Based Fish Game Kit',
         '4K Fish Table Software Upgrade'
-      ]
-    }
-  }
-},
-  
-    // ✅ 4. 买家指南 (互动：点击发送 PDF)
-    buyerGuide: [
-      { 
-        title: 'Installation & Compatibility', 
-        content: 'Upgrading your existing cabinet is straightforward. Ensure your power supply is rated at least 450W and check your HDMI 2.0 cables. Enter your email to download our "Air Strike 3 Master Pinout & Retrofit Manual" PDF instantly.' 
-      },
-      { 
-        title: 'Calibrating for ROI', 
-        content: 'We recommend starting at Level 18 for new routes to build player confidence. Our technical support team provides free consultations on math setting optimization for all B2B wholesale partners.' 
-      }
-    ],
-
-    // ✅ 5. 成功案例
-    caseStudy: {
-      title: 'Pennsylvania Route Revenue Up 42%',
-      content: '"By swapping our aging fish boards for the Air Strike 3 Elite kits, we saw an immediate 42% jump in total collections. The visual quality attracted a completely new demographic of competitive players. ROI was achieved in 14 days."',
-      author: 'Master Route Operator, PA Hub'
-    },
-
-    // ✅ 6. 常见问题 (FAQ - 6 entries)
-    faqs: [
-      { question: 'Is the kit compatible with ICT PA7 bill acceptors?', answer: 'Yes, the AS3 PCB is designed with a universal 12V pulse protocol. The included wiring harness features pre-labeled drops that allow for a plug-and-play connection to all major bill validator brands, ensuring zero-configuration setup for your technicians.' },
-      { question: 'Can we switch between 4, 8, and 10 player configurations?', answer: 'Absolutely. The Air Strike 3 software is dynamically configurable through the internal operator menu. This allows you to move the kit between different cabinet sizes, from compact 4-player desks to massive 10-player tables, without needing a software re-flash.' },
-      { question: 'How does the Skill Window adjustment ensure compliance?', answer: 'The board features a password-protected setup menu where you can adjust the hit-sensitivity and reflex-timing across 30 distinct levels. This allows you to fine-tune the game mechanics to ensure the skill element predominates, meeting the legal requirements of various jurisdictions.' },
-      { question: 'What happens to credits if the power goes out?', answer: 'Every Air Strike 3 board is equipped with non-volatile Ferroelectric RAM (F-RAM). This technology saves all active credits, game progress, and operator history instantly. When power is restored, the game resumes exactly where it left off, preventing player disputes.' },
-      { question: 'Does the 4K output require specialized cables?', answer: 'While AS3 supports native 4K, it includes an industrial scaler for 1080P compatibility. However, to maximize player attraction, we recommend using a 4K IPS monitor and a certified HDMI 2.0 cable to deliver the fluid 60FPS combat animations without flickering.' },
-      { question: 'Can I sync cabinet LED lighting with gameplay?', answer: 'Yes, the kit includes an addressable RGB control header. When connected to compatible LED strips, the cabinet lighting will flash red during Incoming Strike warnings and change colors based on the current BOSS battle, creating a fully immersive environment.' }
-    ],
-
-    // ✅ 7. SEO 与交互配置
-    ctaText: 'Get Wholesale Quote Today',
-    pdfUrl: '/downloads/airstrike-3-elite-specs.pdf',
-    
-    seo: {
-      metaTitle: 'Air Strike 3 Fish Game Board | 4K Skill Shooting Kit Upgrade',
-      metaDescription: 'Shop factory-direct Air Strike 3 fish table game kits. Featuring native 4K graphics, 30-level skill settings, and SAS 6.0 accounting for route operators. Wholesale pricing.',
-      keywords: [
-        'Air Strike 3 Game Board',
-        'Fish Table Game Software Upgrade',
-        '4K Skill Based Shooting Kit',
-        'Multiplayer Fish Arcade Software Wholesale'
       ]
     }
   }
