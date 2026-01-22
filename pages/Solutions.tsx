@@ -7,7 +7,7 @@ import {
 } from 'lucide-react';
 import { LanguageCode } from '../types';
 import { DEFAULT_LANG, t } from '../utils/i18n';
-import Seo from '../components/SEO';
+import { SEO } from '../components/SEO';
 
 const Solutions: React.FC = () => {
   const { lang } = useParams();
@@ -46,7 +46,7 @@ const Solutions: React.FC = () => {
 
   return (
     <div className="bg-brand-900 min-h-screen">
-      <Seo 
+      <SEO 
         title={t(currentLang, 'sol.page.title')}
         description={t(currentLang, 'sol.page.subtitle')}
         schema={seoSchema}
