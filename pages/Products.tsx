@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams, useSearchParams, Link } from 'react-router-dom';
 import { getProducts } from '../data';
 import { Check, Info } from 'lucide-react';
-import Seo from '../components/SEO';
+import { SEO } from '../components/SEO';
 import { LanguageCode } from '../types';
 import { DEFAULT_LANG, t } from '../utils/i18n';
 
@@ -38,8 +38,8 @@ const Products: React.FC = () => {
 
   return (
     <div className="py-20 bg-brand-900 min-h-screen">
-      <Seo 
-        title={currentCategory.seoTitle} 
+      <SEO 
+        title={currentCategory.SEOTitle} 
         description={`Shop ${currentCategory.label}. Factory direct pricing.`} 
       />
 
