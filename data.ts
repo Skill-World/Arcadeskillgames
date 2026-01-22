@@ -3189,7 +3189,7 @@ export const getSolutions = (lang: LanguageCode): Solution[] => [
     fullDescription: 'Modern adult arcades require equipment that offers genuine gameplay depth. Our "Ocean King" style fish tables and Nudge cabinets create a social, competitive environment where players compete against the machine or each other using hand-eye coordination.',
     benefits: ['Multiplayer Social Play', 'Linked Progressive Rewards', 'High-End LED Visuals'],
     icon: 'Gamepad2',
-    recommendedCategory: 'complete_machine',
+    recommendedCategory: 'skill_based_game_board',
     painPoints: [
       { title: 'Player Boredom', description: 'Standalone machines lack the excitement of linked play.', icon: 'Sleep' },
       { title: 'Visual Clutter', description: 'Mismatched cabinets look unprofessional.', icon: 'LayoutGrid' }
@@ -3231,7 +3231,7 @@ export const getSolutions = (lang: LanguageCode): Solution[] => [
     fullDescription: t(lang, 'sol.arcade.full'),
     benefits: ['Multiplayer Fish Tables', 'Ticket Redemption', 'Social Gaming'],
     icon: 'Dices',
-    recommendedCategory: 'complete_machine',
+    recommendedCategory: 'skill_based_game_board',
     painPoints: [
       { title: 'Single Player Limits', description: '1-player games limit revenue throughput.', icon: 'User' },
       { title: 'Maintenance', description: 'Cheap joysticks break constantly.', icon: 'Wrench' }
@@ -3274,7 +3274,7 @@ export const getSolutions = (lang: LanguageCode): Solution[] => [
     fullDescription: 'Convenience store owners face thin margins on retail items. Our skill-based amusement kiosks provide a new revenue stream that requires zero staff interaction. Unlike prohibited devices, these machines reward player dexterity and mental acuity.',
     benefits: ['100% Passive Revenue', 'Small 20" Footprint', 'Theft-Resistant Steel Body'],
     icon: 'Zap',
-    recommendedCategory: 'complete_machine',
+    recommendedCategory: 'skill_based_game_board',
     painPoints: [
       { title: 'Low Margins', description: 'Retail products offer pennies in profit.', icon: 'TrendingDown' },
       { title: 'Dead Space', description: 'Unused corners generating zero cash flow.', icon: 'Maximize' }
@@ -3317,7 +3317,7 @@ export const getSolutions = (lang: LanguageCode): Solution[] => [
     fullDescription: t(lang, 'sol.cstore.full'),
     benefits: ['Countertop Models', 'Impulse Play Design', 'Cash-Handling Secure'],
     icon: 'Store',
-    recommendedCategory: 'complete_machine',
+    recommendedCategory: 'skill_based_game_board',
     painPoints: [
       { title: 'Limited Floor Space', description: 'No room for full cabinets.', icon: 'Minimize' },
       { title: 'Impulse Sales', description: 'Need to capture loose change.', icon: 'Coins' }
@@ -3359,7 +3359,7 @@ export const getSolutions = (lang: LanguageCode): Solution[] => [
     fullDescription: t(lang, 'sol.barber.full'),
     benefits: ['Monetize Wait Times', 'Compact Vertical Units', 'Silent/Attract Modes'],
     icon: 'Scissors',
-    recommendedCategory: 'complete_machine',
+    recommendedCategory: 'skill_based_game_board',
     painPoints: [
       { title: 'Boredom', description: 'Customers hate waiting.', icon: 'Clock' },
       { title: 'Revenue Cap', description: 'You can only cut so much hair a day.', icon: 'TrendingUp' }
@@ -3401,7 +3401,7 @@ export const getSolutions = (lang: LanguageCode): Solution[] => [
     fullDescription: t(lang, 'sol.tattoo.full'),
     benefits: ['Themed Graphics (Dark/Edgy)', 'High Volatility', 'High-Value Customers'],
     icon: 'PenTool',
-    recommendedCategory: 'complete_machine',
+    recommendedCategory: 'skill_based_game_board',
     painPoints: [
       { title: 'Long Sessions', description: 'Friends waiting for clients get bored.', icon: 'Users' },
       { title: 'Aesthetic Mismatch', description: 'Bright/Cartoonish games ruin the vibe.', icon: 'Palette' }
@@ -3443,7 +3443,7 @@ export const getSolutions = (lang: LanguageCode): Solution[] => [
     fullDescription: t(lang, 'sol.laundry.full'),
     benefits: ['Long Session Times', 'Sit-Down Cabinets', 'Dwell Time Monetization'],
     icon: 'Droplets',
-    recommendedCategory: 'complete_machine',
+    recommendedCategory: 'skill_based_game_board',
     painPoints: [
       { title: 'Captive Audience', description: 'Customers staring at phones for 45 mins.', icon: 'Smartphone' },
       { title: 'Coin Handling', description: 'You already deal with coins, why not get more?', icon: 'Coins' }
@@ -3485,7 +3485,7 @@ export const getSolutions = (lang: LanguageCode): Solution[] => [
     fullDescription: t(lang, 'sol.cafe.full'),
     benefits: ['Diversify Revenue', 'PC-Gamer Friendly', 'Tournament Features'],
     icon: 'Wifi',
-    recommendedCategory: 'complete_machine',
+    recommendedCategory: 'skill_based_game_board',
     painPoints: [
       { title: 'Low PC Margins', description: 'Rental hourly rates are low.', icon: 'TrendingDown' },
       { title: 'Burnout', description: 'Gamers need a break between matches.', icon: 'Battery' }
@@ -3527,7 +3527,7 @@ export const getSolutions = (lang: LanguageCode): Solution[] => [
     fullDescription: t(lang, 'sol.lounge.full'),
     benefits: ['Luxury Finishes', 'Slant-Top Ergonomics', '4K UHD Screens'],
     icon: 'Armchair',
-    recommendedCategory: 'complete_machine',
+    recommendedCategory: 'skill_based_game_board',
     painPoints: [
       { title: 'Aesthetics', description: 'Cheap machines look bad in nice venues.', icon: 'Eye' },
       { title: 'Comfort', description: 'Standing is not for VIPs.', icon: 'Armchair' }
