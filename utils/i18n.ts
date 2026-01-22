@@ -1,10 +1,11 @@
-// src/i18n.ts
+// src/utils/i18n.ts
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
+import { LanguageCode } from '../types';
 
-// 1. 保留你之前的语言列表定义
-export const LANGUAGES = [
+// 1. 导出语言列表
+export const LANGUAGES: { code: LanguageCode; name: string; flag: string }[] = [
   { code: 'en', name: 'English', flag: '🇺🇸' },
   { code: 'es', name: 'Español', flag: '🇪🇸' },
   { code: 'fr', name: 'Français', flag: '🇫🇷' },
@@ -17,11 +18,14 @@ export const LANGUAGES = [
   { code: 'ar', name: 'العربية', flag: '🇸🇦' },
 ];
 
-// 2. 将你之前的 TRANSLATIONS 对象放入 resources
+// 2. 导出默认语言 (解决你之前的 Vercel 报错)
+export const DEFAULT_LANG: LanguageCode = 'en';
+
+// 3. 将你的翻译字典填入 resources 结构中
 const resources = {
   en: {
     translation: {
-      // Nav
+        // Nav
     'nav.home': 'Home', 
     'nav.about': 'About Us', 
     'nav.products': 'Products', 
@@ -132,7 +136,8 @@ const resources = {
     }
   },
   es: {
-    translation: {'nav.home': 'Inicio', 
+    translation: {
+    'nav.home': 'Inicio', 
     'nav.solutions': 'Soluciones',
     'sol.page.title': 'Soluciones Comerciales',
     'tank.pain.title': 'El Desafío',
@@ -141,22 +146,27 @@ const resources = {
     // ... basic mapping
     }
   }
-  // 其他 8 种语言后期可以慢慢补充，i18next 会在缺失时自动退回到英文
 };
 
+// 4. 标准化初始化 (让 i18next 接管路由识别)
 i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
     resources,
-    fallbackLng: 'en',
+    fallbackLng: DEFAULT_LANG,
     detection: {
       order: ['path', 'cookie', 'htmlTag'],
-      lookupFromPathIndex: 0 // 核心：从 URL 的第一个位置读取语言，如 /en/products
+      lookupFromPathIndex: 0 // 核心：从 URL 的第一位识别语言，如 /en/product/...
     },
     interpolation: {
-      escapeValue: false
+      escapeValue: false 
     }
   });
+
+// 5. 保留这个工具函数，防止其他组件报错
+export function isLanguageCode(code: string): code is LanguageCode {
+  return LANGUAGES.some(l => l.code === code);
+}
 
 export default i18n;
