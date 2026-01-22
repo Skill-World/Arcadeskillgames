@@ -8,7 +8,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
     name: '43" 4K Titan Vertical Skill Cabinet (Empty Shell)',
     category: 'cabinet_only',
     description: 'Premier 43-inch 4K UHD gaming cabinet shell. Designed for maximum player engagement with addressable RGB Halo lighting and industrial-grade steel construction.',
-    imageUrl: 'https://picsum.photos/800/1200?random=43', // 建议替换为真实的43寸立式机图片
+    imageUrl: '/images/43 Inch Vertical Skill Cabinet.png', // 建议替换为真实的43寸立式机图片
     features: ['43" 4K UHD PCAP Touch', 'Addressable LED Halo Lighting', '1.2mm Cold Rolled Steel', '36/10 Pin Pre-Wired'],
     
     // 🔥 坦克页深度内容升级
@@ -123,7 +123,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: '43" J-Curve 4K Elite Skill Cabinet (Empty Shell)',
   category: 'cabinet_only',
   description: 'The ultimate immersive experience for premium venues. Features a massive 43-inch J-Curved 4K display with high-fidelity PCAP touch and dynamic sync-lighting.',
-  imageUrl: 'https://picsum.photos/800/1200?random=431', // 建议替换为真实的 J-Curve 机柜图
+  imageUrl: '/images/43 Inch Curved Skill Cabinet.png', // 建议替换为真实的 J-Curve 机柜图
   features: ['43" 4K J-Curve Display', 'Pro-Grade PCAP Multi-Touch', 'Sync-LED RGB Lighting', 'Dual-Lock Security Body'],
   
   tankPage: {
@@ -237,7 +237,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: '43" 4K Slant Top Curved Skill Cabinet (Empty Shell)',
   category: 'cabinet_only',
   description: 'The ultimate luxury ergonomic gaming shell. 4K J-Curve display with a slant-top design optimized for high-end VIP lounges and long-session play.',
-  imageUrl: '/images/slant-top-43.jpg', 
+  imageUrl: '/images/43 Inch Curved Gaming Shell.png', 
   features: ['43" 4K Curved PCAP Touch', 'Ergonomic Slant-Top Design', 'Premium 2.1 Sound System', 'Anti-Pry 1.2mm Steel Body'],
   
   tankPage: {
@@ -351,7 +351,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: '43" 4K Vertical Elite Skill Cabinet (Empty Shell)',
   category: 'cabinet_only',
   description: 'The definitive 43-inch vertical gaming platform. A seamless 4K visual experience designed for Link and Nudge games. Built for durability and high-impact visual attraction.',
-  imageUrl: '/images/vertical-43-pro.jpg', // 建议在 public/images/ 放入图片
+  imageUrl: '/images/43 Inch Vertical Arcade Cabinet.png', // 建议在 public/images/ 放入图片
   features: ['43" 4K Vertical UHD Display', 'Industrial PCAP Touchscreen', 'Custom RGB Side Lighting', 'Heavy-Duty 1.2mm Steel Shell'],
   
   tankPage: {
@@ -560,7 +560,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: '43" 4K Curved Elite Arc Skill Cabinet (Empty Shell)',
   category: 'cabinet_only',
   description: 'The ultimate curved arcade shell optimized for Link games. Features a premium R1500 curvature for maximum player immersion and a space-saving slim profile.',
-  imageUrl: 'https://picsum.photos/800/1200?random=110', // 建议在 public/images/ 放入 Model V2 实拍图
+  imageUrl: '/images/43 Inch Curved Arcade Cabinet Shell.png', // 建议在 public/images/ 放入 Model V2 实拍图
   features: ['43" R1500 4K Curved Display', '10-Point Flush PCAP Touch', 'Slim-Profile Metal Body', 'Programmable Side RGB'],
   
   tankPage: {
@@ -638,7 +638,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: '43" Slim 4K Vertical Link Cabinet (Empty Shell)',
   category: 'cabinet_only',
   description: 'A space-saving 43-inch vertical gaming shell with an ultra-slim bezel. Engineered for high-density venues to maximize revenue per square foot without compromising visual impact.',
-  imageUrl: 'https://picsum.photos/800/1200?random=v5', // 请替换为真实 Model 5 图片
+  imageUrl: '/images/Vertical Arcade Cabinet Shell.png', // 请替换为真实 Model 5 图片
   features: ['Ultra-Slim 24" Chassis', '4K Industrial PCAP Touch', 'Enhanced Vault Security', 'High-Efficiency Airflow'],
   
   tankPage: {
@@ -716,7 +716,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: '43" 4K Aura Elite Vertical Skill Cabinet (Model 7)',
   category: 'cabinet_only',
   description: 'The premier choice for high-end routes. Features the signature Aura dynamic lighting system and a native 4K PCAP touch display for maximum player immersion.',
-  imageUrl: '/images/model-7-aura.jpg', 
+  imageUrl: '/images/43 Inch Vertical Skill Game Cabinet.png', 
   features: ['43" 4K Ultra-HD Portrait Display', 'Signature Aura RGB Halo Lighting', 'Heavy-Duty 1.2mm Steel Vault Shell', 'Precision 10-Point PCAP Touch'],
   
   tankPage: {
