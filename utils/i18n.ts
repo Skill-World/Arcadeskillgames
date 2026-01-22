@@ -1,7 +1,10 @@
+// src/i18n.ts
+import i18n from 'i18next';
+import { initReactI18next } from 'react-i18next';
+import LanguageDetector from 'i18next-browser-languagedetector';
 
-import { LanguageCode } from '../types';
-
-export const LANGUAGES: { code: LanguageCode; name: string; flag: string }[] = [
+// 1. 保留你之前的语言列表定义
+export const LANGUAGES = [
   { code: 'en', name: 'English', flag: '🇺🇸' },
   { code: 'es', name: 'Español', flag: '🇪🇸' },
   { code: 'fr', name: 'Français', flag: '🇫🇷' },
@@ -14,11 +17,11 @@ export const LANGUAGES: { code: LanguageCode; name: string; flag: string }[] = [
   { code: 'ar', name: 'العربية', flag: '🇸🇦' },
 ];
 
-export const DEFAULT_LANG: LanguageCode = 'en';
-
-const TRANSLATIONS: Partial<Record<LanguageCode, Record<string, string>>> = {
+// 2. 将你之前的 TRANSLATIONS 对象放入 resources
+const resources = {
   en: {
-    // Nav
+    translation: {
+      // Nav
     'nav.home': 'Home', 
     'nav.about': 'About Us', 
     'nav.products': 'Products', 
@@ -126,24 +129,34 @@ const TRANSLATIONS: Partial<Record<LanguageCode, Record<string, string>>> = {
     'blog.b1.title': 'Defining "Skill": The Legal Distinction', 'blog.b1.excerpt': 'How Nudge and Shooting mechanics separate amusement devices from prohibited gambling machines.',
     'blog.b2.title': 'Maintenance Guide: Reducing Downtime', 'blog.b2.excerpt': 'Factory tips for keeping your bill acceptors and touchscreens in peak condition.',
     'blog.b3.title': 'The Psychology of Replay', 'blog.b3.excerpt': 'Why players prefer games where their actions directly control the outcome.',
+    }
   },
   es: {
-    'nav.home': 'Inicio', 
+    translation: {'nav.home': 'Inicio', 
     'nav.solutions': 'Soluciones',
     'sol.page.title': 'Soluciones Comerciales',
     'tank.pain.title': 'El Desafío',
     'tank.stats.title': 'Impacto de Mercado',
     'tank.compare.title': 'Por qué Ganamos',
     // ... basic mapping
-  },
+    }
+  }
+  // 其他 8 种语言后期可以慢慢补充，i18next 会在缺失时自动退回到英文
 };
 
-export function t(lang: LanguageCode, key: string): string {
-  const enDict = TRANSLATIONS['en'] || {};
-  const dict = TRANSLATIONS[lang] || enDict;
-  return dict[key] || enDict[key] || key;
-}
+i18n
+  .use(LanguageDetector)
+  .use(initReactI18next)
+  .init({
+    resources,
+    fallbackLng: 'en',
+    detection: {
+      order: ['path', 'cookie', 'htmlTag'],
+      lookupFromPathIndex: 0 // 核心：从 URL 的第一个位置读取语言，如 /en/products
+    },
+    interpolation: {
+      escapeValue: false
+    }
+  });
 
-export function isLanguageCode(code: string): code is LanguageCode {
-  return LANGUAGES.some(l => l.code === code);
-}
+export default i18n;
