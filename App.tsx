@@ -1,34 +1,37 @@
 import React from 'react';
-import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async'; // ✅ 引入 SEO 管理器
+import './utils/i18n'; // ✅ 初始化多语言引擎
+
 import Layout from './components/Layout';
 import Home from './pages/Home';
 import About from './pages/About';
 import Products from './pages/Products';
-import ProductDetail from './pages/ProductDetail'; // 确保引入了
+import ProductDetail from './pages/ProductDetail'; 
 import Solutions from './pages/Solutions';
 import SolutionDetail from './pages/SolutionDetail';
 import Blog from './pages/Blog';
 import BlogDetail from './pages/BlogDetail';
 import Contact from './pages/Contact';
-import { DEFAULT_LANG } from './utils/i18n';
 
 const App: React.FC = () => {
   return (
-    <HashRouter>
-      <Layout>
+    <HelmetProvider> {/* ✅ 必须包裹在最外层以支持动态 SEO 标签 */}
+      <BrowserRouter> {/* ✅ 核心修改：移除 # 井号的关键 */}
         <Routes>
-          {/* Root redirect to default language */}
-          <Route path="/" element={<Navigate to={`/${DEFAULT_LANG}`} replace />} />
+          {/* 1. 根目录自动重定向到默认语言英文版 /en */}
+          <Route path="/" element={<Navigate to="/en" replace />} />
           
-          {/* Language Parameter Routes */}
-          <Route path="/:lang">
+          {/* 2. 多语言主路由结构 */}
+          {/* ✅ 注意：Layout 现在作为 element 传递，页面组件作为子路由嵌套在其中 */}
+          <Route path="/:lang" element={<Layout children={undefined} />}>
             <Route index element={<Home />} />
             <Route path="about" element={<About />} />
             
-            {/* 产品列表页 */}
+            {/* 产品列表坦克页 */}
             <Route path="products" element={<Products />} />
-            {/* 产品详情页 (新增) */}
-            <Route path="products/:id" element={<ProductDetail />} />
+            {/* 产品详情坦克页：使用 /product/:id 结构更利于搜索引擎识别 */}
+            <Route path="product/:id" element={<ProductDetail />} />
             
             <Route path="solutions" element={<Solutions />} />
             <Route path="solutions/:slug" element={<SolutionDetail />} />
@@ -37,11 +40,11 @@ const App: React.FC = () => {
             <Route path="contact" element={<Contact />} />
           </Route>
 
-          {/* Fallback route */}
-          <Route path="*" element={<Navigate to={`/${DEFAULT_LANG}`} replace />} />
+          {/* 3. 错误路径回退 */}
+          <Route path="*" element={<Navigate to="/en" replace />} />
         </Routes>
-      </Layout>
-    </HashRouter>
+      </BrowserRouter>
+    </HelmetProvider>
   );
 };
 

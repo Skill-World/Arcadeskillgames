@@ -1,9 +1,10 @@
-
-import React, { useState } from 'react';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, useLocation, useNavigate, useParams } from 'react-router-dom';
 import { Menu, X, Gamepad2, Phone, Mail, MapPin, Globe, ChevronDown } from 'lucide-react';
+import { useTranslation } from 'react-i18next'; // ✅ 引入标准钩子
 import { PageRoute } from '../types';
-import { LANGUAGES, t, DEFAULT_LANG, isLanguageCode } from '../utils/i18n';
+import { LANGUAGES } from '../utils/i18n'; // ✅ 只引入语言列表定义
+import { SEO } from './SEO'; // ✅ 引入我们之前写的 SEO 坦克组件
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -12,45 +13,61 @@ interface LayoutProps {
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isProductDropdownOpen, setIsProductDropdownOpen] = useState(false);
+  
+  const { t, i18n } = useTranslation(); // ✅ 使用标准的 t 和 i18n
+  const { lang } = useParams(); // ✅ 直接从 URL 获取语言参数 (:lang)
   const location = useLocation();
   const navigate = useNavigate();
-  
-  const pathLang = location.pathname.split('/')[1];
-  const currentLang = isLanguageCode(pathLang) ? pathLang : DEFAULT_LANG;
 
-  // Helper to generate localized paths
-  const getPath = (route: string) => `/${currentLang}${route === '/' ? '' : route}`;
+  // ✅ 核心逻辑：当 URL 中的语言变化时，自动切换翻译引擎语言
+  useEffect(() => {
+    if (lang && i18n.language !== lang) {
+      i18n.changeLanguage(lang);
+    }
+  }, [lang, i18n]);
 
-  // Product Sub-Categories for Dropdown
+  // ✅ 生成带语言前缀的路径辅助函数
+  const getPath = (route: string) => `/${lang}${route === '/' ? '' : route}`;
+
+  // 游戏产品分类 (从 i18n 获取翻译)
   const productCategories = [
-    { name: t(currentLang, 'nav.cat.machines'), id: 'skill_based_game_board' },
-    { name: t(currentLang, 'nav.cat.cabinets'), id: 'cabinet_only' },
-    { name: t(currentLang, 'nav.cat.boards'), id: 'game_board' },
+    { name: t('nav.cat.machines'), id: 'skill_based_game_board' },
+    { name: t('nav.cat.cabinets'), id: 'cabinet_only' },
+    { name: t('nav.cat.boards'), id: 'game_board' },
   ];
 
+  // ✅ 语言切换处理：保持在当前路径，仅更换语言前缀
   const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const newLang = e.target.value;
-    const pathParts = location.pathname.split('/');
-    pathParts[1] = newLang;
-    navigate(pathParts.join('/'));
+    const currentPathWithoutLang = location.pathname.replace(`/${lang}`, '');
+    navigate(`/${newLang}${currentPathWithoutLang}${location.search}`);
   };
 
   const isActive = (path: string) => {
     const fullPath = getPath(path);
     if (path === PageRoute.HOME) {
-      return location.pathname === `/${currentLang}` || location.pathname === `/${currentLang}/`;
+      return location.pathname === `/${lang}` || location.pathname === `/${lang}/`;
     }
     return location.pathname.startsWith(fullPath);
   }
 
   return (
     <div className="flex flex-col min-h-screen bg-brand-900 text-slate-100 font-sans">
+      {/* ✅ 全局 SEO 默认设置 (Tank Page 逻辑) */}
+      <SEO 
+        title={t('hero.title')} 
+        description={t('hero.subtitle')} 
+        keywords="Skill-Based Game Board, Nudge Game Board, Redemption Game PCB" 
+        lang={lang || 'en'} 
+        path={location.pathname.replace(`/${lang}/`, '')} 
+      />
+
       {/* Navigation */}
       <nav className="sticky top-0 z-50 bg-brand-900/95 backdrop-blur-md border-b border-slate-800 shadow-lg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-20 items-center">
             {/* Logo */}
-            <Link to={`/${currentLang}`} className="flex items-center gap-2 group">
+            <Link to={`/${lang}`} className="flex items-center gap-2 group">
               <div className="p-2 bg-brand-500 rounded-lg group-hover:neon-glow transition-all duration-300">
                 <Gamepad2 className="h-8 w-8 text-white" />
               </div>
@@ -66,14 +83,14 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                   to={getPath(PageRoute.HOME)}
                   className={`text-sm font-medium transition-colors duration-200 hover:text-brand-400 ${isActive(PageRoute.HOME) ? 'text-brand-400' : 'text-slate-300'}`}
               >
-                  {t(currentLang, 'nav.home')}
+                  {t('nav.home')}
               </Link>
 
               <Link
                   to={getPath(PageRoute.ABOUT)}
                   className={`text-sm font-medium transition-colors duration-200 hover:text-brand-400 ${isActive(PageRoute.ABOUT) ? 'text-brand-400' : 'text-slate-300'}`}
               >
-                  {t(currentLang, 'nav.about')}
+                  {t('nav.about')}
               </Link>
 
               {/* Products Dropdown */}
@@ -85,7 +102,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                 <button 
                   className={`flex items-center text-sm font-medium transition-colors duration-200 hover:text-brand-400 ${isActive(PageRoute.PRODUCTS) ? 'text-brand-400' : 'text-slate-300'}`}
                 >
-                  {t(currentLang, 'nav.products')} <ChevronDown className="ml-1 h-4 w-4" />
+                  {t('nav.products')} <ChevronDown className="ml-1 h-4 w-4" />
                 </button>
                 
                 {isProductDropdownOpen && (
@@ -95,7 +112,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                         to={getPath(PageRoute.PRODUCTS)} 
                         className="block px-4 py-3 text-sm text-slate-300 hover:bg-brand-700 hover:text-white border-b border-slate-700/50"
                       >
-                        All Products
+                        {t('nav.products')}
                       </Link>
                       {productCategories.map((cat) => (
                         <Link
@@ -115,27 +132,27 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                   to={getPath(PageRoute.SOLUTIONS)}
                   className={`text-sm font-medium transition-colors duration-200 hover:text-brand-400 ${isActive(PageRoute.SOLUTIONS) ? 'text-brand-400' : 'text-slate-300'}`}
               >
-                  {t(currentLang, 'nav.solutions')}
+                  {t('nav.solutions')}
               </Link>
               <Link
                   to={getPath(PageRoute.BLOG)}
                   className={`text-sm font-medium transition-colors duration-200 hover:text-brand-400 ${isActive(PageRoute.BLOG) ? 'text-brand-400' : 'text-slate-300'}`}
               >
-                  {t(currentLang, 'nav.blog')}
+                  {t('nav.blog')}
               </Link>
 
               <Link
                   to={getPath(PageRoute.CONTACT)}
                   className={`text-sm font-medium transition-colors duration-200 hover:text-brand-400 ${isActive(PageRoute.CONTACT) ? 'text-brand-400' : 'text-slate-300'}`}
               >
-                  {t(currentLang, 'nav.contact')}
+                  {t('nav.contact')}
               </Link>
               
               {/* Language Switcher */}
               <div className="relative flex items-center bg-brand-800 rounded-md px-2 py-1 border border-slate-700">
                 <Globe className="h-4 w-4 text-slate-400 mr-2" />
                 <select 
-                  value={currentLang}
+                  value={lang}
                   onChange={handleLanguageChange}
                   className="bg-transparent text-sm text-slate-300 focus:outline-none cursor-pointer appearance-none pr-4"
                   style={{ backgroundImage: 'none' }}
@@ -152,14 +169,14 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                 to={getPath(PageRoute.CONTACT)}
                 className="bg-brand-500 hover:bg-brand-600 text-white px-5 py-2.5 rounded-full font-semibold transition-all shadow-lg hover:shadow-brand-500/25"
               >
-                Get Quote
+                {t('tank.cta.sticky')}
               </Link>
             </div>
 
             {/* Mobile Menu Button */}
             <div className="md:hidden flex items-center gap-4">
               <select 
-                  value={currentLang}
+                  value={lang}
                   onChange={handleLanguageChange}
                   className="bg-brand-800 text-white text-xs p-1 rounded border border-slate-700"
                 >
@@ -187,13 +204,13 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                   onClick={() => setIsMobileMenuOpen(false)}
                   className="block px-3 py-3 rounded-md text-base font-medium text-slate-300 hover:bg-brand-700 hover:text-white"
                 >
-                  {t(currentLang, 'nav.home')}
+                  {t('nav.home')}
                 </Link>
                 
                 {/* Mobile Products Sub-menu */}
                 <div className="space-y-1 bg-brand-900/50 rounded-lg p-2">
                   <div className="px-3 py-2 text-brand-400 font-bold uppercase text-xs tracking-wider border-b border-slate-700 mb-2">
-                     {t(currentLang, 'nav.products')}
+                     {t('nav.products')}
                   </div>
                   {productCategories.map((cat) => (
                     <Link
@@ -212,28 +229,28 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                   onClick={() => setIsMobileMenuOpen(false)}
                   className="block px-3 py-3 rounded-md text-base font-medium text-slate-300 hover:bg-brand-700 hover:text-white"
                 >
-                  {t(currentLang, 'nav.about')}
+                  {t('nav.about')}
                 </Link>
                 <Link
                   to={getPath(PageRoute.SOLUTIONS)}
                   onClick={() => setIsMobileMenuOpen(false)}
                   className="block px-3 py-3 rounded-md text-base font-medium text-slate-300 hover:bg-brand-700 hover:text-white"
                 >
-                  {t(currentLang, 'nav.solutions')}
+                  {t('nav.solutions')}
                 </Link>
                 <Link
                   to={getPath(PageRoute.BLOG)}
                   onClick={() => setIsMobileMenuOpen(false)}
                   className="block px-3 py-3 rounded-md text-base font-medium text-slate-300 hover:bg-brand-700 hover:text-white"
                 >
-                  {t(currentLang, 'nav.blog')}
+                  {t('nav.blog')}
                 </Link>
                 <Link
                   to={getPath(PageRoute.CONTACT)}
                   onClick={() => setIsMobileMenuOpen(false)}
                   className="block px-3 py-3 rounded-md text-base font-medium text-brand-400 font-bold"
                 >
-                  {t(currentLang, 'nav.contact')}
+                  {t('nav.contact')}
                 </Link>
             </div>
           </div>
@@ -255,12 +272,12 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                 <span className="text-lg font-bold text-white">Arcade Skill Games</span>
               </div>
               <p className="text-slate-400 text-sm leading-relaxed">
-                Leading provider of skill-based gaming solutions. Helping businesses maximize square-footage ROI since 1995.
+                {t('hero.subtitle')}
               </p>
             </div>
 
             <div>
-              <h3 className="text-white font-semibold mb-4 uppercase tracking-wider text-sm">{t(currentLang, 'nav.products')}</h3>
+              <h3 className="text-white font-semibold mb-4 uppercase tracking-wider text-sm">{t('nav.products')}</h3>
               <ul className="space-y-2 text-sm text-slate-400">
                 {productCategories.map((cat) => (
                    <li key={cat.id}>
@@ -271,7 +288,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             </div>
             
              <div>
-              <h3 className="text-white font-semibold mb-4 uppercase tracking-wider text-sm">{t(currentLang, 'nav.contact')}</h3>
+              <h3 className="text-white font-semibold mb-4 uppercase tracking-wider text-sm">{t('nav.contact')}</h3>
               <ul className="space-y-3 text-sm text-slate-400">
                 <li className="flex items-center gap-2"><MapPin className="h-4 w-4 text-brand-500" /> 123 Gaming Blvd, Las Vegas, NV</li>
                 <li className="flex items-center gap-2"><Phone className="h-4 w-4 text-brand-500" /> +1 (800) 555-0199</li>
