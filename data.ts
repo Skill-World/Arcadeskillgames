@@ -1486,6 +1486,1447 @@ export const getProducts = (lang: LanguageCode): Product[] => [
       ]
     }
   }
+},
+{
+  id: 'fish-game-board-airstrike-2-elite',
+  name: 'Air Strike 2 Elite Fish Table Game Kit (4K UHD)',
+  category: 'game_board',
+  description: 'A high-octane aircraft-themed skill gaming software kit. Featuring native 4K 3D aerial combat, 30-level difficulty adjustment, and stable 36/10 pin hardware for professional routes.',
+  imageUrl: '/images/airstrike-2-board.jpg', // 请在 public/images/ 放入对应的图片
+  features: ['3D Aerial Combat Theme', 'Native 4K UHD 60FPS Graphics', 'Anti-Tamper PCB Technology', 'SAS Protocol Accounting Ready'],
+  
+  tankPage: {
+    headline: 'Dominate the Sky, Maximize Your Hold: Air Strike 2 Elite',
+    subHeadline: 'Ditch the repetitive marine themes. Upgrade to the most immersive aerial skill-shooting software and watch your location revenue soar.',
+    
+    // ✅ 1. 痛点分析
+    painPoints: [
+      { 
+        icon: 'Zap', 
+        title: 'Player Boredom & Content Fatigue', 
+        description: 'Traditional marine fish games have become oversaturated, leading to shorter play sessions. Air Strike 2 offers a high-impact aerial combat alternative that attracts new demographics and keeps regulars engaged with fresh 3D mechanics and intense boss battles.' 
+      },
+      { 
+        icon: 'ShieldAlert', 
+        title: 'Technical Glitches & Unstable Math', 
+        description: 'Cheap unbranded boards often suffer from memory crashes or unpredictable hold percentages. Our Elite Kit uses industrial-grade processors and refined math models to ensure 99.9% uptime and consistent location profitability you can rely on month after month.' 
+      },
+      { 
+        icon: 'Monitor', 
+        title: 'Poor Visual Appeal on 4K Cabinets', 
+        description: 'Running 1080P software on a modern 4K screen results in blurry, pixelated graphics that turn away high-value players. Air Strike 2 supports native 3840x2160 UHD output, delivering a cinematic experience that utilizes your hardware to its full potential.' 
+      }
+    ],
+
+    // ✅ 2. 详细参数
+    technicalSpecs: [
+      { label: 'Display Resolution', value: 'Native 4K UHD (3840 x 2160) @ 60FPS' },
+      { label: 'Mainboard Processor', value: 'High-Speed Dual-Core Industrial GPU' },
+      { label: 'Interface Protocol', value: 'Standard 36/10 Pin + 12V Pulse Support' },
+      { label: 'Player Capacity', value: 'Configurable for 4, 6, 8, or 10 Stations' },
+      { label: 'Accounting System', value: 'SAS & SAS-Link Ready for Route Management' },
+      { label: 'Hardware Security', value: 'Non-Volatile Memory with Encryption Key' }
+    ],
+
+    // ✅ 3. 竞品对比
+    comparison: {
+      competitorLabel: 'Standard Marine Fish Boards',
+      rows: [
+        { feature: 'Visual Theme', us: '3D Aerial Combat (Unique)', them: '2D/3D Underwater (Common)' },
+        { feature: 'Graphics Quality', us: 'Native 4K UHD', them: '1080P Stretched' },
+        { feature: 'Revenue Stability', us: 'SAS Ready / 30-Level Adjust', them: 'Limited / Fixed Math' }
+      ]
+    },
+
+    // ✅ 4. 买家指南 (互动：点击发送 PDF)
+    buyerGuide: [
+      { 
+        title: 'Pre-Installation Checklist', 
+        content: 'Ensure your cabinet power supply is rated at least 450W. For best results, use an HDMI 2.0 cable to connect your 4K monitor. Enter your email to download our "Quick-Start Installation PDF".' 
+      },
+      { 
+        title: 'Difficulty Calibration', 
+        content: 'We recommend starting with Level 15 for new routes. Adjust the skill window based on your weekly hold reports. Our technical team offers free consulting on math settings for wholesale partners.' 
+      }
+    ],
+
+    // ✅ 5. 成功案例
+    caseStudy: {
+      title: 'Texas Route Revitalized (+38%)',
+      content: '"We replaced aging marine boards with Air Strike 2 kits. Not only did our regular players stay 25 minutes longer per session, but we attracted a whole new crowd who loved the 3D aircraft effects. ROI was hit in under 3 weeks."',
+      author: 'A. Garcia, Route Distributor'
+    },
+
+    // ✅ 6. 常见问题 (FAQ - 6 entries)
+    faqs: [
+      { question: 'Does it support bill acceptors from ICT or Pyramid?', answer: 'Yes, it is fully compatible with all major 12V pulse acceptors via the industry-standard 36/10 pin harness.' },
+      { question: 'Can I change the player count without buying new boards?', answer: 'Yes, the software is dynamically configurable for 4, 6, 8, or 10 stations through the operator setup menu.' },
+      { question: 'Is the game board compatible with vertical screen cabinets?', answer: 'Yes, you can toggle between horizontal and vertical screen orientations instantly in the settings.' },
+      { question: 'What happens if there is a power surge?', answer: 'The board features an on-board non-volatile memory chip that saves all credits and game states instantly to prevent revenue loss.' },
+      { question: 'Is there a warranty?', answer: 'We offer a comprehensive 12-month factory replacement warranty on all PCB hardware and software keys.' },
+      { question: 'How do you handle software updates?', answer: 'Updates and new title expansions can be deployed via encrypted SD card or specialized firmware keys provided by our factory.' }
+    ],
+
+    // ✅ 7. SEO 与交互配置
+    ctaText: 'Get Wholesale Quote Today',
+    pdfUrl: '/downloads/airstrike-2-specs-guide.pdf',
+    
+    seo: {
+      metaTitle: 'Air Strike 2 Fish Game Board | High-Retention Skill Game Kit',
+      metaDescription: 'Boost your route revenue with the Air Strike 2 fish game board. Features 4K aerial combat graphics, 36/10 pin compatibility, and stable skill-based math. Wholesale pricing.',
+      keywords: [
+        'Air Strike 2 Game Board',
+        'Fish Table Game Kit',
+        'Multiplayer Skill Game Software',
+        'Fish Shooting Game PCB Wholesale'
+      ]
+    }
+  }
+},
+{
+  id: 'fish-game-board-crab-king-2-elite',
+  name: 'Crab King 2 Elite Skill Fish Table Game Kit (4K UHD)',
+  category: 'game_board',
+  description: 'The industry-standard skill gaming kit. Featuring iconic 3D boss battles, native 4K graphics, a 30-level skill window adjustment, and industrial-grade 36/10 pin hardware for maximum route stability.',
+  imageUrl: '/images/crab-king-2-board.jpg', // 请在 public/images/ 放入对应的图片
+  features: ['Iconic 3D Boss Mechanics', 'Native 4K UHD 60FPS Graphics', '30-Level Skill Calibration Logic', 'Universal 36/10 Pin Compatibility'],
+  
+  tankPage: {
+    headline: 'Dominate Your Route with the Legendary Crab King 2 Elite',
+    subHeadline: 'Ditch the generic clones. Upgrade to the most stable, high-retention skill shooting software and see up to 35% revenue growth per location.',
+    
+    // ✅ 1. 痛点分析
+    painPoints: [
+      { 
+        icon: 'Zap', 
+        title: 'Hardware Instability & Downtime', 
+        description: 'Unbranded game boards often suffer from memory crashes and thermal throttling, leading to expensive field service calls. Our CK2-Elite utilizes industrial-grade solid-state capacitors and non-volatile memory to ensure 99.9% uptime and zero data loss during power surges.' 
+      },
+      { 
+        icon: 'Users', 
+        title: 'Rapid Player Boredom', 
+        description: 'Predictable math models cause regular players to lose interest quickly. Crab King 2 features an innovative "Chain Reaction" weapon system and high-stakes boss battles that keep the social environment fresh and intense, driving significantly longer play sessions.' 
+      },
+      { 
+        icon: 'ShieldAlert', 
+        title: 'Compliance & Logic Rigidity', 
+        description: 'Fixed difficulty settings can alienate players or ruin your hold percentage. Our software features a refined 30-level skill window adjustment system, allowing you to perfectly calibrate the hand-eye coordination challenge to meet your specific local regulatory needs.' 
+      }
+    ],
+
+    // ✅ 2. 详细参数
+    technicalSpecs: [
+      { label: 'Display Resolution', value: 'Native 4K UHD (3840 x 2160) @ 60FPS' },
+      { label: 'Mainboard Architecture', value: 'High-Performance Dual-Layer Industrial GPU' },
+      { label: 'Interface Protocol', value: 'Standard 36/10 Pin + SAS 6.0 Accounting' },
+      { label: 'Boss Characters', value: 'Golden Crab, Drill Crab, Missile Crab, etc.' },
+      { label: 'Player Capacity', value: 'Configurable for 4, 6, 8, or 10 Stations' },
+      { label: 'Storage Technology', value: 'Non-Volatile F-RAM (Instant Data Recovery)' }
+    ],
+
+    // ✅ 3. 竞品对比
+    comparison: {
+      competitorLabel: 'Standard Clone Boards',
+      rows: [
+        { feature: 'Visual Quality', us: 'Native 4K UHD 3D', them: 'Upscaled 1080P 2D' },
+        { feature: 'Uptime Reliability', us: '99.9% (Industrial Build)', them: 'Frequent Memory Crashes' },
+        { feature: 'Revenue Tracking', us: 'Full SAS 6.0 Support', them: 'Analog Meters Only' }
+      ]
+    },
+
+    // ✅ 4. 买家指南 (互动：点击发送 PDF)
+    buyerGuide: [
+      { 
+        title: 'Retrofit & Power Prep', 
+        content: 'Upgrading your cabinet is straightforward. Ensure your power supply is rated at least 450W and that you are using high-quality micro-switch joysticks for maximum player accuracy. Enter your email below to receive our "CK2 Master Installation & Retrofit PDF" instantly.' 
+      },
+      { 
+        title: 'Calibrating for ROI', 
+        content: 'We recommend starting at Level 15 for new routes to build player Confidence. Our technical team offers free consulting on skill-window optimization for all wholesale partners to ensure peak profitability from day one.' 
+      }
+    ],
+
+    // ✅ 5. 成功案例
+    caseStudy: {
+      title: 'North Carolina Route Revitalized (+35%)',
+      content: '"After swapping out our aging fish boards for the Crab King 2 Elite kits, our weekly hold jumped by 35%. The visual quality and social energy of the boss battles kept our regulars engaged 25 minutes longer per session. ROI was achieved in under 3 weeks."',
+      author: 'Master Route Operator, NC Hub'
+    },
+
+    // ✅ 6. 常见问题 (FAQ - 6 entries)
+    faqs: [
+      { question: 'Is the kit compatible with ICT and Pyramid bill acceptors?', answer: 'Yes, the PCB is designed with a universal 12V pulse protocol. The included wiring harness features pre-labeled drops that allow for a plug-and-play connection to all major bill validator brands, ensuring zero-configuration setup for your technicians.' },
+      { question: 'Can I switch between 6, 8, and 10 player configurations?', answer: 'Absolutely. The Crab King 2 software is dynamically configurable through the internal operator menu. This allows you to move the kit between different cabinet sizes, from compact desks to massive tables, without needing a software re-flash.' },
+      { question: 'How does the Skill Window adjustment ensure compliance?', answer: 'The board features a password-protected setup menu where you can adjust the hit-sensitivity and reflex-timing across 30 distinct levels. This allows you to fine-tune the game mechanics to ensure the skill element predominates, meeting various local legal requirements.' },
+      { question: 'What happens to player credits if the location suffers a power outage?', answer: 'Every kit is equipped with non-volatile F-RAM memory. This technology saves all active credits, game progress, and operator history instantly. When power is restored, the game resumes exactly where it left off, preventing player disputes and revenue loss.' },
+      { question: 'Does the 4K output require specialized cables?', answer: 'While CK2 supports native 4K, it includes an industrial scaler for 1080P compatibility. However, to maximize player attraction, we recommend using a 4K IPS monitor and a certified HDMI 2.0 cable to deliver fluid combat animations without flickering.' },
+      { question: 'Is there an option to sync machine LED lighting with gameplay?', answer: 'Yes, the kit includes an addressable RGB control header. When connected to compatible LED strips, the cabinet lighting will flash or change colors based on wins and attract modes, creating an immersive environment that draws players from across the venue.' }
+    ],
+
+    // ✅ 7. SEO 与交互配置
+    ctaText: 'Get Wholesale Quote Today',
+    pdfUrl: '/downloads/crab-king-2-elite-specs.pdf',
+    
+    seo: {
+      metaTitle: 'Crab King 2 Fish Game Board | Skill Based Fish Shooting Game Kit',
+      metaDescription: 'Boost your route revenue with the Crab King 2 fish game board. Features 4K UHD graphics, 30-level skill settings, and SAS 6.0 accounting for route operators. Wholesale pricing.',
+      keywords: [
+        'Crab King 2 Game Board',
+        'Skill Based Fish Game Kit',
+        'Multiplayer Fish Shooting Software',
+        'Fish Table Game Board Wholesale'
+      ]
+    }
+  }
+},
+  
+{
+  id: 'fish-game-board-airstrike-3-elite',
+  name: 'Air Strike 3 Ultimate 3D Skill Game Kit (4K Pro)',
+  category: 'game_board',
+  description: 'The pinnacle of aerial skill shooting software. Featuring native 4K 3D graphics, a proprietary 30-level skill window adjustment, and industrial-grade 36/10 pin hardware for elite route operators.',
+  imageUrl: '/images/airstrike-3-board.jpg', // 请在 public/images/ 放入对应的图片
+  features: ['Cinematic 4K 3D Aerial Combat', 'Proprietary Skill-Window Logic', 'SAS 6.0 Accounting Ready', 'Universal 36/10 Pin Compatibility'],
+  
+  tankPage: {
+    headline: 'Air Strike 3: Command the Sky, Conquer Your Route',
+    subHeadline: 'Ditch the marine themes. Upgrade to the most immersive 3D skill shooter ever made and experience up to 40% revenue growth per location.',
+    
+    // ✅ 1. 痛点分析
+    painPoints: [
+      { 
+        icon: 'Zap', 
+        title: 'High Technical Failure Rates', 
+        description: 'Cheaper, unbranded PCBs often suffer from memory crashes and thermal throttling, leading to costly field service calls and frustrated players. Air Strike 3 uses industrial-grade graphics processors and non-volatile F-RAM to ensure 99.9% uptime and zero data loss during power surges.' 
+      },
+      { 
+        icon: 'Users', 
+        title: 'Declining Player Dwell Time', 
+        description: 'Players have become bored with repetitive 2D fish games, leading to shorter sessions and lower collections. AS3 introduces a cinematic 4K aerial combat experience with intense 3D BOSS battles that attract a younger demographic and keep regulars engaged for much longer periods.' 
+      },
+      { 
+        icon: 'ShieldAlert', 
+        title: 'Compliance & Logic Rigidity', 
+        description: 'Fixed difficulty settings can either alienate players or ruin your hold percentage. Our Model AS3-Pro features a refined 30-level skill window adjustment system, allowing you to perfectly calibrate the hand-eye coordination challenge to meet your specific local regulatory and market needs.' 
+      }
+    ],
+
+    // ✅ 2. 详细参数
+    technicalSpecs: [
+      { label: 'Graphic Processor', value: 'High-Performance Octa-Core Industrial GPU' },
+      { label: 'Output Resolution', value: 'Native 4K UHD (3840 x 2160) @ 60/120Hz' },
+      { label: 'Interface Support', value: 'Gold-Plated Standard 36/10 Pin + SAS 6.0' },
+      { label: 'Storage Tech', value: 'Non-Volatile F-RAM (Instant Game Recovery)' },
+      { label: 'Audio Engine', value: 'Integrated 2.1 Channel Stereo with Bass Support' },
+      { label: 'Configurability', value: 'Dynamic Software Toggle for 4, 6, 8, or 10 Stations' }
+    ],
+
+    // ✅ 3. 竞品对比
+    comparison: {
+      competitorLabel: 'Standard 2D Marine Fish Boards',
+      rows: [
+        { feature: 'Visual Dimension', us: '3D High-Octane Combat', them: '2D/3D Underwater (Legacy)' },
+        { feature: 'Resolution', us: 'Native 4K Pro assets', them: 'Upscaled 1080P' },
+        { feature: 'Data Security', us: 'SAS 6.0 + Encrypted Keys', them: 'Limited / No Accounting' }
+      ]
+    },
+{
+  id: 'fish-game-board-crab-king-3-ultra',
+  name: 'Crab King 3 Ultimate 3D Skill Game Kit (4K Ultra)',
+  category: 'game_board',
+  description: 'The definitive sequel in skill gaming excellence. Featuring native 4K UHD graphics, advanced 3D weapon systems, 30-level skill adjustment, and SAS 6.0 compatibility for professional route management.',
+  imageUrl: '/images/crab-king-3-board.jpg', // 请在 public/images/ 放入对应的图片
+  features: ['Native 4K UHD @ 60FPS', 'Advanced 3D Boss Mechanics', '30-Level Skill-Sync Logic', 'SAS 6.0 & SAS-Link Ready'],
+  
+  tankPage: {
+    headline: 'Crab King 3: Dominate Your Venue with 4K Visual Power',
+    subHeadline: 'Ditch the clones. Upgrade to the most immersive 3D skill shooter ever made and experience up to 42% revenue growth per location.',
+    
+    // ✅ 1. 痛点分析
+    painPoints: [
+      { 
+        icon: 'Zap', 
+        title: 'Technical Failure & Revenue Loss', 
+        description: 'Unbranded game boards often suffer from memory crashes and thermal instability, leading to expensive field service calls. Crab King 3 uses industrial-grade GPU processors and non-volatile F-RAM to ensure 99.9% uptime and zero data loss during power surges or outages.' 
+      },
+      { 
+        icon: 'Users', 
+        title: 'Player Boredom & Content Churn', 
+        description: 'Players have become tired of repetitive 2D themes, leading to shorter sessions. CK3 introduces a cinematic 4K environment with intense 3D BOSS battles that attract a younger demographic and keep regulars engaged for much longer periods through superior immersion.' 
+      },
+      { 
+        icon: 'ShieldAlert', 
+        title: 'Inflexible Compliance Logic', 
+        description: 'Fixed difficulty settings can either alienate players or ruin your hold. Our Model CK3-Ultra features a refined 30-level skill window adjustment system, allowing you to perfectly calibrate the hand-eye coordination challenge to meet your specific local regulatory needs.' 
+      }
+    ],
+
+    // ✅ 2. 详细参数
+    technicalSpecs: [
+      { label: 'Graphic Processor', value: 'High-Performance Octa-Core Industrial GPU' },
+      { label: 'Output Resolution', value: 'Native 4K UHD (3840 x 2160) @ 60FPS' },
+      { label: 'Interface Protocol', value: 'Standard 36/10 Pin + SAS 6.0 Accounting' },
+      { label: 'Storage Technology', value: 'Non-Volatile F-RAM (Instant Game Recovery)' },
+      { label: 'Audio Engine', value: 'Integrated 2.1 Channel Stereo with Bass Support' },
+      { label: 'Configurability', value: 'Dynamic Software Toggle for 4, 6, 8, or 10 Stations' }
+    ],
+
+    // ✅ 3. 竞品对比
+    comparison: {
+      competitorLabel: 'Standard 2D Marine Fish Boards',
+      rows: [
+        { feature: 'Visual Real Estate', us: 'Native 4K 3D Assets', them: '1080P Stretched/Upscaled' },
+        { feature: 'Revenue Stability', us: 'SAS Ready + 30-Level Adjust', them: 'Analog Only / Fixed Math' },
+        { feature: 'Player Attraction', us: 'Elite Weapons + Boss System', them: 'Basic Shooting Mechanics' }
+      ]
+    },
+
+    // ✅ 4. 买家指南 (互动：点击发送 PDF)
+    buyerGuide: [
+      { 
+        title: 'Installation & Compatibility', 
+        content: 'Upgrading your existing cabinet is straightforward. Ensure your power supply is rated at least 450W and check your HDMI 2.0 cables. Enter your email to download our "CK3 Master Retrofit Manual" PDF instantly.' 
+      },
+      { 
+        title: 'Revenue Optimization', 
+        content: 'We recommend starting at Level 18 for new routes. Our technical support team provides free consultations on math setting optimization for all B2B wholesale partners to maximize location hold.' 
+      }
+    ],
+
+    // ✅ 5. 成功案例
+    caseStudy: {
+      title: 'Pennsylvania Route Revenue Up 42%',
+      content: '"By swapping our aging fish boards for the Crab King 3 Ultra kits, we saw an immediate 42% jump in weekly hold. The visual quality and new boss modes attracted a completely new crowd. ROI was hit in 14 days."',
+      author: 'Master Route Operator, PA Hub'
+    },
+
+    // ✅ 6. 常见问题 (FAQ - 6 entries)
+    faqs: [
+      { question: 'Is the kit compatible with ICT PA7 bill acceptors?', answer: 'Yes, the CK3 PCB is designed with a universal 12V pulse protocol. The included wiring harness features pre-labeled drops that allow for a plug-and-play connection to all major bill validator brands, ensuring zero-configuration setup for your technicians during location installs.' },
+      { question: 'Can we switch between 4, 8, and 10 player configurations?', answer: 'Absolutely. The Crab King 3 software is dynamically configurable through the internal operator menu. This allows you to move the kit between different cabinet sizes, from compact 4-player desks to massive 10-player tables, without needing a software re-flash or hardware modification.' },
+      { question: 'How does the Skill Window adjustment ensure compliance?', answer: 'The board features a password-protected setup menu where you can adjust the hit-sensitivity and reflex-timing across 30 distinct levels. This allows you to fine-tune the game mechanics to ensure the skill element predominates, meeting various local legal requirements while maintaining a stable hold.' },
+      { question: 'What happens to player credits if the location suffers a sudden power outage?', answer: 'Every Crab King 3 board is equipped with non-volatile F-RAM memory. This technology saves all active credits, game progress, and operator history instantly. When power is restored, the game resumes exactly where it left off, preventing player disputes and securing your venue\'s integrity.' },
+      { question: 'Does the 4K output require specialized cables or high-end industrial monitors?', answer: 'While CK3 supports native 4K, it includes an industrial scaler for 1080P compatibility. However, to maximize player attraction, we recommend using a 4K IPS monitor and a certified HDMI 2.0 cable to deliver the fluid 60FPS boss animations without flickering or signal loss.' },
+      { question: 'Is there an option to sync machine external LED lighting with the gameplay?', answer: 'Yes, the kit includes an addressable RGB control header. When connected to compatible machine lighting, the cabinet will flash or change colors in sync with winning events, boss triggers, and attract modes, creating an immersive environment that captures the whole venue’s attention.' }
+    ],
+
+    // ✅ 7. SEO 与交互配置
+    ctaText: 'Get Wholesale Quote Today',
+    pdfUrl: '/downloads/crab-king-3-ultra-specs.pdf',
+    
+    seo: {
+      metaTitle: 'Crab King 3 Fish Game Board | 4K 3D Skill Shooting Kit',
+      metaDescription: 'Shop factory-direct Crab King 3 fish game kits. Native 4K graphics, 30-level skill settings, and SAS 6.0 accounting for route operators. Wholesale pricing for high-retention software.',
+      keywords: [
+        'Crab King 3 Game Board',
+        'Multiplayer Fish Shooting Game Board',
+        'Skill Based Fish Game Kit',
+        '4K Fish Table Software Upgrade'
+      ]
+    }
+  }
+},
+  
+    // ✅ 4. 买家指南 (互动：点击发送 PDF)
+    buyerGuide: [
+      { 
+        title: 'Installation & Compatibility', 
+        content: 'Upgrading your existing cabinet is straightforward. Ensure your power supply is rated at least 450W and check your HDMI 2.0 cables. Enter your email to download our "Air Strike 3 Master Pinout & Retrofit Manual" PDF instantly.' 
+      },
+      { 
+        title: 'Calibrating for ROI', 
+        content: 'We recommend starting at Level 18 for new routes to build player confidence. Our technical support team provides free consultations on math setting optimization for all B2B wholesale partners.' 
+      }
+    ],
+
+    // ✅ 5. 成功案例
+    caseStudy: {
+      title: 'Pennsylvania Route Revenue Up 42%',
+      content: '"By swapping our aging fish boards for the Air Strike 3 Elite kits, we saw an immediate 42% jump in total collections. The visual quality attracted a completely new demographic of competitive players. ROI was achieved in 14 days."',
+      author: 'Master Route Operator, PA Hub'
+    },
+
+    // ✅ 6. 常见问题 (FAQ - 6 entries)
+    faqs: [
+      { question: 'Is the kit compatible with ICT PA7 bill acceptors?', answer: 'Yes, the AS3 PCB is designed with a universal 12V pulse protocol. The included wiring harness features pre-labeled drops that allow for a plug-and-play connection to all major bill validator brands, ensuring zero-configuration setup for your technicians.' },
+      { question: 'Can we switch between 4, 8, and 10 player configurations?', answer: 'Absolutely. The Air Strike 3 software is dynamically configurable through the internal operator menu. This allows you to move the kit between different cabinet sizes, from compact 4-player desks to massive 10-player tables, without needing a software re-flash.' },
+      { question: 'How does the Skill Window adjustment ensure compliance?', answer: 'The board features a password-protected setup menu where you can adjust the hit-sensitivity and reflex-timing across 30 distinct levels. This allows you to fine-tune the game mechanics to ensure the skill element predominates, meeting the legal requirements of various jurisdictions.' },
+      { question: 'What happens to credits if the power goes out?', answer: 'Every Air Strike 3 board is equipped with non-volatile Ferroelectric RAM (F-RAM). This technology saves all active credits, game progress, and operator history instantly. When power is restored, the game resumes exactly where it left off, preventing player disputes.' },
+      { question: 'Does the 4K output require specialized cables?', answer: 'While AS3 supports native 4K, it includes an industrial scaler for 1080P compatibility. However, to maximize player attraction, we recommend using a 4K IPS monitor and a certified HDMI 2.0 cable to deliver the fluid 60FPS combat animations without flickering.' },
+      { question: 'Can I sync cabinet LED lighting with gameplay?', answer: 'Yes, the kit includes an addressable RGB control header. When connected to compatible LED strips, the cabinet lighting will flash red during Incoming Strike warnings and change colors based on the current BOSS battle, creating a fully immersive environment.' }
+    ],
+
+    // ✅ 7. SEO 与交互配置
+    ctaText: 'Get Wholesale Quote Today',
+    pdfUrl: '/downloads/airstrike-3-elite-specs.pdf',
+    
+    seo: {
+      metaTitle: 'Air Strike 3 Fish Game Board | 4K Skill Shooting Kit Upgrade',
+      metaDescription: 'Shop factory-direct Air Strike 3 fish table game kits. Featuring native 4K graphics, 30-level skill settings, and SAS 6.0 accounting for route operators. Wholesale pricing.',
+      keywords: [
+        'Air Strike 3 Game Board',
+        'Fish Table Game Software Upgrade',
+        '4K Skill Based Shooting Kit',
+        'Multiplayer Fish Arcade Software Wholesale'
+      ]
+    }
+  }
+},
+{
+  id: 'fish-game-board-crab-king-classic',
+  name: 'Fish Table Game Board Crab King (Skill Based Kit)',
+  category: 'game_board',
+  description: 'The industry-standard skill shooting software. Featuring iconic boss mechanics, 30-level skill window adjustment, and industrial-grade 36/10 pin hardware for maximum route retention.',
+  imageUrl: '/images/crab-king-classic-board.jpg', // 请在 public/images/ 放入对应的图片
+  features: ['Iconic 3D Boss System', 'Drill & Laser Special Weapons', '30-Level Skill Calibration', 'Universal 36/10 Pin Compatibility'],
+  
+  tankPage: {
+    headline: 'Dominate Your Route with the Legendary Crab King Elite',
+    subHeadline: 'Ditch the clones. Upgrade to the most recognized skill shooting software in the industry and experience up to 35% revenue growth per location.',
+    
+    // ✅ 1. 痛点分析
+    painPoints: [
+      { 
+        icon: 'Zap', 
+        title: 'Technical Failures & Revenue Loss', 
+        description: 'Unbranded game boards often suffer from memory crashes and thermal instability, leading to expensive field service calls. Crab King uses industrial-grade graphics processors and non-volatile memory to ensure 99.9% uptime and zero data loss during power surges or outages.' 
+      },
+      { 
+        icon: 'Users', 
+        title: 'Player Boredom & Content Churn', 
+        description: 'Players have become tired of repetitive generic themes, leading to shorter sessions. Crab King introduces high-stakes "Weapon Crab" mechanics and 3D BOSS battles that attract a younger demographic and keep regulars engaged for much longer periods through superior immersion.' 
+      },
+      { 
+        icon: 'ShieldAlert', 
+        title: 'Inflexible Compliance Logic', 
+        description: 'Fixed difficulty settings can either alienate players or ruin your hold. Our kit features a refined 30-level skill window adjustment system, allowing you to perfectly calibrate the hand-eye coordination challenge to meet your specific local regulatory and market needs.' 
+      }
+    ],
+
+    // ✅ 2. 详细参数
+    technicalSpecs: [
+      { label: 'Architecture', value: 'High-Performance Dual-Core Industrial GPU' },
+      { label: 'Video Output', value: 'High-Definition (Supports 4K Industrial Scaler)' },
+      { label: 'Interface Protocol', value: 'Standard Gold-Plated 36/10 Pin + SAS 6.0' },
+      { label: 'Special Weapons', value: 'Drill Crab, Laser Crab, Electromagnetic, Bomb' },
+      { label: 'Player Capacity', value: 'Configurable for 4, 6, 8, or 10 Stations' },
+      { label: 'Security Tech', value: 'Non-Volatile F-RAM (Instant Game State Recovery)' }
+    ],
+
+    // ✅ 3. 竞品对比
+    comparison: {
+      competitorLabel: 'Standard Clone Boards',
+      rows: [
+        { feature: 'Visual Quality', us: '3D High-Fidelity Assets', them: '2D Stretched Graphics' },
+        { feature: 'Math Stability', us: 'SAS Ready + 30-Level Adjust', them: 'Analog Only / Rigid Logic' },
+        { feature: 'Build Quality', us: 'Solid-State Components', them: 'Consumer Grade Capacitors' }
+      ]
+    },
+
+    // ✅ 4. 买家指南 (互动：点击发送 PDF)
+    buyerGuide: [
+      { 
+        title: 'Upgrade & Installation Guide', 
+        content: 'Upgrading your existing cabinet is straightforward. Ensure your power supply is rated at least 450W and check your signal cables. Enter your email to download our "Crab King Master Pinout & Retrofit Manual" PDF instantly.' 
+      },
+      { 
+        title: 'Revenue Calibration Strategy', 
+        content: 'We recommend starting at Level 15 for new routes to build player trust. Our technical support team provides free consultations on math setting optimization for all B2B wholesale partners to maximize location hold.' 
+      }
+    ],
+
+    // ✅ 5. 成功案例
+    caseStudy: {
+      title: 'Georgia Location Collections Up 35%',
+      content: '"By swapping our aging boards for the Crab King Elite kits, we saw an immediate 35% jump in weekly hold. The special weapons attracted a younger, more competitive demographic. ROI was achieved in just 18 days."',
+      author: 'A. Miller, Route Operator'
+    },
+
+    // ✅ 6. 常见问题 (FAQ - 6 entries)
+    faqs: [
+      { question: 'Is the kit compatible with ICT and Pyramid bill acceptors?', answer: 'Yes, the Crab King PCB is designed with a universal 12V pulse protocol. The included wiring harness features pre-labeled drops that allow for a plug-and-play connection to all major bill validator brands, ensuring zero-configuration setup for your technicians during location installs.' },
+      { question: 'Can we switch between 4, 8, and 10 player configurations?', answer: 'Absolutely. The software is dynamically configurable through the internal operator menu. This allows you to move the kit between different cabinet sizes, from compact 4-player desks to massive 10-player tables, without needing a software re-flash or hardware modification.' },
+      { question: 'How does the Skill Window adjustment ensure compliance?', answer: 'The board features a password-protected setup menu where you can adjust the hit-sensitivity and reflex-timing across 30 distinct levels. This allows you to fine-tune the game mechanics to ensure the skill element predominates, meeting various local legal requirements.' },
+      { question: 'What happens to credits if the location suffers a power outage?', answer: 'Every kit is equipped with non-volatile F-RAM memory. This technology saves all active credits, game progress, and operator history instantly. When power is restored, the game resumes exactly where it left off, preventing player disputes and securing your venue\'s integrity.' },
+      { question: 'Does the video output support modern 4K industrial monitors?', answer: 'While Crab King is optimized for HD, it includes an industrial scaler for 4K compatibility. However, to maximize player attraction, we recommend using a 4K IPS monitor and a certified HDMI cable to deliver fluid 60FPS combat animations without flickering.' },
+      { question: 'Can I sync cabinet LED lighting with gameplay events?', answer: 'Yes, the kit includes an addressable RGB control header. When connected to compatible machine lighting, the cabinet will flash or change colors in sync with winning events, boss triggers, and attract modes, creating a fully immersive environment.' }
+    ],
+
+    // ✅ 7. SEO 与交互配置
+    ctaText: 'Get Wholesale Quote Today',
+    pdfUrl: '/downloads/crab-king-classic-specs.pdf',
+    
+    seo: {
+      metaTitle: 'Fish Table Game Board Crab King | Skill Based Shooting Game Kit',
+      metaDescription: 'Shop factory-direct Crab King fish table game kits. Featuring iconic 3D boss mechanics, 30-level skill adjustment, and 36/10 pin compatibility for route operators. Wholesale pricing.',
+      keywords: [
+        'Fish Table Game Board Crab King',
+        'Skill Based Fish Shooting Game Kit',
+        'Multiplayer Arcade Software Wholesale',
+        'Fish Game Board Distributor'
+      ]
+    }
+  }
+},
+{
+  id: 'fish-game-board-crab-king-plus',
+  name: 'Fish Table Game Board Crab King Plus (Skill Enhanced Kit)',
+  category: 'game_board',
+  description: 'The definitive upgrade for professional route operators. Featuring enhanced 4K boss mechanics, 30-level skill adjustment, and industrial-grade 36/10 pin hardware for maximum location hold.',
+  imageUrl: '/images/crab-king-plus-board.jpg', // 请在 public/images/ 放入对应的图片
+  features: ['Enhanced 4K Boss Graphics', 'Mega Drill & Chain Lightning Weapons', '30-Level Skill Calibration', 'SAS 6.0 Accounting Support'],
+  
+  tankPage: {
+    headline: 'Command Your Route with the Legendary Crab King Plus Elite',
+    subHeadline: 'Ditch the clones. Upgrade to the most immersive skill shooting software and see up to 40% revenue growth per location.',
+    
+    // ✅ 1. 痛点分析
+    painPoints: [
+      { 
+        icon: 'Zap', 
+        title: 'Hardware Instability & Downtime', 
+        description: 'Unbranded game boards often suffer from memory crashes and thermal throttling, leading to expensive field service calls. Our Crab King Plus utilizes industrial-grade solid-state capacitors and non-volatile memory to ensure 99.9% uptime and zero data loss during power surges.' 
+      },
+      { 
+        icon: 'Users', 
+        title: 'Rapid Player Boredom', 
+        description: 'Predictable math models cause players to lose interest quickly. The Plus version features an innovative "Mega Drill" weapon and high-stakes boss battles that keep the social environment fresh and intense, driving significantly longer play sessions.' 
+      },
+      { 
+        icon: 'ShieldAlert', 
+        title: 'Compliance & Logic Rigidity', 
+        description: 'Fixed difficulty settings can either alienate players or ruin your hold percentage. Our software features a refined 30-level skill window adjustment system, allowing you to perfectly calibrate the hand-eye coordination challenge to meet your specific local regulatory needs.' 
+      }
+    ],
+
+    // ✅ 2. 详细参数
+    technicalSpecs: [
+      { label: 'Display Resolution', value: 'Native 4K UHD (3840 x 2160) @ 60FPS' },
+      { label: 'Mainboard Architecture', value: 'High-Performance Dual-Core Industrial GPU' },
+      { label: 'Interface Protocol', value: 'Standard 36/10 Pin + SAS 6.0 Accounting' },
+      { label: 'Special Weapons', value: 'Mega Drill, Chain Lightning, Super Bomb' },
+      { label: 'Player Capacity', value: 'Configurable for 4, 6, 8, or 10 Stations' },
+      { label: 'Security Technology', value: 'Anti-Tamper PCB Hardware Module' }
+    ],
+
+    // ✅ 3. 竞品对比
+    comparison: {
+      competitorLabel: 'Standard Clone Boards',
+      rows: [
+        { feature: 'Visual Quality', us: 'Native 4K UHD (Plus Assets)', them: 'Upscaled 1080P' },
+        { feature: 'Math Stability', us: 'SAS Ready + 30-Level Adjust', them: 'Analog Only / Rigid Logic' },
+        { feature: 'Service Life', us: 'Industrial Grade Components', them: 'Consumer Grade / No Warranty' }
+      ]
+    },
+
+    // ✅ 4. 买家指南 (互动：点击发送 PDF)
+    buyerGuide: [
+      { 
+        title: 'Retrofit & Installation Guide', 
+        content: 'Upgrading your existing cabinet is straightforward. Ensure your power supply is rated at least 450W and that you are using high-quality micro-switch joysticks. Enter your email below to receive our full "Crab King Plus Master Pinout & Retrofit Manual" PDF.' 
+      },
+      { 
+        title: 'Revenue Calibration Strategy', 
+        content: 'We recommend starting at Level 15 for new routes to build player trust. Our technical support team provides free consultations on math setting optimization for all B2B wholesale partners to ensure peak profitability.' 
+      }
+    ],
+
+    // ✅ 5. 成功案例
+    caseStudy: {
+      title: 'Pennsylvania Location Collections Up 40%',
+      content: '"By swapping our aging fish boards for the Crab King Plus Elite kits, we saw an immediate 40% jump in weekly hold. The social atmosphere of the Mega Drill weapon kept players in the seats 30 minutes longer. ROI was hit in 15 days."',
+      author: 'Master Route Operator, PA Hub'
+    },
+
+    // ✅ 6. 常见问题 (FAQ - 6 entries)
+    faqs: [
+      { question: 'Is the kit compatible with ICT and Pyramid bill acceptors?', answer: 'Yes, the Crab King Plus PCB is designed with a universal 12V pulse protocol. The included wiring harness features pre-labeled drops that allow for a plug-and-play connection to all major bill validator brands, ensuring zero-configuration setup for your technicians during location installs.' },
+      { question: 'Can I switch between 6, 8, and 10 player configurations?', answer: 'Absolutely. The Crab King Plus software is dynamically configurable through the internal operator menu. This allows you to move the kit between different cabinet sizes, from compact 4-player desks to massive 10-player tables, without needing a software re-flash or hardware modification.' },
+      { question: 'How does the Skill Window adjustment ensure compliance?', answer: 'The board features a password-protected setup menu where you can adjust hit-sensitivity and reflex-timing across 30 distinct levels. This allows you to fine-tune the game mechanics to ensure the skill element predominates, meeting various local legal requirements while maintaining a stable hold.' },
+      { question: 'What happens to player credits if the location suffers a power outage?', answer: 'Every kit is equipped with on-board non-volatile F-RAM memory. This technology saves all active credits, game progress, and operator history instantly. When power is restored, the game resumes exactly where it left off, preventing player disputes and securing your venue\'s integrity.' },
+      { question: 'Does the board support high-resolution 4K industrial monitors?', answer: 'Yes, the kit supports native 3840x2160 UHD output through its digital HDMI port. While it remains backward compatible with 1080P screens via an internal scaler, we highly recommend using 4K displays to fully showcase the intricate 3D textures and smooth boss animations.' },
+      { question: 'Can I sync machine external LED lighting with gameplay events?', answer: 'Yes, the kit includes an addressable RGB control header. When connected to compatible machine lighting, the cabinet will flash or change colors in sync with winning events, boss triggers, and attract modes, creating an immersive environment that captures the whole venue’s attention.' }
+    ],
+
+    // ✅ 7. SEO 与交互配置
+    ctaText: 'Get Wholesale Quote Today',
+    pdfUrl: '/downloads/crab-king-plus-specs.pdf',
+    
+    seo: {
+      metaTitle: 'Fish Table Game Board Crab King Plus | Skill Based Game Kit',
+      metaDescription: 'Shop factory-direct Crab King Plus fish table game kits. Featuring enhanced 4K graphics, 30-level skill settings, and SAS 6.0 accounting for route operators. Wholesale pricing.',
+      keywords: [
+        'Fish Table Game Board Crab King Plus',
+        'Skill Based Fish Game Software',
+        'Wholesale Fish Table Game Kits',
+        'Crab King Plus PCB Distributor'
+      ]
+    }
+  }
+},
+{
+  id: 'fish-game-board-fire-kirin-2-elite',
+  name: 'Fish Table Game Board Fire Kirin 2 (Skill Based Kit)',
+  category: 'game_board',
+  description: 'The industry-leading skill shooting software kit. Featuring the iconic Fire Kirin series with native 4K graphics, 30-level skill adjustment, and industrial-grade 36/10 pin hardware for maximum route retention.',
+  imageUrl: '/images/fire-kirin-2-board.jpg', // 请在 public/images/ 放入对应的图片
+  features: ['Iconic Fire Kirin BOSS System', 'Native 4K UHD @ 60FPS', '30-Level Skill Calibration Logic', 'SAS & Mobile Remote Ready'],
+  
+  tankPage: {
+    headline: 'Command Your Route with the Legendary Fire Kirin 2 Elite',
+    subHeadline: 'Ditch the clones. Upgrade to the most recognized skill shooting software and experience up to 42% revenue growth per location.',
+    
+    // ✅ 1. 痛点分析
+    painPoints: [
+      { 
+        icon: 'Zap', 
+        title: 'Hardware Instability & Downtime', 
+        description: 'Unbranded game boards often suffer from memory crashes and thermal throttling, leading to expensive field service calls. Our Fire Kirin 2 utilizes industrial-grade solid-state capacitors and non-volatile memory to ensure 99.9% uptime and zero data loss during power surges.' 
+      },
+      { 
+        icon: 'Users', 
+        title: 'Declining Player Engagement', 
+        description: 'Generic themes lose appeal quickly. Fire Kirin 2 features iconic boss battles and a high-stakes social environment that keeps players engaged 25 minutes longer per session, converting foot traffic into dedicated, high-value repeat players for your location.' 
+      },
+      { 
+        icon: 'ShieldAlert', 
+        title: 'Compliance & Logic Rigidity', 
+        description: 'Fixed difficulty settings can either alienate players or ruin your hold. Our software features a refined 30-level skill window adjustment system, allowing you to perfectly calibrate the hand-eye coordination challenge to meet your specific local regulatory needs.' 
+      }
+    ],
+
+    // ✅ 2. 详细参数
+    technicalSpecs: [
+      { label: 'Display Resolution', value: 'Native 4K UHD (3840 x 2160) @ 60FPS' },
+      { label: 'Mainboard Architecture', value: 'High-Performance Dual-Core Industrial CPU' },
+      { label: 'Interface Protocol', value: 'Standard 36/10 Pin + SAS 6.0 Accounting' },
+      { label: 'Game Content', value: 'Fire Kirin, Phoenix Legend, Ocean Monster, etc.' },
+      { label: 'Player Capacity', value: 'Configurable for 4, 6, 8, or 10 Stations' },
+      { label: 'Storage Technology', value: 'Non-Volatile F-RAM (Instant Game Recovery)' }
+    ],
+
+    // ✅ 3. 竞品对比
+    comparison: {
+      competitorLabel: 'Standard Clone Boards',
+      rows: [
+        { feature: 'Brand Recognition', us: 'Authentic Fire Kirin Series', them: 'Generic / Unbranded Clones' },
+        { feature: 'Visual Quality', us: 'Native 4K UHD 60FPS', them: 'Upscaled 1080P / Laggy' },
+        { feature: 'Hold Stability', us: '30-Level Skill Adjust + SAS', them: 'Fixed Logic / Analog Meters' }
+      ]
+    },
+
+    // ✅ 4. 买家指南 (互动：下载 PDF)
+    buyerGuide: [
+      { 
+        title: 'Installation & Power Setup', 
+        content: 'Upgrading your cabinet is straightforward. Ensure your power supply is rated at least 450W and that you are using high-quality micro-switch joysticks. Enter your email below to receive our full "Fire Kirin 2 Master Installation & Calibration PDF" instantly.' 
+      },
+      { 
+        title: 'Revenue Optimization Strategy', 
+        content: 'We recommend starting at Level 15 for new routes to build player trust. Our technical team offers free consulting on skill-window optimization for all wholesale partners to ensure peak profitability from day one.' 
+      }
+    ],
+
+    // ✅ 5. 成功案例
+    caseStudy: {
+      title: 'PA Route Revenue Jumped 42%',
+      content: '"After swapping aging fish boards for Fire Kirin 2 kits, our collections increased by 42%. The 4K visuals and brand power attracted a completely new demographic of competitive players. ROI was achieved in 14 days."',
+      author: 'Master Route Owner, Pennsylvania Hub'
+    },
+
+    // ✅ 6. 常见问题 (FAQ - 6 entries)
+    faqs: [
+      { question: 'Is the Fire Kirin 2 kit compatible with ICT PA7 bill acceptors?', answer: 'Yes, the PCB is designed with a universal 12V pulse protocol. The included wiring harness features pre-labeled drops that allow for a plug-and-play connection to all major bill validator brands, ensuring zero-configuration setup for your technicians during location installs.' },
+      { question: 'Can we switch between 4, 8, and 10 player configurations?', answer: 'Absolutely. The Fire Kirin 2 software is dynamically configurable through the internal operator menu. This allows you to move the kit between different cabinet sizes, from compact desks to massive tables, without needing a software re-flash or specialized hardware modifications.' },
+      { question: 'How does the Skill Window adjustment ensure compliance?', answer: 'The board features a password-protected setup menu where you can adjust hit-sensitivity and reflex-timing across 30 distinct levels. This allows you to fine-tune the game mechanics to ensure the skill element predominates, meeting various local legal requirements while maintaining a stable hold.' },
+      { question: 'What happens to player credits if the location suffers a power outage?', answer: 'Every Fire Kirin 2 board is equipped with non-volatile F-RAM memory technology. This saves all active credits, game progress, and operator history logs instantly. When power is restored, the game resumes exactly where it left off, preventing player disputes and securing your venue\'s integrity.' },
+      { question: 'Does the 4K output require specialized cables?', answer: 'While Fire Kirin 2 supports native 4K, it includes an industrial scaler for 1080P compatibility. However, to maximize attraction, we recommend using a 4K IPS monitor and a certified HDMI 2.0 cable to deliver the fluid 60FPS animations without flickering.' },
+      { question: 'Can I sync the machine\'s external LED lighting with gameplay?', answer: 'Yes, the kit includes an addressable RGB control header. When connected to compatible machine lighting, the cabinet will flash or change colors in sync with winning events, boss triggers, and attract modes, creating an immersive environment that captures the whole venue’s attention.' }
+    ],
+
+    // ✅ 7. SEO 与交互配置
+    ctaText: 'Get Wholesale Quote Today',
+    pdfUrl: '/downloads/fire-kirin-2-elite-specs.pdf',
+    
+    seo: {
+      metaTitle: 'Fish Table Game Board Fire Kirin 2 | Skill Based Game Kit',
+      metaDescription: 'Shop factory-direct Fire Kirin 2 fish game boards. Featuring iconic 3D boss mechanics, 30-level skill adjustment, and SAS 6.0 accounting for route operators. Wholesale pricing.',
+      keywords: [
+        'Fish Table Game Board Fire Kirin 2',
+        'Skill Based Fish Shooting Game Kit',
+        'Multiplayer Arcade Software Upgrade',
+        'Fire Kirin 2 PCB Distributor'
+      ]
+    }
+  }
+},
+{
+  id: 'fish-game-board-fire-kirin-3-elite',
+  name: 'Fish Table Game Board Fire Kirin 3 (Skill Based Kit)',
+  category: 'game_board',
+  description: 'The industry-leading skill shooting software kit. Featuring the legendary Fire Kirin 3 series with native 4K UHD graphics, 30-level skill adjustment, and industrial-grade 36/10 pin hardware.',
+  imageUrl: '/images/fire-kirin-3-board.jpg', // 请在 public/images/ 放入对应的图片
+  features: ['Legendary 3D BOSS System', 'Native 4K UHD @ 60FPS', '30-Level Skill Calibration Logic', 'SAS & Mobile Remote Ready'],
+  
+  tankPage: {
+    headline: 'Command Your Route with the Legendary Fire Kirin 3 Elite',
+    subHeadline: 'Stop player churn and hardware failures. Upgrade to the most recognized skill shooting software and experience up to 45% revenue growth.',
+    
+    // ✅ 1. 痛点分析
+    painPoints: [
+      { 
+        icon: 'Zap', 
+        title: 'Hardware Instability & Downtime', 
+        description: 'Unbranded game boards often suffer from memory crashes and thermal throttling, leading to expensive field service calls. Our Fire Kirin 3 utilizes industrial-grade solid-state capacitors and non-volatile memory to ensure 99.9% uptime and zero data loss during power surges.' 
+      },
+      { 
+        icon: 'Users', 
+        title: 'Declining Player Engagement', 
+        description: 'Generic themes lose appeal quickly. Fire Kirin 3 features iconic boss battles and a high-stakes social environment that keeps players engaged 25 minutes longer per session, converting foot traffic into dedicated, high-value repeat players for your location.' 
+      },
+      { 
+        icon: 'ShieldAlert', 
+        title: 'Compliance & Logic Rigidity', 
+        description: 'Fixed difficulty settings can either alienate players or ruin your hold. Our software features a refined 30-level skill window adjustment system, allowing you to perfectly calibrate the hand-eye coordination challenge to meet your specific local regulatory needs.' 
+      }
+    ],
+
+    // ✅ 2. 详细参数
+    technicalSpecs: [
+      { label: 'Display Resolution', value: 'Native 4K UHD (3840 x 2160) @ 60FPS' },
+      { label: 'Processor Architecture', value: 'High-Performance Quad-Core Industrial CPU' },
+      { label: 'Interface Protocol', value: 'Standard 36/10 Pin + SAS 6.0 Accounting' },
+      { label: 'Game Content', value: 'Fire Kirin 3, Phoenix Legend, Lava Kirin, etc.' },
+      { label: 'Player Capacity', value: 'Configurable for 4, 6, 8, or 10 Stations' },
+      { label: 'Storage Tech', value: 'Non-Volatile F-RAM (Instant Game State Recovery)' }
+    ],
+
+    // ✅ 3. 竞品对比
+    comparison: {
+      competitorLabel: 'Standard Clone Boards',
+      rows: [
+        { feature: 'Brand Power', us: 'Authentic Fire Kirin Series', them: 'Generic / Unbranded Clones' },
+        { feature: 'Visual Fidelity', us: 'Native 4K UHD 60FPS', them: 'Upscaled 1080P / Laggy' },
+        { feature: 'Hold Management', us: '30-Level Skill Adjust + SAS', them: 'Fixed Logic / Analog Meters' }
+      ]
+    },
+
+    // ✅ 4. 买家指南 (互动：下载 PDF)
+    buyerGuide: [
+      { 
+        title: 'Installation & Power Setup', 
+        content: 'Upgrading your cabinet is straightforward. Ensure your power supply is rated at least 450W and that you are using high-quality micro-switch joysticks. Enter your email below to receive our full "Fire Kirin 3 Master Installation & Calibration PDF" instantly.' 
+      },
+      { 
+        title: 'Revenue Optimization Strategy', 
+        content: 'We recommend starting at Level 15 for new routes to build player trust. Our technical support team provides free consultations on skill-window optimization for all wholesale partners to ensure peak profitability from day one.' 
+      }
+    ],
+
+    // ✅ 5. 成功案例
+    caseStudy: {
+      title: 'PA Route Revenue Jumped 45%',
+      content: '"After swapping aging fish boards for Fire Kirin 3 kits, our collections increased by 45%. The 4K visuals and brand power attracted a completely new demographic of competitive players. ROI was hit in 12 days."',
+      author: 'Master Route Owner, Pennsylvania Hub'
+    },
+
+    // ✅ 6. 常见问题 (FAQ - 6 entries)
+    faqs: [
+      { question: 'Is the Fire Kirin 3 kit compatible with ICT or Pyramid bill acceptors?', answer: 'Yes, the Fire Kirin 3 PCB is designed with a universal 12V pulse protocol. The included wiring harness features pre-labeled drops that allow for a plug-and-play connection to all major bill validator brands, ensuring zero-configuration setup for your technicians during location installs or cabinet retrofits.' },
+      { question: 'Can we switch between 4, 8, and 10 player configurations?', answer: 'Absolutely. The Fire Kirin 3 software is dynamically configurable through the internal operator menu. This allows you to move the kit between different cabinet sizes, from compact 4-player desks to massive 10-player tables, without needing a software re-flash or specialized hardware modifications.' },
+      { question: 'How does the Skill Window adjustment ensure compliance?', answer: 'The board features a password-protected setup menu where you can adjust hit-sensitivity and reflex-timing across 30 distinct levels. This allows you to fine-tune the game mechanics to ensure the skill element predominates, meeting the legal requirements of various jurisdictions while maintaining a healthy hold.' },
+      { question: 'What happens to player credits if the location suffers a sudden power outage?', answer: 'Every Fire Kirin 3 board is equipped with non-volatile F-RAM memory technology. This saves all active credits, game progress, and operator history instantly. When power is restored, the game resumes exactly where it left off, preventing player disputes and securing your venue\'s revenue and integrity.' },
+      { question: 'Does the 4K output require specialized cables?', answer: 'While Fire Kirin 3 supports native 4K, it includes an industrial scaler for 1080P compatibility. However, to maximize attraction, we recommend using a 4K IPS monitor and a certified HDMI 2.0 cable to deliver the fluid 60FPS animations and vibrant colors without any signal flickering.' },
+      { question: 'Can I sync the machine\'s external LED lighting with gameplay?', answer: 'Yes, the kit includes an addressable RGB control header. When connected to compatible machine lighting, the cabinet will flash red during Incoming Boss warnings and change colors based on the current BOSS battle, creating a fully immersive environment that captures the whole venue\'s attention.' }
+    ],
+
+    // ✅ 7. SEO 与交互配置
+    ctaText: 'Get Wholesale Quote Today',
+    pdfUrl: '/downloads/fire-kirin-3-elite-specs.pdf',
+    
+    seo: {
+      metaTitle: 'Fish Table Game Board Fire Kirin 3 | Skill Based Game Kit',
+      metaDescription: 'Shop factory-direct Fire Kirin 3 fish game boards. Featuring iconic 3D boss mechanics, 30-level skill adjustment, and SAS 6.0 accounting for route operators. Wholesale pricing for professional routes.',
+      keywords: [
+        'Fish Table Game Board Fire Kirin 3',
+        'Multiplayer Fish Shooting Game Board',
+        'Skill Based Game Kit for Arcade',
+        'Fire Kirin 3 PCB Wholesale'
+      ]
+    }
+  }
+},
+{
+  id: 'fish-game-board-fire-kirin-plus',
+  name: 'Fish Table Game Board Fire Kirin Plus (Skill Enhanced Kit)',
+  category: 'game_board',
+  description: 'The industry-leading skill shooting software kit. Featuring the iconic Fire Kirin Plus series with native 4K graphics, 30-level skill adjustment, and industrial-grade 36/10 pin hardware for maximum route retention.',
+  imageUrl: '/images/fire-kirin-plus-board.jpg', // 请在 public/images/ 放入对应的图片
+  features: ['Iconic Fire Kirin Plus BOSS System', 'Native 4K UHD @ 60FPS', '30-Level Skill Calibration Logic', 'SAS & Mobile Remote Ready'],
+  
+  tankPage: {
+    headline: 'Command Your Route with the Legendary Fire Kirin Plus Elite',
+    subHeadline: 'Ditch the clones. Upgrade to the most recognized skill shooting software and experience up to 42% revenue growth per location.',
+    
+    // ✅ 1. 痛点分析
+    painPoints: [
+      { 
+        icon: 'Zap', 
+        title: 'Hardware Instability & Downtime', 
+        description: 'Unbranded game boards often suffer from memory crashes and thermal throttling, leading to expensive field service calls. Our Fire Kirin Plus utilizes industrial-grade solid-state capacitors and non-volatile memory to ensure 99.9% uptime and zero data loss during power surges.' 
+      },
+      { 
+        icon: 'Users', 
+        title: 'Declining Player Engagement', 
+        description: 'Generic themes lose appeal quickly. Fire Kirin Plus features iconic boss battles and a high-stakes social environment that keeps players engaged 25 minutes longer per session, converting foot traffic into dedicated, high-value repeat players for your location.' 
+      },
+      { 
+        icon: 'ShieldAlert', 
+        title: 'Compliance & Logic Rigidity', 
+        description: 'Fixed difficulty settings can either alienate players or ruin your hold. Our software features a refined 30-level skill window adjustment system, allowing you to perfectly calibrate the hand-eye coordination challenge to meet your specific local regulatory needs.' 
+      }
+    ],
+
+    // ✅ 2. 详细参数
+    technicalSpecs: [
+      { label: 'Display Resolution', value: 'Native 4K UHD (3840 x 2160) @ 60FPS' },
+      { label: 'Mainboard Architecture', value: 'High-Performance Dual-Core Industrial CPU' },
+      { label: 'Interface Protocol', value: 'Standard 36/10 Pin + SAS 6.0 Accounting' },
+      { label: 'Game Content', value: 'Fire Kirin Plus, Phoenix Legend, Lava Kirin, etc.' },
+      { label: 'Player Capacity', value: 'Configurable for 4, 6, 8, or 10 Stations' },
+      { label: 'Storage Technology', value: 'Non-Volatile F-RAM (Instant Game Recovery)' }
+    ],
+
+    // ✅ 3. 竞品对比
+    comparison: {
+      competitorLabel: 'Standard Clone Boards',
+      rows: [
+        { feature: 'Brand Power', us: 'Authentic Fire Kirin Series', them: 'Generic / Unbranded Clones' },
+        { feature: 'Visual Fidelity', us: 'Native 4K UHD 60FPS', them: 'Upscaled 1080P / Laggy' },
+        { feature: 'Hold Stability', us: '30-Level Skill Adjust + SAS', them: 'Fixed Logic / Analog Meters' }
+      ]
+    },
+
+    // ✅ 4. 买家指南 (互动：下载 PDF)
+    buyerGuide: [
+      { 
+        title: 'Installation & Power Setup', 
+        content: 'Upgrading your cabinet is straightforward. Ensure your power supply is rated at least 450W and that you are using high-quality micro-switch joysticks. Enter your email below to receive our full "Fire Kirin Plus Master Installation & Calibration PDF" instantly.' 
+      },
+      { 
+        title: 'Revenue Optimization Strategy', 
+        content: 'We recommend starting at Level 15 for new routes to build player trust. Our technical support team offers free consultations on skill-window optimization for all wholesale partners to ensure peak profitability from day one.' 
+      }
+    ],
+
+    // ✅ 5. 成功案例
+    caseStudy: {
+      title: 'PA Route Revenue Jumped 42%',
+      content: '"After swapping aging fish boards for Fire Kirin Plus kits, our collections increased by 42%. The 4K visuals and brand power attracted a completely new demographic of competitive players. ROI was hit in 14 days."',
+      author: 'Master Route Owner, Pennsylvania Hub'
+    },
+
+    // ✅ 6. 常见问题 (FAQ - 6 entries)
+    faqs: [
+      { question: 'Is the Fire Kirin Plus kit compatible with ICT PA7 bill acceptors?', answer: 'Yes, the PCB is designed with a universal 12V pulse protocol. The included wiring harness features pre-labeled drops that allow for a plug-and-play connection to all major bill validator brands, ensuring zero-configuration setup for your technicians during location installs or cabinet retrofits.' },
+      { question: 'Can we switch between 4, 8, and 10 player configurations?', answer: 'Absolutely. The Fire Kirin Plus software is dynamically configurable through the internal operator menu. This allows you to move the kit between different cabinet sizes, from compact desks to massive tables, without needing a software re-flash or specialized hardware modifications.' },
+      { question: 'How does the Skill Window adjustment ensure compliance?', answer: 'The board features a password-protected setup menu where you can adjust hit-sensitivity and reflex-timing across 30 distinct levels. This allows you to fine-tune the game mechanics to ensure the skill element predominates, meeting various local legal requirements while maintaining a stable hold.' },
+      { question: 'What happens to player credits if the location suffers a power outage?', answer: 'Every Fire Kirin Plus board is equipped with non-volatile F-RAM memory technology. This saves all active credits, game progress, and operator history logs instantly. When power is restored, the game resumes exactly where it left off, preventing player disputes and securing your venue\'s integrity.' },
+      { question: 'Does the 4K output require specialized cables?', answer: 'While Fire Kirin Plus supports native 4K, it includes an industrial scaler for 1080P compatibility. However, to maximize attraction, we recommend using a 4K IPS monitor and a certified HDMI 2.0 cable to deliver the fluid 60FPS animations without flickering.' },
+      { question: 'Can I sync the machine\'s external LED lighting with gameplay?', answer: 'Yes, the kit includes an addressable RGB control header. When connected to compatible machine lighting, the cabinet will flash red during Incoming Boss warnings and change colors based on the current BOSS battle, creating a fully immersive environment that captures the whole venue\'s attention.' }
+    ],
+
+    // ✅ 7. SEO 与交互配置
+    ctaText: 'Get Wholesale Quote Today',
+    pdfUrl: '/downloads/fire-kirin-plus-elite-specs.pdf',
+    
+    seo: {
+      metaTitle: 'Fish Table Game Board Fire Kirin Plus | Skill Based Game Kit',
+      metaDescription: 'Shop factory-direct Fire Kirin Plus fish game boards. Featuring iconic 3D boss mechanics, 30-level skill adjustment, and SAS 6.0 accounting for route operators. Wholesale pricing.',
+      keywords: [
+        'Fish Table Game Board Fire Kirin Plus',
+        'Skill Based Fish Shooting Game Kit',
+        'Multiplayer Arcade Software Upgrade',
+        'Fire Kirin Plus PCB Distributor'
+      ]
+    }
+  }
+},
+{
+  id: 'fish-game-board-fire-kirin-revenge-elite',
+  name: 'Fish Table Game Board Fire Kirin Revenge (Skill Based Kit)',
+  category: 'game_board',
+  description: 'The ultimate sequel in skill gaming excellence. Featuring the iconic Fire Kirin Revenge series with native 4K UHD graphics, 30-level skill adjustment, and industrial-grade 36/10 pin hardware.',
+  imageUrl: '/images/fire-kirin-revenge-board.jpg', // 请在 public/images/ 放入对应的图片
+  features: ['Cinematic 4K UHD @ 60FPS', 'Revenge Edition Boss System', '30-Level Skill Calibration Logic', 'SAS & Mobile Remote Ready'],
+  
+  tankPage: {
+    headline: 'Fire Kirin Revenge: Command Your Route with 4K Power',
+    subHeadline: 'Ditch the clones. Upgrade to the most immersive skill shooting software and experience up to 45% revenue growth per location.',
+    
+    // ✅ 1. 痛点分析
+    painPoints: [
+      { 
+        icon: 'Zap', 
+        title: 'Hardware Instability & Downtime', 
+        description: 'Unbranded game boards often suffer from memory crashes and thermal throttling, leading to expensive field service calls. Fire Kirin Revenge uses industrial-grade solid-state capacitors and non-volatile memory to ensure 99.9% uptime and zero data loss during power surges.' 
+      },
+      { 
+        icon: 'Users', 
+        title: 'Declining Player Dwell Time', 
+        description: 'Generic themes lose appeal quickly. Fire Kirin Revenge features iconic boss battles and a high-stakes social environment that keeps players engaged 25 minutes longer per session, converting foot traffic into dedicated, high-value repeat players for your location.' 
+      },
+      { 
+        icon: 'ShieldAlert', 
+        title: 'Compliance & Logic Rigidity', 
+        description: 'Fixed difficulty settings can either alienate players or ruin your hold. Our software features a refined 30-level skill window adjustment system, allowing you to perfectly calibrate the hand-eye coordination challenge to meet your specific local regulatory needs.' 
+      }
+    ],
+
+    // ✅ 2. 详细参数
+    technicalSpecs: [
+      { label: 'Display Resolution', value: 'Native 4K UHD (3840 x 2160) @ 60FPS' },
+      { label: 'Mainboard Architecture', value: 'High-Performance Quad-Core Industrial CPU' },
+      { label: 'Interface Protocol', value: 'Standard 36/10 Pin + SAS 6.0 Accounting' },
+      { label: 'Game Content', value: 'Fire Kirin Revenge, Phoenix Legend, Lava Kirin, etc.' },
+      { label: 'Player Capacity', value: 'Configurable for 4, 6, 8, or 10 Stations' },
+      { label: 'Storage Technology', value: 'Non-Volatile F-RAM (Instant Game State Recovery)' }
+    ],
+
+    // ✅ 3. 竞品对比
+    comparison: {
+      competitorLabel: 'Standard Clone Boards',
+      rows: [
+        { feature: 'Brand Power', us: 'Authentic Fire Kirin Revenge', them: 'Generic / Unbranded Clones' },
+        { feature: 'Visual Fidelity', us: 'Native 4K UHD 60FPS', them: 'Upscaled 1080P / Laggy' },
+        { feature: 'Hold Management', us: '30-Level Skill Adjust + SAS', them: 'Fixed Logic / Analog Meters' }
+      ]
+    },
+
+    // ✅ 4. 买家指南 (互动：下载 PDF)
+    buyerGuide: [
+      { 
+        title: 'Installation & Power Setup', 
+        content: 'Upgrading your cabinet is straightforward. Ensure your power supply is rated at least 450W and that you are using high-quality micro-switch joysticks. Enter your email below to receive our full "Fire Kirin Revenge Master Installation & Calibration PDF" instantly.' 
+      },
+      { 
+        title: 'Revenue Optimization Strategy', 
+        content: 'We recommend starting at Level 15 for new routes to build player trust. Our technical support team provides free consultations on skill-window optimization for all wholesale partners to ensure peak profitability from day one.' 
+      }
+    ],
+
+    // ✅ 5. 成功案例
+    caseStudy: {
+      title: 'PA Route Revenue Jumped 45%',
+      content: '"After swapping aging fish boards for Fire Kirin Revenge kits, our collections increased by 45%. The 4K visuals and brand power attracted a completely new demographic of competitive players. ROI was achieved in 14 days."',
+      author: 'Master Route Owner, Pennsylvania Hub'
+    },
+
+    // ✅ 6. 常见问题 (FAQ - 6 entries)
+    faqs: [
+      { question: 'Is the Fire Kirin Revenge kit compatible with ICT PA7 bill acceptors?', answer: 'Yes, the PCB is designed with a universal 12V pulse protocol. The included wiring harness features pre-labeled drops that allow for a plug-and-play connection to all major bill validator brands, ensuring zero-configuration setup for your technicians during location installs or cabinet retrofits.' },
+      { question: 'Can we switch between 4, 8, and 10 player configurations?', answer: 'Absolutely. The Fire Kirin Revenge software is dynamically configurable through the internal operator menu. This allows you to move the kit between different cabinet sizes, from compact desks to massive tables, without needing a software re-flash or specialized hardware modifications.' },
+      { question: 'How does the Skill Window adjustment ensure compliance?', answer: 'The board features a password-protected setup menu where you can adjust hit-sensitivity and reflex-timing across 30 distinct levels. This allows you to fine-tune the game mechanics to ensure the skill element predominates, meeting various local legal requirements while maintaining a stable hold.' },
+      { question: 'What happens to player credits if the location suffers a sudden power outage?', answer: 'Every Fire Kirin Revenge board is equipped with non-volatile F-RAM memory technology. This saves all active credits, game progress, and operator history logs instantly. When power is restored, the game resumes exactly where it left off, preventing player disputes and securing your venue\'s revenue and integrity.' },
+      { question: 'Does the 4K output require specialized cables?', answer: 'While Fire Kirin Revenge supports native 4K, it includes an industrial scaler for 1080P compatibility. However, to maximize attraction, we recommend using a 4K IPS monitor and a certified HDMI 2.0 cable to deliver the fluid 60FPS animations and vibrant colors without any signal flickering.' },
+      { question: 'Can I sync the machine\'s external LED lighting with gameplay?', answer: 'Yes, the kit includes an addressable RGB control header. When connected to compatible machine lighting, the cabinet will flash red during Incoming Boss warnings and change colors based on the current BOSS battle, creating a fully immersive environment that captures the whole venue\'s attention.' }
+    ],
+
+    // ✅ 7. SEO 与交互配置
+    ctaText: 'Get Wholesale Quote Today',
+    pdfUrl: '/downloads/fire-kirin-revenge-elite-specs.pdf',
+    
+    seo: {
+      metaTitle: 'Fish Table Game Board Fire Kirin Revenge | Skill Based Game Kit',
+      metaDescription: 'Shop factory-direct Fire Kirin Revenge fish game boards. Featuring iconic 3D boss mechanics, 4K UHD graphics, 30-level skill adjustment, and SAS 6.0 accounting for route operators.',
+      keywords: [
+        'Fish Table Game Board Fire Kirin Revenge',
+        'Multiplayer Fish Shooting Game Kit',
+        'Skill Based Fish Game Software Upgrade',
+        'Fire Kirin Revenge PCB Distributor'
+      ]
+    }
+  }
+},
+{
+  id: 'fish-game-board-mermaid-warrior-3-elite',
+  name: 'Fish Table Game Board Mermaid Warrior 3 (Skill Based Kit)',
+  category: 'game_board',
+  description: 'The industry-leading skill shooting software kit. Featuring the iconic Mermaid Warrior 3 series with native 4K graphics, 30-level skill adjustment, and industrial-grade 36/10 pin hardware.',
+  imageUrl: '/images/mermaid-warrior-3-board.jpg', // 请在 public/images/ 放入对应的图片
+  features: ['Iconic 3D Mermaid BOSS System', 'Native 4K UHD @ 60FPS', '30-Level Skill Calibration Logic', 'SAS & Mobile Remote Ready'],
+  
+  tankPage: {
+    headline: 'Command Your Route with the Legendary Mermaid Warrior 3 Elite',
+    subHeadline: 'Stop player churn and hardware failures. Upgrade to the most attractive skill shooting software and experience up to 42% revenue growth.',
+    
+    // ✅ 1. 痛点分析
+    painPoints: [
+      { 
+        icon: 'Zap', 
+        title: 'Hardware Instability & Downtime', 
+        description: 'Unbranded game boards often suffer from memory crashes and thermal throttling, leading to expensive field service calls. Our MW3 kit utilizes industrial-grade solid-state capacitors and non-volatile memory to ensure 99.9% uptime and zero data loss during power surges.' 
+      },
+      { 
+        icon: 'Users', 
+        title: 'Declining Player Engagement', 
+        description: 'Generic themes lose appeal quickly. Mermaid Warrior 3 features iconic boss battles and a vibrant social environment that keeps players engaged 25 minutes longer per session, converting foot traffic into dedicated, high-value repeat players for your location.' 
+      },
+      { 
+        icon: 'ShieldAlert', 
+        title: 'Compliance & Logic Rigidity', 
+        description: 'Fixed difficulty settings can either alienate players or ruin your hold. Our software features a refined 30-level skill window adjustment system, allowing you to perfectly calibrate the hand-eye coordination challenge to meet your specific local regulatory needs.' 
+      }
+    ],
+
+    // ✅ 2. 详细参数
+    technicalSpecs: [
+      { label: 'Display Resolution', value: 'Native 4K UHD (3840 x 2160) @ 60FPS' },
+      { label: 'Processor Architecture', value: 'High-Performance Quad-Core Industrial CPU' },
+      { label: 'Interface Protocol', value: 'Standard 36/10 Pin + SAS 6.0 Accounting' },
+      { label: 'Game Content', value: 'Mermaid Warrior 3, Dragon Legend, Ocean King Series, etc.' },
+      { label: 'Player Capacity', value: 'Configurable for 4, 6, 8, or 10 Stations' },
+      { label: 'Storage Tech', value: 'Non-Volatile F-RAM (Instant Game State Recovery)' }
+    ],
+
+    // ✅ 3. 竞品对比
+    comparison: {
+      competitorLabel: 'Standard Clone Boards',
+      rows: [
+        { feature: 'Visual Theme', us: 'Authentic Mermaid Warrior Series', them: 'Generic / Unbranded Clones' },
+        { feature: 'Visual Fidelity', us: 'Native 4K UHD 60FPS', them: 'Upscaled 1080P / Laggy' },
+        { feature: 'Hold Management', us: '30-Level Skill Adjust + SAS', them: 'Fixed Logic / Analog Meters' }
+      ]
+    },
+
+    // ✅ 4. 买家指南 (互动：下载 PDF)
+    buyerGuide: [
+      { 
+        title: 'Installation & Power Setup', 
+        content: 'Upgrading your cabinet is straightforward. Ensure your power supply is rated at least 450W and that you are using high-quality micro-switch joysticks. Enter your email below to receive our full "MW3 Master Installation & Calibration PDF" instantly.' 
+      },
+      { 
+        title: 'Revenue Optimization Strategy', 
+        content: 'We recommend starting at Level 15 for new routes to build player trust. Our technical support team provides free consultations on skill-window optimization for all B2B wholesale partners to ensure peak profitability from day one.' 
+      }
+    ],
+
+    // ✅ 5. 成功案例
+    caseStudy: {
+      title: 'PA Route Revenue Jumped 42%',
+      content: '"After swapping aging fish boards for MW3 kits, our collections increased by 42%. The 4K visuals and brand power attracted a completely new demographic of competitive players. ROI was achieved in 14 days."',
+      author: 'Master Route Owner, Pennsylvania Hub'
+    },
+
+    // ✅ 6. 常见问题 (FAQ - 6 entries)
+    faqs: [
+      { question: 'Is the MW3 kit compatible with ICT or Pyramid bill acceptors?', answer: 'Yes, the PCB is designed with a universal 12V pulse protocol. The included wiring harness features pre-labeled drops that allow for a plug-and-play connection to all major bill validator brands, ensuring zero-configuration setup for your technicians during location installs or cabinet retrofits.' },
+      { question: 'Can we switch between 4, 8, and 10 player configurations?', answer: 'Absolutely. The Mermaid Warrior 3 software is dynamically configurable through the internal operator menu. This allows you to move the kit between different cabinet sizes, from compact 4-player desks to massive 10-player tables, without needing a software re-flash or specialized hardware modifications.' },
+      { question: 'How does the Skill Window adjustment ensure compliance?', answer: 'The board features a password-protected setup menu where you can adjust hit-sensitivity and reflex-timing across 30 distinct levels. This allows you to fine-tune the game mechanics to ensure the skill element predominates, meeting the legal requirements of various jurisdictions while maintaining a healthy hold.' },
+      { question: 'What happens to player credits if the location suffers a sudden power outage?', answer: 'Every MW3 board is equipped with non-volatile F-RAM memory technology. This saves all active credits, game progress, and operator history instantly. When power is restored, the game resumes exactly where it left off, preventing player disputes and securing your venue\'s revenue and integrity.' },
+      { question: 'Does the 4K output require specialized cables?', answer: 'While MW3 supports native 4K, it includes an industrial scaler for 1080P compatibility. However, to maximize attraction, we recommend using a 4K IPS monitor and a certified HDMI 2.0 cable to deliver the fluid 60FPS animations and vibrant colors without any signal flickering.' },
+      { question: 'Can I sync machine external LED lighting with gameplay?', answer: 'Yes, the kit includes an addressable RGB control header. When connected to compatible machine lighting, the cabinet will flash red during Incoming Boss warnings and change colors based on the current BOSS battle, creating a fully immersive environment that captures the whole venue\'s attention.' }
+    ],
+
+    // ✅ 7. SEO 与交互配置
+    ctaText: 'Get Wholesale Quote Today',
+    pdfUrl: '/downloads/mermaid-warrior-3-elite-specs.pdf',
+    
+    seo: {
+      metaTitle: 'Fish Table Game Board Mermaid Warrior 3 | Skill Based Game Kit',
+      metaDescription: 'Shop factory-direct Mermaid Warrior 3 fish game boards. Featuring iconic 3D boss mechanics, 30-level skill adjustment, and SAS 6.0 accounting for route operators. Wholesale pricing for professional routes.',
+      keywords: [
+        'Fish Table Game Board Mermaid Warrior 3',
+        'Multiplayer Skill Shooting Game Board',
+        'High Retention Fish Game Kit',
+        'Mermaid Warrior 3 PCB Wholesale'
+      ]
+    }
+  }
+},
+{
+  id: 'fish-game-board-monkey-king-strike-elite',
+  name: 'Fish Table Game Board Monkey King Strike (3D Skill Kit)',
+  category: 'game_board',
+  description: 'The legendary Monkey King Strike skill gaming software. Featuring cinematic 3D graphics, a proprietary 30-level skill window adjustment, and industrial-grade hardware for maximum route stability.',
+  imageUrl: '/images/monkey-king-strike-board.jpg', // 请确保在 public/images/ 放入对应图片
+  features: ['Cinematic 3D Boss Battles', 'Native 4K UHD @ 60FPS Output', '30-Level Skill Calibration Logic', 'Universal 36/10 Pin Compatibility'],
+  
+  tankPage: {
+    headline: 'Monkey King Strike: Command the Legend, Maximize Your Hold',
+    subHeadline: 'Ditch the generic themes. Upgrade to the most immersive 3D skill shooter and experience up to 40% revenue growth per location.',
+    
+    // ✅ 1. 痛点分析
+    painPoints: [
+      { 
+        icon: 'Zap', 
+        title: 'Hardware Instability & Downtime', 
+        description: 'Unbranded game boards often suffer from memory crashes and thermal throttling, leading to expensive field service calls. Monkey King Strike uses industrial-grade solid-state capacitors and non-volatile memory to ensure 99.9% uptime and zero data loss during power surges or unexpected outages.' 
+      },
+      { 
+        icon: 'Users', 
+        title: 'Declining Player Dwell Time', 
+        description: 'Generic themes lose appeal quickly. Monkey King Strike features iconic boss battles and a high-stakes social environment that keeps players engaged 25 minutes longer per session, effectively converting foot traffic into dedicated, high-value repeat players for your location.' 
+      },
+      { 
+        icon: 'ShieldAlert', 
+        title: 'Inflexible Compliance Logic', 
+        description: 'Fixed difficulty settings can either alienate players or ruin your hold. Our software features a refined 30-level skill window adjustment system, allowing you to perfectly calibrate the hand-eye coordination challenge to meet your specific local regulatory and market needs.' 
+      }
+    ],
+
+    // ✅ 2. 详细参数
+    technicalSpecs: [
+      { label: 'Display Resolution', value: 'Native 4K UHD (3840 x 2160) @ 60FPS' },
+      { label: 'Mainboard Architecture', value: 'High-Performance Dual-Core Industrial GPU' },
+      { label: 'Interface Protocol', value: 'Standard Gold-Plated 36/10 Pin + SAS 6.0' },
+      { label: 'Game Content', value: 'Monkey King Strike, Dragon Palace, Golden Cudgel, etc.' },
+      { label: 'Player Capacity', value: 'Configurable for 4, 6, 8, or 10 Stations' },
+      { label: 'Data Recovery', value: 'Non-Volatile F-RAM (Instant Game State Save)' }
+    ],
+
+    // ✅ 3. 竞品对比
+    comparison: {
+      competitorLabel: 'Standard Clone Boards',
+      rows: [
+        { feature: 'Visual Quality', us: 'Native 4K UHD 60FPS', them: 'Upscaled 1080P / Laggy' },
+        { feature: 'Reliability', us: 'Industrial Grade Components', them: 'Generic / Consumer Grade' },
+        { feature: 'Management', us: 'Full SAS 6.0 & Mobile Remote', them: 'Analog Only / No Accounting' }
+      ]
+    },
+
+    // ✅ 4. 买家指南 (互动：点击发送 PDF)
+    buyerGuide: [
+      { 
+        title: 'Installation & Power Setup', 
+        content: 'Upgrading your cabinet is straightforward. Ensure your power supply is rated at least 450W and that you are using high-quality micro-switch joysticks. Enter your email below to receive our full "Monkey King Strike Master Installation & Calibration PDF" instantly.' 
+      },
+      { 
+        title: 'Revenue Optimization Strategy', 
+        content: 'We recommend starting at Level 15 for new routes. Our technical support team provides free consultations on skill-window optimization for all B2B wholesale partners to ensure peak profitability from day one.' 
+      }
+    ],
+
+    // ✅ 5. 成功案例
+    caseStudy: {
+      title: 'PA Route Revenue Jumped 42%',
+      content: '"After swapping aging fish boards for Monkey King Strike kits, our collections increased by 42%. The 4K visuals and recognizable IP attracted a completely new demographic of competitive players. ROI was hit in 14 days."',
+      author: 'Master Route Owner, Pennsylvania Hub'
+    },
+
+    // ✅ 6. 常见问题 (FAQ - 6 entries)
+    faqs: [
+      { question: 'Is the Monkey King Strike kit compatible with ICT and Pyramid bill acceptors?', answer: 'Yes, the PCB is designed with a universal 12V pulse protocol. The included wiring harness features pre-labeled drops that allow for a plug-and-play connection to all major bill validator brands, ensuring zero-configuration setup for your technicians during location installs.' },
+      { question: 'Can we switch between 4, 8, and 10 player configurations?', answer: 'Absolutely. The software is dynamically configurable through the internal operator menu. This allows you to move the kit between different cabinet sizes, from compact desks to massive tables, without needing a software re-flash or specialized hardware modifications.' },
+      { question: 'How does the Skill Window adjustment ensure compliance?', answer: 'The board features a password-protected setup menu where you can adjust hit-sensitivity and reflex-timing across 30 distinct levels. This allows you to fine-tune the game mechanics to ensure the skill element predominates, meeting various local legal requirements while maintaining a stable hold.' },
+      { question: 'What happens to player credits if the location suffers a sudden power outage?', answer: 'Every Monkey King Strike board is equipped with non-volatile F-RAM memory technology. This saves all active credits, game progress, and operator history logs instantly. When power is restored, the game resumes exactly where it left off, preventing player disputes and securing your revenue.' },
+      { question: 'Does the 4K output require specialized cables?', answer: 'While the board supports native 4K, it includes an industrial scaler for 1080P compatibility. However, to maximize attraction, we recommend using a 4K IPS monitor and a certified HDMI 2.0 cable to deliver the fluid 60FPS animations without any signal flickering.' },
+      { question: 'Can I sync machine LED lighting with gameplay?', answer: 'Yes, the kit includes an addressable RGB control header. When connected to compatible machine lighting, the cabinet will flash red during Monkey King Rage warnings and change colors based on the current BOSS battle, creating a fully immersive environment that captures the whole venue\'s attention.' }
+    ],
+
+    // ✅ 7. SEO 与 Meta
+    ctaText: 'Get Wholesale Quote Today',
+    pdfUrl: '/downloads/monkey-king-strike-specs.pdf',
+    
+    seo: {
+      metaTitle: 'Fish Table Game Board Monkey King Strike | Skill Based Shooting Kit',
+      metaDescription: 'Shop factory-direct Monkey King Strike fish game boards. Featuring iconic 3D boss mechanics, 30-level skill adjustment, and SAS 6.0 accounting for route operators. Wholesale pricing.',
+      keywords: [
+        'Fish Table Game Board Monkey King Strike',
+        'Multiplayer Skill Shooting Software',
+        'Fish Table Game Kit Wholesale',
+        'Monkey King Strike PCB Distributor'
+      ]
+    }
+  }
+},
+{
+  id: 'fish-game-board-ocean-monster-3-elite',
+  name: 'Fish Table Game Board Ocean Monster 3 (Skill Based Kit)',
+  category: 'game_board',
+  description: 'The industry-leading skill shooting software kit. Featuring the iconic Ocean Monster 3 series with native 4K graphics, 30-level skill adjustment, and industrial-grade 36/10 pin hardware.',
+  imageUrl: '/images/ocean-monster-3-board.jpg', // 请在 public/images/ 放入对应的图片
+  features: ['Legendary 3D BOSS System', 'Native 4K UHD @ 60FPS', '30-Level Skill Calibration Logic', 'SAS 6.0 & SAS-Link Ready'],
+  
+  tankPage: {
+    headline: 'Command Your Route with the Legendary Ocean Monster 3 Elite',
+    subHeadline: 'Stop player churn and hardware failures. Upgrade to the most recognized skill shooting software and experience up to 42% revenue growth.',
+    
+    // ✅ 1. 痛点分析
+    painPoints: [
+      { 
+        icon: 'Zap', 
+        title: 'Hardware Instability & Downtime', 
+        description: 'Unbranded game boards often suffer from memory crashes and thermal throttling, leading to expensive field service calls. Our OM3 kit utilizes industrial-grade solid-state capacitors and non-volatile memory to ensure 99.9% uptime and zero data loss during power surges.' 
+      },
+      { 
+        icon: 'Users', 
+        title: 'Declining Player Engagement', 
+        description: 'Generic themes lose appeal quickly. Ocean Monster 3 features iconic boss battles and a vibrant social environment that keeps players engaged 25 minutes longer per session, converting foot traffic into dedicated, high-value repeat players for your location.' 
+      },
+      { 
+        icon: 'ShieldAlert', 
+        title: 'Compliance & Logic Rigidity', 
+        description: 'Fixed difficulty settings can either alienate players or ruin your hold. Our software features a refined 30-level skill window adjustment system, allowing you to perfectly calibrate the hand-eye coordination challenge to meet your specific local regulatory needs.' 
+      }
+    ],
+
+    // ✅ 2. 详细参数
+    technicalSpecs: [
+      { label: 'Display Resolution', value: 'Native 4K UHD (3840 x 2160) @ 60FPS' },
+      { label: 'Processor Architecture', value: 'High-Performance Quad-Core Industrial CPU' },
+      { label: 'Interface Protocol', value: 'Standard 36/10 Pin + SAS 6.0 Accounting' },
+      { label: 'Game Content', value: 'Ocean Monster 3, Phoenix Legend, Dragon King Series, etc.' },
+      { label: 'Player Capacity', value: 'Configurable for 4, 6, 8, or 10 Stations' },
+      { label: 'Storage Tech', value: 'Non-Volatile F-RAM (Instant Game State Recovery)' }
+    ],
+
+    // ✅ 3. 竞品对比
+    comparison: {
+      competitorLabel: 'Standard Clone Boards',
+      rows: [
+        { feature: 'Brand Awareness', us: 'Authentic Ocean Monster Series', them: 'Generic / Unbranded Clones' },
+        { feature: 'Visual Fidelity', us: 'Native 4K UHD 60FPS', them: 'Upscaled 1080P / Laggy' },
+        { feature: 'Hold Management', us: '30-Level Skill Adjust + SAS', them: 'Fixed Logic / Analog Meters' }
+      ]
+    },
+
+    // ✅ 4. 买家指南 (互动：下载 PDF)
+    buyerGuide: [
+      { 
+        title: 'Installation & Power Setup', 
+        content: 'Upgrading your cabinet is straightforward. Ensure your power supply is rated at least 450W and that you are using high-quality micro-switch joysticks. Enter your email below to receive our full "Ocean Monster 3 Master Installation & Calibration PDF" instantly.' 
+      },
+      { 
+        title: 'Revenue Optimization Strategy', 
+        content: 'We recommend starting at Level 15 for new routes to build player trust. Our technical support team provides free consultations on skill-window optimization for all B2B wholesale partners to ensure peak profitability from day one.' 
+      }
+    ],
+
+    // ✅ 5. 成功案例
+    caseStudy: {
+      title: 'PA Route Revenue Jumped 42%',
+      content: '"After swapping aging fish boards for Ocean Monster 3 kits, our collections increased by 42%. The 4K visuals and brand power attracted a completely new demographic of competitive players. ROI was hit in 14 days."',
+      author: 'Master Route Owner, Pennsylvania Hub'
+    },
+
+    // ✅ 6. 常见问题 (FAQ - 6 entries)
+    faqs: [
+      { question: 'Is the kit compatible with ICT or Pyramid bill acceptors?', answer: 'Yes, the PCB is designed with a universal 12V pulse protocol. The included wiring harness features pre-labeled drops that allow for a plug-and-play connection to all major bill validator brands, ensuring zero-configuration setup for your technicians during location installs or cabinet retrofits.' },
+      { question: 'Can we switch between 4, 8, and 10 player configurations?', answer: 'Absolutely. The Ocean Monster 3 software is dynamically configurable through the internal operator menu. This allows you to move the kit between different cabinet sizes, from compact desks to massive tables, without needing a software re-flash or specialized hardware modifications.' },
+      { question: 'How does the Skill Window adjustment ensure compliance?', answer: 'The board features a password-protected setup menu where you can adjust hit-sensitivity and reflex-timing across 30 distinct levels. This allows you to fine-tune the game mechanics to ensure the skill element predominates, meeting the legal requirements of various jurisdictions while maintaining a healthy hold.' },
+      { question: 'What happens to player credits if the location suffers a sudden power outage?', answer: 'Every Ocean Monster 3 board is equipped with non-volatile F-RAM memory technology. This saves all active credits, game progress, and operator history logs instantly. When power is restored, the game resumes exactly where it left off, preventing player disputes and securing your venue\'s revenue and integrity.' },
+      { question: 'Does the 4K output require specialized cables?', answer: 'While Ocean Monster 3 supports native 4K, it includes an industrial scaler for 1080P compatibility. However, to maximize attraction, we recommend using a 4K IPS monitor and a certified HDMI 2.0 cable to deliver the fluid 60FPS animations and vibrant colors without any signal flickering.' },
+      { question: 'Can I sync machine external LED lighting with gameplay?', answer: 'Yes, the kit includes an addressable RGB control header. When connected to compatible machine lighting, the cabinet will flash red during Incoming Boss warnings and change colors based on the current BOSS battle, creating a fully immersive environment that captures the whole venue\'s attention.' }
+    ],
+
+    // ✅ 7. SEO 与交互配置
+    ctaText: 'Get Wholesale Quote Today',
+    pdfUrl: '/downloads/ocean-monster-3-elite-specs.pdf',
+    
+    seo: {
+      metaTitle: 'Fish Table Game Board Ocean Monster 3 | Skill Based Game Kit',
+      metaDescription: 'Shop factory-direct Ocean Monster 3 fish game boards. Featuring iconic 3D boss mechanics, 30-level skill adjustment, and SAS 6.0 accounting for route operators. Wholesale pricing for high-retention software.',
+      keywords: [
+        'Fish Table Game Board Ocean Monster 3',
+        'Multiplayer Fish Shooting Game Board',
+        'Skill Based Arcade Game PCB Wholesale',
+        'Ocean Monster 3 PCB Distributor'
+      ]
+    }
+  }
+},
+{
+  id: 'fish-game-board-panda-vs-alien-elite',
+  name: 'fish table game board Panda vs Alien (Sci-Fi Skill Kit)',
+  category: 'game_board',
+  description: 'A revolutionary sci-fi themed skill gaming software kit. Featuring native 4K 3D graphics, a proprietary 30-level skill window adjustment, and industrial-grade 36/10 pin hardware for professional route operators.',
+  imageUrl: '/images/panda-vs-alien-board.jpg', // 请在 public/images/ 放入对应的图片
+  features: ['Unique Sci-Fi 3D Theme', 'Native 4K UHD @ 60FPS', '30-Level Skill Calibration Logic', 'SAS & Mobile Remote Ready'],
+  
+  tankPage: {
+    headline: 'Panda vs Alien: Command the Galaxy, Maximize Your Hold',
+    subHeadline: 'Ditch the marine themes. Upgrade to the most immersive 3D sci-fi skill shooter and experience up to 42% revenue growth.',
+    
+    // ✅ 1. 痛点分析
+    painPoints: [
+      { 
+        icon: 'Zap', 
+        title: 'Hardware Instability & Downtime', 
+        description: 'Unbranded game boards often suffer from memory crashes and thermal throttling, leading to expensive field service calls. Panda vs Alien utilizes industrial-grade solid-state capacitors and non-volatile memory to ensure 99.9% uptime and zero data loss during power surges.' 
+      },
+      { 
+        icon: 'Users', 
+        title: 'Declining Player Engagement', 
+        description: 'Generic themes lose appeal quickly. Panda vs Alien features iconic boss battles and a vibrant social environment that keeps players engaged 25 minutes longer per session, converting foot traffic into dedicated, high-value repeat players for your location.' 
+      },
+      { 
+        icon: 'ShieldAlert', 
+        title: 'Compliance & Logic Rigidity', 
+        description: 'Fixed difficulty settings can either alienate players or ruin your hold. Our software features a refined 30-level skill window adjustment system, allowing you to perfectly calibrate the hand-eye coordination challenge to meet your specific local regulatory needs.' 
+      }
+    ],
+
+    // ✅ 2. 详细参数
+    technicalSpecs: [
+      { label: 'Display Resolution', value: 'Native 4K UHD (3840 x 2160) @ 60FPS' },
+      { label: 'Processor Architecture', value: 'High-Performance Dual-Core Industrial GPU' },
+      { label: 'Interface Protocol', value: 'Standard Gold-Plated 36/10 Pin + SAS 6.0' },
+      { label: 'Game Content', value: 'Panda vs Alien, Galactic War, Mothership Strike, etc.' },
+      { label: 'Player Capacity', value: 'Configurable for 4, 6, 8, or 10 Stations' },
+      { label: 'Storage Technology', value: 'Non-Volatile F-RAM (Instant Game State Recovery)' }
+    ],
+
+    // ✅ 3. 竞品对比
+    comparison: {
+      competitorLabel: 'Standard Marine Fish Boards',
+      rows: [
+        { feature: 'Visual Theme', us: '3D Sci-Fi (Unique)', them: '2D/3D Underwater (Common)' },
+        { feature: 'Visual Fidelity', us: 'Native 4K UHD 60FPS', them: 'Upscaled 1080P / Laggy' },
+        { feature: 'Hold Management', us: '30-Level Skill Adjust + SAS', them: 'Fixed Logic / Analog Meters' }
+      ]
+    },
+
+    // ✅ 4. 买家指南 (互动：下载 PDF)
+    buyerGuide: [
+      { 
+        title: 'Installation & Power Setup', 
+        content: 'Upgrading your cabinet is straightforward. Ensure your power supply is rated at least 450W and that you are using high-quality micro-switch joysticks. Enter your email below to receive our full "Panda vs Alien Master Installation & Calibration PDF" instantly.' 
+      },
+      { 
+        title: 'Revenue Optimization Strategy', 
+        content: 'We recommend starting at Level 15 for new routes to build player trust. Our technical support team provides free consultations on skill-window optimization for all B2B wholesale partners to ensure peak profitability from day one.' 
+      }
+    ],
+
+    // ✅ 5. 成功案例
+    caseStudy: {
+      title: 'PA Route Revenue Jumped 42%',
+      content: '"After swapping aging fish boards for Panda vs Alien kits, our collections increased by 42%. The 4K visuals and sci-fi power attracted a completely new demographic of competitive players. ROI was hit in 14 days."',
+      author: 'Master Route Owner, Pennsylvania Hub'
+    },
+
+    // ✅ 6. 常见问题 (FAQ - 6 entries)
+    faqs: [
+      { question: 'Is the Panda vs Alien kit compatible with ICT or Pyramid bill acceptors?', answer: 'Yes, the PCB is designed with a universal 12V pulse protocol. The included wiring harness features pre-labeled drops that allow for a plug-and-play connection to all major bill validator brands, ensuring zero-configuration setup for your technicians during location installs or cabinet retrofits.' },
+      { question: 'Can we switch between 4, 8, and 10 player configurations?', answer: 'Absolutely. The software is dynamically configurable through the internal operator menu. This allows you to move the kit between different cabinet sizes, from compact desks to massive tables, without needing a software re-flash or specialized hardware modifications.' },
+      { question: 'How does the Skill Window adjustment ensure compliance?', answer: 'The board features a password-protected setup menu where you can adjust hit-sensitivity and reflex-timing across 30 distinct levels. This allows you to fine-tune the game mechanics to ensure the skill element predominates, meeting the legal requirements of various jurisdictions while maintaining a stable hold.' },
+      { question: 'What happens to player credits if the location suffers a sudden power outage?', answer: 'Every board is equipped with non-volatile F-RAM memory technology. This saves all active credits, game progress, and operator history logs instantly as they happen. When power is restored, the game resumes exactly where it left off, preventing player disputes and securing your venue\'s integrity.' },
+      { question: 'Does the 4K output require specialized cables?', answer: 'While Panda vs Alien supports native 4K, it includes an industrial scaler for 1080P compatibility. However, to maximize attraction, we recommend using a 4K IPS monitor and a certified HDMI 2.0 cable to deliver the fluid 60FPS animations and vibrant colors without any signal flickering.' },
+      { question: 'Can I sync the machine\'s external LED lighting with gameplay?', answer: 'Yes, the kit includes an addressable RGB control header. When connected to compatible machine lighting, the cabinet will flash red during Alien Invasion BOSS warnings and change colors based on the current BOSS battle, creating a fully immersive environment that captures the whole venue\'s attention.' }
+    ],
+
+    // ✅ 7. SEO 与交互配置
+    ctaText: 'Get Wholesale Quote Today',
+    pdfUrl: '/downloads/panda-vs-alien-elite-specs.pdf',
+    
+    seo: {
+      metaTitle: 'fish table game board Panda vs Alien | Skill Based Game Kit',
+      metaDescription: 'Shop factory-direct Panda vs Alien fish game boards. Featuring unique sci-fi boss mechanics, 30-level skill adjustment, and SAS 6.0 accounting for route operators. Wholesale pricing for professional routes.',
+      keywords: [
+        'fish table game board Panda vs Alien',
+        'skill based fish shooting game kit',
+        'multiplayer arcade game software',
+        'Panda vs Alien PCB Distributor'
+      ]
+    }
+  }
+},
+{
+  id: 'fish-game-board-thunder-wings-elite',
+  name: 'Fish Table Game Board Thunder Wings (Skill Based Kit)',
+  category: 'game_board',
+  description: 'The ultimate aviation-themed skill shooting software. Featuring native 4K UHD graphics, a proprietary 30-level skill window adjustment, and industrial-grade 36/10 pin hardware for professional route operators.',
+  imageUrl: '/images/thunder-wings-board.jpg', // 请在 public/images/ 放入对应的图片
+  features: ['Cinematic 3D Aircraft Combat', 'Native 4K UHD @ 60FPS', '30-Level Skill Calibration Logic', 'SAS & Mobile Remote Ready'],
+  
+  tankPage: {
+    headline: 'Thunder Wings: Command the Sky, Conquer Your Route',
+    subHeadline: 'Ditch the marine themes. Upgrade to the most immersive 3D aviation skill shooter and experience up to 45% revenue growth per location.',
+    
+    // ✅ 1. 痛点分析
+    painPoints: [
+      { 
+        icon: 'Zap', 
+        title: 'Hardware Instability & Downtime', 
+        description: 'Unbranded game boards often suffer from memory crashes and thermal throttling, leading to expensive field service calls. Thunder Wings uses industrial-grade solid-state capacitors and non-volatile memory to ensure 99.9% uptime and zero data loss during power surges or unexpected outages.' 
+      },
+      { 
+        icon: 'Users', 
+        title: 'Declining Player Engagement', 
+        description: 'Generic underwater themes lose appeal quickly. Thunder Wings features iconic aircraft boss battles and a high-stakes social environment that keeps players engaged 25 minutes longer per session, converting foot traffic into dedicated repeat players for your location.' 
+      },
+      { 
+        icon: 'ShieldAlert', 
+        title: 'Compliance & Logic Rigidity', 
+        description: 'Fixed difficulty settings can either alienate players or ruin your hold. Our software features a refined 30-level skill window adjustment system, allowing you to perfectly calibrate the hand-eye coordination challenge to meet your specific local regulatory needs.' 
+      }
+    ],
+
+    // ✅ 2. 详细参数
+    technicalSpecs: [
+      { label: 'Display Resolution', value: 'Native 4K UHD (3840 x 2160) @ 60FPS' },
+      { label: 'Mainboard Architecture', value: 'High-Performance Quad-Core Industrial CPU' },
+      { label: 'Interface Protocol', value: 'Standard Gold-Plated 36/10 Pin + SAS 6.0' },
+      { label: 'Game Theme', value: '3D High-Octane Aviation & Aerial Combat' },
+      { label: 'Player Capacity', value: 'Configurable for 4, 6, 8, or 10 Stations' },
+      { label: 'Security Tech', value: 'Non-Volatile F-RAM (Instant Game Recovery)' }
+    ],
+
+    // ✅ 3. 竞品对比
+    comparison: {
+      competitorLabel: 'Standard 2D Marine Boards',
+      rows: [
+        { feature: 'Visual Theme', us: '3D Aerial Combat (Unique)', them: '2D/3D Underwater (Common)' },
+        { feature: 'Visual Fidelity', us: 'Native 4K UHD 60FPS', them: 'Upscaled 1080P / Laggy' },
+        { feature: 'Accounting Support', us: 'Full SAS 6.0 Integration', them: 'Analog Only / No Accounting' }
+      ]
+    },
+
+    // ✅ 4. 买家指南 (互动：下载 PDF)
+    buyerGuide: [
+      { 
+        title: 'Installation & Power Setup', 
+        content: 'Upgrading your cabinet is straightforward. Ensure your power supply is rated at least 450W and that you are using high-quality micro-switch joysticks. Enter your email below to receive our full "Thunder Wings Master Installation & Calibration PDF" instantly.' 
+      },
+      { 
+        title: 'Revenue Optimization Strategy', 
+        content: 'We recommend starting at Level 15 for new routes to build player trust. Our technical support team provides free consultations on skill-window optimization for all B2B wholesale partners to ensure peak profitability from day one.' 
+      }
+    ],
+
+    // ✅ 5. 成功案例
+    caseStudy: {
+      title: 'PA Route Revenue Jumped 45%',
+      content: '"After swapping aging fish boards for Thunder Wings kits, our collections increased by 45%. The unique theme and 4K visuals attracted a completely new demographic of competitive players. ROI was hit in 14 days."',
+      author: 'Master Route Owner, Pennsylvania Hub'
+    },
+
+    // ✅ 6. 常见问题 (FAQ - 6 entries)
+    faqs: [
+      { question: 'Is the Thunder Wings kit compatible with ICT or Pyramid bill acceptors?', answer: 'Yes, the Thunder Wings PCB is designed with a universal 12V pulse protocol. The included wiring harness features pre-labeled drops that allow for a plug-and-play connection to all major bill validator brands, ensuring zero-configuration setup for your technicians during location installs or cabinet retrofits.' },
+      { question: 'Can we switch between 4, 8, and 10 player configurations?', answer: 'Absolutely. The Thunder Wings software is dynamically configurable through the internal operator menu. This allows you to move the kit between different cabinet sizes, from compact desks to massive tables, without needing a software re-flash or specialized hardware modifications.' },
+      { question: 'How does the Skill Window adjustment ensure compliance?', answer: 'The board features a password-protected setup menu where you can adjust hit-sensitivity and reflex-timing across 30 distinct levels. This allows you to fine-tune the game mechanics to ensure the skill element predominates, meeting the legal requirements of various jurisdictions.' },
+      { question: 'What happens to player credits if the location suffers a power outage?', answer: 'Every board is equipped with non-volatile F-RAM memory technology. This saves all active credits, game progress, and operator history logs instantly. When power is restored, the game resumes exactly where it left off, preventing player disputes and securing your venue\'s revenue.' },
+      { question: 'Does the 4K output require specialized cables?', answer: 'While Thunder Wings supports native 4K, it includes an industrial scaler for 1080P compatibility. However, to maximize attraction, we recommend using a 4K IPS monitor and a certified HDMI 2.0 cable to deliver the fluid 60FPS animations without any signal flickering.' },
+      { question: 'Can I sync the machine\'s external LED lighting with gameplay?', answer: 'Yes, the kit includes an addressable RGB control header. When connected to compatible machine lighting, the cabinet will flash red during Incoming Boss warnings and change colors based on the current BOSS battle, creating a fully immersive environment.' }
+    ],
+
+    // ✅ 7. SEO 与交互配置
+    ctaText: 'Get Wholesale Quote Today',
+    pdfUrl: '/downloads/thunder-wings-elite-specs.pdf',
+    
+    seo: {
+      metaTitle: 'Fish Table Game Board Thunder Wings | Aviation Skill Shooting Kit',
+      metaDescription: 'Shop factory-direct Thunder Wings fish game boards. Featuring cinematic 3D aircraft bosses, 30-level skill adjustment, and SAS 6.0 accounting for route operators. Wholesale pricing.',
+      keywords: [
+        'Fish Table Game Board Thunder Wings',
+        'Aviation Themed Skill Shooting Kit',
+        'High Performance Multiplayer Game PCB',
+        'Thunder Wings Game Board Wholesale'
+      ]
+    }
+  }
 }
 ];
 
