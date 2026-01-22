@@ -185,5 +185,6 @@ export const t = (lang: string, key: string): string => {
 export function isLanguageCode(code: string): code is LanguageCode {
   return LANGUAGES.some(l => l.code === code);
 }
+export default i18n;
 
 export default i18n;
