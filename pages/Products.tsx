@@ -12,10 +12,10 @@ const Products: React.FC = () => {
   const currentLang = (lang as LanguageCode) || DEFAULT_LANG;
   
   const categoryParam = searchParams.get('category');
-  const [filter, setFilter] = useState<'all' | 'complete_machine' | 'cabinet_only' | 'game_board'>('all');
+  const [filter, setFilter] = useState<'all' | 'skill_based_game_board' | 'cabinet_only' | 'game_board'>('all');
 
   useEffect(() => {
-    if (categoryParam && ['complete_machine', 'cabinet_only', 'game_board'].includes(categoryParam)) {
+    if (categoryParam && ['skill_based_game_board', 'cabinet_only', 'game_board'].includes(categoryParam)) {
       setFilter(categoryParam as any);
     } else {
       setFilter('all');
@@ -29,7 +29,7 @@ const Products: React.FC = () => {
 
   const categories = [
     { id: 'all', label: 'All Products', seoTitle: 'Skill Game Machines & Parts' },
-    { id: 'complete_machine', label: 'Complete Machines', seoTitle: 'Turnkey Skill Machines', desc: t(currentLang, 'cat.desc.machines') },
+    { id: 'skill_based_game_board', label: 'Skill-Based Game Board', seoTitle: 'Turnkey Skill Machines', desc: t(currentLang, 'cat.desc.machines') },
     { id: 'cabinet_only', label: 'Empty Cabinets', seoTitle: 'Empty Arcade Cabinets', desc: t(currentLang, 'cat.desc.cabinets') },
     { id: 'game_board', label: 'Game Kits / Boards', seoTitle: 'Skill Game Boards', desc: t(currentLang, 'cat.desc.boards') },
   ];
