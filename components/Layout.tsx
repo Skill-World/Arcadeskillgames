@@ -6,11 +6,7 @@ import { PageRoute } from '../types';
 import { LANGUAGES } from '../utils/i18n'; // ✅ 只引入语言列表定义
 import { SEO } from './SEO'; // ✅ 引入我们之前写的 SEO 坦克组件
 
-interface LayoutProps {
-  children: React.ReactNode;
-}
-
-const Layout: React.FC<LayoutProps> = ({ children }) => {
+const Layout: React.FC<LayoutProps> = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isProductDropdownOpen, setIsProductDropdownOpen] = useState(false);
   
@@ -259,7 +255,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 
       {/* Main Content */}
       <main className="flex-grow">
-        {children}
+        <Outlet />
       </main>
 
       {/* Footer */}
