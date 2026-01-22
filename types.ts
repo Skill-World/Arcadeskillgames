@@ -24,7 +24,7 @@ export interface Product {
   id: string;
   name: string;
   // ✅ 统一使用这三个标准 ID
-  category: 'complete_machine' | 'cabinet_only' | 'game_board'; 
+  category: 'skill_based_game_board' | 'cabinet_only' | 'game_board'; 
   description: string;
   imageUrl: string;
   features: string[];
@@ -162,7 +162,7 @@ export interface Solution {
   fullDescription: string;
   benefits: string[];
   icon: string;
-  recommendedCategory: 'complete_machine' | 'cabinet_only' | 'game_board';
+  recommendedCategory: 'skill_based_game_board' | 'cabinet_only' | 'game_board';
   stats: Stat[];
   painPoints: PainPoint[];
   comparison: {
