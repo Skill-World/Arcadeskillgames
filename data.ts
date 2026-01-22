@@ -2926,6 +2926,486 @@ export const getProducts = (lang: LanguageCode): Product[] => [
       ]
     }
   }
+},
+{
+  id: 'skill-based-game-board-golden-empires-777',
+  name: 'Skill-Based Game Board Golden Empires 777',
+  category: 'skill_based_game_board', // ✅ 使用最新的 ID
+  description: 'The industry-standard Nudge game platform. Featuring iconic Golden Empires graphics, native HD output, and industrial-grade 36/10 pin hardware for professional route operators.',
+  imageUrl: '/images/golden-empires-777.jpg', // 请在 public/images/ 放入图片
+  features: ['Nudge-Based Skill Logic', '1080P/4K HD Output Support', 'Universal 36/10 Pin Interface', 'Touch Screen Protocol Support'],
+  
+  tankPage: {
+    headline: 'Command Your Route with Golden Empires 777 Elite',
+    subHeadline: 'Ditch the clones. Upgrade to the most reliable Nudge Game Board and experience up to 38% revenue growth per location.',
+    
+    // ✅ 1. 痛点分析
+    painPoints: [
+      { 
+        icon: 'Zap', 
+        title: 'Hardware Instability & Downtime', 
+        description: 'Unbranded game boards often suffer from memory crashes and thermal instability, leading to expensive field service calls. Our board uses industrial-grade capacitors and non-volatile F-RAM to ensure 99.9% uptime and zero data loss during power surges.' 
+      },
+      { 
+        icon: 'ShieldAlert', 
+        title: 'Compliance & Audit Risks', 
+        description: 'Poor accounting systems lead to location disputes and regulatory issues. Our board features full SAS-link support and a secure, password-protected audit menu, providing the transparency and professional-grade asset protection that route operators demand.' 
+      },
+      { 
+        icon: 'Users', 
+        title: 'Player Boredom & Churn', 
+        description: 'Players have become tired of repetitive generic themes. Golden Empires 777 offers iconic brand familiarity that attracts players instantly, while the responsive Nudge interface keeps them engaged for significantly longer play sessions.' 
+      }
+    ],
+
+    // ✅ 2. 详细参数
+    technicalSpecs: [
+      { label: 'Display Output', value: 'VGA / HDMI Dual Resolution Support (Up to 4K)' },
+      { label: 'Interface Type', value: 'Industry Standard Gold-Plated 36/10 Pin' },
+      { label: 'Logic Framework', value: 'Nudge-Based Skill Logic & Redemption Mode' },
+      { label: 'Touch Support', value: 'Compatible with 3M and Elo Touch Protocols' },
+      { label: 'Accounting Protocol', value: 'Full SAS-Link & Secure Local Audit Menu' },
+      { label: 'Memory Tech', value: 'Non-Volatile F-RAM (Instant Game Recovery)' }
+    ],
+
+    // ✅ 3. 竞品对比
+    comparison: {
+      competitorLabel: 'Standard Clone Nudge Boards',
+      rows: [
+        { feature: 'Visual Dimension', us: 'Native HD Graphics', them: 'Upscaled / Blurry Assets' },
+        { feature: 'Security Protocol', us: 'SAS-Link & Encrypted Keys', them: 'Analog Meters Only' },
+        { feature: 'Reliability', us: 'Industrial Grade (99.9%)', them: 'Frequent Memory Crashes' }
+      ]
+    },
+
+    // ✅ 4. 买家指南
+    buyerGuide: [
+      { 
+        title: 'Retrofit and Installation', 
+        content: 'Upgrading your existing cabinet is straightforward. Ensure your power supply is rated at least 350W and check your touch screen calibration. Enter your email below to receive our full "Skill Game Retrofit Manual" PDF instantly.' 
+      },
+      { 
+        title: 'Optimizing Revenue Hold', 
+        content: 'We recommend starting at Level 15 for new routes. Our technical support team provides free consultations on skill-window optimization for all B2B wholesale partners to ensure peak profitability.' 
+      }
+    ],
+
+    // ✅ 5. 成功案例
+    caseStudy: {
+      title: 'Georgia Route Revenue Jumped 38%',
+      content: '"By swapping aging legacy boards for the Golden Empires 777 Elite kits, we saw an immediate 38% jump in weekly collections. The HD visuals and Nudge power attracted a completely new demographic. ROI was hit in 16 days."',
+      author: 'Master Route Operator, Georgia'
+    },
+
+    // ✅ 6. 常见问题
+    faqs: [
+      { question: 'Is this Skill-Based Game Board compatible with my current cabinet wiring?', answer: 'Yes, the board utilizes the industry-standard 36/10 pin gold-plated edge connector. This allows for a direct plug-and-play replacement in most existing 8-liner cabinets, ensuring your technicians can complete the hardware upgrade in under 15 minutes without any complex re-wiring.' },
+      { question: 'How does the Nudge feature work to ensure the game is skill-based?', answer: 'The software includes a refined Nudge mechanic where players must manually interact with the reels after a spin to move them into a winning position. This requires hand-eye coordination and reflex timing, ensuring the game outcome is determined by player skill rather than pure chance.' },
+      { question: 'Can I adjust the hold percentage to match my specific location needs?', answer: 'Absolutely. The board features a password-protected operator menu with 30 distinct levels of skill-window calibration. This allows you to fine-tune the difficulty to match the skill level of your local players while maintaining a healthy and predictable profit margin.' },
+      { question: 'What happens to the credits if the machine loses power suddenly?', answer: 'Every board is equipped with non-volatile F-RAM memory technology. This technology saves every player credit, game progress state, and operator log instantly. When power is restored, the machine resumes exactly where it left off, preventing player disputes.' },
+      { question: 'Does the PCB support modern touch screen monitor interfaces?', answer: 'Yes, this Universal Game Logic Board is fully compatible with most standard 3M and Elo touch screen protocols. This enables a more engaging and modern social gaming experience, allowing players to interact directly with the game elements on the screen.' },
+      { question: 'How do you protect the board from static electricity?', answer: 'Our boards feature an enhanced 15KV ESD protection circuit designed specifically for environments with static-prone carpets. This prevents environmental static from resetting the processor or damaging sensitive logic components, ensuring zero technical interruptions.' }
+    ],
+
+    // ✅ 7. SEO 与交互配置
+    ctaText: 'Get Wholesale Quote Today',
+    pdfUrl: '/downloads/golden-empires-777-specs.pdf',
+    
+    seo: {
+      metaTitle: 'Skill-Based Game Board Golden Empires 777 | Nudge Game Kit',
+      metaDescription: 'Shop factory-direct Golden Empires 777 Nudge boards. Featuring native HD graphics, 30-level skill adjustment, and SAS-link support for route operators. Wholesale pricing.',
+      keywords: [
+        'Skill-Based Game Board Golden Empires 777',
+        'Nudge Game Board Wholesale',
+        'Redemption Game PCB Kit',
+        'Skill Gaming PCB Distributor'
+      ]
+    }
+  }
+},
+{
+  id: 'skill-based-game-board-lunars-quest-777',
+  name: 'Skill-Based Game Board Lunar\'s Quest 777',
+  category: 'skill_based_game_board',
+  description: 'The cinematic sci-fi redemption platform. Featuring immersive lunar-themed graphics, native 4K output, and industrial-grade 36/10 pin hardware for elite route operators.',
+  imageUrl: '/images/lunars-quest-777.jpg', // 请在 public/images/ 放入对应图片
+  features: ['Cinematic 3D Lunar Graphics', 'Native 4K UHD Output Support', 'Nudge-Based Skill Logic', 'Universal 36/10 Pin Interface'],
+  
+  tankPage: {
+    headline: 'Command the Galaxy, Maximize Your Hold: Lunar\'s Quest 777 Elite',
+    subHeadline: 'Ditch the legacy themes. Upgrade to the most immersive 3D Nudge Game Board and experience up to 42% revenue growth per location.',
+    
+    // ✅ 1. 痛点分析
+    painPoints: [
+      { 
+        icon: 'Zap', 
+        title: 'Hardware Instability & Downtime', 
+        description: 'Unbranded game boards often suffer from memory crashes and thermal instability, leading to expensive field service calls. Our board uses industrial-grade capacitors and non-volatile F-RAM to ensure 99.9% uptime and zero data loss during power surges or unexpected outages.' 
+      },
+      { 
+        icon: 'ShieldAlert', 
+        title: 'Audit and Compliance Risks', 
+        description: 'Poor accounting systems lead to location disputes and potential regulatory scrutiny. Our board features full SAS-link support and a secure, password-protected audit menu, providing the transparency and professional-grade asset protection that serious route operators demand for daily operation.' 
+      },
+      { 
+        icon: 'Users', 
+        title: 'Player Boredom & Location Churn', 
+        description: 'Players have become tired of repetitive legacy themes, leading to shorter play sessions. Lunar\'s Quest 777 offers a cinematic 4K sci-fi environment that attracts players instantly, while the responsive Nudge interface keeps them engaged for significantly longer periods of time.' 
+      }
+    ],
+
+    // ✅ 2. 详细参数
+    technicalSpecs: [
+      { label: 'Display Output', value: 'VGA / HDMI Dual Resolution Support (Up to 4K UHD)' },
+      { label: 'Interface Type', value: 'Industry Standard Gold-Plated 36/10 Pin Edge' },
+      { label: 'Logic Protocol', value: 'Nudge-Based Skill Logic & Redemption Protocol' },
+      { label: 'Touch Interface', value: 'Full Compatibility with 3M and Elo Touch Protocols' },
+      { label: 'ESD Protection', value: 'Enhanced 15KV Static Circuit for High-Traffic Routes' },
+      { label: 'Memory Tech', value: 'Non-Volatile F-RAM (Instant Game State Recovery)' }
+    ],
+
+    // ✅ 3. 竞品对比
+    comparison: {
+      competitorLabel: 'Standard Legacy 8-Liner Boards',
+      rows: [
+        { feature: 'Visual Real Estate', us: 'Native 4K 3D Sci-Fi', them: '2D Stretched Legacy Assets' },
+        { feature: 'Security Protocol', us: 'Full SAS-Link & Audit', them: 'Analog Only / No Accounting' },
+        { feature: 'ESD Hardening', us: 'Enhanced 15KV Protection', them: 'Standard / Unprotected' }
+      ]
+    },
+
+    // ✅ 4. 买家指南 (互动点：发送 PDF)
+    buyerGuide: [
+      { 
+        title: 'Retrofit and Installation', 
+        content: 'Upgrading your existing vertical cabinet is straightforward. Ensure your power supply is rated at least 350W and check your touch screen calibration. Enter your email below to receive our full "Skill Game Retrofit Manual" PDF instantly.' 
+      },
+      { 
+        title: 'Optimizing Revenue Hold', 
+        content: 'We recommend starting at Level 15 for new locations to build player confidence. Our technical support team provides free consultations on skill-window optimization for all wholesale partners to ensure peak profitability.' 
+      }
+    ],
+
+    // ✅ 5. 成功案例
+    caseStudy: {
+      title: 'North Carolina Route Collections Jumped 42%',
+      content: '"After swapping aging legacy software for Lunar\'s Quest 777, our weekly hold increased by 42%. The cinematic 4K visuals attracted a younger, more competitive demographic. ROI was achieved in 14 days of peak operation."',
+      author: 'A. Jensen, Master Route Operator'
+    },
+
+    // ✅ 6. 常见问题 (FAQ)
+    faqs: [
+      { question: 'Is this Skill-Based Game Board compatible with my current cabinet wiring?', answer: 'Yes, the board utilizes the industry-standard 36/10 pin gold-plated edge connector. This allows for a direct plug-and-play replacement in most existing 8-liner or skill-game cabinets, ensuring your technicians can complete the hardware upgrade in under 15 minutes without any complex re-wiring.' },
+      { question: 'How does the Nudge feature work to ensure the game is skill-based?', answer: 'The software includes a refined Nudge mechanic where players must manually interact with the reels after a spin to move them into a winning position. This requires hand-eye coordination and reflex timing, ensuring the game outcome is determined by player skill rather than pure chance, which is essential for legal compliance.' },
+      { question: 'Can I adjust the hold percentage to match my specific location needs?', answer: 'Absolutely. The board features a password-protected operator menu with 30 distinct levels of skill-window calibration. This allows you to fine-tune the difficulty to match the skill level of your local players while maintaining a healthy and predictable profit margin for your route business.' },
+      { question: 'What happens to the credits if the machine loses power suddenly?', answer: 'Every board is equipped with non-volatile F-RAM memory technology. This advanced feature saves every player credit, game progress state, and operator log instantly. When power is restored, the machine resumes exactly where it left off, preventing player disputes and securing your venue\'s reputation and integrity.' },
+      { question: 'Does the PCB support modern touch screen monitor interfaces?', answer: 'Yes, this Universal Game Logic Board is fully compatible with most standard 3M and Elo touch screen protocols. This enables a more engaging and modern social gaming experience, allowing players to interact directly with the game elements on the screen for enhanced immersion, which has been shown to increase average session length.' },
+      { question: 'How do you protect the board from static electricity?', answer: 'Our boards feature an enhanced 15KV ESD protection circuit designed specifically for environments with static-prone carpets. This prevents environmental static from resetting the processor or damaging sensitive logic components, ensuring your route equipment stays earning revenue with zero technical interruptions throughout the busy weekend hours of operation.' }
+    ],
+
+    // ✅ 7. SEO 与交互配置
+    ctaText: 'Get Wholesale Quote Today',
+    pdfUrl: '/downloads/lunars-quest-777-specs.pdf',
+    
+    seo: {
+      metaTitle: 'Skill-Based Game Board Lunar\'s Quest 777 | Nudge Game Kit',
+      metaDescription: 'Shop factory-direct Lunar\'s Quest 777 Nudge boards. Featuring native 4K graphics, 30-level skill adjustment, and 15KV ESD protection for route operators. Wholesale Skill-Based Game Boards.',
+      keywords: [
+        'Skill-Based Game Board Lunar\'s Quest 777',
+        'Nudge Game Board Wholesale',
+        'Redemption Game PCB Kit',
+        'Universal Game Logic Board'
+      ]
+    }
+  }
+},
+{
+  id: 'skill-based-game-board-golden-empires-multi',
+  name: 'Skill-Based Game Board Golden Empires (Multi-Game Kit)',
+  category: 'skill_based_game_board',
+  description: 'The premier multi-game redemption platform. Featuring iconic Golden Empires titles, native 4K output, and industrial-grade 36/10 pin hardware for professional route operators.',
+  imageUrl: '/images/golden-empires-multi.jpg', // 请在 public/images/ 放入图片
+  features: ['Multi-Game Software Suite', 'Nudge-Based Skill Logic', '4K UHD Graphics Support', 'Universal 36/10 Pin Interface'],
+  
+  tankPage: {
+    headline: 'Command Your Route with Golden Empires Multi-Game Elite',
+    subHeadline: 'Ditch the generic clones. Upgrade to the most reliable Nudge Game Board and experience up to 38% revenue growth per location.',
+    
+    // ✅ 1. 痛点分析
+    painPoints: [
+      { 
+        icon: 'Zap', 
+        title: 'Hardware Instability & Downtime', 
+        description: 'Unbranded game boards often suffer from memory crashes and thermal instability, leading to expensive field service calls. Our board uses industrial-grade capacitors and non-volatile F-RAM to ensure 99.9% uptime and zero data loss during power surges or unexpected outages.' 
+      },
+      { 
+        icon: 'ShieldAlert', 
+        title: 'Audit and Compliance Risks', 
+        description: 'Poor accounting systems lead to location disputes and regulatory issues. Our board features full SAS-link support and a secure, password-protected audit menu, providing the transparency and professional-grade asset protection that serious route operators demand for daily operation.' 
+      },
+      { 
+        icon: 'Users', 
+        title: 'Player Boredom & Location Churn', 
+        description: 'Players have become tired of repetitive generic themes, leading to shorter sessions. Golden Empires offers iconic brand familiarity and variety that attracts players instantly, while the responsive Nudge interface keeps them engaged for significantly longer periods.' 
+      }
+    ],
+
+    // ✅ 2. 详细参数
+    technicalSpecs: [
+      { label: 'Display Output', value: 'VGA / HDMI Dual Resolution Support (Up to 4K UHD)' },
+      { label: 'Interface Type', value: 'Industry Standard Gold-Plated 36/10 Pin Edge' },
+      { label: 'Logic Framework', value: 'Nudge-Based Skill Logic & Multi-Game Redemption' },
+      { label: 'Touch Support', value: 'Compatible with 3M and Elo Touch Protocols' },
+      { label: 'Accounting Protocol', value: 'Full SAS-Link & Secure Local Audit Menu' },
+      { label: 'Memory Tech', value: 'Non-Volatile F-RAM (Instant Game Recovery)' }
+    ],
+
+    // ✅ 3. 竞品对比
+    comparison: {
+      competitorLabel: 'Standard Clone Multi-Game Boards',
+      rows: [
+        { feature: 'Visual Quality', us: 'Native 4K UHD Assets', them: 'Upscaled / Blurry Graphics' },
+        { feature: 'Reliability', us: 'Industrial Grade (99.9%)', them: 'Frequent Memory Crashes' },
+        { feature: 'Hold Stability', us: '30-Level Skill Adjust + SAS', them: 'Fixed Logic / Analog Only' }
+      ]
+    },
+
+    // ✅ 4. 买家指南 (互动点：发送 PDF)
+    buyerGuide: [
+      { 
+        title: 'Retrofit and Installation', 
+        content: 'Upgrading your existing vertical cabinet is straightforward. Ensure your power supply is rated at least 350W and check your touch screen calibration. Enter your email below to receive our full "Multi-Game Retrofit Manual" PDF instantly.' 
+      },
+      { 
+        title: 'Optimizing Revenue Hold', 
+        content: 'We recommend starting at Level 15 for new routes. Our technical support team provides free consultations on skill-window optimization for all B2B wholesale partners to ensure peak profitability.' 
+      }
+    ],
+
+    // ✅ 5. 成功案例
+    caseStudy: {
+      title: 'Pennsylvania Route Collections Jumped 38%',
+      content: '"After swapping aging legacy software for Golden Empires Multi-Game, our weekly hold increased by 38%. The cinematic 4K visuals attracted a younger, more competitive demographic. ROI was achieved in 16 days of peak operation."',
+      author: 'J. Miller, Master Route Operator'
+    },
+
+    // ✅ 6. 常见问题 (FAQ)
+    faqs: [
+      { question: 'Is this Skill-Based Game Board compatible with my current cabinet wiring?', answer: 'Yes, the board utilizes the industry-standard 36/10 pin gold-plated edge connector. This allows for a direct plug-and-play replacement in most existing 8-liner or vertical skill-game cabinets, ensuring your technicians can complete the hardware upgrade in under 15 minutes.' },
+      { question: 'How does the Nudge feature work to ensure the game is skill-based?', answer: 'The software includes a refined Nudge mechanic where players must manually interact with the reels after a spin to move them into a winning position. This requires hand-eye coordination and reflex timing, ensuring the game outcome is determined by player skill.' },
+      { question: 'Can I adjust the hold percentage to match my specific location needs?', answer: 'Absolutely. The board features a password-protected operator menu with 30 distinct levels of skill-window calibration. This allows you to fine-tune the difficulty to match the skill level of your local players while maintaining a healthy and predictable profit margin.' },
+      { question: 'What happens to the credits if the machine loses power suddenly?', answer: 'Every board is equipped with non-volatile F-RAM memory technology. This technology saves every player credit, game progress state, and operator log instantly. When power is restored, the machine resumes exactly where it left off, preventing player disputes.' },
+      { question: 'Does the PCB support modern touch screen monitor interfaces?', answer: 'Yes, this Universal Game Logic Board is fully compatible with most standard 3M and Elo touch screen protocols. This enables a more engaging and modern social gaming experience, allowing players to interact directly with the game elements on the screen.' },
+      { question: 'How do you protect the board from static electricity?', answer: 'Our boards feature an enhanced 15KV ESD protection circuit designed specifically for environments with static-prone carpets. This prevents environmental static from resetting the processor or damaging sensitive logic components, ensuring zero technical interruptions.' }
+    ],
+
+    // ✅ 7. SEO 与交互配置
+    ctaText: 'Get Wholesale Quote Today',
+    pdfUrl: '/downloads/golden-empires-multi-specs.pdf',
+    
+    seo: {
+      metaTitle: 'Skill-Based Game Board Golden Empires | Nudge Multi-game PCB Kit',
+      metaDescription: 'Shop factory-direct Golden Empires Nudge boards. Featuring 5-in-1 multi-game variety, native 4K graphics, 30-level skill adjustment, and SAS-link support. Wholesale Skill-Based Game Boards.',
+      keywords: [
+        'Skill-Based Game Board Golden Empires',
+        'Nudge Game Board Software',
+        'Multi-game PCB Kit Wholesale',
+        'Universal Game Logic Board'
+      ]
+    }
+  }
+},
+{
+  id: 'universal-game-logic-board-xtreme-skill-777',
+  name: 'Universal Game Logic Board Xtreme Skill 777',
+  category: 'skill_based_game_board',
+  description: 'The premier 4K UHD redemption platform. Featuring immersive nudge-themed graphics, industrial-grade hardware, and full SAS 6.0 accounting for elite route operators.',
+  imageUrl: '/images/xtreme-skill-777-board.jpg', // 请在 public/images/ 放入图片
+  features: ['Cinematic 4K UHD Output', 'Nudge-Based Skill Logic', '30-Level Skill Calibration', 'Enhanced 15KV ESD Protection'],
+  
+  tankPage: {
+    headline: 'Xtreme Skill 777: Dominate Your Route with 4K Power',
+    subHeadline: 'Ditch the legacy boards. Upgrade to the most immersive 3D Nudge Game Board and experience up to 45% revenue growth per location.',
+    
+    // ✅ 1. 痛点分析
+    painPoints: [
+      { 
+        icon: 'Zap', 
+        title: 'Hardware Instability & Downtime', 
+        description: 'Unbranded game boards often suffer from memory crashes and thermal instability, leading to expensive field service calls. Xtreme Skill 777 utilizes industrial-grade solid-state capacitors and non-volatile F-RAM to ensure 99.9% uptime and zero data loss during power surges.' 
+      },
+      { 
+        icon: 'ShieldAlert', 
+        title: 'Audit and Compliance Risks', 
+        description: 'Poor accounting systems lead to location disputes and regulatory issues. Our board features full SAS-link support and a secure, password-protected audit menu, providing the transparency and professional-grade asset protection that serious route operators demand for daily operation.' 
+      },
+      { 
+        icon: 'Users', 
+        title: 'Player Boredom & Location Churn', 
+        description: 'Players have become tired of repetitive legacy themes, leading to shorter play sessions. Xtreme Skill 777 offers a cinematic 4K environment that attracts players instantly, while the responsive Nudge interface keeps them engaged for significantly longer periods of time.' 
+      }
+    ],
+
+    // ✅ 2. 详细参数
+    technicalSpecs: [
+      { label: 'Display Output', value: 'VGA / HDMI / DP Multi-Resolution Support (Up to 4K UHD)' },
+      { label: 'Interface Type', value: 'Industry Standard Gold-Plated 36/10 Pin Edge' },
+      { label: 'Logic Protocol', value: 'Nudge-Based Skill Logic & Pre-Reveal Protocol' },
+      { label: 'Touch Interface', value: 'Full Compatibility with 3M and Elo Touch Protocols' },
+      { label: 'ESD Protection', value: 'Enhanced 15KV Static Circuit for High-Traffic Routes' },
+      { label: 'Memory Tech', value: 'Non-Volatile F-RAM (Instant Game State Recovery)' }
+    ],
+
+    // ✅ 3. 竞品对比
+    comparison: {
+      competitorLabel: 'Standard Legacy 8-Liner Boards',
+      rows: [
+        { feature: 'Visual Fidelity', us: 'Native 4K UHD 60FPS', them: 'Upscaled 1080P / Stretched' },
+        { feature: 'Reliability', us: 'Industrial Grade (99.9%)', them: 'Frequent Memory Crashes' },
+        { feature: 'Hold Stability', us: '30-Level Skill Adjust + SAS', them: 'Fixed Logic / Analog Only' }
+      ]
+    },
+
+    // ✅ 4. 买家指南 (互动点：发送 PDF)
+    buyerGuide: [
+      { 
+        title: 'Retrofit and Installation', 
+        content: 'Upgrading your existing vertical cabinet is straightforward. Ensure your power supply is rated at least 450W and check your touch screen calibration. Enter your email below to receive our full "Skill Game Retrofit Manual" PDF instantly.' 
+      },
+      { 
+        title: 'Optimizing Revenue Hold', 
+        content: 'We recommend starting at Level 15 for new locations to build player confidence. Our technical support team provides free consultations on skill-window optimization for all wholesale partners to ensure peak profitability.' 
+      }
+    ],
+
+    // ✅ 5. 成功案例
+    caseStudy: {
+      title: 'Pennsylvania Route Collections Jumped 45%',
+      content: '"After swapping aging legacy software for Xtreme Skill 777, our weekly hold increased by 45%. The cinematic 4K visuals attracted a younger, more competitive demographic. ROI was achieved in 12 days of peak operation."',
+      author: 'M. Thompson, Master Route Operator'
+    },
+
+    // ✅ 6. 常见问题 (FAQ)
+    faqs: [
+      { question: 'Is the Xtreme Skill 777 kit compatible with my current cabinet wiring?', answer: 'Yes, the board utilizes the industry-standard 36/10 pin gold-plated edge connector. This allows for a direct plug-and-play replacement in most existing 8-liner or vertical skill-game cabinets, ensuring your technicians can complete the hardware upgrade in under 15 minutes without any complex re-wiring.' },
+      { question: 'How does the Nudge feature work to ensure the game is skill-based?', answer: 'The software includes a refined Nudge mechanic where players must manually interact with the reels after a spin to move them into a winning position. This requires hand-eye coordination and reflex timing, ensuring the game outcome is determined by player skill rather than pure chance.' },
+      { question: 'Can I adjust the hold percentage to match my specific location needs?', answer: 'Absolutely. The board features a password-protected operator menu with 30 distinct levels of skill-window calibration. This allows you to fine-tune the difficulty to match the skill level of your local players while maintaining a healthy and predictable profit margin.' },
+      { question: 'What happens to player credits if the location suffers a sudden power outage?', answer: 'Every board is equipped with non-volatile F-RAM memory technology. This advanced feature saves every player credit, game progress state, and operator log instantly. When power is restored, the machine resumes exactly where it left off, preventing player disputes.' },
+      { question: 'Does the PCB support modern touch screen monitor interfaces?', answer: 'Yes, this Universal Game Logic Board is fully compatible with most standard 3M and Elo touch screen protocols. This enables a more engaging and modern social gaming experience, allowing players to interact directly with the game elements on the screen for enhanced immersion.' },
+      { question: 'How do you protect the board from static electricity?', answer: 'Our boards feature an enhanced 15KV ESD protection circuit designed specifically for environments with static-prone carpets. This prevents environmental static from resetting the processor or damaging sensitive logic components, ensuring zero technical interruptions throughout the busy weekend hours.' }
+    ],
+
+    // ✅ 7. SEO 与交互配置
+    ctaText: 'Get Wholesale Quote Today',
+    pdfUrl: '/downloads/xtreme-skill-777-specs.pdf',
+    
+    seo: {
+      metaTitle: 'Skill-Based Game Board Xtreme Skill 777 | Universal Game Logic PCB',
+      metaDescription: 'Shop factory-direct Xtreme Skill 777 Nudge boards. Featuring native 4K UHD graphics, 30-level skill adjustment, and 15KV ESD protection. Wholesale Skill-Based Game Boards.',
+      keywords: [
+        'Skill-Based Game Board Xtreme Skill 777',
+        'Universal Game Logic Board',
+        'Nudge Game Board Wholesale',
+        'Redemption Game PCB Kit'
+      ]
+    }
+  }
+},
+{
+  id: 'nudge-game-board-lunars-quest',
+  name: 'Nudge Game Board Lunar\'s Quest',
+  category: 'skill_based_game_board',
+  description: 'The premier sci-fi redemption platform. Featuring immersive lunar-themed 3D graphics, native 4K output, and industrial-grade 36/10 pin hardware for elite route operators.',
+  imageUrl: '/images/lunars-quest.jpg', // 请在 public/images/ 放入图片
+  features: ['Cinematic 3D Space Theme', 'Native 4K UHD Output Support', 'Nudge-Based Skill Logic', '15KV Enhanced ESD Protection'],
+  
+  tankPage: {
+    headline: 'Command the Galaxy, Maximize Your Hold: Lunar\'s Quest Elite',
+    subHeadline: 'Ditch the legacy themes. Upgrade to the most immersive 3D Nudge Game Board and experience up to 42% revenue growth per location.',
+    
+    // ✅ 1. 痛点分析
+    painPoints: [
+      { 
+        icon: 'Zap', 
+        title: 'Hardware Instability & Downtime', 
+        description: 'Unbranded game boards often suffer from memory crashes and thermal instability, leading to expensive field service calls. Lunar\'s Quest utilizes industrial-grade capacitors and non-volatile F-RAM to ensure 99.9% uptime and zero data loss during power surges or unexpected outages.' 
+      },
+      { 
+        icon: 'ShieldAlert', 
+        title: 'Audit and Compliance Risks', 
+        description: 'Poor accounting systems lead to location disputes and regulatory issues. Our board features full SAS-link support and a secure, password-protected audit menu, providing the transparency and professional-grade asset protection that serious route operators demand for daily operation.' 
+      },
+      { 
+        icon: 'Users', 
+        title: 'Player Boredom & Location Churn', 
+        description: 'Players have become tired of repetitive legacy themes, leading to shorter play sessions. Lunar\'s Quest offers a cinematic 4K sci-fi environment that attracts players instantly, while the responsive Nudge interface keeps them engaged for significantly longer periods of time.' 
+      }
+    ],
+
+    // ✅ 2. 详细参数
+    technicalSpecs: [
+      { label: 'Display Output', value: 'VGA / HDMI Dual Resolution Support (Up to 4K UHD)' },
+      { label: 'Interface Type', value: 'Industry Standard Gold-Plated 36/10 Pin Edge' },
+      { label: 'Logic Protocol', value: 'Nudge-Based Skill Logic & Redemption Protocol' },
+      { label: 'Touch Interface', value: 'Full Compatibility with 3M and Elo Touch Protocols' },
+      { label: 'ESD Protection', value: 'Enhanced 15KV Static Circuit for High-Traffic Routes' },
+      { label: 'Memory Tech', value: 'Non-Volatile F-RAM (Instant Game State Recovery)' }
+    ],
+
+    // ✅ 3. 竞品对比
+    comparison: {
+      competitorLabel: 'Standard Legacy 8-Liner Boards',
+      rows: [
+        { feature: 'Visual Real Estate', us: 'Native 4K 3D Sci-Fi', them: '2D Stretched Legacy Assets' },
+        { feature: 'Security Protocol', us: 'Full SAS-Link & Audit', them: 'Analog Only / No Accounting' },
+        { feature: 'ESD Hardening', us: 'Enhanced 15KV Protection', them: 'Standard / Unprotected' }
+      ]
+    },
+
+    // ✅ 4. 买家指南 (互动点：发送 PDF)
+    buyerGuide: [
+      { 
+        title: 'Retrofit and Installation', 
+        content: 'Upgrading your existing vertical cabinet is straightforward. Ensure your power supply is rated at least 350W and check your touch screen calibration. Enter your email below to receive our full "Skill Game Retrofit Manual" PDF instantly.' 
+      },
+      { 
+        title: 'Optimizing Revenue Hold', 
+        content: 'We recommend starting at Level 15 for new locations to build player confidence. Our technical support team provides free consultations on skill-window optimization for all wholesale partners to ensure peak profitability.' 
+      }
+    ],
+
+    // ✅ 5. 成功案例
+    caseStudy: {
+      title: 'North Carolina Route Collections Jumped 42%',
+      content: '"After swapping aging legacy software for Lunar\'s Quest, our weekly hold increased by 42%. The cinematic 4K visuals attracted a younger, more competitive demographic. ROI was achieved in 14 days of peak operation."',
+      author: 'A. Jensen, Master Route Operator'
+    },
+
+    // ✅ 6. 常见问题 (FAQ)
+    faqs: [
+      { question: 'Is the Lunar\'s Quest kit compatible with our existing cabinet wiring?', answer: 'Yes, the board utilizes the industry-standard 36/10 pin gold-plated edge connector. This allows for a direct plug-and-play replacement in most existing 8-liner or skill-game cabinets, ensuring your technicians can complete the hardware upgrade in under 15 minutes without any complex re-wiring.' },
+      { question: 'How does the Nudge feature work to ensure the game is skill-based?', answer: 'The software includes a refined Nudge mechanic where players must manually interact with the reels after a spin to move them into a winning position. This requires hand-eye coordination and reflex timing, ensuring the game outcome is determined by player skill rather than pure chance.' },
+      { question: 'Can I adjust the hold percentage to match my specific location needs?', answer: 'Absolutely. The board features a password-protected operator menu with 30 distinct levels of skill-window calibration. This allows you to fine-tune the difficulty to match the skill level of your local players while maintaining a healthy and predictable profit margin.' },
+      { question: 'What happens to the credits if the machine loses power suddenly?', answer: 'Every board is equipped with non-volatile F-RAM memory technology. This advanced feature saves every player credit, game progress state, and operator log instantly. When power is restored, the machine resumes exactly where it left off, preventing player disputes and securing your venue\'s reputation.' },
+      { question: 'Does the PCB support modern touch screen monitor interfaces?', answer: 'Yes, this Universal Game Logic Board is fully compatible with most standard 3M and Elo touch screen protocols. This enables a more engaging and modern social gaming experience, allowing players to interact directly with the game elements on the screen for enhanced immersion.' },
+      { question: 'How do you protect the board from static electricity?', answer: 'Our boards feature an enhanced 15KV ESD protection circuit designed specifically for environments with static-prone carpets. This prevents environmental static from resetting the processor or damaging sensitive logic components, ensuring zero technical interruptions throughout the busy weekend hours.' }
+    ],
+
+    // ✅ 7. SEO 与交互配置
+    ctaText: 'Get Wholesale Quote Today',
+    pdfUrl: '/downloads/lunars-quest-specs.pdf',
+    
+    seo: {
+      metaTitle: 'Nudge Game Board Lunar\'s Quest | Skill-Based Contest Software',
+      metaDescription: 'Shop factory-direct Lunar\'s Quest Nudge boards. Featuring native 4K 3D graphics, 30-level skill adjustment, and 15KV ESD protection for route operators. Wholesale Skill-Based Game Boards.',
+      keywords: [
+        'Nudge Game Board Lunar\'s Quest',
+        'Skill-Based Contest Software',
+        '8-Liner Multi-game PCB Kit',
+        'Universal Game Logic Board'
+      ]
+    }
+  }
 }
 ];
 
