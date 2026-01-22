@@ -92,6 +92,7 @@ i18n
   .init({
     resources,
     fallbackLng: DEFAULT_LANG,
+    react: { useSuspense: false }, // ✅ 必须加，防止白屏
     detection: {
       order: ['path', 'cookie', 'htmlTag'],
       lookupFromPathIndex: 0
