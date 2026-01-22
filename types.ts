@@ -190,7 +190,7 @@ export type LanguageCode = 'en' | 'es' | 'fr' | 'de' | 'pt' | 'it' | 'ja' | 'ko'
 export interface SeoProps {
   title: string;
   description: string;
-  canonicalPath?: string;
-  schema?: object;
-  keywords?: string[]; // Added keywords support
+  keywords?: string[]; // 数组格式，方便在 data.ts 中编辑
+  path: string;        // 必须项：用于生成 Canonical 和 Hreflang 标签
+  schema?: object;     // 可选项：用于 JSON-LD 结构化数据
 }

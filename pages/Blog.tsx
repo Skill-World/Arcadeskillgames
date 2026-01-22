@@ -5,7 +5,7 @@ import { getBlogs } from '../data';
 import { Calendar, Tag, ArrowRight } from 'lucide-react';
 import { LanguageCode } from '../types';
 import { t, DEFAULT_LANG } from '../utils/i18n';
-import Seo from '../components/Seo';
+import Seo from '../components/SEO';
 
 const Blog: React.FC = () => {
   const { lang } = useParams();

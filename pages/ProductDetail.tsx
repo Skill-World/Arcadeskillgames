@@ -7,7 +7,7 @@ import {
 } from 'lucide-react';
 import { LanguageCode } from '../types';
 import { DEFAULT_LANG } from '../utils/i18n';
-import Seo from '../components/Seo';
+import Seo from '../components/SEO';
 
 const ProductDetail: React.FC = () => {
   const { lang, id } = useParams();

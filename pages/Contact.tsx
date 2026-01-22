@@ -5,7 +5,7 @@ import { getGameRecommendation } from '../services/geminiService';
 import { useParams } from 'react-router-dom';
 import { t, DEFAULT_LANG } from '../utils/i18n';
 import { LanguageCode } from '../types';
-import Seo from '../components/Seo';
+import Seo from '../components/SEO';
 import { getSolutions } from '../data';
 
 const Contact: React.FC = () => {

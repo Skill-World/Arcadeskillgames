@@ -4,7 +4,7 @@ import { Menu, X, Gamepad2, Phone, Mail, MapPin, Globe, ChevronDown } from 'luci
 import { useTranslation } from 'react-i18next'; // ✅ 引入标准钩子
 import { PageRoute } from '../types';
 import { LANGUAGES } from '../utils/i18n'; // ✅ 只引入语言列表定义
-import { SEO } from './Seo'; // ✅ 引入我们之前写的 SEO 坦克组件
+import { SEO } from './SEO'; // ✅ 引入我们之前写的 SEO 坦克组件
 
 interface LayoutProps {
   children: React.ReactNode;

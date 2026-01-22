@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams, useSearchParams, Link } from 'react-router-dom';
 import { getProducts } from '../data';
 import { Check, Info } from 'lucide-react';
-import Seo from '../components/Seo';
+import Seo from '../components/SEO';
 import { LanguageCode } from '../types';
 import { DEFAULT_LANG, t } from '../utils/i18n';
 

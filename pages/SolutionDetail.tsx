@@ -5,7 +5,7 @@ import { getSolutions, getProducts } from '../data';
 import { Check, ArrowRight, HelpCircle, Quote, BarChart, ChevronDown, ChevronUp, AlertTriangle, ShieldCheck, TrendingUp, X, Lock, Maximize, Minimize, Coins, Clock, Users, Palette, Smartphone, Eye, Battery, Copy, Moon, LayoutGrid, User, Wrench, DollarSign, ShieldAlert, TrendingDown, Phone, Mail, MessageCircle } from 'lucide-react';
 import { LanguageCode } from '../types';
 import { DEFAULT_LANG, t } from '../utils/i18n';
-import Seo from '../components/Seo';
+import Seo from '../components/SEO';
 
 // Helper to map icon string to Component
 const IconMap: Record<string, React.FC<any>> = {
