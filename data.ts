@@ -1729,6 +1729,8 @@ export const getProducts = (lang: LanguageCode): Product[] => [
         { feature: 'Resolution', us: 'Native 4K Pro assets', them: 'Upscaled 1080P' },
         { feature: 'Data Security', us: 'SAS 6.0 + Encrypted Keys', them: 'Limited / No Accounting' }
       ]
+      }
+     }
     },
 {
   id: 'fish-game-board-crab-king-3-ultra',
