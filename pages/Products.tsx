@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useSearchParams, Link } from 'react-router-dom';
 import { getProducts } from '../data';
-import { Check, Info } from 'lucide-react';
+import { Check } from 'lucide-react';
 import { SEO } from '../components/SEO';
 import { LanguageCode } from '../types';
 import { DEFAULT_LANG, t } from '../utils/i18n';
@@ -27,6 +27,7 @@ const Products: React.FC = () => {
     ? allProducts 
     : allProducts.filter(p => p.category === filter);
 
+  // ✅ 修正了 seoTitle 的大小写一致性
   const categories = [
     { id: 'all', label: 'All Products', seoTitle: 'Skill Game Machines & Parts' },
     { id: 'skill_based_game_board', label: 'Skill-Based Game Board', seoTitle: 'Turnkey Skill Machines', desc: t(currentLang, 'cat.desc.machines') },
@@ -38,13 +39,15 @@ const Products: React.FC = () => {
 
   return (
     <div className="py-20 bg-brand-900 min-h-screen">
+      {/* ✅ 修正了 title 属性名，并补全了 path */}
       <SEO 
-        title={currentCategory.SEOTitle} 
+        title={currentCategory.seoTitle} 
         description={`Shop ${currentCategory.label}. Factory direct pricing.`} 
+        lang={currentLang}
+        path="products"
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header Section */}
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">{currentCategory.seoTitle}</h1>
           <p className="text-xl text-slate-400 max-w-3xl mx-auto">{currentCategory.desc || 'Quality manufacturing solutions.'}</p>
@@ -65,26 +68,25 @@ const Products: React.FC = () => {
           ))}
         </div>
 
-        {/* Product Grid - 修复后的核心结构 */}
+        {/* Product Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredProducts.map((product) => (
             <article key={product.id} className="bg-brand-800 rounded-xl overflow-hidden border border-slate-700 shadow-lg flex flex-col h-full group">
               
-              {/* 1. Image Section (修复了多余的 div 和闭合标签) */}
               <div className="h-72 overflow-hidden bg-black relative">
-                <Link to={product.id} className="block w-full h-full">
+                {/* ✅ 核心修正：跳转路径补全了语言前缀和正确的 /product/ 结构 */}
+                <Link to={`/${currentLang}/product/${product.id}`} className="block w-full h-full">
                   <img src={product.imageUrl} alt={product.name} className="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-500" />
                 </Link>
-                {/* Category Badge */}
                 <div className="absolute top-4 right-4 bg-brand-900/90 backdrop-blur px-3 py-1 rounded text-xs font-bold uppercase border border-brand-500/30 text-brand-400">
                   {product.category.replace('_', ' ')}
                 </div>
               </div>
 
-              {/* 2. Content Section */}
               <div className="p-8 flex flex-col flex-grow">
                 <h2 className="text-2xl font-bold text-white mb-3">
-                  <Link to={product.id} className="hover:text-brand-400 transition-colors">
+                  {/* ✅ 核心修正：标题跳转路径 */}
+                  <Link to={`/${currentLang}/product/${product.id}`} className="hover:text-brand-400 transition-colors">
                     {product.name}
                   </Link>
                 </h2>
@@ -102,7 +104,8 @@ const Products: React.FC = () => {
                   </ul>
                 </div>
 
-                <Link to={product.id} className="w-full bg-slate-700 hover:bg-brand-500 text-white py-3 rounded-lg font-semibold transition-colors mt-auto text-center block">
+                {/* ✅ 核心修正：按钮跳转路径 */}
+                <Link to={`/${currentLang}/product/${product.id}`} className="w-full bg-slate-700 hover:bg-brand-500 text-white py-3 rounded-lg font-semibold transition-colors mt-auto text-center block">
                   View Details & Pricing
                 </Link>
               </div>
