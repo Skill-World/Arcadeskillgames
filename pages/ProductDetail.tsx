@@ -7,7 +7,7 @@ import {
 } from 'lucide-react';
 import { LanguageCode } from '../types';
 import { DEFAULT_LANG } from '../utils/i18n';
-import Seo from '../components/SEO';
+import { SEO } from '../components/SEO';
 
 const ProductDetail: React.FC = () => {
   const { lang, id } = useParams();
@@ -55,7 +55,7 @@ const ProductDetail: React.FC = () => {
 
   return (
     <div className="bg-brand-900 min-h-screen text-slate-200 font-sans">
-      <Seo 
+      <SEO 
         title={tankPage.seo.metaTitle}
         description={tankPage.seo.metaDescription}
         keywords={tankPage.seo.keywords}
