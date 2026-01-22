@@ -2,7 +2,7 @@ import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { t, DEFAULT_LANG } from '../utils/i18n';
 import { LanguageCode } from '../types';
-import Seo from '../components/SEO';
+import { SEO } from '../components/SEO';
 import { CheckCircle, Award, Globe, Wrench, Cpu } from 'lucide-react';
 
 const About: React.FC = () => {
@@ -11,7 +11,7 @@ const About: React.FC = () => {
 
   return (
     <div className="bg-brand-900 min-h-screen">
-      <Seo 
+      <SEO 
         title={t(currentLang, 'about.title')}
         description={`${t(currentLang, 'about.intro')} 25 Years of manufacturing excellence.`}
       />

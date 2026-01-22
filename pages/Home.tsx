@@ -3,7 +3,7 @@ import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { TrendingUp, ShieldCheck, DollarSign, ArrowRight } from 'lucide-react';
 import { getProducts } from '../data';
-import {SEO} from '../components/SEO';
+import { SEO } from '../components/SEO';
 import { t, DEFAULT_LANG } from '../utils/i18n';
 import { LanguageCode } from '../types';
 
