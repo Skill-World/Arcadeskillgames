@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useLocation, useNavigate, useParams } from 'react-router-dom';
+import { Link, useLocation, useNavigate, useParams, Outlet } from 'react-router-dom';
 import { Menu, X, Gamepad2, Phone, Mail, MapPin, Globe, ChevronDown } from 'lucide-react';
 import { useTranslation } from 'react-i18next'; // ✅ 引入标准钩子
 import { PageRoute } from '../types';
