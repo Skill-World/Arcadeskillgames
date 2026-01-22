@@ -1390,6 +1390,102 @@ export const getProducts = (lang: LanguageCode): Product[] => [
       ]
     }
   }
+},
+{
+  id: 'fish-game-board-5in1-elite',
+  name: '5-in-1 Elite Skill Fish Table Game Kit (4K UHD)',
+  category: 'game_board',
+  description: 'The definitive multiplayer skill gaming software kit. Featuring 5 hot titles in 1 board with native 4K output, 30-level difficulty adjustment, and standard 36/10 pin compatibility.',
+  imageUrl: '/images/5in1-fish-game-board.jpg', // 请在 public/images/ 放入对应的图片
+  features: ['5 Hot Skill Titles Integrated', 'Native 4K UHD 60FPS Output', '30-Level Skill Window Adjustment', 'SAS & SAS-Link Ready'],
+  
+  tankPage: {
+    headline: 'Command the Floor with the 5-in-1 Elite Fish Game Kit',
+    subHeadline: 'Stop player churn and hardware failures. Upgrade your route with the most stable, high-fidelity skill shooting software in the industry.',
+    
+    // ✅ 1. 痛点分析 (Pain Points)
+    painPoints: [
+      { 
+        icon: 'Zap', 
+        title: 'High Maintenance & Downtime', 
+        description: 'Unbranded game boards often suffer from memory crashes and thermal throttling, leading to expensive field service calls. Our Kit-518 utilizes industrial-grade processors and non-volatile memory to ensure 99.9% uptime and zero data loss during power surges.' 
+      },
+      { 
+        icon: 'Users', 
+        title: 'Declining Player Engagement', 
+        description: 'Single-title boards lose their appeal quickly. With five integrated high-definition themes, you can rotate content to keep the social environment fresh. Players stay longer when they have real skill-based control over varied and immersive gameplay environments.' 
+      },
+      { 
+        icon: 'ShieldAlert', 
+        title: 'Inflexible Difficulty Logic', 
+        description: 'If a game is too hard or too easy, your hold percentage suffers. Our software features a refined 30-level skill window adjustment, allowing you to perfectly calibrate the hand-eye coordination challenge to match your specific local market and regulatory needs.' 
+      }
+    ],
+
+    // ✅ 2. 详细参数 (Parameters)
+    technicalSpecs: [
+      { label: 'Processor', value: 'High-Performance Dual-Core Industrial CPU' },
+      { label: 'Output Resolution', value: 'Native 4K UHD (3840 x 2160) @ 60FPS' },
+      { label: 'Interface', value: 'Standard 36/10 Pin + SAS Accounting Protocol' },
+      { label: 'Game Titles', value: '5 Integrated High-Retention Skill Themes' },
+      { label: 'Player Count', value: 'Software-Configurable for 4, 6, 8, or 10 Stations' },
+      { label: 'Encryption', value: 'Anti-Tamper Hardware Security Module (HSM)' }
+    ],
+
+    // ✅ 3. 竞品对比 (Comparison)
+    comparison: {
+      competitorLabel: 'Generic Single-Game Boards',
+      rows: [
+        { feature: 'Content Variety', us: '5 Integrated Titles', them: '1 Title Only' },
+        { feature: 'Visual Quality', us: 'Native 4K UHD (60FPS)', them: '1080P Upscaled' },
+        { feature: 'Reliability', us: 'Industrial Componentry', them: 'Consumer Grade / No Warranty' }
+      ]
+    },
+
+    // ✅ 4. 买家指南 (Interaction Hooks)
+    buyerGuide: [
+      { 
+        title: 'Retrofit & Installation Guide', 
+        content: 'Upgrading your existing fish table is simple. Ensure your power supply is rated at least 450W and that your joysticks are cleaned for maximum responsiveness. Enter your email below to receive our full "36/10 Pin Wiring & Retrofit Manual" PDF.' 
+      },
+      { 
+        title: 'Revenue Optimization', 
+        content: 'We recommend rotating the lead game title every 60 days to maintain peak attraction. Our sales team can provide a free 12-month "Content Strategy" layout for multi-location route operators upon request.' 
+      }
+    ],
+
+    // ✅ 5. 成功案例 (Case Study)
+    caseStudy: {
+      title: 'Georgia Operator Boosts Hold by 40%',
+      content: '"After swapping out our aging single-game boards for the Kit-518, our weekly collections increased by 40%. The 5-in-1 variety prevented the usual mid-week slump and kept our regulars engaged for significantly longer sessions. ROI was hit in under a month."',
+      author: 'Master Route Owner, Georgia Route'
+    },
+
+    // ✅ 6. 常见问题 (FAQ - 6 entries)
+    faqs: [
+      { question: 'Is the board compatible with ICT PA7 bill acceptors?', answer: 'Yes, it is pre-wired to support all standard pulse bill validators including ICT and Pyramid series via the standard harness.' },
+      { question: 'Does it support vertical monitor kiosks?', answer: 'The Elite Series supports both horizontal (table) and vertical (upright) screen orientations via a simple toggle in the operator menu.' },
+      { question: 'How is the difficulty adjusted?', answer: 'Each title has an independent skill-shot window that can be adjusted from levels 1 to 30 using the password-protected setup menu.' },
+      { question: 'Is the software SAS link ready?', answer: 'Yes, the board includes a dedicated SAS communication port for real-time route accounting and location management systems.' },
+      { question: 'What happens if the power goes out?', answer: 'The non-volatile memory chip saves all credits and game states instantly, ensuring no player disputes or revenue loss during power events.' },
+      { question: 'Can I add a progressive signage board?', answer: 'Absolutely. The board includes a data-link header designed to sync with our external LED progressive signage kits.' }
+    ],
+
+    // ✅ 7. SEO 与交互配置
+    ctaText: 'Get Wholesale Quote Today',
+    pdfUrl: '/downloads/5in1-elite-kit-specs.pdf',
+    
+    seo: {
+      metaTitle: '5-in-1 Fish Table Game Kit | Skill Based Fish Shooting Game Board',
+      metaDescription: 'Shop factory-direct 5-in-1 multiplayer fish game boards. Native 4K graphics, 30-level skill adjustment, and 36/10 pin compatibility for route operators. Wholesale pricing.',
+      keywords: [
+        'Fish Table Game Kit',
+        'Skill Based Fish Shooting Game Board',
+        'Multiplayer Fish Arcade Software',
+        'Fish Game Board Wholesale'
+      ]
+    }
+  }
 }
 ];
 
