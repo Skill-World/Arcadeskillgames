@@ -794,7 +794,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: '98" Deluxe 10-Player Dismantle Table Shell (Empty Cabinet)',
   category: 'cabinet_only',
   description: 'The ultimate revenue engine for large-scale venues. Featuring a massive 98-inch 4K display and a modular dismantle design for easy global shipping and installation.',
-  imageUrl: 'https://picsum.photos/1200/800?random=10player', // 建议在 public/images/ 放入 98寸桌机实拍图
+  imageUrl: '/images/98 Inch Fish Table Shell.png', // 建议在 public/images/ 放入 98寸桌机实拍图
   features: ['Industrial 98" 4K UHD Display', '10-Player Modular Design', 'Reinforced 1.5mm Steel Shell', 'Sync-Addressable Halo Lighting'],
   
   tankPage: {
@@ -872,7 +872,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: '86" Deluxe 10-Player Dismantle Table Shell (Empty Cabinet)',
   category: 'cabinet_only',
   description: 'The ultimate visual flagship for high-traffic game rooms. Featuring a massive 86-inch 4K display and a modular dismantle design to reduce shipping and installation costs by 45%.',
-  imageUrl: '/images/86-10player-dismantle.jpg', // 建议在 public/images/ 放入对应的86寸机箱图
+  imageUrl: '/images/10 Player Fish Game Housing.png', // 建议在 public/images/ 放入对应的86寸机箱图
   features: ['Industrial 86" 4K UHD Display', '10-Player High-Capacity Layout', 'Modular "Dismantle" Structure', 'Reinforced 1.5mm Steel Shell'],
   
   tankPage: {
@@ -974,7 +974,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: '86" Deluxe 10-Player Fully Welded Table Shell (Non-Dismantle)',
   category: 'cabinet_only',
   description: 'The definitive high-capacity multiplayer shell. Featuring a massive 86-inch 4K monitor and a fully welded 1.5mm steel body for maximum structural integrity and professional venue aesthetics.',
-  imageUrl: 'https://picsum.photos/1200/800?random=10pw', // 建议在 public/images/ 放入产品图
+  imageUrl: '/images/86 inch fish game machine shell.png', // 建议在 public/images/ 放入产品图
   features: ['Industrial 86" 4K UHD Display', '10-Player Station Capacity', 'Fully Welded 1.5mm Steel Shell', '5mm Tempered Safety Glass'],
   
   tankPage: {
@@ -1052,7 +1052,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: '65" Royal 10-Player Fully Welded Table Shell (Non-Dismantle)',
   category: 'cabinet_only',
   description: 'The premier choice for premium venues. Featuring a massive 65-inch 4K monitor and a high-end fully welded 1.5mm steel body for ultimate stability and "Vegas-grade" aesthetics.',
-  imageUrl: '/images/65-10player-royal.jpg', // 请在 public/images/ 放入对应的图片
+  imageUrl: '/images/10 Player Arcade Cabinet Shell.png', // 请在 public/images/ 放入对应的图片
   features: ['65" Industrial 4K UHD Display', 'Royal 10-Player Layout', 'One-Piece Fully Welded Steel', 'Custom dynamic RGB Halo'],
   
   tankPage: {
@@ -1130,7 +1130,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: '86" Royal 10-Player Fully Welded Table Shell (Non-Dismantle)',
   category: 'cabinet_only',
   description: 'The premier choice for luxury venues. Featuring a massive 86-inch 4K monitor and a high-end fully welded 1.5mm steel body for ultimate stability and "Vegas-grade" aesthetics.',
-  imageUrl: '/images/86-10player-royal-welded.jpg', // 请在 public/images/ 放入对应的图片
+  imageUrl: '/images/86 inch Royal 10 Players Fully Welded Table Shell.png', // 请在 public/images/ 放入对应的图片
   features: ['65" Industrial 4K UHD Display', 'Royal 10-Player Layout', 'One-Piece Fully Welded Steel', 'Custom dynamic RGB Halo'],
   
   tankPage: {
@@ -1208,7 +1208,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: '86" Royal V2 10-Player Fully Welded Table Shell (Non-Dismantle)',
   category: 'cabinet_only',
   description: 'The premier luxury flagship for high-end routes. Featuring a massive 86-inch 4K monitor and a high-end fully welded 1.5mm steel body with Halo-Eclipse RGB effects.',
-  imageUrl: '/images/86-10player-royal-v2.jpg', // 请在 public/images/ 放入对应的图片
+  imageUrl: '/images/86 Inch 4K Skill Game Housing.png', // 请在 public/images/ 放入对应的图片
   features: ['Industrial 86" 4K UHD Display', 'Royal V2 10-Player Layout', 'One-Piece Fully Welded 1.5mm Steel', 'Halo-Eclipse RGB Lighting'],
   
   tankPage: {
@@ -1293,14 +1293,12 @@ export const getProducts = (lang: LanguageCode): Product[] => [
     }
   }
 },
-  // ⚠️ 插入位置：src/data.ts -> getProducts 数组内部末尾
-
 {
   id: 'fish-table-8-classic-welded',
   name: '8-Player Classic Black Fully Welded Table Shell (Non-Dismantle)',
   category: 'cabinet_only',
   description: 'The industry workhorse for high-retention routes. Featuring a 55-inch display support and a fully welded 1.5mm steel body for maximum security and zero-maintenance durability.',
-  imageUrl: '/images/8-player-classic-black.jpg', // 请在 public/images/ 放入对应的图片
+  imageUrl: '/images/8 Players Classic Black Fully Fish Table Game.png', // 请在 public/images/ 放入对应的图片
   features: ['Fits 55" Industrial 4K Monitor', 'Classic 8-Player Stand-Up Layout', '1.5mm Reinforced Steel Body', 'Anti-Pry Vault Security System'],
   
   tankPage: {
