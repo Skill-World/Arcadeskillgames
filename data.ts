@@ -2930,7 +2930,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: 'Skill-Based Game Board Golden Empires 777',
   category: 'skill_based_game_board', // ✅ 使用最新的 ID
   description: 'The industry-standard Nudge game platform. Featuring iconic Golden Empires graphics, native HD output, and industrial-grade 36/10 pin hardware for professional route operators.',
-  imageUrl: '/images/golden-empires-777.jpg', // 请在 public/images/ 放入图片
+  imageUrl: '/images/Skill-Based Game Board Golden Empires 777.png', // 请在 public/images/ 放入图片
   features: ['Nudge-Based Skill Logic', '1080P/4K HD Output Support', 'Universal 36/10 Pin Interface', 'Touch Screen Protocol Support'],
   
   tankPage: {
@@ -3026,7 +3026,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: 'Skill-Based Game Board Lunar\'s Quest 777',
   category: 'skill_based_game_board',
   description: 'The cinematic sci-fi redemption platform. Featuring immersive lunar-themed graphics, native 4K output, and industrial-grade 36/10 pin hardware for elite route operators.',
-  imageUrl: '/images/lunars-quest-777.jpg', // 请在 public/images/ 放入对应图片
+  imageUrl: '/images/Redemption Game PCB Kit Lunars Quest 777.png', // 请在 public/images/ 放入对应图片
   features: ['Cinematic 3D Lunar Graphics', 'Native 4K UHD Output Support', 'Nudge-Based Skill Logic', 'Universal 36/10 Pin Interface'],
   
   tankPage: {
@@ -3122,7 +3122,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: 'Skill-Based Game Board Golden Empires (Multi-Game Kit)',
   category: 'skill_based_game_board',
   description: 'The premier multi-game redemption platform. Featuring iconic Golden Empires titles, native 4K output, and industrial-grade 36/10 pin hardware for professional route operators.',
-  imageUrl: '/images/golden-empires-multi.jpg', // 请在 public/images/ 放入图片
+  imageUrl: '/images/Multi-game PCB Kit Wholesale Golden Empires.png', // 请在 public/images/ 放入图片
   features: ['Multi-Game Software Suite', 'Nudge-Based Skill Logic', '4K UHD Graphics Support', 'Universal 36/10 Pin Interface'],
   
   tankPage: {
@@ -3218,7 +3218,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: 'Universal Game Logic Board Xtreme Skill 777',
   category: 'skill_based_game_board',
   description: 'The premier 4K UHD redemption platform. Featuring immersive nudge-themed graphics, industrial-grade hardware, and full SAS 6.0 accounting for elite route operators.',
-  imageUrl: '/images/xtreme-skill-777-board.jpg', // 请在 public/images/ 放入图片
+  imageUrl: '/images/Skill-Based Game Board Xtreme Skill 777.jpg', // 请在 public/images/ 放入图片
   features: ['Cinematic 4K UHD Output', 'Nudge-Based Skill Logic', '30-Level Skill Calibration', 'Enhanced 15KV ESD Protection'],
   
   tankPage: {
@@ -3314,7 +3314,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: 'Nudge Game Board Lunar\'s Quest',
   category: 'skill_based_game_board',
   description: 'The premier sci-fi redemption platform. Featuring immersive lunar-themed 3D graphics, native 4K output, and industrial-grade 36/10 pin hardware for elite route operators.',
-  imageUrl: '/images/lunars-quest.jpg', // 请在 public/images/ 放入图片
+  imageUrl: '/images/Nudge Game Board Lunars Quest.png', // 请在 public/images/ 放入图片
   features: ['Cinematic 3D Space Theme', 'Native 4K UHD Output Support', 'Nudge-Based Skill Logic', '15KV Enhanced ESD Protection'],
   
   tankPage: {
@@ -3410,7 +3410,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: 'Redemption Game PCB Wild Link',
   category: 'skill_based_game_board',
   description: 'The cinematic jungle-themed skill gaming software kit. Featuring native 4K UHD graphics, a proprietary 30-level skill window adjustment, and industrial-grade 36/10 pin hardware.',
-  imageUrl: '/images/wild-link-board.jpg', // 请在 public/images/ 放入图片
+  imageUrl: '/images/Redemption Game PCB Wild Link.png', // 请在 public/images/ 放入图片
   features: ['Cinematic 3D Jungle Graphics', 'Native 4K UHD @ 60FPS Support', '30-Level Skill Calibration Logic', 'Universal 36/10 Pin Interface'],
   
   tankPage: {
@@ -3506,7 +3506,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: 'Nudge Game Board Panda Link',
   category: 'skill_based_game_board',
   description: 'The cinematic oriental-themed skill gaming platform. Featuring immersive 4K Panda Link graphics, a proprietary 30-level skill window, and industrial-grade 36/10 pin hardware.',
-  imageUrl: '/images/panda-link-board.jpg', // 请在 public/images/ 放入图片
+  imageUrl: '/images/Skill Based Contest Software Panda Link.png', // 请在 public/images/ 放入图片
   features: ['Cinematic 4K UHD Graphics', 'Nudge-Based Skill Logic', '30-Level Skill Calibration', 'Enhanced 15KV ESD Protection'],
   
   tankPage: {
@@ -3602,7 +3602,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: 'Universal Game Logic Board Xtreme Link',
   category: 'skill_based_game_board',
   description: 'The premier vertical multi-game redemption platform. Featuring immersive 4K graphics, a proprietary 30-level skill window, and industrial-grade 36/10 pin hardware for elite route operators.',
-  imageUrl: '/images/xtreme-link-board.jpg', // 请在 public/images/ 放入对应图片
+  imageUrl: '/images/Universal Game Logic Board Xtreme Link.png', // 请在 public/images/ 放入对应图片
   features: ['4-in-1 Multi-game Suite', 'Native 4K UHD Output Support', 'Nudge-Based Skill Logic', 'Universal 36/10 Pin Interface'],
   
   tankPage: {
@@ -3698,7 +3698,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: 'Skill-Based Game Board Panda Link II 777',
   category: 'skill_based_game_board',
   description: 'The cinematic sequel in skill gaming excellence. Featuring immersive 4K Panda Link II graphics, a proprietary 30-level skill window, and industrial-grade 36/10 pin hardware for elite route operators.',
-  imageUrl: '/images/panda-link-ii-board.jpg', // 请在 public/images/ 放入图片
+  imageUrl: '/images/Skill Based Game Board Panda Link II 777.png', // 请在 public/images/ 放入图片
   features: ['Cinematic 4K UHD Graphics', 'Nudge-Based Skill Logic', '30-Level Skill Calibration', '15KV Enhanced ESD Protection'],
   
   tankPage: {
