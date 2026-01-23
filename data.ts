@@ -3914,7 +3914,7 @@ export const getBlogs = (lang: LanguageCode): BlogPost[] => [
 
 export const getSolutions = (lang: LanguageCode): Solution[] => [
   {
-    id: 'game-distributors',
+    id: 'distributors',
     title: 'Strategic Wholesale Solutions for Global Game Distributors',
     targetAudience: 'Amusement Equipment Wholesalers, Master Agents, & Route Developers',
     description: 'Empower your distribution network with 28 years of engineering excellence and factory-direct high-retention hardware.',
