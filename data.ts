@@ -1394,7 +1394,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: '5-in-1 Elite Skill Fish Table Game Kit (4K UHD)',
   category: 'game_board',
   description: 'The definitive multiplayer skill gaming software kit. Featuring 5 hot titles in 1 board with native 4K output, 30-level difficulty adjustment, and standard 36/10 pin compatibility.',
-  imageUrl: '/images/5in1-fish-game-board.jpg', // 请在 public/images/ 放入对应的图片
+  imageUrl: '/images/fish game board 5 in 1.png', // 请在 public/images/ 放入对应的图片
   features: ['5 Hot Skill Titles Integrated', 'Native 4K UHD 60FPS Output', '30-Level Skill Window Adjustment', 'SAS & SAS-Link Ready'],
   
   tankPage: {
@@ -1490,7 +1490,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: 'Air Strike 2 Elite Fish Table Game Kit (4K UHD)',
   category: 'game_board',
   description: 'A high-octane aircraft-themed skill gaming software kit. Featuring native 4K 3D aerial combat, 30-level difficulty adjustment, and stable 36/10 pin hardware for professional routes.',
-  imageUrl: '/images/airstrike-2-board.jpg', // 请在 public/images/ 放入对应的图片
+  imageUrl: '/images/fish game board air strike 2.png', // 请在 public/images/ 放入对应的图片
   features: ['3D Aerial Combat Theme', 'Native 4K UHD 60FPS Graphics', 'Anti-Tamper PCB Technology', 'SAS Protocol Accounting Ready'],
   
   tankPage: {
@@ -1586,7 +1586,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: 'Crab King 2 Elite Skill Fish Table Game Kit (4K UHD)',
   category: 'game_board',
   description: 'The industry-standard skill gaming kit. Featuring iconic 3D boss battles, native 4K graphics, a 30-level skill window adjustment, and industrial-grade 36/10 pin hardware for maximum route stability.',
-  imageUrl: '/images/crab-king-2-board.jpg', // 请在 public/images/ 放入对应的图片
+  imageUrl: '/images/Crab King 2 Game Board.png', // 请在 public/images/ 放入对应的图片
   features: ['Iconic 3D Boss Mechanics', 'Native 4K UHD 60FPS Graphics', '30-Level Skill Calibration Logic', 'Universal 36/10 Pin Compatibility'],
   
   tankPage: {
@@ -1683,7 +1683,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: 'Air Strike 3 Ultimate 3D Skill Game Kit (4K Pro)',
   category: 'game_board',
   description: 'The pinnacle of aerial skill shooting software. Featuring native 4K 3D graphics, a proprietary 30-level skill window adjustment, and industrial-grade 36/10 pin hardware for elite route operators.',
-  imageUrl: '/images/airstrike-3-board.jpg', // 请在 public/images/ 放入对应的图片
+  imageUrl: '/images/Air Strike 3 Ultimate 3D Skill Game Kit.png', // 请在 public/images/ 放入对应的图片
   features: ['Cinematic 4K 3D Aerial Combat', 'Proprietary Skill-Window Logic', 'SAS 6.0 Accounting Ready', 'Universal 36/10 Pin Compatibility'],
   
   tankPage: {
@@ -1778,7 +1778,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: 'Crab King 3 Ultimate 3D Skill Game Kit (4K Ultra)',
   category: 'game_board',
   description: 'The definitive sequel in skill gaming excellence. Featuring native 4K UHD graphics, advanced 3D weapon systems, 30-level skill adjustment, and SAS 6.0 compatibility for professional route management.',
-  imageUrl: '/images/crab-king-3-board.jpg', // 请在 public/images/ 放入对应的图片
+  imageUrl: '/images/Multiplayer Fish Shooting Game Board Crab King 3.png', // 请在 public/images/ 放入对应的图片
   features: ['Native 4K UHD @ 60FPS', 'Advanced 3D Boss Mechanics', '30-Level Skill-Sync Logic', 'SAS 6.0 & SAS-Link Ready'],
   
   tankPage: {
@@ -1874,7 +1874,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: 'Fish Table Game Board Crab King (Skill Based Kit)',
   category: 'game_board',
   description: 'The industry-standard skill shooting software. Featuring iconic boss mechanics, 30-level skill window adjustment, and industrial-grade 36/10 pin hardware for maximum route retention.',
-  imageUrl: '/images/crab-king-classic-board.jpg', // 请在 public/images/ 放入对应的图片
+  imageUrl: '/images/Fish Table Game Board Crab King.png', // 请在 public/images/ 放入对应的图片
   features: ['Iconic 3D Boss System', 'Drill & Laser Special Weapons', '30-Level Skill Calibration', 'Universal 36/10 Pin Compatibility'],
   
   tankPage: {
@@ -1970,7 +1970,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: 'Fish Table Game Board Crab King Plus (Skill Enhanced Kit)',
   category: 'game_board',
   description: 'The definitive upgrade for professional route operators. Featuring enhanced 4K boss mechanics, 30-level skill adjustment, and industrial-grade 36/10 pin hardware for maximum location hold.',
-  imageUrl: '/images/crab-king-plus-board.jpg', // 请在 public/images/ 放入对应的图片
+  imageUrl: '/images/Fish Table Game Board Crab King Plus.png', // 请在 public/images/ 放入对应的图片
   features: ['Enhanced 4K Boss Graphics', 'Mega Drill & Chain Lightning Weapons', '30-Level Skill Calibration', 'SAS 6.0 Accounting Support'],
   
   tankPage: {
@@ -2066,7 +2066,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: 'Fish Table Game Board Fire Kirin 2 (Skill Based Kit)',
   category: 'game_board',
   description: 'The industry-leading skill shooting software kit. Featuring the iconic Fire Kirin series with native 4K graphics, 30-level skill adjustment, and industrial-grade 36/10 pin hardware for maximum route retention.',
-  imageUrl: '/images/fire-kirin-2-board.jpg', // 请在 public/images/ 放入对应的图片
+  imageUrl: '/images/Skill Based Fish Shooting Game Kit Fire Kirin II.png', // 请在 public/images/ 放入对应的图片
   features: ['Iconic Fire Kirin BOSS System', 'Native 4K UHD @ 60FPS', '30-Level Skill Calibration Logic', 'SAS & Mobile Remote Ready'],
   
   tankPage: {
@@ -2162,7 +2162,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: 'Fish Table Game Board Fire Kirin 3 (Skill Based Kit)',
   category: 'game_board',
   description: 'The industry-leading skill shooting software kit. Featuring the legendary Fire Kirin 3 series with native 4K UHD graphics, 30-level skill adjustment, and industrial-grade 36/10 pin hardware.',
-  imageUrl: '/images/fire-kirin-3-board.jpg', // 请在 public/images/ 放入对应的图片
+  imageUrl: '/images/Multiplayer Fish Shooting Game Board Fire Kirin 3.png', // 请在 public/images/ 放入对应的图片
   features: ['Legendary 3D BOSS System', 'Native 4K UHD @ 60FPS', '30-Level Skill Calibration Logic', 'SAS & Mobile Remote Ready'],
   
   tankPage: {
@@ -2258,7 +2258,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: 'Fish Table Game Board Fire Kirin Plus (Skill Enhanced Kit)',
   category: 'game_board',
   description: 'The industry-leading skill shooting software kit. Featuring the iconic Fire Kirin Plus series with native 4K graphics, 30-level skill adjustment, and industrial-grade 36/10 pin hardware for maximum route retention.',
-  imageUrl: '/images/fire-kirin-plus-board.jpg', // 请在 public/images/ 放入对应的图片
+  imageUrl: '/images/Fire Kirin Plus PCB Distributor.png', // 请在 public/images/ 放入对应的图片
   features: ['Iconic Fire Kirin Plus BOSS System', 'Native 4K UHD @ 60FPS', '30-Level Skill Calibration Logic', 'SAS & Mobile Remote Ready'],
   
   tankPage: {
@@ -2354,7 +2354,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: 'Fish Table Game Board Fire Kirin Revenge (Skill Based Kit)',
   category: 'game_board',
   description: 'The ultimate sequel in skill gaming excellence. Featuring the iconic Fire Kirin Revenge series with native 4K UHD graphics, 30-level skill adjustment, and industrial-grade 36/10 pin hardware.',
-  imageUrl: '/images/fire-kirin-revenge-board.jpg', // 请在 public/images/ 放入对应的图片
+  imageUrl: '/images/Fish Table Game Board Fire Kirin Revenge.png', // 请在 public/images/ 放入对应的图片
   features: ['Cinematic 4K UHD @ 60FPS', 'Revenge Edition Boss System', '30-Level Skill Calibration Logic', 'SAS & Mobile Remote Ready'],
   
   tankPage: {
@@ -2450,7 +2450,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: 'Fish Table Game Board Mermaid Warrior 3 (Skill Based Kit)',
   category: 'game_board',
   description: 'The industry-leading skill shooting software kit. Featuring the iconic Mermaid Warrior 3 series with native 4K graphics, 30-level skill adjustment, and industrial-grade 36/10 pin hardware.',
-  imageUrl: '/images/mermaid-warrior-3-board.jpg', // 请在 public/images/ 放入对应的图片
+  imageUrl: '/images/fish game board mermaid warrior 3.png', // 请在 public/images/ 放入对应的图片
   features: ['Iconic 3D Mermaid BOSS System', 'Native 4K UHD @ 60FPS', '30-Level Skill Calibration Logic', 'SAS & Mobile Remote Ready'],
   
   tankPage: {
@@ -2546,7 +2546,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: 'Fish Table Game Board Monkey King Strike (3D Skill Kit)',
   category: 'game_board',
   description: 'The legendary Monkey King Strike skill gaming software. Featuring cinematic 3D graphics, a proprietary 30-level skill window adjustment, and industrial-grade hardware for maximum route stability.',
-  imageUrl: '/images/monkey-king-strike-board.jpg', // 请确保在 public/images/ 放入对应图片
+  imageUrl: '/images/Multiplayer Skill Shooting Software Monkey King Strike.png', // 请确保在 public/images/ 放入对应图片
   features: ['Cinematic 3D Boss Battles', 'Native 4K UHD @ 60FPS Output', '30-Level Skill Calibration Logic', 'Universal 36/10 Pin Compatibility'],
   
   tankPage: {
@@ -2642,7 +2642,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: 'Fish Table Game Board Ocean Monster 3 (Skill Based Kit)',
   category: 'game_board',
   description: 'The industry-leading skill shooting software kit. Featuring the iconic Ocean Monster 3 series with native 4K graphics, 30-level skill adjustment, and industrial-grade 36/10 pin hardware.',
-  imageUrl: '/images/ocean-monster-3-board.jpg', // 请在 public/images/ 放入对应的图片
+  imageUrl: '/images/Ocean Monster 3 Skill Based Kit.png', // 请在 public/images/ 放入对应的图片
   features: ['Legendary 3D BOSS System', 'Native 4K UHD @ 60FPS', '30-Level Skill Calibration Logic', 'SAS 6.0 & SAS-Link Ready'],
   
   tankPage: {
@@ -2738,7 +2738,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: 'fish table game board Panda vs Alien (Sci-Fi Skill Kit)',
   category: 'game_board',
   description: 'A revolutionary sci-fi themed skill gaming software kit. Featuring native 4K 3D graphics, a proprietary 30-level skill window adjustment, and industrial-grade 36/10 pin hardware for professional route operators.',
-  imageUrl: '/images/panda-vs-alien-board.jpg', // 请在 public/images/ 放入对应的图片
+  imageUrl: '/images/fish table game board Panda vs Alien.png', // 请在 public/images/ 放入对应的图片
   features: ['Unique Sci-Fi 3D Theme', 'Native 4K UHD @ 60FPS', '30-Level Skill Calibration Logic', 'SAS & Mobile Remote Ready'],
   
   tankPage: {
@@ -2834,7 +2834,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: 'Fish Table Game Board Thunder Wings (Skill Based Kit)',
   category: 'game_board',
   description: 'The ultimate aviation-themed skill shooting software. Featuring native 4K UHD graphics, a proprietary 30-level skill window adjustment, and industrial-grade 36/10 pin hardware for professional route operators.',
-  imageUrl: '/images/thunder-wings-board.jpg', // 请在 public/images/ 放入对应的图片
+  imageUrl: '/images/Aviation Themed Skill Shooting Kit Thunder Wings.png', // 请在 public/images/ 放入对应的图片
   features: ['Cinematic 3D Aircraft Combat', 'Native 4K UHD @ 60FPS', '30-Level Skill Calibration Logic', 'SAS & Mobile Remote Ready'],
   
   tankPage: {
