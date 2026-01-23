@@ -33,18 +33,18 @@ const Layout: React.FC = () => {
   ];
 // 在 Layout 内部约第 34 行添加：
 const venueCategories = [
-  { id: 'distributor', key: 'distributor' },
-  { id: 'agent', key: 'agent' },
-  { id: 'custom-kit', key: 'custom' },
-  { id: 'game-room', key: 'gameroom' },
-  { id: 'arcade', key: 'arcade' },
-  { id: 'gas-station', key: 'gas' },
-  { id: 'convenience-store', key: 'cstore' },
-  { id: 'barbershop', key: 'barber' },
-  { id: 'tattoo-studio', key: 'tattoo' },
-  { id: 'laundromat', key: 'laundry' },
-  { id: 'internet-cafe', key: 'icafe' },
-  { id: 'lounge', key: 'lounge' }
+  { id: 'distributors', key: 'distributor' },
+  { id: 'agents', key: 'agent' },
+  { id: 'custom-kits', key: 'custom' },
+  { id: 'game-rooms', key: 'gameroom' },
+  { id: 'arcades', key: 'arcade' },
+  { id: 'gas-stations', key: 'gas' },
+  { id: 'convenience-stores', key: 'cstore' },
+  { id: 'barbershops', key: 'barber' },
+  { id: 'tattoo-studios', key: 'tattoo' },
+  { id: 'laundromats', key: 'laundry' },
+  { id: 'internet-cafes', key: 'icafe' },
+  { id: 'lounges', key: 'lounge' }
 ];
   // ✅ 语言切换处理：保持在当前路径，仅更换语言前缀
   const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {

@@ -10,18 +10,18 @@ import { LanguageCode } from '../types';
 
 // ✅ 1. 核心 12 类目标客户数据（与 Layout 导航同步）
 const industrySolutions = [
-  { id: 'distributor', icon: Building2, key: 'distributor' },
-  { id: 'agent', icon: Briefcase, key: 'agent' },
-  { id: 'custom-kit', icon: Cpu, key: 'custom' },
-  { id: 'game-room', icon: Zap, key: 'gameroom' },
-  { id: 'arcade', icon: Users, key: 'arcade' },
-  { id: 'gas-station', icon: Car, key: 'gas' },
-  { id: 'convenience-store', icon: ShoppingBag, key: 'cstore' },
-  { id: 'barbershop', icon: Scissors, key: 'barber' },
-  { id: 'tattoo-studio', icon: PenTool, key: 'tattoo' },
-  { id: 'laundromat', icon: Store, key: 'laundry' },
-  { id: 'internet-cafe', icon: Monitor, key: 'icafe' },
-  { id: 'lounge', icon: Beer, key: 'lounge' }
+  { id: 'distributors', icon: Building2, key: 'distributor' },
+  { id: 'agents', icon: Briefcase, key: 'agent' },
+  { id: 'custom-kits', icon: Cpu, key: 'custom' },
+  { id: 'game-rooms', icon: Zap, key: 'gameroom' },
+  { id: 'arcades', icon: Users, key: 'arcade' },
+  { id: 'gas-stations', icon: Car, key: 'gas' },
+  { id: 'convenience-stores', icon: ShoppingBag, key: 'cstore' },
+  { id: 'barbershops', icon: Scissors, key: 'barber' },
+  { id: 'tattoo-studios', icon: PenTool, key: 'tattoo' },
+  { id: 'laundromats', icon: Store, key: 'laundry' },
+  { id: 'internet-cafes', icon: Monitor, key: 'icafe' },
+  { id: 'lounges', icon: Beer, key: 'lounge' }
 ];
 
 const Solutions: React.FC = () => {
