@@ -13,12 +13,12 @@ const IconMap: Record<string, React.FC<any>> = {
 };
 
 const SolutionDetail: React.FC = () => {
-  const { lang, slug } = useParams();
+  const { lang, id } = useParams();
   const currentLang = (lang as LanguageCode) || DEFAULT_LANG;
   const [openFaq, setOpenFaq] = React.useState<number | null>(null);
   
   const solutions = getSolutions(currentLang);
-  const solution = solutions.find(s => s.id === slug);
+  const solution = solutions.find(s => s.id === id);
 
   // If slug doesn't exist, redirect
   if (!solution) {
