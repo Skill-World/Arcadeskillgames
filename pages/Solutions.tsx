@@ -11,7 +11,7 @@ import { LanguageCode } from '../types';
 // ✅ 1. 核心 12 类目标客户数据（与 Layout 导航同步）
 const industrySolutions = [
   { id: 'distributors', icon: Building2, key: 'distributor' },
-  { id: 'agents', icon: Briefcase, key: 'agent' },
+  { id: 'game-agents', icon: Briefcase, key: 'agent' },
   { id: 'custom-kits', icon: Cpu, key: 'custom' },
   { id: 'game-rooms', icon: Zap, key: 'gameroom' },
   { id: 'arcades', icon: Users, key: 'arcade' },

@@ -34,7 +34,7 @@ const Layout: React.FC = () => {
 // 在 Layout 内部约第 34 行添加：
 const venueCategories = [
   { id: 'distributors', key: 'distributor' },
-  { id: 'agents', key: 'agent' },
+  { id: 'game-agents', key: 'agent' },
   { id: 'custom-kits', key: 'custom' },
   { id: 'game-rooms', key: 'gameroom' },
   { id: 'arcades', key: 'arcade' },
