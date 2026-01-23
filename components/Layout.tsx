@@ -31,7 +31,21 @@ const Layout: React.FC = () => {
     { name: t('nav.cat.cabinets'), id: 'cabinet_only' },
     { name: t('nav.cat.boards'), id: 'game_board' },
   ];
-
+// 在 Layout 内部约第 34 行添加：
+const venueCategories = [
+  { id: 'distributor', key: 'distributor' },
+  { id: 'agent', key: 'agent' },
+  { id: 'custom-kit', key: 'custom' },
+  { id: 'game-room', key: 'gameroom' },
+  { id: 'arcade', key: 'arcade' },
+  { id: 'gas-station', key: 'gas' },
+  { id: 'convenience-store', key: 'cstore' },
+  { id: 'barbershop', key: 'barber' },
+  { id: 'tattoo-studio', key: 'tattoo' },
+  { id: 'laundromat', key: 'laundry' },
+  { id: 'internet-cafe', key: 'icafe' },
+  { id: 'lounge', key: 'lounge' }
+];
   // ✅ 语言切换处理：保持在当前路径，仅更换语言前缀
   const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const newLang = e.target.value;
@@ -124,12 +138,30 @@ const Layout: React.FC = () => {
                 )}
               </div>
 
-              <Link
-                  to={getPath(PageRoute.SOLUTIONS)}
-                  className={`text-sm font-medium transition-colors duration-200 hover:text-brand-400 ${isActive(PageRoute.SOLUTIONS) ? 'text-brand-400' : 'text-slate-300'}`}
-              >
-                  {t('nav.solutions')}
-              </Link>
+              {/* Venue Solutions Dropdown */}
+<div className="relative group">
+  <Link
+    to={getPath(PageRoute.SOLUTIONS)}
+    className={`flex items-center text-sm font-medium transition-colors duration-200 hover:text-brand-400 ${isActive(PageRoute.SOLUTIONS) ? 'text-brand-400' : 'text-slate-300'}`}
+  >
+    {t('nav.solutions')} <ChevronDown className="ml-1 h-4 w-4" />
+  </Link>
+  
+  {/* ✅ 12 类目标客户下拉列表 */}
+  <div className="absolute left-0 hidden group-hover:block w-72 bg-brand-800 border border-slate-700 rounded-xl shadow-2xl py-3 z-50 animate-fade-in">
+    <div className="grid grid-cols-1 gap-1 max-h-[60vh] overflow-y-auto px-2 scrollbar-thin scrollbar-thumb-slate-700">
+      {venueCategories.map((cat) => (
+        <Link
+          key={cat.id}
+          to={`/${lang}/solutions/${cat.id}`}
+          className="block px-4 py-2 text-sm text-slate-300 hover:bg-brand-700 hover:text-brand-400 rounded-lg transition-colors"
+        >
+          {t(`sol.${cat.key}.title`)}
+        </Link>
+      ))}
+    </div>
+  </div>
+</div>
               <Link
                   to={getPath(PageRoute.BLOG)}
                   className={`text-sm font-medium transition-colors duration-200 hover:text-brand-400 ${isActive(PageRoute.BLOG) ? 'text-brand-400' : 'text-slate-300'}`}
@@ -227,13 +259,26 @@ const Layout: React.FC = () => {
                 >
                   {t('nav.about')}
                 </Link>
-                <Link
-                  to={getPath(PageRoute.SOLUTIONS)}
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  className="block px-3 py-3 rounded-md text-base font-medium text-slate-300 hover:bg-brand-700 hover:text-white"
-                >
-                  {t('nav.solutions')}
-                </Link>
+                {/* Mobile Venue Solutions with Sub-menu */}
+<div className="space-y-1 bg-brand-900/50 rounded-lg p-2">
+  <Link
+    to={getPath(PageRoute.SOLUTIONS)}
+    onClick={() => setIsMobileMenuOpen(false)}
+    className="block px-3 py-2 text-brand-400 font-bold uppercase text-xs tracking-wider border-b border-slate-700 mb-2"
+  >
+    {t('nav.solutions')}
+  </Link>
+  {venueCategories.map((cat) => (
+    <Link
+      key={cat.id}
+      to={`/${lang}/solutions/${cat.id}`}
+      onClick={() => setIsMobileMenuOpen(false)}
+      className="block px-3 py-2 rounded-md text-sm font-medium text-slate-300 hover:text-white pl-6"
+    >
+      • {t(`sol.${cat.key}.title`)}
+    </Link>
+  ))}
+</div>
                 <Link
                   to={getPath(PageRoute.BLOG)}
                   onClick={() => setIsMobileMenuOpen(false)}
