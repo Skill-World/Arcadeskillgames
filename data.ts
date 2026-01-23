@@ -8,7 +8,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
     name: '43" 4K Titan Vertical Skill Cabinet (Empty Shell)',
     category: 'cabinet_only',
     description: 'Premier 43-inch 4K UHD gaming cabinet shell. Designed for maximum player engagement with addressable RGB Halo lighting and industrial-grade steel construction.',
-    imageUrl: 'https://picsum.photos/800/1200?random=43', // 建议替换为真实的43寸立式机图片
+    imageUrl: '/images/43 Inch Vertical Skill Cabinet.png', // 建议替换为真实的43寸立式机图片
     features: ['43" 4K UHD PCAP Touch', 'Addressable LED Halo Lighting', '1.2mm Cold Rolled Steel', '36/10 Pin Pre-Wired'],
     
     // 🔥 坦克页深度内容升级
@@ -123,7 +123,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: '43" J-Curve 4K Elite Skill Cabinet (Empty Shell)',
   category: 'cabinet_only',
   description: 'The ultimate immersive experience for premium venues. Features a massive 43-inch J-Curved 4K display with high-fidelity PCAP touch and dynamic sync-lighting.',
-  imageUrl: 'https://picsum.photos/800/1200?random=431', // 建议替换为真实的 J-Curve 机柜图
+  imageUrl: '/images/43 Inch Curved Skill Cabinet.png', // 建议替换为真实的 J-Curve 机柜图
   features: ['43" 4K J-Curve Display', 'Pro-Grade PCAP Multi-Touch', 'Sync-LED RGB Lighting', 'Dual-Lock Security Body'],
   
   tankPage: {
@@ -237,7 +237,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: '43" 4K Slant Top Curved Skill Cabinet (Empty Shell)',
   category: 'cabinet_only',
   description: 'The ultimate luxury ergonomic gaming shell. 4K J-Curve display with a slant-top design optimized for high-end VIP lounges and long-session play.',
-  imageUrl: '/images/slant-top-43.jpg', 
+  imageUrl: '/images/43 Inch Curved Gaming Shell.png', 
   features: ['43" 4K Curved PCAP Touch', 'Ergonomic Slant-Top Design', 'Premium 2.1 Sound System', 'Anti-Pry 1.2mm Steel Body'],
   
   tankPage: {
@@ -351,7 +351,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: '43" 4K Vertical Elite Skill Cabinet (Empty Shell)',
   category: 'cabinet_only',
   description: 'The definitive 43-inch vertical gaming platform. A seamless 4K visual experience designed for Link and Nudge games. Built for durability and high-impact visual attraction.',
-  imageUrl: '/images/vertical-43-pro.jpg', // 建议在 public/images/ 放入图片
+  imageUrl: '/images/43 Inch Vertical Arcade Cabinet.png', // 建议在 public/images/ 放入图片
   features: ['43" 4K Vertical UHD Display', 'Industrial PCAP Touchscreen', 'Custom RGB Side Lighting', 'Heavy-Duty 1.2mm Steel Shell'],
   
   tankPage: {
@@ -560,7 +560,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: '43" 4K Curved Elite Arc Skill Cabinet (Empty Shell)',
   category: 'cabinet_only',
   description: 'The ultimate curved arcade shell optimized for Link games. Features a premium R1500 curvature for maximum player immersion and a space-saving slim profile.',
-  imageUrl: 'https://picsum.photos/800/1200?random=110', // 建议在 public/images/ 放入 Model V2 实拍图
+  imageUrl: '/images/43 Inch Curved Arcade Cabinet Shell.png', // 建议在 public/images/ 放入 Model V2 实拍图
   features: ['43" R1500 4K Curved Display', '10-Point Flush PCAP Touch', 'Slim-Profile Metal Body', 'Programmable Side RGB'],
   
   tankPage: {
@@ -638,7 +638,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: '43" Slim 4K Vertical Link Cabinet (Empty Shell)',
   category: 'cabinet_only',
   description: 'A space-saving 43-inch vertical gaming shell with an ultra-slim bezel. Engineered for high-density venues to maximize revenue per square foot without compromising visual impact.',
-  imageUrl: 'https://picsum.photos/800/1200?random=v5', // 请替换为真实 Model 5 图片
+  imageUrl: '/images/Vertical Arcade Cabinet Shell.png', // 请替换为真实 Model 5 图片
   features: ['Ultra-Slim 24" Chassis', '4K Industrial PCAP Touch', 'Enhanced Vault Security', 'High-Efficiency Airflow'],
   
   tankPage: {
@@ -716,7 +716,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: '43" 4K Aura Elite Vertical Skill Cabinet (Model 7)',
   category: 'cabinet_only',
   description: 'The premier choice for high-end routes. Features the signature Aura dynamic lighting system and a native 4K PCAP touch display for maximum player immersion.',
-  imageUrl: '/images/model-7-aura.jpg', 
+  imageUrl: '/images/43 Inch Vertical Skill Game Cabinet.png', 
   features: ['43" 4K Ultra-HD Portrait Display', 'Signature Aura RGB Halo Lighting', 'Heavy-Duty 1.2mm Steel Vault Shell', 'Precision 10-Point PCAP Touch'],
   
   tankPage: {
@@ -794,7 +794,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: '98" Deluxe 10-Player Dismantle Table Shell (Empty Cabinet)',
   category: 'cabinet_only',
   description: 'The ultimate revenue engine for large-scale venues. Featuring a massive 98-inch 4K display and a modular dismantle design for easy global shipping and installation.',
-  imageUrl: 'https://picsum.photos/1200/800?random=10player', // 建议在 public/images/ 放入 98寸桌机实拍图
+  imageUrl: '/images/98 Inch Fish Table Shell.png', // 建议在 public/images/ 放入 98寸桌机实拍图
   features: ['Industrial 98" 4K UHD Display', '10-Player Modular Design', 'Reinforced 1.5mm Steel Shell', 'Sync-Addressable Halo Lighting'],
   
   tankPage: {
@@ -872,7 +872,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: '86" Deluxe 10-Player Dismantle Table Shell (Empty Cabinet)',
   category: 'cabinet_only',
   description: 'The ultimate visual flagship for high-traffic game rooms. Featuring a massive 86-inch 4K display and a modular dismantle design to reduce shipping and installation costs by 45%.',
-  imageUrl: '/images/86-10player-dismantle.jpg', // 建议在 public/images/ 放入对应的86寸机箱图
+  imageUrl: '/images/10 Player Fish Game Housing.png', // 建议在 public/images/ 放入对应的86寸机箱图
   features: ['Industrial 86" 4K UHD Display', '10-Player High-Capacity Layout', 'Modular "Dismantle" Structure', 'Reinforced 1.5mm Steel Shell'],
   
   tankPage: {
@@ -974,7 +974,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: '86" Deluxe 10-Player Fully Welded Table Shell (Non-Dismantle)',
   category: 'cabinet_only',
   description: 'The definitive high-capacity multiplayer shell. Featuring a massive 86-inch 4K monitor and a fully welded 1.5mm steel body for maximum structural integrity and professional venue aesthetics.',
-  imageUrl: 'https://picsum.photos/1200/800?random=10pw', // 建议在 public/images/ 放入产品图
+  imageUrl: '/images/86 inch fish game machine shell.png', // 建议在 public/images/ 放入产品图
   features: ['Industrial 86" 4K UHD Display', '10-Player Station Capacity', 'Fully Welded 1.5mm Steel Shell', '5mm Tempered Safety Glass'],
   
   tankPage: {
@@ -1052,7 +1052,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: '65" Royal 10-Player Fully Welded Table Shell (Non-Dismantle)',
   category: 'cabinet_only',
   description: 'The premier choice for premium venues. Featuring a massive 65-inch 4K monitor and a high-end fully welded 1.5mm steel body for ultimate stability and "Vegas-grade" aesthetics.',
-  imageUrl: '/images/65-10player-royal.jpg', // 请在 public/images/ 放入对应的图片
+  imageUrl: '/images/10 Player Arcade Cabinet Shell.png', // 请在 public/images/ 放入对应的图片
   features: ['65" Industrial 4K UHD Display', 'Royal 10-Player Layout', 'One-Piece Fully Welded Steel', 'Custom dynamic RGB Halo'],
   
   tankPage: {
@@ -1130,7 +1130,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: '86" Royal 10-Player Fully Welded Table Shell (Non-Dismantle)',
   category: 'cabinet_only',
   description: 'The premier choice for luxury venues. Featuring a massive 86-inch 4K monitor and a high-end fully welded 1.5mm steel body for ultimate stability and "Vegas-grade" aesthetics.',
-  imageUrl: '/images/86-10player-royal-welded.jpg', // 请在 public/images/ 放入对应的图片
+  imageUrl: '/images/86 inch Royal 10 Players Fully Welded Table Shell.png', // 请在 public/images/ 放入对应的图片
   features: ['65" Industrial 4K UHD Display', 'Royal 10-Player Layout', 'One-Piece Fully Welded Steel', 'Custom dynamic RGB Halo'],
   
   tankPage: {
@@ -1208,7 +1208,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: '86" Royal V2 10-Player Fully Welded Table Shell (Non-Dismantle)',
   category: 'cabinet_only',
   description: 'The premier luxury flagship for high-end routes. Featuring a massive 86-inch 4K monitor and a high-end fully welded 1.5mm steel body with Halo-Eclipse RGB effects.',
-  imageUrl: '/images/86-10player-royal-v2.jpg', // 请在 public/images/ 放入对应的图片
+  imageUrl: '/images/86 Inch 4K Skill Game Housing.png', // 请在 public/images/ 放入对应的图片
   features: ['Industrial 86" 4K UHD Display', 'Royal V2 10-Player Layout', 'One-Piece Fully Welded 1.5mm Steel', 'Halo-Eclipse RGB Lighting'],
   
   tankPage: {
@@ -1293,14 +1293,12 @@ export const getProducts = (lang: LanguageCode): Product[] => [
     }
   }
 },
-  // ⚠️ 插入位置：src/data.ts -> getProducts 数组内部末尾
-
 {
   id: 'fish-table-8-classic-welded',
   name: '8-Player Classic Black Fully Welded Table Shell (Non-Dismantle)',
   category: 'cabinet_only',
   description: 'The industry workhorse for high-retention routes. Featuring a 55-inch display support and a fully welded 1.5mm steel body for maximum security and zero-maintenance durability.',
-  imageUrl: '/images/8-player-classic-black.jpg', // 请在 public/images/ 放入对应的图片
+  imageUrl: '/images/8 Players Classic Black Fully Fish Table Game.png', // 请在 public/images/ 放入对应的图片
   features: ['Fits 55" Industrial 4K Monitor', 'Classic 8-Player Stand-Up Layout', '1.5mm Reinforced Steel Body', 'Anti-Pry Vault Security System'],
   
   tankPage: {
@@ -1396,7 +1394,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: '5-in-1 Elite Skill Fish Table Game Kit (4K UHD)',
   category: 'game_board',
   description: 'The definitive multiplayer skill gaming software kit. Featuring 5 hot titles in 1 board with native 4K output, 30-level difficulty adjustment, and standard 36/10 pin compatibility.',
-  imageUrl: '/images/5in1-fish-game-board.jpg', // 请在 public/images/ 放入对应的图片
+  imageUrl: '/images/fish game board 5 in 1.png', // 请在 public/images/ 放入对应的图片
   features: ['5 Hot Skill Titles Integrated', 'Native 4K UHD 60FPS Output', '30-Level Skill Window Adjustment', 'SAS & SAS-Link Ready'],
   
   tankPage: {
@@ -1492,7 +1490,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: 'Air Strike 2 Elite Fish Table Game Kit (4K UHD)',
   category: 'game_board',
   description: 'A high-octane aircraft-themed skill gaming software kit. Featuring native 4K 3D aerial combat, 30-level difficulty adjustment, and stable 36/10 pin hardware for professional routes.',
-  imageUrl: '/images/airstrike-2-board.jpg', // 请在 public/images/ 放入对应的图片
+  imageUrl: '/images/fish game board air strike 2.png', // 请在 public/images/ 放入对应的图片
   features: ['3D Aerial Combat Theme', 'Native 4K UHD 60FPS Graphics', 'Anti-Tamper PCB Technology', 'SAS Protocol Accounting Ready'],
   
   tankPage: {
@@ -1588,7 +1586,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: 'Crab King 2 Elite Skill Fish Table Game Kit (4K UHD)',
   category: 'game_board',
   description: 'The industry-standard skill gaming kit. Featuring iconic 3D boss battles, native 4K graphics, a 30-level skill window adjustment, and industrial-grade 36/10 pin hardware for maximum route stability.',
-  imageUrl: '/images/crab-king-2-board.jpg', // 请在 public/images/ 放入对应的图片
+  imageUrl: '/images/Crab King 2 Game Board.png', // 请在 public/images/ 放入对应的图片
   features: ['Iconic 3D Boss Mechanics', 'Native 4K UHD 60FPS Graphics', '30-Level Skill Calibration Logic', 'Universal 36/10 Pin Compatibility'],
   
   tankPage: {
@@ -1685,7 +1683,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: 'Air Strike 3 Ultimate 3D Skill Game Kit (4K Pro)',
   category: 'game_board',
   description: 'The pinnacle of aerial skill shooting software. Featuring native 4K 3D graphics, a proprietary 30-level skill window adjustment, and industrial-grade 36/10 pin hardware for elite route operators.',
-  imageUrl: '/images/airstrike-3-board.jpg', // 请在 public/images/ 放入对应的图片
+  imageUrl: '/images/Air Strike 3 Ultimate 3D Skill Game Kit.png', // 请在 public/images/ 放入对应的图片
   features: ['Cinematic 4K 3D Aerial Combat', 'Proprietary Skill-Window Logic', 'SAS 6.0 Accounting Ready', 'Universal 36/10 Pin Compatibility'],
   
   tankPage: {
@@ -1780,7 +1778,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: 'Crab King 3 Ultimate 3D Skill Game Kit (4K Ultra)',
   category: 'game_board',
   description: 'The definitive sequel in skill gaming excellence. Featuring native 4K UHD graphics, advanced 3D weapon systems, 30-level skill adjustment, and SAS 6.0 compatibility for professional route management.',
-  imageUrl: '/images/crab-king-3-board.jpg', // 请在 public/images/ 放入对应的图片
+  imageUrl: '/images/Multiplayer Fish Shooting Game Board Crab King 3.png', // 请在 public/images/ 放入对应的图片
   features: ['Native 4K UHD @ 60FPS', 'Advanced 3D Boss Mechanics', '30-Level Skill-Sync Logic', 'SAS 6.0 & SAS-Link Ready'],
   
   tankPage: {
@@ -1876,7 +1874,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: 'Fish Table Game Board Crab King (Skill Based Kit)',
   category: 'game_board',
   description: 'The industry-standard skill shooting software. Featuring iconic boss mechanics, 30-level skill window adjustment, and industrial-grade 36/10 pin hardware for maximum route retention.',
-  imageUrl: '/images/crab-king-classic-board.jpg', // 请在 public/images/ 放入对应的图片
+  imageUrl: '/images/Fish Table Game Board Crab King.png', // 请在 public/images/ 放入对应的图片
   features: ['Iconic 3D Boss System', 'Drill & Laser Special Weapons', '30-Level Skill Calibration', 'Universal 36/10 Pin Compatibility'],
   
   tankPage: {
@@ -1972,7 +1970,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: 'Fish Table Game Board Crab King Plus (Skill Enhanced Kit)',
   category: 'game_board',
   description: 'The definitive upgrade for professional route operators. Featuring enhanced 4K boss mechanics, 30-level skill adjustment, and industrial-grade 36/10 pin hardware for maximum location hold.',
-  imageUrl: '/images/crab-king-plus-board.jpg', // 请在 public/images/ 放入对应的图片
+  imageUrl: '/images/Fish Table Game Board Crab King Plus.png', // 请在 public/images/ 放入对应的图片
   features: ['Enhanced 4K Boss Graphics', 'Mega Drill & Chain Lightning Weapons', '30-Level Skill Calibration', 'SAS 6.0 Accounting Support'],
   
   tankPage: {
@@ -2068,7 +2066,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: 'Fish Table Game Board Fire Kirin 2 (Skill Based Kit)',
   category: 'game_board',
   description: 'The industry-leading skill shooting software kit. Featuring the iconic Fire Kirin series with native 4K graphics, 30-level skill adjustment, and industrial-grade 36/10 pin hardware for maximum route retention.',
-  imageUrl: '/images/fire-kirin-2-board.jpg', // 请在 public/images/ 放入对应的图片
+  imageUrl: '/images/Skill Based Fish Shooting Game Kit Fire Kirin II.png', // 请在 public/images/ 放入对应的图片
   features: ['Iconic Fire Kirin BOSS System', 'Native 4K UHD @ 60FPS', '30-Level Skill Calibration Logic', 'SAS & Mobile Remote Ready'],
   
   tankPage: {
@@ -2164,7 +2162,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: 'Fish Table Game Board Fire Kirin 3 (Skill Based Kit)',
   category: 'game_board',
   description: 'The industry-leading skill shooting software kit. Featuring the legendary Fire Kirin 3 series with native 4K UHD graphics, 30-level skill adjustment, and industrial-grade 36/10 pin hardware.',
-  imageUrl: '/images/fire-kirin-3-board.jpg', // 请在 public/images/ 放入对应的图片
+  imageUrl: '/images/Multiplayer Fish Shooting Game Board Fire Kirin 3.png', // 请在 public/images/ 放入对应的图片
   features: ['Legendary 3D BOSS System', 'Native 4K UHD @ 60FPS', '30-Level Skill Calibration Logic', 'SAS & Mobile Remote Ready'],
   
   tankPage: {
@@ -2260,7 +2258,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: 'Fish Table Game Board Fire Kirin Plus (Skill Enhanced Kit)',
   category: 'game_board',
   description: 'The industry-leading skill shooting software kit. Featuring the iconic Fire Kirin Plus series with native 4K graphics, 30-level skill adjustment, and industrial-grade 36/10 pin hardware for maximum route retention.',
-  imageUrl: '/images/fire-kirin-plus-board.jpg', // 请在 public/images/ 放入对应的图片
+  imageUrl: '/images/Fire Kirin Plus PCB Distributor.png', // 请在 public/images/ 放入对应的图片
   features: ['Iconic Fire Kirin Plus BOSS System', 'Native 4K UHD @ 60FPS', '30-Level Skill Calibration Logic', 'SAS & Mobile Remote Ready'],
   
   tankPage: {
@@ -2356,7 +2354,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: 'Fish Table Game Board Fire Kirin Revenge (Skill Based Kit)',
   category: 'game_board',
   description: 'The ultimate sequel in skill gaming excellence. Featuring the iconic Fire Kirin Revenge series with native 4K UHD graphics, 30-level skill adjustment, and industrial-grade 36/10 pin hardware.',
-  imageUrl: '/images/fire-kirin-revenge-board.jpg', // 请在 public/images/ 放入对应的图片
+  imageUrl: '/images/Fish Table Game Board Fire Kirin Revenge.png', // 请在 public/images/ 放入对应的图片
   features: ['Cinematic 4K UHD @ 60FPS', 'Revenge Edition Boss System', '30-Level Skill Calibration Logic', 'SAS & Mobile Remote Ready'],
   
   tankPage: {
@@ -2452,7 +2450,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: 'Fish Table Game Board Mermaid Warrior 3 (Skill Based Kit)',
   category: 'game_board',
   description: 'The industry-leading skill shooting software kit. Featuring the iconic Mermaid Warrior 3 series with native 4K graphics, 30-level skill adjustment, and industrial-grade 36/10 pin hardware.',
-  imageUrl: '/images/mermaid-warrior-3-board.jpg', // 请在 public/images/ 放入对应的图片
+  imageUrl: '/images/fish game board mermaid warrior 3.png', // 请在 public/images/ 放入对应的图片
   features: ['Iconic 3D Mermaid BOSS System', 'Native 4K UHD @ 60FPS', '30-Level Skill Calibration Logic', 'SAS & Mobile Remote Ready'],
   
   tankPage: {
@@ -2548,7 +2546,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: 'Fish Table Game Board Monkey King Strike (3D Skill Kit)',
   category: 'game_board',
   description: 'The legendary Monkey King Strike skill gaming software. Featuring cinematic 3D graphics, a proprietary 30-level skill window adjustment, and industrial-grade hardware for maximum route stability.',
-  imageUrl: '/images/monkey-king-strike-board.jpg', // 请确保在 public/images/ 放入对应图片
+  imageUrl: '/images/Multiplayer Skill Shooting Software Monkey King Strike.png', // 请确保在 public/images/ 放入对应图片
   features: ['Cinematic 3D Boss Battles', 'Native 4K UHD @ 60FPS Output', '30-Level Skill Calibration Logic', 'Universal 36/10 Pin Compatibility'],
   
   tankPage: {
@@ -2644,7 +2642,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: 'Fish Table Game Board Ocean Monster 3 (Skill Based Kit)',
   category: 'game_board',
   description: 'The industry-leading skill shooting software kit. Featuring the iconic Ocean Monster 3 series with native 4K graphics, 30-level skill adjustment, and industrial-grade 36/10 pin hardware.',
-  imageUrl: '/images/ocean-monster-3-board.jpg', // 请在 public/images/ 放入对应的图片
+  imageUrl: '/images/Ocean Monster 3 Skill Based Kit.png', // 请在 public/images/ 放入对应的图片
   features: ['Legendary 3D BOSS System', 'Native 4K UHD @ 60FPS', '30-Level Skill Calibration Logic', 'SAS 6.0 & SAS-Link Ready'],
   
   tankPage: {
@@ -2740,7 +2738,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: 'fish table game board Panda vs Alien (Sci-Fi Skill Kit)',
   category: 'game_board',
   description: 'A revolutionary sci-fi themed skill gaming software kit. Featuring native 4K 3D graphics, a proprietary 30-level skill window adjustment, and industrial-grade 36/10 pin hardware for professional route operators.',
-  imageUrl: '/images/panda-vs-alien-board.jpg', // 请在 public/images/ 放入对应的图片
+  imageUrl: '/images/fish table game board Panda vs Alien.png', // 请在 public/images/ 放入对应的图片
   features: ['Unique Sci-Fi 3D Theme', 'Native 4K UHD @ 60FPS', '30-Level Skill Calibration Logic', 'SAS & Mobile Remote Ready'],
   
   tankPage: {
@@ -2836,7 +2834,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: 'Fish Table Game Board Thunder Wings (Skill Based Kit)',
   category: 'game_board',
   description: 'The ultimate aviation-themed skill shooting software. Featuring native 4K UHD graphics, a proprietary 30-level skill window adjustment, and industrial-grade 36/10 pin hardware for professional route operators.',
-  imageUrl: '/images/thunder-wings-board.jpg', // 请在 public/images/ 放入对应的图片
+  imageUrl: '/images/Aviation Themed Skill Shooting Kit Thunder Wings.png', // 请在 public/images/ 放入对应的图片
   features: ['Cinematic 3D Aircraft Combat', 'Native 4K UHD @ 60FPS', '30-Level Skill Calibration Logic', 'SAS & Mobile Remote Ready'],
   
   tankPage: {
@@ -2932,7 +2930,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: 'Skill-Based Game Board Golden Empires 777',
   category: 'skill_based_game_board', // ✅ 使用最新的 ID
   description: 'The industry-standard Nudge game platform. Featuring iconic Golden Empires graphics, native HD output, and industrial-grade 36/10 pin hardware for professional route operators.',
-  imageUrl: '/images/golden-empires-777.jpg', // 请在 public/images/ 放入图片
+  imageUrl: '/images/Skill-Based Game Board Golden Empires 777.png', // 请在 public/images/ 放入图片
   features: ['Nudge-Based Skill Logic', '1080P/4K HD Output Support', 'Universal 36/10 Pin Interface', 'Touch Screen Protocol Support'],
   
   tankPage: {
@@ -3028,7 +3026,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: 'Skill-Based Game Board Lunar\'s Quest 777',
   category: 'skill_based_game_board',
   description: 'The cinematic sci-fi redemption platform. Featuring immersive lunar-themed graphics, native 4K output, and industrial-grade 36/10 pin hardware for elite route operators.',
-  imageUrl: '/images/lunars-quest-777.jpg', // 请在 public/images/ 放入对应图片
+  imageUrl: '/images/Redemption Game PCB Kit Lunars Quest 777.png', // 请在 public/images/ 放入对应图片
   features: ['Cinematic 3D Lunar Graphics', 'Native 4K UHD Output Support', 'Nudge-Based Skill Logic', 'Universal 36/10 Pin Interface'],
   
   tankPage: {
@@ -3124,7 +3122,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: 'Skill-Based Game Board Golden Empires (Multi-Game Kit)',
   category: 'skill_based_game_board',
   description: 'The premier multi-game redemption platform. Featuring iconic Golden Empires titles, native 4K output, and industrial-grade 36/10 pin hardware for professional route operators.',
-  imageUrl: '/images/golden-empires-multi.jpg', // 请在 public/images/ 放入图片
+  imageUrl: '/images/Multi-game PCB Kit Wholesale Golden Empires.png', // 请在 public/images/ 放入图片
   features: ['Multi-Game Software Suite', 'Nudge-Based Skill Logic', '4K UHD Graphics Support', 'Universal 36/10 Pin Interface'],
   
   tankPage: {
@@ -3220,7 +3218,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: 'Universal Game Logic Board Xtreme Skill 777',
   category: 'skill_based_game_board',
   description: 'The premier 4K UHD redemption platform. Featuring immersive nudge-themed graphics, industrial-grade hardware, and full SAS 6.0 accounting for elite route operators.',
-  imageUrl: '/images/xtreme-skill-777-board.jpg', // 请在 public/images/ 放入图片
+  imageUrl: '/images/Skill-Based Game Board Xtreme Skill 777.jpg', // 请在 public/images/ 放入图片
   features: ['Cinematic 4K UHD Output', 'Nudge-Based Skill Logic', '30-Level Skill Calibration', 'Enhanced 15KV ESD Protection'],
   
   tankPage: {
@@ -3316,7 +3314,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: 'Nudge Game Board Lunar\'s Quest',
   category: 'skill_based_game_board',
   description: 'The premier sci-fi redemption platform. Featuring immersive lunar-themed 3D graphics, native 4K output, and industrial-grade 36/10 pin hardware for elite route operators.',
-  imageUrl: '/images/lunars-quest.jpg', // 请在 public/images/ 放入图片
+  imageUrl: '/images/Nudge Game Board Lunars Quest.png', // 请在 public/images/ 放入图片
   features: ['Cinematic 3D Space Theme', 'Native 4K UHD Output Support', 'Nudge-Based Skill Logic', '15KV Enhanced ESD Protection'],
   
   tankPage: {
@@ -3412,7 +3410,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: 'Redemption Game PCB Wild Link',
   category: 'skill_based_game_board',
   description: 'The cinematic jungle-themed skill gaming software kit. Featuring native 4K UHD graphics, a proprietary 30-level skill window adjustment, and industrial-grade 36/10 pin hardware.',
-  imageUrl: '/images/wild-link-board.jpg', // 请在 public/images/ 放入图片
+  imageUrl: '/images/Redemption Game PCB Wild Link.png', // 请在 public/images/ 放入图片
   features: ['Cinematic 3D Jungle Graphics', 'Native 4K UHD @ 60FPS Support', '30-Level Skill Calibration Logic', 'Universal 36/10 Pin Interface'],
   
   tankPage: {
@@ -3508,7 +3506,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: 'Nudge Game Board Panda Link',
   category: 'skill_based_game_board',
   description: 'The cinematic oriental-themed skill gaming platform. Featuring immersive 4K Panda Link graphics, a proprietary 30-level skill window, and industrial-grade 36/10 pin hardware.',
-  imageUrl: '/images/panda-link-board.jpg', // 请在 public/images/ 放入图片
+  imageUrl: '/images/Skill Based Contest Software Panda Link.png', // 请在 public/images/ 放入图片
   features: ['Cinematic 4K UHD Graphics', 'Nudge-Based Skill Logic', '30-Level Skill Calibration', 'Enhanced 15KV ESD Protection'],
   
   tankPage: {
@@ -3604,7 +3602,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: 'Universal Game Logic Board Xtreme Link',
   category: 'skill_based_game_board',
   description: 'The premier vertical multi-game redemption platform. Featuring immersive 4K graphics, a proprietary 30-level skill window, and industrial-grade 36/10 pin hardware for elite route operators.',
-  imageUrl: '/images/xtreme-link-board.jpg', // 请在 public/images/ 放入对应图片
+  imageUrl: '/images/Universal Game Logic Board Xtreme Link.png', // 请在 public/images/ 放入对应图片
   features: ['4-in-1 Multi-game Suite', 'Native 4K UHD Output Support', 'Nudge-Based Skill Logic', 'Universal 36/10 Pin Interface'],
   
   tankPage: {
@@ -3700,7 +3698,7 @@ export const getProducts = (lang: LanguageCode): Product[] => [
   name: 'Skill-Based Game Board Panda Link II 777',
   category: 'skill_based_game_board',
   description: 'The cinematic sequel in skill gaming excellence. Featuring immersive 4K Panda Link II graphics, a proprietary 30-level skill window, and industrial-grade 36/10 pin hardware for elite route operators.',
-  imageUrl: '/images/panda-link-ii-board.jpg', // 请在 public/images/ 放入图片
+  imageUrl: '/images/Skill Based Game Board Panda Link II 777.png', // 请在 public/images/ 放入图片
   features: ['Cinematic 4K UHD Graphics', 'Nudge-Based Skill Logic', '30-Level Skill Calibration', '15KV Enhanced ESD Protection'],
   
   tankPage: {
