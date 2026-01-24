@@ -6,7 +6,8 @@ import {
   AlertTriangle, ShieldCheck, TrendingUp, X, Lock, Maximize, Minimize, 
   Coins, Clock, Users, Palette, Smartphone, Eye, Battery, Copy, 
   Moon, LayoutGrid, User, Wrench, DollarSign, ShieldAlert, TrendingDown, 
-  Phone, Mail, MessageCircle, FileText, Download 
+  Phone, Mail, MessageCircle, FileText, Download,
+  Play, Image as ImageIcon
 } from 'lucide-react';
 import { LanguageCode } from '../types';
 import { DEFAULT_LANG, t } from '../utils/i18n';
@@ -202,6 +203,29 @@ const SolutionDetail: React.FC = () => {
                 {solution.fullDescription}
               </div>
             </section>
+            {/* ✅ 新增：视频演示版块 (AIDA: Desire) */}
+{solution.promoVideo && (
+  <section className="mt-24 animate-in fade-in slide-in-from-bottom-10 duration-1000">
+    <h2 className="text-3xl font-bold text-white mb-8 flex items-center gap-3 uppercase tracking-tighter">
+      <Play className="h-8 w-8 text-brand-500 fill-brand-500/20" /> 
+      Live Performance & Factory Showcase
+    </h2>
+    <div className="relative aspect-video rounded-[40px] overflow-hidden border border-slate-700 shadow-[0_0_50px_rgba(0,0,0,0.5)] bg-black group">
+      <iframe
+        className="w-full h-full"
+        src={`https://www.youtube.com/embed/${solution.promoVideo.id}?rel=0&modestbranding=1`}
+        title={solution.promoVideo.title}
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      ></iframe>
+      {/* 视频上方的装饰遮罩 */}
+      <div className="absolute inset-0 pointer-events-none border-[12px] border-brand-900/20 rounded-[40px]"></div>
+    </div>
+    <p className="mt-6 text-slate-500 text-sm italic text-center font-medium">
+      Video: {solution.promoVideo.title} — Verified factory-direct reliability.
+    </p>
+  </section>
+)}
 
             {/* 6. Comparison Table (Interactive) */}
             <section>
@@ -242,7 +266,38 @@ const SolutionDetail: React.FC = () => {
                 </button>
               </div>
             </section>
-
+{/* ✅ 新增：成功场地实拍画廊 (EEAT: Proof) */}
+{solution.venueGallery && (
+  <section className="mt-32 border-t border-slate-800 pt-24">
+    <div className="flex items-center justify-between mb-12">
+      <div>
+        <h2 className="text-4xl font-black text-white mb-2 uppercase tracking-tighter flex items-center gap-3">
+          <ImageIcon className="h-8 w-8 text-brand-500" /> Success Environments
+        </h2>
+        <p className="text-slate-400">Real-world deployments across high-traffic {solution.id} locations.</p>
+      </div>
+    </div>
+    
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      {solution.venueGallery.map((img, idx) => (
+        <div key={idx} className="group relative h-72 rounded-[32px] overflow-hidden border border-slate-800 shadow-2xl transition-all hover:border-brand-500/50">
+          <img 
+            src={img} 
+            alt={`Verified ${solution.title} deployment ${idx + 1}`} 
+            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" 
+          />
+          {/* 图片悬停水印 */}
+          <div className="absolute inset-0 bg-gradient-to-t from-brand-900/90 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-8">
+             <div className="flex items-center gap-2 text-brand-400 text-[10px] font-black uppercase tracking-[0.3em] mb-2">
+                <ShieldCheck className="h-4 w-4" /> Verified Setup
+             </div>
+             <p className="text-white font-bold text-sm">Optimized for {solution.targetAudience}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+)}
             {/* 7. Recommended Products (Cross-sell) */}
             <section className="mt-32">
               <div className="flex justify-between items-end mb-12">
