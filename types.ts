@@ -154,6 +154,8 @@ export interface SeoConfig {
   keywords: string[];
 }
 
+// ... 前面部分保持不变 (Product, PainPoint 等)
+
 export interface Solution {
   id: string;
   title: string;
@@ -172,9 +174,26 @@ export interface Solution {
   buyersGuide: BuyerStep[];
   faqs: FAQ[];
   testimonials: Testimonial[];
-  // SEO Injection
   seo: SeoConfig;
+
+  // --- ✅ 新增视觉与内容扩展字段 (可选) ---
+  /** 场地实拍图画廊：存储图片 URL 数组 */
+  venueGallery?: string[]; 
+  
+  /** 宣传视频：支持 YouTube 嵌入逻辑 */
+  promoVideo?: {
+    id: string;    // YouTube 视频 ID
+    title: string; // 视频标题，用于 SEO 和 Alt 标签
+  };
+
+  /** 28年源头开发商定制化重点描述 */
+  customizationFocus?: string;
+
+  /** 自定义 CTA 按钮文字 (例如: Get Wholesale Catalog) */
+  ctaText?: string;
 }
+
+// ... 后面部分 (PageRoute, LanguageCode 等) 保持不变
 
 export enum PageRoute {
   HOME = '/',
