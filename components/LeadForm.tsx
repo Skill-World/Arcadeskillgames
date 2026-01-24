@@ -1,257 +1,142 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { X, Send, CheckCircle2, Loader2, ShieldCheck, FileText } from 'lucide-react';
 
-import { useParams, Link } from 'react-router-dom';
+interface LeadFormProps {
+  onClose: () => void;
+  targetSector: string; // 用于记录询盘来源行业，如 distributors
+}
 
-import { ArrowRight } from 'lucide-react';
+export const LeadForm: React.FC<LeadFormProps> = ({ onClose, targetSector }) => {
+  const [status, setStatus] = useState<'idle' | 'submitting' | 'success'>('idle');
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    company: '',
+    volume: '1-5 units',
+    message: ''
+  });
 
-
-
-// 导入逻辑与数据
-
-import { getProducts } from '../data';
-
-import { SEO } from '../components/SEO';
-
-import { t, DEFAULT_LANG } from '../utils/i18n';
-
-import { LanguageCode } from '../types';
-
-
-
-// 导入新开发的营销组件
-
-import { TrustBar } from '../components/home/TrustBar';
-
-import { PainPoints } from '../components/home/PainPoints';
-
-import { VenueGrid } from '../components/home/VenueGrid';
-
-import { ProductShowcase } from '../components/home/ProductShowcase';
-
-import { Testimonials } from '../components/home/Testimonials';
-
-
-
-// --- 关键修改：导入 LeadForm 组件 ---
-
-import { LeadForm } from '../components/LeadForm'; 
-
-
-
-const Home: React.FC = () => {
-
-  // --- 逻辑层：保留多语言支持 ---
-
-  const { lang } = useParams();
-
-  const currentLang = (lang as LanguageCode) || DEFAULT_LANG;
-
-  const products = getProducts(currentLang);
-
-
-
-  // --- SEO层：保留结构化数据与元标签 ---
-
-  const homeSchema = {
-
-    "@context": "https://schema.org",
-
-    "@type": "Organization",
-
-    "name": "Arcade Skill Games",
-
-    "url": "https://www.arcadeskillgames.com",
-
-    "description": t(currentLang, 'hero.subtitle'),
-
-    "areaServed": "USA",
-
-    "knowsAbout": ["Skill Games", "Nudge Machines", "Fish Tables", "Fire Kirin Original Logic", "Arcade Cabinets"]
-
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setStatus('submitting');
+    
+    // 模拟数据提交逻辑
+    setTimeout(() => {
+      console.log('Capture Success:', { ...formData, sector: targetSector });
+      setStatus('success');
+    }, 1500);
   };
 
-
+  // 成功状态视图
+  if (status === 'success') {
+    return (
+      <div className="fixed inset-0 z-[100] flex items-center justify-center px-4">
+        <div className="absolute inset-0 bg-slate-950/90 backdrop-blur-md" onClick={onClose} />
+        <div className="relative bg-brand-900 border border-brand-500/30 p-10 rounded-[40px] max-w-md w-full text-center shadow-[0_0_50px_rgba(59,130,246,0.2)] animate-in zoom-in duration-300">
+          <div className="bg-emerald-500/20 w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-8">
+            <CheckCircle2 className="h-12 w-12 text-emerald-500" />
+          </div>
+          <h3 className="text-3xl font-black text-white mb-4 uppercase tracking-tighter">Inquiry Received</h3>
+          <p className="text-slate-400 mb-10 leading-relaxed font-medium">Our sector specialist will send the 2026 Price List and Technical Catalog to your inbox within 12 hours.</p>
+          <button onClick={onClose} className="w-full py-5 bg-white text-brand-900 rounded-2xl font-black uppercase tracking-widest hover:bg-slate-200 transition-all shadow-xl">
+            Close Window
+          </button>
+        </div>
+      </div>
+    );
+  }
 
   return (
-
-    <div className="animate-fade-in">
-
-      {/* 1. SEO 头部注入 */}
-
-      <SEO 
-
-        title={`${t(currentLang, 'hero.title')} | 28-Year Source Factory`}
-
-        description={t(currentLang, 'hero.subtitle')}
-
-        schema={homeSchema}
-
-        keywords={['Fire Kirin Original Logic', 'Wholesale Skill Games', 'Nudge Machine Manufacturer', 'Fish Table Distributor', 'PA Skill Games', 'Passive Income for Gas Stations']}
-
-      />
-
-
-
-      {/* 2. Hero Section */}
-
-      <section className="relative min-h-[85vh] flex items-center overflow-hidden">
-
-        <div className="absolute inset-0 bg-brand-900">
-
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-brand-800 via-brand-900 to-black opacity-80"></div>
-
-          <div className="absolute inset-0 opacity-20 bg-[url('https://picsum.photos/1920/1080')] bg-cover bg-center mix-blend-overlay"></div>
-
-        </div>
-
+    <div className="fixed inset-0 z-[100] flex items-center justify-center px-4">
+      {/* 背景遮罩 */}
+      <div className="absolute inset-0 bg-slate-950/85 backdrop-blur-sm" onClick={onClose} />
+      
+      {/* 表单主体 */}
+      <div className="relative bg-brand-900 border border-slate-700 rounded-[32px] max-w-4xl w-full overflow-hidden shadow-2xl animate-in fade-in slide-in-from-bottom-12 duration-500 flex flex-col md:flex-row">
         
+        {/* 关闭按钮 */}
+        <button onClick={onClose} className="absolute top-6 right-6 z-30 text-slate-400 hover:text-white hover:rotate-90 transition-all">
+          <X className="h-6 w-6" />
+        </button>
 
-        <div className="relative max-w-7xl mx-auto px-4 text-center pt-10">
+        {/* 左侧：营销话术（AIDA 模型） */}
+        <div className="md:w-5/12 bg-slate-950 p-10 flex flex-col justify-between border-r border-slate-800">
+          <div>
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-500/10 border border-brand-500/20 text-brand-400 text-[10px] font-black uppercase tracking-widest mb-8">
+              Official Factory Access
+            </div>
+            <h2 className="text-3xl font-black text-white mb-6 leading-tight uppercase tracking-tighter">
+              Get Tier-1 <span className="text-brand-500">Wholesale</span> Pricing
+            </h2>
+            <p className="text-slate-500 mb-10 text-sm leading-relaxed">
+              Connect directly with our 28-year engineering team. We prioritize inquiries from registered distributors and route operators.
+            </p>
+            <ul className="space-y-6">
+              {[
+                { icon: FileText, text: "2026 Wholesale Price Matrix" },
+                { icon: ShieldCheck, text: "Logic Compliance Documentation" },
+                { icon: Send, text: "Mixed Container Logistics PDF" }
+              ].map((item, i) => (
+                <li key={i} className="flex items-center gap-4 text-slate-300 font-bold text-xs uppercase tracking-wide">
+                  <div className="bg-brand-500/10 p-2 rounded-lg text-brand-500">
+                    <item.icon className="h-4 w-4" />
+                  </div>
+                  {item.text}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="mt-12 pt-8 border-t border-slate-800/50 text-[10px] text-slate-600 font-medium uppercase tracking-[0.2em]">
+            Arcade Skill Games © 2026
+          </div>
+        </div>
 
-          <h2 className="inline-block py-1 px-3 rounded-full bg-brand-500/20 border border-brand-500/50 text-brand-400 text-sm font-bold tracking-wider mb-6 animate-pulse uppercase">
+        {/* 右侧：输入表单 */}
+        <div className="md:w-7/12 p-10 bg-brand-900/50 relative">
+          <form onSubmit={handleSubmit} className="space-y-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div className="space-y-2">
+                <label className="text-[10px] font-black text-slate-500 uppercase tracking-widest ml-1">Full Name</label>
+                <input required type="text" placeholder="e.g. John Smith" className="w-full bg-slate-950 border border-slate-800 rounded-xl px-5 py-4 text-white placeholder-slate-700 focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 transition-all"
+                  onChange={e => setFormData({...formData, name: e.target.value})} />
+              </div>
+              <div className="space-y-2">
+                <label className="text-[10px] font-black text-slate-500 uppercase tracking-widest ml-1">Work Email</label>
+                <input required type="email" placeholder="john@company.com" className="w-full bg-slate-950 border border-slate-800 rounded-xl px-5 py-4 text-white placeholder-slate-700 focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500 transition-all"
+                  onChange={e => setFormData({...formData, email: e.target.value})} />
+              </div>
+            </div>
 
-            Original Fire Kirin Logic Developer & 28-Year Manufacturer
+            <div className="space-y-2">
+              <label className="text-[10px] font-black text-slate-500 uppercase tracking-widest ml-1">Estimated Purchase Volume</label>
+              <select className="w-full bg-slate-950 border border-slate-800 rounded-xl px-5 py-4 text-white focus:outline-none focus:border-brand-500 transition-all appearance-none cursor-pointer"
+                onChange={e => setFormData({...formData, volume: e.target.value})}>
+                <option value="1-5 units">Personal Venue (1-5 units)</option>
+                <option value="5-20 units">Route Expansion (5-20 units)</option>
+                <option value="20-50 units">Master Agent (20-50 units)</option>
+                <option value="50+ units">Bulk Distributor (50+ units)</option>
+              </select>
+            </div>
 
-          </h2>
+            <div className="space-y-2">
+              <label className="text-[10px] font-black text-slate-500 uppercase tracking-widest ml-1">Specific Requirements</label>
+              <textarea rows={3} placeholder="Tell us about your target location or custom needs..." className="w-full bg-slate-950 border border-slate-800 rounded-xl px-5 py-4 text-white placeholder-slate-700 focus:outline-none focus:border-brand-500 transition-all"
+                onChange={e => setFormData({...formData, message: e.target.value})} />
+            </div>
 
-          <h1 className="text-5xl md:text-7xl font-black text-white tracking-tight mb-8 leading-tight">
-
-            {t(currentLang, 'hero.title')}
-
-          </h1>
-
-          <p className="text-xl md:text-2xl text-slate-300 max-w-4xl mb-12 leading-relaxed font-light mx-auto">
-
-            {t(currentLang, 'hero.subtitle')}
-
-          </p>
-
-          <div className="flex flex-col sm:flex-row gap-6 justify-center">
-
-            <Link to={`/${currentLang}/products`} className="bg-brand-500 hover:bg-brand-600 text-white text-lg px-10 py-5 rounded-lg font-bold shadow-lg transition-all transform hover:scale-105 flex items-center justify-center">
-
-              Browse Wholesale Catalog <ArrowRight className="ml-2 h-5 w-5" />
-
-            </Link>
-
-            <button 
-
-              onClick={() => window.dispatchEvent(new CustomEvent('openLeadForm'))}
-
-              className="bg-transparent border-2 border-slate-500 hover:border-brand-400 hover:text-brand-400 text-slate-200 text-lg px-10 py-5 rounded-lg font-bold transition-all"
-
-            >
-
-              Get Free ROI Consultation
-
+            <button disabled={status === 'submitting'} type="submit" className="w-full bg-brand-500 hover:bg-brand-600 text-white font-black py-5 rounded-2xl shadow-[0_20px_40px_-10px_rgba(59,130,246,0.5)] transition-all flex items-center justify-center gap-3 uppercase tracking-widest text-sm active:scale-[0.98] disabled:opacity-50">
+              {status === 'submitting' ? (
+                <Loader2 className="h-5 w-5 animate-spin" />
+              ) : (
+                <>Submit project Inquiry <Send className="h-4 w-4" /></>
+              )}
             </button>
-
-          </div>
-
+            <p className="text-[9px] text-center text-slate-600 leading-relaxed font-medium">
+              By submitting, you agree to receive wholesale data specific to {targetSector}. <br/>We respect your privacy and never sell your data to 3rd parties.
+            </p>
+          </form>
         </div>
-
-      </section>
-
-
-
-      {/* 3. 信任背书 (Trust Bar) */}
-
-      <TrustBar />
-
-
-
-      {/* 4. 痛点分析 (Pain Points) */}
-
-      <PainPoints />
-
-
-
-      {/* 5. 行业分流 (Venue Grid) */}
-
-      <VenueGrid />
-
-
-
-      {/* 6. 产品肌肉展示 (Product Showcase) */}
-
-      <ProductShowcase />
-
-
-
-      {/* 7. 客户证言 (Testimonials) */}
-
-      <Testimonials />
-
-
-
-      {/* 8. 最终转化区 (Final CTA) */}
-
-      <section className="bg-brand-600 py-24 text-center">
-
-        <div className="max-w-4xl mx-auto px-4">
-
-          <h2 className="text-4xl md:text-6xl font-black text-white uppercase italic mb-8 leading-none">
-
-            Claim Your <span className="text-slate-900">Source Factory</span> Pricing Today
-
-          </h2>
-
-          <button 
-
-            onClick={() => window.dispatchEvent(new CustomEvent('openLeadForm'))}
-
-            className="bg-white text-brand-600 font-black px-12 py-6 rounded-2xl text-lg hover:scale-105 transition-transform uppercase tracking-widest shadow-2xl"
-
-          >
-
-            Download 2026 Wholesale Catalog
-
-          </button>
-
-        </div>
-
-      </section>
-
-
-
-      {/* 9. SEO 标签云 */}
-
-      <section className="py-12 bg-brand-950 border-t border-slate-800">
-
-        <div className="max-w-7xl mx-auto px-4">
-
-          <h2 className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-6 text-center">Industry Leading Skill Game Solutions</h2>
-
-          <div className="flex flex-wrap justify-center gap-4">
-
-             {['Original Fire Kirin', 'Skill Games for Sale', 'Nudge Machine Logic', 'Fish Table Manufacturer', '28 Year Factory'].map((tag, i) => (
-
-               <span key={i} className="text-xs text-slate-600 border border-slate-800 rounded-full px-3 py-1 italic">
-
-                 {tag}
-
-               </span>
-
-             ))}
-
-          </div>
-
-        </div>
-
-      </section>
-
-
-
-      {/* --- 关键修改：在此处挂载 LeadForm 组件 --- */}
-
-      <LeadForm />
-
+      </div>
     </div>
-
   );
-
 };
-
-
-
-export default Home;
