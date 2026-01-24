@@ -4241,7 +4241,7 @@ export const getSolutions = (lang: LanguageCode): Solution[] => [
       },
       { 
         question: 'How difficult is the assembly process for your custom kits?', 
-        answer: 'We have engineered our **custom arcade machine kits** for rapid, 'one-tool' assembly. The modular 'Dismantle-Ready' design allows most experienced builders to complete a full cabinet setup in under 60 minutes. We provide detailed 4K video tutorials and direct engineer support to ensure your first build is technically perfect and ready for location placement.' 
+        answer: `We have engineered our **custom arcade machine kits** for rapid, 'one-tool' assembly. The modular 'Dismantle-Ready' design allows most experienced builders to complete a full cabinet setup in under 60 minutes. We provide detailed 4K video tutorials and direct engineer support to ensure your first build is technically perfect and ready for location placement.`, 
       },
       { 
         question: 'Can I integrate my own game boards into your DIY cabinets?', 
