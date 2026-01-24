@@ -4032,9 +4032,9 @@ export const getSolutions = (lang: LanguageCode): Solution[] => [
     },
     // 1. 增加场地实拍图（请将图片放入 public/images/venues/）
     venueGallery: [
-      '/images/venues/distributor-warehouse-1.jpg',
-      '/images/venues/arcade-setup-commercial.jpg',
-      '/images/venues/skill-game-bank-layout.jpg'
+      '/images/Redemption Game PCB Kit Lunars Quest 777.png',
+      '/images/Redemption Game PCB Kit Lunars Quest 777.png',
+      '/images/Redemption Game PCB Kit Lunars Quest 777.png'
     ],
 
     // 2. 增加宣传视频（YouTube 嵌入逻辑）
