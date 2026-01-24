@@ -21,13 +21,15 @@ const painPoints = [
 
 export const PainPoints = () => (
   <section className="py-24 bg-slate-900">
-    <div className="max-w-7xl mx-auto px-4 text-center">
-      <h2 className="text-3xl md:text-5xl font-black text-white uppercase italic mb-16">
-        The Business Owner's <span className="text-brand-500">Reality Check</span>
-      </h2>
+    <div className="max-w-7xl mx-auto px-4">
+      <div className="text-center mb-16">
+        <h2 className="text-3xl md:text-5xl font-black text-white uppercase italic">
+          The Business Owner's <span className="text-brand-500">Reality Check</span>
+        </h2>
+      </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
         {painPoints.map((point, i) => (
-          <div key={i} className="group">
+          <div key={i} className="text-center group">
             <div className="inline-flex p-6 rounded-3xl bg-brand-500/10 mb-6 group-hover:bg-brand-500 transition-colors">
               <point.icon className="w-10 h-10 text-brand-500 group-hover:text-white" />
             </div>
