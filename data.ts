@@ -4030,6 +4030,22 @@ export const getSolutions = (lang: LanguageCode): Solution[] => [
         'Arcade machine startup solutions'
       ]
     }
+    // 1. 增加场地实拍图（请将图片放入 public/images/venues/）
+    venueGallery: [
+      '/images/venues/distributor-warehouse-1.jpg',
+      '/images/venues/arcade-setup-commercial.jpg',
+      '/images/venues/skill-game-bank-layout.jpg'
+    ],
+
+    // 2. 增加宣传视频（YouTube 嵌入逻辑）
+    promoVideo: {
+      id: 'YOUR_YOUTUBE_ID', // 替换为真实的工厂或产品演示视频 ID
+      title: '28-Year Factory Manufacturing Process & Product Demo'
+    },
+
+    // 3. 强化推荐产品（确保每个产品都有真实的 imageUrl）
+    recommendedCategory: 'cabinet_only', 
+    // 注意：系统会自动从 getProducts 中拉取 cabinet_only 分类的产品
   },
   {
     id: 'game-agents',
