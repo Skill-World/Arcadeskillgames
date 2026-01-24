@@ -15,6 +15,9 @@ import { VenueGrid } from '../components/home/VenueGrid';
 import { ProductShowcase } from '../components/home/ProductShowcase';
 import { Testimonials } from '../components/home/Testimonials';
 
+// --- 关键修改：导入 LeadForm 组件 ---
+import { LeadForm } from '../components/LeadForm'; 
+
 const Home: React.FC = () => {
   // --- 逻辑层：保留多语言支持 ---
   const { lang } = useParams();
@@ -34,7 +37,7 @@ const Home: React.FC = () => {
 
   return (
     <div className="animate-fade-in">
-      {/* 1. SEO 头部注入：确保关键词不丢失 */}
+      {/* 1. SEO 头部注入 */}
       <SEO 
         title={`${t(currentLang, 'hero.title')} | 28-Year Source Factory`}
         description={t(currentLang, 'hero.subtitle')}
@@ -42,7 +45,7 @@ const Home: React.FC = () => {
         keywords={['Fire Kirin Original Logic', 'Wholesale Skill Games', 'Nudge Machine Manufacturer', 'Fish Table Distributor', 'PA Skill Games', 'Passive Income for Gas Stations']}
       />
 
-      {/* 2. Hero Section：使用你现有的视觉风格，但建议微调文案 */}
+      {/* 2. Hero Section */}
       <section className="relative min-h-[85vh] flex items-center overflow-hidden">
         <div className="absolute inset-0 bg-brand-900">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-brand-800 via-brand-900 to-black opacity-80"></div>
@@ -63,7 +66,6 @@ const Home: React.FC = () => {
             <Link to={`/${currentLang}/products`} className="bg-brand-500 hover:bg-brand-600 text-white text-lg px-10 py-5 rounded-lg font-bold shadow-lg transition-all transform hover:scale-105 flex items-center justify-center">
               Browse Wholesale Catalog <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
-            {/* 触发弹窗表单的入口 */}
             <button 
               onClick={() => window.dispatchEvent(new CustomEvent('openLeadForm'))}
               className="bg-transparent border-2 border-slate-500 hover:border-brand-400 hover:text-brand-400 text-slate-200 text-lg px-10 py-5 rounded-lg font-bold transition-all"
@@ -104,7 +106,7 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* 9. 隐藏的 SEO 标签云（对爬虫友好） */}
+      {/* 9. SEO 标签云 */}
       <section className="py-12 bg-brand-950 border-t border-slate-800">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-6 text-center">Industry Leading Skill Game Solutions</h2>
@@ -117,6 +119,9 @@ const Home: React.FC = () => {
           </div>
         </div>
       </section>
+
+      {/* --- 关键修改：在此处挂载 LeadForm 组件 --- */}
+      <LeadForm />
     </div>
   );
 };
