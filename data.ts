@@ -4029,7 +4029,7 @@ export const getSolutions = (lang: LanguageCode): Solution[] => [
         'Skill game equipment supplier',
         'Arcade machine startup solutions'
       ]
-    }
+    },
     // 1. 增加场地实拍图（请将图片放入 public/images/venues/）
     venueGallery: [
       '/images/venues/distributor-warehouse-1.jpg',
