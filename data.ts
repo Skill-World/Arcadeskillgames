@@ -4252,9 +4252,9 @@ export const getSolutions = (lang: LanguageCode): Solution[] => [
         answer: 'We support growing businesses by offering custom branding options—including custom acrylic headers and boot-screen logos—on orders as small as 5 units. For larger wholesale orders, we can modify the physical hardware design and cabinet dimensions to create a truly exclusive, proprietary product line that is unique to your distribution company.' 
       },
       { 
-        question: 'How do you handle shipping and freight for large kit orders?', 
-        answer: 'Our innovative 'Dismantle' design allows our **DIY skill game cabinets** to be shipped in a compact, flat-packed state. This reduces shipping volume by up to 40% compared to fully assembled units, allowing you to fit more inventory into a single 40HQ container and drastically reducing your per-unit freight costs across international shipping lanes.' 
-      },
+          question: 'How do you handle shipping and freight for large kit orders?', 
+          answer: `Our innovative 'Dismantle' design allows our **DIY skill game cabinets** to be shipped in a compact, flat-packed state. This reduces shipping volume by up to 40% compared to fully assembled units, allowing you to fit more inventory into a single 40HQ container and drastically reducing your per-unit freight costs across international shipping lanes.` 
+        },
       { 
         question: 'Is technical support available for builders and manufacturers?', 
         answer: 'Absolutely. Every custom kit purchase includes direct access to our 28-year factory R&D team. Whether you have questions about wiring harness pinouts, peripheral integration (like bill acceptors), or software logic calibration, our engineers are available via video call to ensure your custom builds are operationally flawless and highly profitable.' 
