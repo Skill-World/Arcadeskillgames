@@ -30,7 +30,7 @@ export const FloatingSidebar = () => {
         className="group flex items-center bg-brand-500 text-white p-4 rounded-l-2xl shadow-2xl hover:pl-8 transition-all duration-300 border-l border-t border-b border-brand-400"
       >
         <span className="max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-500 font-black text-[10px] uppercase tracking-widest whitespace-nowrap">
-          Get 2026 Price List
+          Get Free Quote
         </span>
         <FileText className="w-6 h-6 ml-2" />
       </button>
