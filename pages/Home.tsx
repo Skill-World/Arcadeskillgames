@@ -99,9 +99,9 @@ const Home: React.FC = () => {
           </h2>
           <button 
             onClick={() => window.dispatchEvent(new CustomEvent('openLeadForm'))}
-            className="bg-white text-brand-600 font-black px-12 py-6 rounded-2xl text-lg hover:scale-105 transition-transform uppercase tracking-widest shadow-2xl"
+            className="bg-brand-500 text-brand-600 font-black px-12 py-6 rounded-2xl text-lg hover:scale-105 transition-transform uppercase tracking-widest shadow-2xl"
           >
-            Download 2026 Wholesale Catalog
+            Get High Profit Now
           </button>
         </div>
       </section>
