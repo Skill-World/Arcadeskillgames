@@ -58,64 +58,64 @@ showcase: {
       link: "https://arcadeskillgames.vercel.app/en/product/skill-based-game-board-golden-empires-777" // 💡 留空则自动跳转到 /en/products/fire-kirin-original
     },
     { 
-      id: "golden-empire-nudge",
-      name: "Golden Empire Nudge", 
+      id: "xtreme-skill-777",
+      name: "Xtreme Skill 777", 
       tags: "Compliance", 
       desc: "Verified skill-based mechanics with pre-reveal logic for retail zones.",
-      link: "" 
+      link: "https://arcadeskillgames.vercel.app/en/product/universal-game-logic-board-xtreme-skill-777" 
     },
     { 
-      id: "dragon-hunter",
-      name: "Dragon Hunter", 
+      id: "panda-link",
+      name: "Panda Link", 
       tags: "High Hold", 
       desc: "Precision-engineered math models for high professional retention.",
-      link: ""
+      link: "https://arcadeskillgames.vercel.app/en/product/nudge-game-board-panda-link"
     }
   ],
   cabinets: [
     { 
-      id: "titan-vertical-43",
-      name: '43" Titan Vertical', 
+      id: "j-curve-43-cabinet",
+      name: '43" J-Curve Cabinet', 
       tags: "C-Store Top Pick", 
       desc: "Ultra-slim 1.2mm reinforced steel construction with 4K UHD touch.",
-      link: "" 
+      link: "https://arcadeskillgames.vercel.app/en/product/j-curve-43-cabinet" 
     },
     { 
-      id: "fish-table-8-player",
+      id: "fish-table-8-classic-welded",
       name: "8-Player Fish Table", 
       tags: "Social Hub", 
       desc: "Industrial LG/Samsung 4K Panels with dual-lock vault security.",
-      link: "" 
+      link: "https://arcadeskillgames.vercel.app/en/product/fish-table-8-classic-welded" 
     },
     { 
-      id: "vip-slant-top",
+      id: "slim-vertical-43-v5",
       name: "VIP Slant-Top", 
       tags: "Luxury", 
       desc: "Ergonomic furniture-grade design for lounges and private clubs.",
-      link: "" 
+      link: "https://arcadeskillgames.vercel.app/en/product/slim-vertical-43-v5" 
     }
   ],
   logic: [
     { 
-      id: "universal-pcb-10pin",
-      name: "36/10 Pin Universal", 
-      tags: "Tech-Ready", 
-      desc: "Seamlessly upgrade 90% of existing cabinets with 28yr factory logic.",
-      link: "" 
+      id: "fish-game-board-fire-kirin-3-elite",
+      name: "Fire Kirin 3", 
+      tags: "Game-Kits", 
+      desc: "Source from popular game Fire Kirin",
+      link: "https://arcadeskillgames.vercel.app/en/product/fish-game-board-fire-kirin-3-elite" 
     },
     { 
-      id: "nudge-plus-logic",
-      name: "Nudge-Plus Logic", 
-      tags: "Smart Tech", 
-      desc: "Pre-Reveal compliance logic with native 4K output and remote audit.",
-      link: "" 
+      id: "fish-game-board-crab-king-3-ultra",
+      name: "Crab King 3", 
+      tags: "Game Boards", 
+      desc: "Ocean King Series",
+      link: "https://arcadeskillgames.vercel.app/en/product/fish-game-board-crab-king-3-ultra" 
     },
     { 
-      id: "linked-network-board",
-      name: "Linked Network Board", 
-      tags: "Route Control", 
-      desc: "Remote accounting & global leaderboards via secure SAS 6.0.",
-      link: "" 
+      id: "fish-game-board-airstrike-3-elite",
+      name: "Airstrike 3", 
+      tags: "Fish Table Game Board", 
+      desc: "Command the Sky, Conquer Your Route",
+      link: "https://arcadeskillgames.vercel.app/en/product/fish-game-board-airstrike-3-elite" 
     }
   ]
 },
