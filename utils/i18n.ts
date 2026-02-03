@@ -56,7 +56,7 @@ const resources = {
       'contact.email': 'Email Address',
       'contact.phone': 'Phone Number',
       'contact.message': 'Message Details',
-      'contact.ai.title': 'AI Configuration Specialist',
+      'contact.ai.title': 'Game Venue Solution Support',
       'contact.ai.desc': 'Our system matches you with the best engineer based on your venue type.',
       'CONTACT.SEND': 'Contact Support Team',
 
