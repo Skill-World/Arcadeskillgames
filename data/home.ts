@@ -51,7 +51,7 @@ export const homeData = {
 showcase: {
   boards: [
     { 
-      id: "fire-kirin-original", // ✅ 必填：用于生成默认链接
+      id: "golden-empires-777", // ✅ 必填：用于生成默认链接
       name: "Fire Kirin: Original", 
       tags: "Legendary", 
       desc: "The legendary logic that dominates the US market. 100% original math.",
