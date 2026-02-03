@@ -55,7 +55,7 @@ const Contact: React.FC = () => {
           <div>
             <h1 className="text-4xl font-bold text-white mb-6">{t(currentLang, 'Contact Us')}</h1>
             <p className="text-slate-400 mb-12">
-              {t(currentLang, 'contact.subtitle')}
+              {t(currentLang, 'Arcade Skill Games Team will reply you as soon as possible')}
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-12">
