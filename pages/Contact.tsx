@@ -44,7 +44,7 @@ const Contact: React.FC = () => {
     <div className="bg-brand-900 min-h-screen py-20 animate-fade-in">
       <SEO
         title={t(currentLang, 'contact.title')}
-        description={t(currentLang, 'contact.subtitle')}
+        description={t(currentLang, 'Arcade Skill Games Team will reply you as soon as possible')}
       />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -53,7 +53,7 @@ const Contact: React.FC = () => {
           
           {/* Left Column: Contact Info & Form */}
           <div>
-            <h1 className="text-4xl font-bold text-white mb-6">{t(currentLang, 'contact.title')}</h1>
+            <h1 className="text-4xl font-bold text-white mb-6">{t(currentLang, 'Contact Us')}</h1>
             <p className="text-slate-400 mb-12">
               {t(currentLang, 'contact.subtitle')}
             </p>
