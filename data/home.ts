@@ -118,7 +118,7 @@ showcase: {
       link: "" 
     }
   ]
-}
+},
 
   // 5. 客户证言 (ROI 案例)
   testimonials: [
