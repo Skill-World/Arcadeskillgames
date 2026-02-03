@@ -52,10 +52,10 @@ showcase: {
   boards: [
     { 
       id: "golden-empires-777", // ✅ 必填：用于生成默认链接
-      name: "Fire Kirin: Original", 
+      name: "Golden Empires 777", 
       tags: "Legendary", 
       desc: "The legendary logic that dominates the US market. 100% original math.",
-      link: "" // 💡 留空则自动跳转到 /en/products/fire-kirin-original
+      link: "https://arcadeskillgames.vercel.app/en/product/skill-based-game-board-golden-empires-777" // 💡 留空则自动跳转到 /en/products/fire-kirin-original
     },
     { 
       id: "golden-empire-nudge",
