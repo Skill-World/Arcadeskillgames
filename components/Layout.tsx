@@ -1,42 +1,36 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation, useNavigate, useParams, Outlet } from 'react-router-dom';
-import { Menu, X, Gamepad2, Phone, Mail, MapPin, Globe, ChevronDown } from 'lucide-react';
-import { useTranslation } from 'react-i18next'; // ✅ 引入标准钩子
+import { Menu, X, Gamepad2, Globe, ChevronDown } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import { PageRoute } from '../types';
-import { LANGUAGES } from '../utils/i18n'; // ✅ 只引入语言列表定义
-import { SEO } from './SEO'; // ✅ 引入我们之前写的 SEO 坦克组件
-
-// --- 新增：导入全局功能组件 ---
-import { LeadForm } from './LeadForm'; // ✅ 弹窗表单组件
-import { FloatingSidebar } from './FloatingSidebar'; // ✅ 悬浮侧边栏组件
+import { LANGUAGES } from '../utils/i18n';
+import { SEO } from './SEO';
+import { LeadForm } from './LeadForm';
+import { FloatingSidebar } from './FloatingSidebar';
 
 const Layout: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isProductDropdownOpen, setIsProductDropdownOpen] = useState(false);
   
-  const { t, i18n } = useTranslation(); // ✅ 使用标准的 t 和 i18n
-  const { lang } = useParams(); // ✅ 直接从 URL 获取语言参数 (:lang)
+  const { t, i18n } = useTranslation();
+  const { lang } = useParams();
   const location = useLocation();
   const navigate = useNavigate();
 
-  // ✅ 核心逻辑：当 URL 中的语言变化时，自动切换翻译引擎语言
   useEffect(() => {
     if (lang && i18n.language !== lang) {
       i18n.changeLanguage(lang);
     }
   }, [lang, i18n]);
 
-  // ✅ 生成带语言前缀的路径辅助函数
   const getPath = (route: string) => `/${lang}${route === '/' ? '' : route}`;
 
-  // 游戏产品分类 (从 i18n 获取翻译)
   const productCategories = [
     { name: t('nav.cat.machines'), id: 'skill_based_game_board' },
     { name: t('nav.cat.cabinets'), id: 'cabinet_only' },
     { name: t('nav.cat.boards'), id: 'game_board' },
   ];
 
-  // 12 类目标客户定义
   const venueCategories = [
     { id: 'distributors', key: 'distributor' },
     { id: 'game-agents', key: 'agent' },
@@ -52,7 +46,6 @@ const Layout: React.FC = () => {
     { id: 'lounges', key: 'lounge' }
   ];
 
-  // ✅ 语言切换处理
   const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const newLang = e.target.value;
     const currentPathWithoutLang = location.pathname.replace(`/${lang}`, '');
@@ -69,7 +62,6 @@ const Layout: React.FC = () => {
 
   return (
     <div className="flex flex-col min-h-screen bg-brand-900 text-slate-100 font-sans">
-      {/* ✅ 全局 SEO 默认设置 */}
       <SEO 
         title={t('hero.title')} 
         description={t('hero.subtitle')} 
@@ -98,7 +90,6 @@ const Layout: React.FC = () => {
               <Link to={getPath(PageRoute.HOME)} className={`text-sm font-medium transition-colors hover:text-brand-400 ${isActive(PageRoute.HOME) ? 'text-brand-400' : 'text-slate-300'}`}>
                 {t('nav.home')}
               </Link>
-
               <Link to={getPath(PageRoute.ABOUT)} className={`text-sm font-medium transition-colors hover:text-brand-400 ${isActive(PageRoute.ABOUT) ? 'text-brand-400' : 'text-slate-300'}`}>
                 {t('nav.about')}
               </Link>
@@ -143,12 +134,10 @@ const Layout: React.FC = () => {
               <Link to={getPath(PageRoute.BLOG)} className={`text-sm font-medium transition-colors hover:text-brand-400 ${isActive(PageRoute.BLOG) ? 'text-brand-400' : 'text-slate-300'}`}>
                 {t('nav.blog')}
               </Link>
-
               <Link to={getPath(PageRoute.CONTACT)} className={`text-sm font-medium transition-colors hover:text-brand-400 ${isActive(PageRoute.CONTACT) ? 'text-brand-400' : 'text-slate-300'}`}>
                 {t('nav.contact')}
               </Link>
               
-              {/* Language Switcher */}
               <div className="relative flex items-center bg-brand-800 rounded-md px-2 py-1 border border-slate-700">
                 <Globe className="h-4 w-4 text-slate-400 mr-2" />
                 <select value={lang} onChange={handleLanguageChange} className="bg-transparent text-sm text-slate-300 focus:outline-none cursor-pointer appearance-none pr-4">
@@ -160,58 +149,58 @@ const Layout: React.FC = () => {
                 </select>
               </div>
 
-              {/* 粘性 CTA 按钮 */}
               <Link to={getPath(PageRoute.CONTACT)} className="bg-brand-500 hover:bg-brand-600 text-white px-5 py-2.5 rounded-full font-semibold transition-all shadow-lg hover:shadow-brand-500/25">
                 {t('tank.cta.sticky')}
               </Link>
             </div>
 
-            {/* Mobile Nav Content */}
-{isMobileMenuOpen && (
-  <div className="md:hidden bg-brand-800 border-t border-slate-700 animate-in slide-in-from-top duration-300">
-    <div className="px-4 pt-4 pb-8 space-y-2">
-      
-      {/* 1. 基础链接循环 */}
-      {[
-        { name: 'nav.home', route: PageRoute.HOME },
-        { name: 'nav.about', route: PageRoute.ABOUT },
-        { name: 'nav.products', route: PageRoute.PRODUCTS },
-        { name: 'nav.solutions', route: PageRoute.SOLUTIONS },
-        { name: 'nav.blog', route: PageRoute.BLOG },
-        { name: 'nav.contact', route: PageRoute.CONTACT },
-      ].map((item) => (
-        <Link
-          key={item.route}
-          to={getPath(item.route)}
-          onClick={() => setIsMobileMenuOpen(false)}
-          className={`block px-4 py-4 rounded-xl text-lg font-bold uppercase italic tracking-tight transition-all ${
-            isActive(item.route) ? 'text-brand-400 bg-brand-500/10' : 'text-slate-300 hover:bg-brand-700'
-          }`}
-        >
-          {t(item.name)}
-        </Link>
-      ))}
+            {/* ✅ 关键修复：补全移动端汉堡菜单按钮 */}
+            <div className="md:hidden flex items-center gap-4">
+              <button 
+                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} 
+                className="text-slate-300 hover:text-white p-2"
+              >
+                {isMobileMenuOpen ? <X className="h-8 w-8" /> : <Menu className="h-8 w-8" />}
+              </button>
+            </div>
+          </div> {/* 对应 flex justify-between 的关闭标签 */}
+        </div> {/* 对应 max-w-7xl 的关闭标签 */}
 
-      {/* 2. 移动端专用 CTA 按钮 */}
-      <div className="pt-6">
-        <Link
-          to={getPath(PageRoute.CONTACT)}
-          onClick={() => setIsMobileMenuOpen(false)}
-          className="block w-full bg-brand-500 hover:bg-brand-600 text-white text-center py-5 rounded-2xl font-black uppercase tracking-widest shadow-xl shadow-brand-500/20 active:scale-95 transition-all"
-        >
-          {t('tank.cta.sticky')}
-        </Link>
-      </div>
-
-      {/* 3. 底部版权标识 */}
-      <div className="pt-8 text-center">
-        <p className="text-[10px] text-slate-600 font-black uppercase tracking-[0.3em]">
-          Arcade Skill Games © 2026
-        </p>
-      </div>
-    </div>
-  </div>
-)}
+        {/* Mobile Nav Content */}
+        {isMobileMenuOpen && (
+          <div className="md:hidden bg-brand-800 border-t border-slate-700 animate-in slide-in-from-top duration-300">
+            <div className="px-4 pt-4 pb-8 space-y-2">
+              {[
+                { name: 'nav.home', route: PageRoute.HOME },
+                { name: 'nav.about', route: PageRoute.ABOUT },
+                { name: 'nav.products', route: PageRoute.PRODUCTS },
+                { name: 'nav.solutions', route: PageRoute.SOLUTIONS },
+                { name: 'nav.blog', route: PageRoute.BLOG },
+                { name: 'nav.contact', route: PageRoute.CONTACT },
+              ].map((item) => (
+                <Link
+                  key={item.route}
+                  to={getPath(item.route)}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className={`block px-4 py-4 rounded-xl text-lg font-bold uppercase italic tracking-tight transition-all ${
+                    isActive(item.route) ? 'text-brand-400 bg-brand-500/10' : 'text-slate-300 hover:bg-brand-700'
+                  }`}
+                >
+                  {t(item.name)}
+                </Link>
+              ))}
+              <div className="pt-6">
+                <Link
+                  to={getPath(PageRoute.CONTACT)}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="block w-full bg-brand-500 hover:bg-brand-600 text-white text-center py-5 rounded-2xl font-black uppercase tracking-widest shadow-xl shadow-brand-500/20 active:scale-95 transition-all"
+                >
+                  {t('tank.cta.sticky')}
+                </Link>
+              </div>
+            </div>
+          </div>
+        )}
       </nav>
 
       {/* Main Content */}
@@ -221,13 +210,11 @@ const Layout: React.FC = () => {
 
       {/* Footer */}
       <footer className="bg-brand-900 border-t border-slate-800 pt-16 pb-8">
-        {/* ... 您原有的 Footer 内容 ... */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-slate-500 text-sm">
            &copy; {new Date().getFullYear()} Arcade Skill Games. All rights reserved.
         </div>
       </footer>
 
-      {/* ✅ 核心挂载：确保在全站生效 */}
       <FloatingSidebar />
       <LeadForm />
     </div>
