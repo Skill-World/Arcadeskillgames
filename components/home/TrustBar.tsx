@@ -30,9 +30,18 @@ export const TrustBar = () => (
             Yes, we are the source. The game that redefined the US skill-market was born in our R&D labs. Don't settle for clones—leverage the original math models that generate maximum ROI.
           </p>
         </div>
-        <button className="bg-brand-500 hover:bg-brand-600 text-white font-black px-10 py-5 rounded-2xl transition-all uppercase text-sm tracking-widest shadow-xl shadow-brand-500/20">
-          Inquire Originals
-        </button>
+        <button 
+  onClick={() => {
+    // 派发全局自定义事件，使全局 LeadForm 接收到信号
+    window.dispatchEvent(new CustomEvent('openLeadForm', { 
+      detail: { sector: 'Fire Kirin Original Logic' } 
+    }));
+  }}
+  // 您现有的 className 保持不变
+  className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded-lg transition-all ..."
+>
+  INQUIRE ORIGINALS
+</button>
       </div>
     </div>
   </section>
