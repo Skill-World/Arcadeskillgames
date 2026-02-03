@@ -34,6 +34,21 @@ const resources = {
       'nav.cat.cabinets': 'Empty Cabinets',
       'nav.cat.boards': 'Game Kits / Boards',
 
+      // ✅ 在这里添加联系页面翻译
+    "contact": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "message": "Project Details",
+      "ai": {
+        "title": "AI Logic Specialist",
+        "desc": "Our R&D team will review your venue details to suggest the best hardware match."
+      }
+    },
+    // ✅ 对应你按钮上的大写 Key
+    "CONTACT": {
+      "SEND": "Submit Inquiry"
+
       // 首页 & 通用
       'hero.title': 'Manufacturer of High-Performance Skill Games',
       'hero.subtitle': 'Direct from our 25-year R&D Factory. We engineer compliant Nudge, Shooting, and Reflex-based amusement machines.', // ✅ 修复 hero.subtitle
