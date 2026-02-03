@@ -1,14 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { X, Send, CheckCircle2, Loader2, ShieldCheck, FileText } from 'lucide-react';
 
-// 改为可选 Props，因为我们现在主要靠全局信号驱动
 interface LeadFormProps {
   onClose?: () => void;
   initialSector?: string;
 }
 
 export const LeadForm: React.FC<LeadFormProps> = ({ onClose, initialSector }) => {
-  // --- 新增：显示状态管理 ---
   const [isOpen, setIsOpen] = useState(false);
   const [status, setStatus] = useState<'idle' | 'submitting' | 'success'>('idle');
   const [currentSector, setCurrentSector] = useState(initialSector || 'General');
@@ -21,14 +19,12 @@ export const LeadForm: React.FC<LeadFormProps> = ({ onClose, initialSector }) =>
     message: ''
   });
 
-  // --- 新增：核心监听逻辑 ---
   useEffect(() => {
     const handleOpen = (e: any) => {
-      // 接收来自按钮的行业信息（如果有的话）
       const sector = e.detail?.sector || 'General';
       setCurrentSector(sector);
       setIsOpen(true);
-      setStatus('idle'); // 每次打开重置状态
+      setStatus('idle');
     };
 
     window.addEventListener('openLeadForm', handleOpen);
@@ -49,20 +45,19 @@ export const LeadForm: React.FC<LeadFormProps> = ({ onClose, initialSector }) =>
     }, 1500);
   };
 
-  // --- 关键修复：如果没打开，返回空，不渲染任何内容 ---
   if (!isOpen) return null;
 
-  // 成功状态视图
+  // 成功状态视图 (已优化移动端)
   if (status === 'success') {
     return (
       <div className="fixed inset-0 z-[999] flex items-center justify-center px-4">
         <div className="absolute inset-0 bg-slate-950/90 backdrop-blur-md" onClick={handleClose} />
-        <div className="relative bg-brand-900 border border-brand-500/30 p-10 rounded-[40px] max-w-md w-full text-center shadow-2xl animate-in zoom-in duration-300">
-          <div className="bg-emerald-500/20 w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-8">
-            <CheckCircle2 className="h-12 w-12 text-emerald-500" />
+        <div className="relative bg-brand-900 border border-brand-500/30 p-8 md:p-10 rounded-[40px] max-w-md w-full text-center shadow-2xl animate-in zoom-in duration-300">
+          <div className="bg-emerald-500/20 w-20 h-20 md:w-24 md:h-24 rounded-full flex items-center justify-center mx-auto mb-8">
+            <CheckCircle2 className="h-10 w-10 md:h-12 md:h-12 text-emerald-500" />
           </div>
-          <h3 className="text-3xl font-black text-white mb-4 uppercase tracking-tighter">Inquiry Received</h3>
-          <p className="text-slate-400 mb-10 leading-relaxed font-medium">Our {currentSector} specialist will send the 2026 Price List to your inbox within 12 hours.</p>
+          <h3 className="text-2xl md:text-3xl font-black text-white mb-4 uppercase tracking-tighter">Inquiry Received</h3>
+          <p className="text-slate-400 mb-10 leading-relaxed font-medium text-sm md:text-base">Our {currentSector} specialist will send the 2026 Price List to your inbox within 12 hours.</p>
           <button onClick={handleClose} className="w-full py-5 bg-white text-brand-900 rounded-2xl font-black uppercase tracking-widest hover:bg-slate-200 transition-all">
             Close Window
           </button>
@@ -72,20 +67,23 @@ export const LeadForm: React.FC<LeadFormProps> = ({ onClose, initialSector }) =>
   }
 
   return (
-    <div className="fixed inset-0 z-[999] flex items-center justify-center px-4">
+    <div className="fixed inset-0 z-[999] flex items-center justify-center p-4 md:p-6">
       {/* 背景遮罩 */}
       <div className="absolute inset-0 bg-slate-950/85 backdrop-blur-sm" onClick={handleClose} />
       
-      {/* 表单主体 */}
-      <div className="relative bg-brand-900 border border-slate-700 rounded-[32px] max-w-4xl w-full overflow-hidden shadow-2xl animate-in fade-in slide-in-from-bottom-12 duration-500 flex flex-col md:flex-row">
+      {/* 表单主体 - 核心修改点：增加 max-h 和 flex-col */}
+      <div className="relative bg-brand-900 border border-slate-700 rounded-[32px] max-w-4xl w-full flex flex-col md:flex-row overflow-hidden shadow-2xl animate-in fade-in slide-in-from-bottom-12 duration-500 max-h-[90vh]">
         
-        {/* 关闭按钮 */}
-        <button onClick={handleClose} className="absolute top-6 right-6 z-30 text-slate-400 hover:text-white hover:rotate-90 transition-all">
+        {/* 固定在顶部的关闭按钮 - 优化：在移动端增加背景色确保可见性 */}
+        <button 
+          onClick={handleClose} 
+          className="absolute top-4 right-4 z-[60] bg-slate-900/50 md:bg-transparent p-2 rounded-full text-slate-400 hover:text-white hover:rotate-90 transition-all"
+        >
           <X className="h-6 w-6" />
         </button>
 
-        {/* 左侧：营销话术 */}
-        <div className="md:w-5/12 bg-slate-950 p-10 flex flex-col justify-between border-r border-slate-800">
+        {/* 左侧：营销话术 - 优化：增加内部滚动支持 */}
+        <div className="hidden md:flex md:w-5/12 bg-slate-950 p-10 flex-col justify-between border-r border-slate-800 overflow-y-auto">
           <div>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-500/10 border border-brand-500/20 text-brand-400 text-[10px] font-black uppercase tracking-widest mb-8">
               Official Factory Access: {currentSector}
@@ -116,8 +114,16 @@ export const LeadForm: React.FC<LeadFormProps> = ({ onClose, initialSector }) =>
           </div>
         </div>
 
-        {/* 右侧：输入表单 */}
-        <div className="md:w-7/12 p-10 bg-brand-900/50 relative">
+        {/* 右侧：输入表单 - 核心修改：overflow-y-auto 允许在该区域滑动 */}
+        <div className="w-full md:w-7/12 p-6 md:p-10 bg-brand-900/50 relative overflow-y-auto custom-scrollbar">
+          {/* 移动端显示的简短标题 */}
+          <div className="md:hidden mb-8 pr-8">
+            <h2 className="text-xl font-black text-white uppercase italic tracking-tighter">
+              {currentSector} Inquiry
+            </h2>
+            <div className="h-1 w-12 bg-brand-500 mt-2"></div>
+          </div>
+
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <div className="space-y-2">
@@ -157,6 +163,10 @@ export const LeadForm: React.FC<LeadFormProps> = ({ onClose, initialSector }) =>
               )}
             </button>
           </form>
+          
+          <p className="mt-8 text-center text-[10px] text-slate-600 uppercase tracking-widest md:hidden">
+            Arcade Skill Games © 2026
+          </p>
         </div>
       </div>
     </div>
