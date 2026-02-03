@@ -11,23 +11,23 @@ import { LanguageCode } from '../../types';
 // 1. 行业分类配置：直接加入 name 属性，防止 i18n 丢失导致空白
 const venueCategories = [
   { 
-    id: 'distributors', key: 'distributor', name: 'Wholesale Distributors', icon: Users,
+    id: 'distributors', key: 'Distributor', name: 'Distributors', icon: Users,
     points: ['28-Year Source Pricing', 'Mixed Loading Logistics', '24/7 Tech Support']
   },
   { 
-    id: 'game-agents', key: 'agent', name: 'Independent Agents', icon: UserCheck,
+    id: 'game-agents', key: 'agent', name: 'Game Agents', icon: UserCheck,
     points: ['Exclusive Area Rights', 'Real-time Route Tracking', 'Passive Revenue Share']
   },
   { 
-    id: 'custom-kits', key: 'custom', name: 'Custom OEM/ODM', icon: Wrench,
+    id: 'custom-kits', key: 'custom', name: 'Custom Kits', icon: Wrench,
     points: ['Proprietary Logic Dev', 'Bespoke Cabinet Skins', 'Unique PCB Design']
   },
   { 
-    id: 'game-rooms', key: 'gameroom', name: 'Skill Game Rooms', icon: LayoutGrid,
+    id: 'game-rooms', key: 'gameroom', name: 'Game Rooms', icon: LayoutGrid,
     points: ['Floor Layout Strategy', 'High-Hold Math Models', 'Vault-Grade Security']
   },
   { 
-    id: 'arcades', key: 'arcade', name: 'Modern Arcades', icon: Gamepad2,
+    id: 'arcades', key: 'arcade', name: 'Arcades', icon: Gamepad2,
     points: ['Anti-Cheat Logic', '4K Ultra-Thin Cabinets', 'Player Retention Tech']
   },
   { 
@@ -55,7 +55,7 @@ const venueCategories = [
     points: ['Skill-Based Upgrades', 'PC Gaming Synergy', 'Plug-and-Play Setup']
   },
   { 
-    id: 'lounges', key: 'lounge', name: 'Lounges & Bars', icon: Coffee,
+    id: 'lounges', key: 'lounge', name: 'Lounges', icon: Coffee,
     points: ['Social Play Interaction', 'Evening Profit Peaks', 'VIP Seating Options']
   }
 ];
