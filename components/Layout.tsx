@@ -166,31 +166,52 @@ const Layout: React.FC = () => {
               </Link>
             </div>
 
-            {/* Mobile Menu Button */}
-            <div className="md:hidden flex items-center gap-4">
-              <select value={lang} onChange={handleLanguageChange} className="bg-brand-800 text-white text-xs p-1 rounded border border-slate-700">
-                {LANGUAGES.map((l) => (
-                  <option key={l.code} value={l.code}>{l.code.toUpperCase()}</option>
-                ))}
-              </select>
-              <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className="text-slate-300 hover:text-white">
-                {isMobileMenuOpen ? <X className="h-8 w-8" /> : <Menu className="h-8 w-8" />}
-              </button>
-            </div>
-          </div>
-        </div>
+            {/* Mobile Nav Content */}
+{isMobileMenuOpen && (
+  <div className="md:hidden bg-brand-800 border-t border-slate-700 animate-in slide-in-from-top duration-300">
+    <div className="px-4 pt-4 pb-8 space-y-2">
+      
+      {/* 1. 基础链接循环 */}
+      {[
+        { name: 'nav.home', route: PageRoute.HOME },
+        { name: 'nav.about', route: PageRoute.ABOUT },
+        { name: 'nav.products', route: PageRoute.PRODUCTS },
+        { name: 'nav.solutions', route: PageRoute.SOLUTIONS },
+        { name: 'nav.blog', route: PageRoute.BLOG },
+        { name: 'nav.contact', route: PageRoute.CONTACT },
+      ].map((item) => (
+        <Link
+          key={item.route}
+          to={getPath(item.route)}
+          onClick={() => setIsMobileMenuOpen(false)}
+          className={`block px-4 py-4 rounded-xl text-lg font-bold uppercase italic tracking-tight transition-all ${
+            isActive(item.route) ? 'text-brand-400 bg-brand-500/10' : 'text-slate-300 hover:bg-brand-700'
+          }`}
+        >
+          {t(item.name)}
+        </Link>
+      ))}
 
-        {/* Mobile Nav Content... (保持您原有的 Mobile Nav 逻辑不变) */}
-        {isMobileMenuOpen && (
-          <div className="md:hidden bg-brand-800 border-t border-slate-700">
-            <div className="px-2 pt-2 pb-3 space-y-1">
-              <Link to={getPath(PageRoute.HOME)} onClick={() => setIsMobileMenuOpen(false)} className="block px-3 py-3 rounded-md text-base font-medium text-slate-300 hover:bg-brand-700 hover:text-white">
-                {t('nav.home')}
-              </Link>
-              {/* 这里省略其他移动端链接，保持您原有的代码即可 */}
-            </div>
-          </div>
-        )}
+      {/* 2. 移动端专用 CTA 按钮 */}
+      <div className="pt-6">
+        <Link
+          to={getPath(PageRoute.CONTACT)}
+          onClick={() => setIsMobileMenuOpen(false)}
+          className="block w-full bg-brand-500 hover:bg-brand-600 text-white text-center py-5 rounded-2xl font-black uppercase tracking-widest shadow-xl shadow-brand-500/20 active:scale-95 transition-all"
+        >
+          {t('tank.cta.sticky')}
+        </Link>
+      </div>
+
+      {/* 3. 底部版权标识 */}
+      <div className="pt-8 text-center">
+        <p className="text-[10px] text-slate-600 font-black uppercase tracking-[0.3em]">
+          Arcade Skill Games © 2026
+        </p>
+      </div>
+    </div>
+  </div>
+)}
       </nav>
 
       {/* Main Content */}
