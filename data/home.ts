@@ -48,23 +48,77 @@ export const homeData = {
   ],
 
   // 4. 核心产品线 (9款热销)
-  showcase: {
-    boards: [
-      { name: "Fire Kirin: Original", tags: "Legendary", desc: "The legendary logic that dominates the US market. 100% original math." },
-      { name: "Golden Empire Nudge", tags: "Compliance", desc: "Verified skill-based mechanics with pre-reveal logic for retail zones." },
-      { name: "Dragon Hunter", tags: "High Hold", desc: "Precision-engineered math models for high professional retention." }
-    ],
-    cabinets: [
-      { name: '43" Titan Vertical', tags: "C-Store Top Pick", desc: "Ultra-slim 1.2mm reinforced steel construction with 4K UHD touch." },
-      { name: "8-Player Fish Table", tags: "Social Hub", desc: "Industrial LG/Samsung 4K Panels with dual-lock vault security." },
-      { name: "VIP Slant-Top", tags: "Luxury", desc: "Ergonomic furniture-grade design for lounges and private clubs." }
-    ],
-    logic: [
-      { name: "36/10 Pin Universal", tags: "Tech-Ready", desc: "Seamlessly upgrade 90% of existing cabinets with 28yr factory logic." },
-      { name: "Nudge-Plus Logic", tags: "Smart Tech", desc: "Pre-Reveal compliance logic with native 4K output and remote audit." },
-      { name: "Linked Network Board", tags: "Route Control", desc: "Remote accounting & global leaderboards via secure SAS 6.0." }
-    ]
-  },
+showcase: {
+  boards: [
+    { 
+      id: "fire-kirin-original", // ✅ 必填：用于生成默认链接
+      name: "Fire Kirin: Original", 
+      tags: "Legendary", 
+      desc: "The legendary logic that dominates the US market. 100% original math.",
+      link: "" // 💡 留空则自动跳转到 /en/products/fire-kirin-original
+    },
+    { 
+      id: "golden-empire-nudge",
+      name: "Golden Empire Nudge", 
+      tags: "Compliance", 
+      desc: "Verified skill-based mechanics with pre-reveal logic for retail zones.",
+      link: "" 
+    },
+    { 
+      id: "dragon-hunter",
+      name: "Dragon Hunter", 
+      tags: "High Hold", 
+      desc: "Precision-engineered math models for high professional retention.",
+      link: ""
+    }
+  ],
+  cabinets: [
+    { 
+      id: "titan-vertical-43",
+      name: '43" Titan Vertical', 
+      tags: "C-Store Top Pick", 
+      desc: "Ultra-slim 1.2mm reinforced steel construction with 4K UHD touch.",
+      link: "" 
+    },
+    { 
+      id: "fish-table-8-player",
+      name: "8-Player Fish Table", 
+      tags: "Social Hub", 
+      desc: "Industrial LG/Samsung 4K Panels with dual-lock vault security.",
+      link: "" 
+    },
+    { 
+      id: "vip-slant-top",
+      name: "VIP Slant-Top", 
+      tags: "Luxury", 
+      desc: "Ergonomic furniture-grade design for lounges and private clubs.",
+      link: "" 
+    }
+  ],
+  logic: [
+    { 
+      id: "universal-pcb-10pin",
+      name: "36/10 Pin Universal", 
+      tags: "Tech-Ready", 
+      desc: "Seamlessly upgrade 90% of existing cabinets with 28yr factory logic.",
+      link: "" 
+    },
+    { 
+      id: "nudge-plus-logic",
+      name: "Nudge-Plus Logic", 
+      tags: "Smart Tech", 
+      desc: "Pre-Reveal compliance logic with native 4K output and remote audit.",
+      link: "" 
+    },
+    { 
+      id: "linked-network-board",
+      name: "Linked Network Board", 
+      tags: "Route Control", 
+      desc: "Remote accounting & global leaderboards via secure SAS 6.0.",
+      link: "" 
+    }
+  ]
+}
 
   // 5. 客户证言 (ROI 案例)
   testimonials: [
