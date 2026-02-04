@@ -28,6 +28,8 @@ export interface Product {
   description: string;
   imageUrl: string;
   features: string[];
+  reviews?: any[];        // 👈 添加这一行 (修复 951 行报错)
+  tankPage?: any;         // 确保 tankPage 也定义了
   
   tankPage?: {
     headline: string;
