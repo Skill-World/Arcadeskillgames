@@ -161,25 +161,6 @@ export interface Solution {
   customizationFocus?: string;
   ctaText?: string;
 }
-  
-  // --- ✅ 新增视觉与内容扩展字段 (可选) ---
-  /** 场地实拍图画廊：存储图片 URL 数组 */
-  venueGallery?: string[]; 
-  
-  /** 宣传视频：支持 YouTube 嵌入逻辑 */
-  promoVideo?: {
-    id: string;    // YouTube 视频 ID
-    title: string; // 视频标题，用于 SEO 和 Alt 标签
-  };
-
-  /** 28年源头开发商定制化重点描述 */
-  customizationFocus?: string;
-
-  /** 自定义 CTA 按钮文字 (例如: Get Wholesale Catalog) */
-  ctaText?: string;
-}
-
-// ... 后面部分 (PageRoute, LanguageCode 等) 保持不变
 
 export enum PageRoute {
   HOME = '/',
@@ -195,7 +176,7 @@ export type LanguageCode = 'en' | 'es' | 'fr' | 'de' | 'pt' | 'it' | 'ja' | 'ko'
 export interface SeoProps {
   title: string;
   description: string;
-  keywords?: string[]; // 数组格式，方便在 data.ts 中编辑
-  path: string;        // 必须项：用于生成 Canonical 和 Hreflang 标签
-  schema?: object;     // 可选项：用于 JSON-LD 结构化数据
+  keywords?: string[];
+  path: string;
+  schema?: object;
 }
