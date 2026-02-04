@@ -82,7 +82,7 @@ const Solutions: React.FC = () => {
                     <div className="relative h-[300px] md:h-[450px] overflow-hidden rounded-3xl border border-slate-700 shadow-2xl">
                       <div className="absolute inset-0 bg-brand-900/40 group-hover:bg-transparent transition-all duration-500 z-10"></div>
                       <img 
-                        src={`https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&q=80&w=800&random=${index}`} 
+                        src={sol.image} // ✅ 改为这一行，使用数据中定义的路径 
                         alt={t(`sol.${sol.key}.title`)} 
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
                       />
