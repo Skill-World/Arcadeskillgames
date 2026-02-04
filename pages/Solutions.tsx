@@ -8,20 +8,80 @@ import {
 import { SEO } from '../components/SEO';
 import { LanguageCode } from '../types';
 
-// ✅ 1. 核心 12 类目标客户数据（与 Layout 导航同步）
+  // ✅ 核心 12 类目标客户数据（已补全本地图片路径）
 const industrySolutions = [
-  { id: 'distributors', icon: Building2, key: 'distributor' },
-  { id: 'game-agents', icon: Briefcase, key: 'agent' },
-  { id: 'custom-kits', icon: Cpu, key: 'custom' },
-  { id: 'game-rooms', icon: Zap, key: 'gameroom' },
-  { id: 'arcades', icon: Users, key: 'arcade' },
-  { id: 'gas-stations', icon: Car, key: 'gas' },
-  { id: 'convenience-stores', icon: ShoppingBag, key: 'cstore' },
-  { id: 'barbershops', icon: Scissors, key: 'barber' },
-  { id: 'tattoo-studios', icon: PenTool, key: 'tattoo' },
-  { id: 'laundromats', icon: Store, key: 'laundry' },
-  { id: 'internet-cafes', icon: Monitor, key: 'icafe' },
-  { id: 'lounges', icon: Beer, key: 'lounge' }
+  { 
+    id: 'distributors', 
+    icon: Building2, 
+    key: 'distributor', 
+    image: '/images/Game Distribution Warehouse.jpg' 
+  },
+  { 
+    id: 'game-agents', 
+    icon: Briefcase, 
+    key: 'agent', 
+    image: '/images/skill-based game agent room.jpg' 
+  },
+  { 
+    id: 'custom-kits', 
+    icon: Cpu, 
+    key: 'custom', 
+    image: '/images/skill-based game creative design studio.jpg' 
+  },
+  { 
+    id: 'game-rooms', 
+    icon: Zap, 
+    key: 'gameroom', 
+    image: '/images/High-Tech eSports Arena.jpg' 
+  },
+  { 
+    id: 'arcades', 
+    icon: Users, 
+    key: 'arcade', 
+    image: '/images/Entertainment Room.jpg' 
+  },
+  { 
+    id: 'gas-stations', 
+    icon: Car, 
+    key: 'gas', 
+    image: '/images/The Modern Travel Plaza.jpg' 
+  },
+  { 
+    id: 'convenience-stores', 
+    icon: ShoppingBag, 
+    key: 'cstore', 
+    image: '/images/Modern Urban Convenience Store.jpg' 
+  },
+  { 
+    id: 'barbershops', 
+    icon: Scissors, 
+    key: 'barber', 
+    image: '/images/The Classic Barbershop.jpg' 
+  },
+  { 
+    id: 'tattoo-studios', 
+    icon: PenTool, 
+    key: 'tattoo', 
+    image: '/images/The Modern Studio.jpg' 
+  },
+  { 
+    id: 'laundromats', 
+    icon: Store, 
+    key: 'laundry', 
+    image: '/images/The Hybrid Laundromat-Café.jpg' 
+  },
+  { 
+    id: 'internet-cafes', 
+    icon: Monitor, 
+    key: 'icafe', 
+    image: '/images/The Cozy Community Hub.jpg' 
+  },
+  { 
+    id: 'lounges', 
+    icon: Beer, 
+    key: 'lounge', 
+    image: '/images/arcade entertainment lounge.jpg' 
+  }
 ];
 
 const Solutions: React.FC = () => {
