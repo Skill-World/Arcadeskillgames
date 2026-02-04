@@ -188,24 +188,6 @@ const resources = {
     }
   }
 };
-  es: {
-    translation: {
-      'nav.home': 'Inicio', 'nav.solutions': 'Soluciones', 'nav.blog': 'Perspectiva del mercado',
-      'sol.page.title': 'Soluciones Comerciales', 'tank.cta.sticky': 'Solicitar presupuesto',
-      'contact.ai.title': 'Especialista en Configuración IA',
-      'CONTACT.SEND': 'Contactar Soporte'
-    }
-  },
-  // 其他语种确保核心 Key 不为空
-  fr: { translation: { 'nav.home': 'Accueil', 'nav.blog': 'Aperçu du marché', 'sol.page.title': 'Solutions de Sites', 'CONTACT.SEND': 'Contacter Support' } },
-  de: { translation: { 'nav.home': 'Startseite', 'nav.blog': 'Markteinblicke', 'sol.page.title': 'Standortlösungen', 'CONTACT.SEND': 'Support kontaktieren' } },
-  pt: { translation: { 'nav.home': 'Início', 'nav.blog': 'Insights de mercado', 'sol.page.title': 'Soluções para Locais', 'CONTACT.SEND': 'Contatar Suporte' } },
-  it: { translation: { 'nav.home': 'Home', 'nav.blog': 'Approfondimenti', 'sol.page.title': 'Soluzioni per Sedi', 'CONTACT.SEND': 'Contatta Supporto' } },
-  ru: { translation: { 'nav.home': 'Главная', 'nav.blog': 'Обзор рынка', 'sol.page.title': 'Решения для площадок', 'CONTACT.SEND': 'Связаться с поддержкой' } },
-  ja: { translation: { 'nav.home': 'ホーム', 'nav.blog': '市場の洞察', 'sol.page.title': '会場別ソリューション', 'CONTACT.SEND': 'サポートに連絡' } },
-  ko: { translation: { 'nav.home': '홈', 'nav.blog': '시장 인사이트', 'sol.page.title': '장소 솔루션', 'CONTACT.SEND': '지원팀에 문의' } },
-  ar: { translation: { 'nav.home': 'الرئيسية', 'nav.blog': 'رؤى السوق', 'sol.page.title': 'حلول المواقع', 'CONTACT.SEND': 'اتصل بالدعم' } }
-};
 
 i18n
   .use(LanguageDetector)
