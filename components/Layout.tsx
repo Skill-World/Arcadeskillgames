@@ -17,6 +17,7 @@ const Layout: React.FC = () => {
   const location = useLocation();
   const navigate = useNavigate();
 
+  // ✅ 核心同步逻辑：监听 URL 参数并强制切换 i18next 状态
   useEffect(() => {
     if (lang && i18n.language !== lang) {
       i18n.changeLanguage(lang);
@@ -138,6 +139,7 @@ const Layout: React.FC = () => {
                 {t('nav.contact')}
               </Link>
               
+              {/* Language Selector */}
               <div className="relative flex items-center bg-brand-800 rounded-md px-2 py-1 border border-slate-700">
                 <Globe className="h-4 w-4 text-slate-400 mr-2" />
                 <select value={lang} onChange={handleLanguageChange} className="bg-transparent text-sm text-slate-300 focus:outline-none cursor-pointer appearance-none pr-4">
@@ -154,7 +156,7 @@ const Layout: React.FC = () => {
               </Link>
             </div>
 
-            {/* ✅ 关键修复：补全移动端汉堡菜单按钮 */}
+            {/* Mobile Nav Button */}
             <div className="md:hidden flex items-center gap-4">
               <button 
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} 
@@ -163,8 +165,8 @@ const Layout: React.FC = () => {
                 {isMobileMenuOpen ? <X className="h-8 w-8" /> : <Menu className="h-8 w-8" />}
               </button>
             </div>
-          </div> {/* 对应 flex justify-between 的关闭标签 */}
-        </div> {/* 对应 max-w-7xl 的关闭标签 */}
+          </div> 
+        </div>
 
         {/* Mobile Nav Content */}
         {isMobileMenuOpen && (
@@ -189,6 +191,24 @@ const Layout: React.FC = () => {
                   {t(item.name)}
                 </Link>
               ))}
+              
+              {/* Mobile Language Selector Integration */}
+              <div className="px-4 py-4 flex items-center justify-between border-t border-slate-700/50 mt-4">
+                <div className="flex items-center gap-2">
+                  <Globe className="h-5 w-5 text-brand-400" />
+                  <span className="text-slate-400 font-bold uppercase text-xs tracking-widest">{t('nav.language')}</span>
+                </div>
+                <select 
+                  value={lang} 
+                  onChange={(e) => { handleLanguageChange(e); setIsMobileMenuOpen(false); }} 
+                  className="bg-brand-900 border border-slate-700 rounded-lg px-3 py-2 text-sm text-white"
+                >
+                  {LANGUAGES.map((l) => (
+                    <option key={l.code} value={l.code}>{l.flag} {l.code.toUpperCase()}</option>
+                  ))}
+                </select>
+              </div>
+
               <div className="pt-6">
                 <Link
                   to={getPath(PageRoute.CONTACT)}
@@ -205,7 +225,8 @@ const Layout: React.FC = () => {
 
       {/* Main Content */}
       <main className="flex-grow">
-        <Outlet />
+        {/* ✅ 添加 key 确保语言切换时子页面内容能够通过 useEffect 重新初始化翻译 */}
+        <Outlet key={lang} />
       </main>
 
       {/* Footer */}
@@ -215,6 +236,7 @@ const Layout: React.FC = () => {
         </div>
       </footer>
 
+      {/* ✅ 全局组件自动继承 Layout 的 i18n 状态 */}
       <FloatingSidebar />
       <LeadForm />
     </div>
