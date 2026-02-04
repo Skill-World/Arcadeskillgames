@@ -3,18 +3,20 @@ import { useParams, Navigate, Link } from 'react-router-dom';
 import { getProducts } from '../data';
 import { 
   Check, ShieldAlert, Monitor, Zap, Download, ChevronRight, 
-  Play, Star, BookOpen, PenTool, LayoutGrid, MessageSquare, Phone
+  Play, Star, BookOpen, PenTool, LayoutGrid, MessageSquare, Phone,
+  Loader2, CheckCircle2 // ✅ 1. 新增图标导入
 } from 'lucide-react';
 import { LanguageCode } from '../types';
 import { DEFAULT_LANG } from '../utils/i18n';
-import { SEO } from '../components/SEO'; // ✅ 引入发射塔
+import { SEO } from '../components/SEO';
 
 const ProductDetail: React.FC = () => {
   const { lang, id } = useParams();
   const currentLang = (lang as LanguageCode) || DEFAULT_LANG;
   
-  // 1. 表单状态 (完整保留)
+  // 1. 表单状态管理
   const [showForm, setShowForm] = useState(false);
+  const [status, setStatus] = useState<'idle' | 'submitting' | 'success'>('idle'); // ✅ 2. 新增状态追踪
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -22,45 +24,66 @@ const ProductDetail: React.FC = () => {
     message: ''
   });
 
-  // 2. 数据获取
+  // 统一使用的 API URL
+  const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxxTifn3vuebu-hO7D9AxUXcmr7nJZzDciH17Z3wHRhwAJMtzIWnCKyO9rZ-DN9k602/exec';
+
   const products = getProducts(currentLang);
   const product = products.find(p => p.id === id);
 
-  // 3. ✅ 安全检查 1：如果产品完全不存在，重定向
   if (!product) {
     return <Navigate to={`/${currentLang}/products`} replace />;
   }
 
-  // 4. ✅ 安全检查 2：如果产品存在但没有“坦克页”数据，显示基础版，防止崩溃
   if (!product.tankPage) {
      return (
        <div className="pt-32 px-8 text-white min-h-screen bg-brand-900 text-center">
-         <div className="max-w-4xl mx-auto">
-            <h1 className="text-4xl font-bold mb-6">{product.name}</h1>
-            <p className="text-xl text-slate-400 mb-8">{product.description}</p>
-            <Link to={`/${currentLang}/products`} className="text-brand-400 hover:underline">← Back to Products</Link>
-         </div>
+          <div className="max-w-4xl mx-auto">
+             <h1 className="text-4xl font-bold mb-6">{product.name}</h1>
+             <p className="text-xl text-slate-400 mb-8">{product.description}</p>
+             <Link to={`/${currentLang}/products`} className="text-brand-400 hover:underline">← Back to Products</Link>
+          </div>
        </div>
      );
   }
 
-  // 5. 只有通过了上面的检查，才解构 tankPage，这样绝对不会报错
   const { tankPage } = product;
   const iconMap: any = { ShieldAlert, Monitor, Zap, PenTool, LayoutGrid };
 
-  // 6. 业务逻辑 (完整保留)
-  const handleInquiry = (e: React.FormEvent) => {
+  // ✅ 3. 核心修改：将原本的 handleInquiry 替换为真实的 fetch
+  const handleInquiry = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Inquiry Submitted:", formData);
-    alert(`Thank you ${formData.name}! Your inquiry for ${product.name} has been sent.`);
-    setShowForm(false);
+    setStatus('submitting');
+
+    try {
+      await fetch(GOOGLE_SCRIPT_URL, {
+        method: 'POST',
+        mode: 'no-cors',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          formType: `Product Inquiry: ${product.name}`, // 动态带入产品名称
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          message: formData.message
+        }),
+      });
+
+      console.log("Capture Success sent to Google Sheets");
+      setStatus('success'); // ✅ 成功后切换到成功视图
+    } catch (error) {
+      console.error('Submission failed:', error);
+      setStatus('idle');
+      alert('Network error. Please try again.');
+    }
   };
 
-  const openForm = () => setShowForm(true);
+  const openForm = () => {
+    setStatus('idle');
+    setShowForm(true);
+  };
 
   return (
     <div className="bg-brand-900 min-h-screen text-slate-200 font-sans">
-      {/* ✅ 注入 SEO 发射塔：使用您 data.ts 里的配置 */}
       <SEO 
         title={tankPage.seo.metaTitle}
         description={tankPage.seo.metaDescription}
@@ -214,40 +237,61 @@ const ProductDetail: React.FC = () => {
         </button>
       </section>
 
-      {/* 6. 询盘表单 Modal (完整保留) */}
+      {/* 6. 询盘表单 Modal (已优化逻辑) */}
       {showForm && (
         <div className="fixed inset-0 z-50 flex items-center justify-center px-4 bg-black/80 backdrop-blur-sm p-4">
           <div className="bg-brand-900 border border-slate-700 p-8 rounded-3xl max-w-lg w-full shadow-2xl relative overflow-y-auto max-h-[90vh]">
             <button onClick={() => setShowForm(false)} className="absolute top-6 right-6 text-slate-400 hover:text-white text-2xl">✕</button>
-            <h3 className="text-2xl font-bold text-white mb-6">Inquiry for {product.name}</h3>
             
-            <form onSubmit={handleInquiry} className="space-y-5">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <input 
-                  type="text" required placeholder="Full Name"
-                  className="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-white outline-none" 
-                  value={formData.name} onChange={(e) => setFormData({...formData, name: e.target.value})}
-                />
-                <input 
-                  type="email" required placeholder="name@company.com"
-                  className="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-white outline-none" 
-                  value={formData.email} onChange={(e) => setFormData({...formData, email: e.target.value})}
-                />
+            {/* ✅ 4. 成功视图切换 */}
+            {status === 'success' ? (
+              <div className="text-center py-8 animate-in zoom-in duration-300">
+                <div className="bg-emerald-500/20 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <CheckCircle2 className="h-10 w-10 text-emerald-500" />
+                </div>
+                <h3 className="text-2xl font-bold text-white mb-4 uppercase">Inquiry Received</h3>
+                <p className="text-slate-400 mb-8">We have received your interest in {product.name}. A specialist will contact you with the full technical specs and wholesale pricing shortly.</p>
+                <button onClick={() => setShowForm(false)} className="w-full py-4 bg-white text-brand-900 rounded-xl font-black uppercase tracking-widest">
+                  Close Window
+                </button>
               </div>
-              <input 
-                type="text" required placeholder="Whatsapp / Phone"
-                className="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-white outline-none" 
-                value={formData.phone} onChange={(e) => setFormData({...formData, phone: e.target.value})}
-              />
-              <textarea 
-                rows={4} placeholder="Quantity or customization needs..."
-                className="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-white outline-none resize-none" 
-                value={formData.message} onChange={(e) => setFormData({...formData, message: e.target.value})}
-              />
-              <button type="submit" className="w-full bg-brand-500 hover:bg-brand-600 text-white py-4 rounded-xl font-bold text-lg transition-all">
-                Submit Inquiry Now
-              </button>
-            </form>
+            ) : (
+              <>
+                <h3 className="text-2xl font-bold text-white mb-6">Inquiry for {product.name}</h3>
+                <form onSubmit={handleInquiry} className="space-y-5">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <input 
+                      type="text" required placeholder="Full Name"
+                      className="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-white outline-none focus:border-brand-500 transition-colors" 
+                      value={formData.name} onChange={(e) => setFormData({...formData, name: e.target.value})}
+                    />
+                    <input 
+                      type="email" required placeholder="name@company.com"
+                      className="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-white outline-none focus:border-brand-500 transition-colors" 
+                      value={formData.email} onChange={(e) => setFormData({...formData, email: e.target.value})}
+                    />
+                  </div>
+                  <input 
+                    type="text" required placeholder="Whatsapp / Phone"
+                    className="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-white outline-none focus:border-brand-500 transition-colors" 
+                    value={formData.phone} onChange={(e) => setFormData({...formData, phone: e.target.value})}
+                  />
+                  <textarea 
+                    rows={4} placeholder="Quantity or customization needs..."
+                    className="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-white outline-none resize-none focus:border-brand-500 transition-colors" 
+                    value={formData.message} onChange={(e) => setFormData({...formData, message: e.target.value})}
+                  />
+                  {/* ✅ 5. 提交中的转圈状态 */}
+                  <button disabled={status === 'submitting'} type="submit" className="w-full bg-brand-500 hover:bg-brand-600 text-white py-4 rounded-xl font-bold text-lg transition-all flex items-center justify-center gap-3">
+                    {status === 'submitting' ? (
+                      <><Loader2 className="h-5 w-5 animate-spin" /> Sending...</>
+                    ) : (
+                      'Submit Inquiry Now'
+                    )}
+                  </button>
+                </form>
+              </>
+            )}
           </div>
         </div>
       )}
