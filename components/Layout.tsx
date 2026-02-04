@@ -225,8 +225,10 @@ const Layout: React.FC = () => {
 
       {/* Main Content */}
       <main className="flex-grow">
-        {/* ✅ 添加 key 确保语言切换时子页面内容能够通过 useEffect 重新初始化翻译 */}
-        <Outlet key={lang} />
+  {/* ✅ 正确：给外层加 key，这样切换语言时内容会正确刷新 */}
+  <div key={lang}>
+    <Outlet />
+  </div>
       </main>
 
       {/* Footer */}
