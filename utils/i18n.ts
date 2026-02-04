@@ -89,6 +89,7 @@ const resources = {
       'sol.page.title': 'Soluciones Industriales',
       'sol.gas.title': 'Gasolineras', 'sol.arcade.title': 'Arcades', 'sol.lounge.title': 'Salones de Relax', 'sol.barber.title': 'Barberías',
       'sol.cstore.title': 'Tiendas de Conveniencia', 'sol.tattoo.title': 'Estudios de Tatuaje', 'sol.laundry.title': 'Lavanderías',
+      'sol.distributor.desc': 'Factory-direct wholesale and global logistics support for bulk buyers.',
     }
   },
 
