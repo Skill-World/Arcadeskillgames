@@ -75,7 +75,6 @@ const resources = {
       'tank.guide.title': "Buyer's Guide",
       'tank.faq.title': 'Frequently Asked Questions',
       'tank.testi.title': 'Success Stories',
-      'sol.distributor.desc': 'Empower your distribution network with 28 years of engineering excellence and factory-direct high-retention hardware.',
     }
   },
 
