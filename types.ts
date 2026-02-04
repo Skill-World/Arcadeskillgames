@@ -1,9 +1,6 @@
-
 // src/types.ts
 
-// 定义坦克页需要的复杂子结构
-// src/types.ts
-
+// --- PRODUCT SUB-TYPES ---
 export interface ProductPainPoint {
   icon: string;
   title: string;
@@ -23,12 +20,11 @@ export interface ProductFAQ {
 export interface Product {
   id: string;
   name: string;
-  // ✅ 统一使用这三个标准 ID
   category: 'skill_based_game_board' | 'cabinet_only' | 'game_board'; 
   description: string;
   imageUrl: string;
   features: string[];
-  reviews?: { author: string; rating: number; comment: string }[];
+  
   tankPage?: {
     headline: string;
     subHeadline: string;
@@ -41,6 +37,8 @@ export interface Product {
     ctaText: string;
     pdfUrl?: string;
     caseStudy?: { title: string; content: string; author: string };
+    // ✅ 修正：在此处添加 reviews 字段，解决 data.ts 第 951 行报错
+    reviews?: { author: string; rating: number; comment: string }[]; 
     seo: {
       metaTitle: string;
       metaDescription: string;
@@ -49,68 +47,49 @@ export interface Product {
   };
 }
 
-// ... 保持其他内容（BlogPost, Solution, LanguageCode 等）不变
-
-// ... 其他接口保持不变
-
-// --- NEW BLOG ARCHITECTURE TYPES ---
-
+// --- BLOG TYPES ---
 export type BlockType = 'h2' | 'h3' | 'paragraph' | 'image' | 'video' | 'list' | 'chart' | 'cta' | 'callout' | 'table';
 
-export interface ChartData {
-  label: string;
-  value: number;
-}
-
-export interface TableData {
-  headers: string[];
-  rows: string[][]; // Array of arrays for rows
-}
+export interface ChartData { label: string; value: number; }
+export interface TableData { headers: string[]; rows: string[][]; }
 
 export interface ContentBlock {
   type: BlockType;
-  // Content can be string (html), array (list), object (chart data), or table object
   content: string | string[] | ChartData[] | TableData;
-  // Optional metadata for blocks
-  alt?: string; // for images
-  caption?: string; // for images/charts/tables
-  url?: string; // for videos/links
+  alt?: string;
+  caption?: string;
+  url?: string;
 }
 
 export interface BlogSeo {
   metaTitle: string;
   metaDescription: string;
   keywords: string[];
-  schema?: object; // Specific article schema
+  schema?: object;
 }
 
 export interface AuthorProfile {
   name: string;
   role: string;
-  avatar: string; // URL
-  bio: string; // Short bio paragraph
+  avatar: string;
+  bio: string;
 }
 
 export interface BlogPost {
   id: string;
-  slug: string; // URL friendly ID
+  slug: string;
   title: string;
   excerpt: string;
   date: string;
-  author: AuthorProfile; // Enhanced author object
+  author: AuthorProfile;
   category: string;
-  imageUrl: string; // Thumbnail/Banner
+  imageUrl: string;
   readingTime: string;
-  
-  // The Body Content
   blocks: ContentBlock[];
-  
-  // Granular SEO Control
   seo: BlogSeo;
 }
 
-// --- END BLOG TYPES ---
-
+// --- SOLUTION TYPES ---
 export interface PainPoint {
   title: string;
   description: string;
@@ -132,7 +111,7 @@ export interface Stat {
 export interface BuyerStep {
   title: string;
   description: string;
-  icon?: string; // Added optional icon for steps
+  icon?: string;
 }
 
 export interface FAQ {
@@ -147,14 +126,11 @@ export interface Testimonial {
   location: string;
 }
 
-// NEW: Dedicated SEO Config for Solutions Pages
 export interface SeoConfig {
   metaTitle: string;
   metaDescription: string;
   keywords: string[];
 }
-
-// ... 前面部分保持不变 (Product, PainPoint 等)
 
 export interface Solution {
   id: string;
@@ -162,8 +138,9 @@ export interface Solution {
   targetAudience: string;
   description: string;
   fullDescription: string;
-  benefits: string[];
-  icon: string;
+  // ✅ 修正：将 benefits 和 icon 设为可选字段（添加 ?），解决 3916 行缺失属性报错
+  benefits?: string[]; 
+  icon?: string; 
   recommendedCategory: 'skill_based_game_board' | 'cabinet_only' | 'game_board';
   stats: Stat[];
   painPoints: PainPoint[];
@@ -176,9 +153,14 @@ export interface Solution {
   testimonials: Testimonial[];
   seo: SeoConfig;
 
- // ✅ 在这里添加以下两个字段，解决 3967 及 4140 等行数的报错
-  recommendedProducts?: { name: string; reason: string }[]; // 解决 3967 行报错
-  caseStudy?: { title: string; content: string; author: string }; // 解决 4140-5390 行报错
+  // 扩展可选字段
+  recommendedProducts?: { name: string; reason: string }[]; 
+  caseStudy?: { title: string; content: string; author: string }; 
+  venueGallery?: string[]; 
+  promoVideo?: { id: string; title: string; };
+  customizationFocus?: string;
+  ctaText?: string;
+}
   
   // --- ✅ 新增视觉与内容扩展字段 (可选) ---
   /** 场地实拍图画廊：存储图片 URL 数组 */
