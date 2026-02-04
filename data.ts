@@ -4032,9 +4032,9 @@ export const getSolutions = (lang: LanguageCode): Solution[] => [
     },
     // 1. 增加场地实拍图（请将图片放入 public/images/venues/）
     venueGallery: [
-      '/images/Redemption Game PCB Kit Lunars Quest 777.png',
-      '/images/Redemption Game PCB Kit Lunars Quest 777.png',
-      '/images/Redemption Game PCB Kit Lunars Quest 777.png'
+      '/images/Game Distribution Warehouse.jpg',
+      '/images/The Flagship Gaming Lounge.jpg',
+      '/images/skill-based gaming machines.jpg'
     ],
 
     // 2. 增加宣传视频（YouTube 嵌入逻辑）
@@ -4150,9 +4150,9 @@ export const getSolutions = (lang: LanguageCode): Solution[] => [
 
     // ⑩ 视觉扩展 (Venue Gallery & Video)
     venueGallery: [
-      '/images/venues/agent-route-setup.jpg',
-      '/images/venues/game-bank-commercial.jpg',
-      '/images/venues/skill-game-agent-warehouse.jpg'
+      '/images/skill-based game agent room.jpg',
+      '/images/skill-based game agent venue.jpg',
+      '/images/skill-based game agents.jpg'
     ],
     promoVideo: {
       id: 'AGENT_MANAGEMENT_DEMO',
@@ -4275,9 +4275,9 @@ export const getSolutions = (lang: LanguageCode): Solution[] => [
 
     // ⑩ 视觉扩展 (Venue Gallery & Video)
     venueGallery: [
-      '/images/venues/custom-kit-build-1.jpg',
-      '/images/venues/diy-cabinet-assembly.jpg',
-      '/images/venues/personalized-arcade-layout.jpg'
+      '/images/skill-based game creative design studio.jpg',
+      '/images/skill-based game development studio.jpg',
+      '/images/skill-based game QA and Testing Lab.jpg'
     ],
     promoVideo: {
       id: 'CUSTOM_KIT_MANUFACTURING_PROCESS',
@@ -4400,9 +4400,9 @@ export const getSolutions = (lang: LanguageCode): Solution[] => [
 
     // ⑩ 视觉扩展 (Venue Gallery & Video)
     venueGallery: [
-      '/images/venues/game-room-setup-1.jpg',
-      '/images/venues/multiplayer-fish-table-social.jpg',
-      '/images/venues/arcade-neon-vibes.jpg'
+      '/images/High-Tech eSports Arena.jpg',
+      '/images/The Retro Arcade Bar.jpg',
+      '/images/The Private Gaming Lounge.jpg'
     ],
     promoVideo: {
       id: 'GAME_ROOM_ATMOSPHERE_ID',
@@ -4525,9 +4525,9 @@ export const getSolutions = (lang: LanguageCode): Solution[] => [
 
     // ⑩ 视觉扩展 (Venue Gallery & Video)
     venueGallery: [
-      '/images/venues/arcade-floor-synergy.jpg',
-      '/images/venues/high-traffic-fec-setup.jpg',
-      '/images/venues/multiplayer-shooting-center.jpg'
+      '/images/Entertainment Room.jpg',
+      '/images/Skill Game Bar.jpg',
+      '/images/game center.jpg'
     ],
     promoVideo: {
       id: 'ARCADE_VENUES_SHOWCASE_ID',
@@ -4650,9 +4650,9 @@ export const getSolutions = (lang: LanguageCode): Solution[] => [
 
     // ⑩ 视觉扩展 (Venue Gallery & Video)
     venueGallery: [
-      '/images/venues/gas-station-setup-1.jpg',
-      '/images/venues/c-store-coffee-corner.jpg',
-      '/images/venues/retail-aisle-kiosk.jpg'
+      '/images/The Classic Roadside Stop.jpg',
+      '/images/The Modern Travel Plaza.jpg',
+      '/images/The Rustic Country Store.jpg'
     ],
     promoVideo: {
       id: 'GAS_STATION_ROI_DEMO',
@@ -4775,9 +4775,9 @@ export const getSolutions = (lang: LanguageCode): Solution[] => [
 
     // ⑩ 视觉扩展 (Venue Gallery & Video)
     venueGallery: [
-      '/images/venues/c-store-kiosk-1.jpg',
-      '/images/venues/retail-aisle-setup.jpg',
-      '/images/venues/checkout-counter-gaming.jpg'
+      '/images/Modern Urban Convenience Store.jpg',
+      '/images/Rural General Store.jpg',
+      '/images/Travel Center Gaming Zone.jpg'
     ],
     promoVideo: {
       id: 'CSTORE_REVENUE_DEMO_ID',
@@ -4900,9 +4900,9 @@ export const getSolutions = (lang: LanguageCode): Solution[] => [
 
     // ⑩ 视觉与视频扩展 (Visual Expansion)
     venueGallery: [
-      '/images/venues/barbershop-arcade-1.jpg',
-      '/images/venues/lounge-area-gaming.jpg',
-      '/images/venues/premium-salon-kiosk.jpg'
+      '/images/The Classic Barbershop.jpg',
+      '/images/The Luxury Barbershop Lounge.jpg',
+      '/images/The Modern Barbershop.jpg'
     ],
     promoVideo: {
       id: 'BARBER_ROI_SHOWCASE_ID',
@@ -5025,9 +5025,9 @@ export const getSolutions = (lang: LanguageCode): Solution[] => [
 
     // ⑩ 视觉扩展 (Venue Gallery & Video)
     venueGallery: [
-      '/images/venues/tattoo-studio-1.jpg',
-      '/images/venues/tattoo-lounge-setup.jpg',
-      '/images/venues/edgy-arcade-kiosk.jpg'
+      '/images/The Modern Studio.jpg',
+      '/images/The Themed Studio.jpg',
+      '/images/The Vintage Parlor.jpg'
     ],
     promoVideo: {
       id: 'TATTOO_SHOP_ROI_VIDEO',
@@ -5150,9 +5150,9 @@ export const getSolutions = (lang: LanguageCode): Solution[] => [
 
     // ⑩ 视觉扩展 (Venue Gallery & Video)
     venueGallery: [
-      '/images/venues/laundry-kiosk-1.jpg',
-      '/images/venues/washateria-gaming-setup.jpg',
-      '/images/venues/laundry-lounge-machines.jpg'
+      '/images/The Hybrid Laundromat-Café.jpg',
+      '/images/The Modern Urban Laundromat.jpg',
+      '/images/The Neighborhood Retro Laundromat.jpg'
     ],
     promoVideo: {
       id: 'LAUNDRY_ROI_DEMO_ID',
@@ -5275,9 +5275,9 @@ export const getSolutions = (lang: LanguageCode): Solution[] => [
 
     // ⑩ 视觉扩展 (Venue Gallery & Video)
     venueGallery: [
-      '/images/venues/cafe-gaming-kiosk.jpg',
-      '/images/venues/esports-lounge-setup.jpg',
-      '/images/venues/cafe-social-hub.jpg'
+      '/images/The Cozy Community Hub.jpg',
+      '/images/The Modern Esports Arena.jpg',
+      '/images/The Retro-Futuristic Arcade.jpg'
     ],
     promoVideo: {
       id: 'CAFE_REVENUE_MAX_ID',
@@ -5400,9 +5400,9 @@ export const getSolutions = (lang: LanguageCode): Solution[] => [
 
     // ⑩ 视觉扩展 (Venue Gallery & Video)
     venueGallery: [
-      '/images/venues/lounge-premium-setup.jpg',
-      '/images/venues/cocktail-bar-social.jpg',
-      '/images/venues/vip-gaming-lounge.jpg'
+      '/images/arcade entertainment lounge.jpg',
+      '/images/high entertainment lounge.jpg',
+      '/images/internet entertainment lounge.jpg'
     ],
     promoVideo: {
       id: 'LOUNGE_VIBE_SHOWCASE_ID',
