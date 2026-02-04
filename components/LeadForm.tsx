@@ -36,13 +36,40 @@ export const LeadForm: React.FC<LeadFormProps> = ({ onClose, initialSector }) =>
     if (onClose) onClose();
   };
 
+  // ✅ 你的专用 Google Script API 接口
+  const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxxTifn3vuebu-hO7D9AxUXcmr7nJZzDciH17Z3wHRhwAJMtzIWnCKyO9rZ-DN9k602/exec';
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus('submitting');
-    setTimeout(() => {
-      console.log('Capture Success:', { ...formData, sector: currentSector });
+
+    try {
+      // ✅ 将数据发送到 Google Apps Script
+      await fetch(GOOGLE_SCRIPT_URL, {
+        method: 'POST',
+        mode: 'no-cors', // ⚠️ 必须保留，解决 Google Script 的跨域重定向问题
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          formType: `Wholesale Inquiry: ${currentSector}`, // 标记表单类型和所属行业
+          name: formData.name,
+          email: formData.email,
+          sector: currentSector,
+          volume: formData.volume,
+          message: formData.message
+        }),
+      });
+
+      // 由于使用 no-cors 模式，fetch 无法读取响应体，但只要不报错，通常代表发送成功
+      console.log('Capture Success sent to Google Sheets');
       setStatus('success');
-    }, 1500);
+      
+    } catch (error) {
+      console.error('Submission failed:', error);
+      setStatus('idle');
+      alert('Network error. Please try again or contact us via WhatsApp directly.');
+    }
   };
 
   if (!isOpen) return null;
