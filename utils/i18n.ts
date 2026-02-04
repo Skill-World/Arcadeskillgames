@@ -21,9 +21,9 @@ export const DEFAULT_LANG: LanguageCode = 'en';
 
 // 2. 翻译字典
 const resources = {
+  // --- 🇺🇸 English (Base - 保持您的原始代码不变) ---
   en: {
     translation: {
-      // 导航栏
       'nav.home': 'Home',
       'nav.about': 'About Us',
       'nav.products': 'Products',
@@ -33,14 +33,10 @@ const resources = {
       'nav.cat.machines': 'Skill-Based Game Board',
       'nav.cat.cabinets': 'Empty Cabinets',
       'nav.cat.boards': 'Game Kits / Boards',
-
-      // 首页 & 通用
       'hero.title': 'Manufacturer of High-Performance Skill Games',
       'hero.subtitle': 'Direct from our 28-year R&D Factory. We engineer compliant Nudge, Shooting, and Reflex-based amusement machines.',
       'tank.cta.sticky': 'Get a Quote',
       'sol.common.view_strategy': 'View Strategy Details',
-
-      // About Page (关于我们 - 填充 28 年研发背景)
       'about.title': 'The Source Behind Fire Kirin',
       'about.mission': 'Our Mission',
       'about.mission.desc': 'Engineering high-performance skill-based entertainment that rewards strategy and reflexes.',
@@ -50,8 +46,6 @@ const resources = {
       'about.exp': '28 Years of R&D Power',
       'about.comp': 'Custom Compliance Engineering',
       'about.supp': 'Direct Factory Support',
-
-      // Contact Page (修复 image_b63aa0.png 中的原始代码显示)
       'contact.name': 'Your Name',
       'contact.email': 'Email Address',
       'contact.phone': 'Phone Number',
@@ -59,8 +53,6 @@ const resources = {
       'contact.ai.title': 'Game Venue Solution Support',
       'contact.ai.desc': 'Our system matches you with the best engineer based on your venue type.',
       'CONTACT.SEND': 'Contact Support Team',
-
-      // 12 类目标客户方案内容
       'sol.page.title': 'Industry Solutions',
       'sol.page.subtitle': 'Industry-specific gaming solutions to maximize your floor revenue.',
       'sol.distributor.title': 'Game Distributors', 'sol.distributor.desc': 'Factory-direct wholesale and global logistics.',
@@ -75,8 +67,6 @@ const resources = {
       'sol.laundry.title': 'Laundromats', 'sol.laundry.desc': 'Turn laundry wait-time into consistent revenue.',
       'sol.icafe.title': 'Internet Cafes', 'sol.icafe.desc': 'Diversify offerings with skill-based hardware.',
       'sol.lounge.title': 'Entertainment Lounges', 'sol.lounge.desc': 'Enhance atmosphere with competitive skill play.',
-      
-      // 坦克页通用模块
       'tank.pain.title': 'The Challenge',
       'tank.pain.subtitle': 'Why traditional models are failing this sector.',
       'tank.stats.title': 'Market Impact',
@@ -87,6 +77,117 @@ const resources = {
       'tank.testi.title': 'Success Stories',
     }
   },
+
+  // --- 🇪🇸 Español ---
+  es: {
+    translation: {
+      'nav.home': 'Inicio', 'nav.about': 'Nosotros', 'nav.products': 'Productos', 'nav.solutions': 'Soluciones', 'nav.blog': 'Perspectiva del mercado', 'nav.contact': 'Contacto',
+      'hero.title': 'Fabricante de juegos de habilidad de alto rendimiento',
+      'tank.cta.sticky': 'Solicitar presupuesto',
+      'contact.ai.title': 'Especialista en Configuración IA',
+      'CONTACT.SEND': 'Contactar Soporte',
+      'sol.page.title': 'Soluciones Industriales',
+      'sol.gas.title': 'Gasolineras', 'sol.arcade.title': 'Arcades', 'sol.lounge.title': 'Salones de Relax', 'sol.barber.title': 'Barberías',
+      'sol.cstore.title': 'Tiendas de Conveniencia', 'sol.tattoo.title': 'Estudios de Tatuaje', 'sol.laundry.title': 'Lavanderías',
+    }
+  },
+
+  // --- 🇫🇷 Français ---
+  fr: {
+    translation: {
+      'nav.home': 'Accueil', 'nav.about': 'À Propos', 'nav.products': 'Produits', 'nav.solutions': 'Solutions', 'nav.blog': 'Aperçu du marché', 'nav.contact': 'Contact',
+      'hero.title': 'Fabricant de jeux de compétence haute performance',
+      'tank.cta.sticky': 'Obtenir un devis',
+      'CONTACT.SEND': 'Contacter Support',
+      'sol.page.title': 'Solutions de Sites',
+      'sol.gas.title': 'Stations-service', 'sol.arcade.title': 'Arcades', 'sol.lounge.title': 'Salons VIP',
+    }
+  },
+
+  // --- 🇩🇪 Deutsch ---
+  de: {
+    translation: {
+      'nav.home': 'Startseite', 'nav.about': 'Über uns', 'nav.products': 'Produkte', 'nav.solutions': 'Standortlösungen', 'nav.blog': 'Markteinblicke', 'nav.contact': 'Kontakt',
+      'hero.title': 'Hersteller von Hochleistungs-Skill-Games',
+      'tank.cta.sticky': 'Angebot anfordern',
+      'CONTACT.SEND': 'Support kontaktieren',
+      'sol.page.title': 'Branchenlösungen',
+      'sol.gas.title': 'Tankstellen', 'sol.arcade.title': 'Spielhallen', 'sol.lounge.title': 'Lounges',
+    }
+  },
+
+  // --- 🇵🇹 Português ---
+  pt: {
+    translation: {
+      'nav.home': 'Início', 'nav.about': 'Sobre Nós', 'nav.products': 'Produtos', 'nav.solutions': 'Soluções', 'nav.blog': 'Insights de mercado', 'nav.contact': 'Contato',
+      'hero.title': 'Fabricante de Jogos de Habilidade de Alto Desempenho',
+      'tank.cta.sticky': 'Solicitar orçamento',
+      'CONTACT.SEND': 'Contatar Suporte',
+      'sol.page.title': 'Soluções para Locais',
+      'sol.gas.title': 'Postos de Gasolina', 'sol.arcade.title': 'Arcades', 'sol.lounge.title': 'Lounges',
+    }
+  },
+
+  // --- 🇮🇹 Italiano ---
+  it: {
+    translation: {
+      'nav.home': 'Home', 'nav.about': 'Chi Siamo', 'nav.products': 'Prodotti', 'nav.solutions': 'Soluzioni per Sedi', 'nav.blog': 'Approfondimenti', 'nav.contact': 'Contatti',
+      'hero.title': 'Produttore di Skill Game ad Alte Prestazioni',
+      'tank.cta.sticky': 'Ottieni un preventivo',
+      'CONTACT.SEND': 'Contatta Supporto',
+      'sol.page.title': 'Soluzioni Industriali',
+      'sol.gas.title': 'Stazioni di Servizio', 'sol.arcade.title': 'Sale Giochi', 'sol.lounge.title': 'Sale Lounge',
+    }
+  },
+
+  // --- 🇷🇺 Русский ---
+  ru: {
+    translation: {
+      'nav.home': 'Главная', 'nav.about': 'О нас', 'nav.products': 'Продукция', 'nav.solutions': 'Решения для площадок', 'nav.blog': 'Обзор рынка', 'nav.contact': 'Контакты',
+      'hero.title': 'Производитель высокопроизводительных скилл-игр',
+      'tank.cta.sticky': 'Узнать цену',
+      'CONTACT.SEND': 'Связаться с поддержкой',
+      'sol.page.title': 'Отраслевые решения',
+      'sol.gas.title': 'АЗС', 'sol.arcade.title': 'Аркады', 'sol.lounge.title': 'Лаундж-зоны',
+    }
+  },
+
+  // --- 🇯🇵 日本語 ---
+  ja: {
+    translation: {
+      'nav.home': 'ホーム', 'nav.about': '会社概要', 'nav.products': '製品情報', 'nav.solutions': '会場別ソリューション', 'nav.blog': '市場の洞察', 'nav.contact': 'お問い合わせ',
+      'hero.title': '高性能スキルゲームメーカー',
+      'tank.cta.sticky': '見積もりを依頼',
+      'CONTACT.SEND': 'サポートに連絡',
+      'sol.page.title': '業界別ソリューション',
+      'sol.gas.title': 'ガソリンスタンド', 'sol.arcade.title': 'ゲームセンター', 'sol.lounge.title': 'ラウンジ',
+    }
+  },
+
+  // --- 🇰🇷 한국어 ---
+  ko: {
+    translation: {
+      'nav.home': '홈', 'nav.about': '회사 소개', 'nav.products': '제품 정보', 'nav.solutions': '장소 솔루션', 'nav.blog': '시장 인사이트', 'nav.contact': '문의하기',
+      'hero.title': '고성능 스킬 게임 제조업체',
+      'tank.cta.sticky': '견적 받기',
+      'CONTACT.SEND': '지원팀에 문의',
+      'sol.page.title': '산업별 솔루션',
+      'sol.gas.title': '주유소', 'sol.arcade.title': '아케이드', 'sol.lounge.title': '라운지',
+    }
+  },
+
+  // --- 🇸🇦 العربية ---
+  ar: {
+    translation: {
+      'nav.home': 'الرئيسية', 'nav.about': 'من نحن', 'nav.products': 'المنتجات', 'nav.solutions': 'حلول المواقع', 'nav.blog': 'رؤى السوق', 'nav.contact': 'اتصل بنا',
+      'hero.title': 'الشركة المصنعة لألعاب المهارة عالية الأداء',
+      'tank.cta.sticky': 'احصل على عرض سعر',
+      'CONTACT.SEND': 'اتصل بالدعم',
+      'sol.page.title': 'حلول الصناعة',
+      'sol.gas.title': 'محطات الوقود', 'sol.arcade.title': 'صالات الألعاب', 'sol.lounge.title': 'صالات الاستراحة',
+    }
+  }
+};
   es: {
     translation: {
       'nav.home': 'Inicio', 'nav.solutions': 'Soluciones', 'nav.blog': 'Perspectiva del mercado',
