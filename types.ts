@@ -28,9 +28,7 @@ export interface Product {
   description: string;
   imageUrl: string;
   features: string[];
-  reviews?: any[];        // 👈 添加这一行 (修复 951 行报错)
-  tankPage?: any;         // 确保 tankPage 也定义了
-  
+  reviews?: { author: string; rating: number; comment: string }[];
   tankPage?: {
     headline: string;
     subHeadline: string;
@@ -178,6 +176,10 @@ export interface Solution {
   testimonials: Testimonial[];
   seo: SeoConfig;
 
+ // ✅ 在这里添加以下两个字段，解决 3967 及 4140 等行数的报错
+  recommendedProducts?: { name: string; reason: string }[]; // 解决 3967 行报错
+  caseStudy?: { title: string; content: string; author: string }; // 解决 4140-5390 行报错
+  
   // --- ✅ 新增视觉与内容扩展字段 (可选) ---
   /** 场地实拍图画廊：存储图片 URL 数组 */
   venueGallery?: string[]; 
