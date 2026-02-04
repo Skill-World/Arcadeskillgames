@@ -75,6 +75,7 @@ const resources = {
       'tank.guide.title': "Buyer's Guide",
       'tank.faq.title': 'Frequently Asked Questions',
       'tank.testi.title': 'Success Stories',
+      'sol.distributor.desc': 'Empower your distribution network with 28 years of engineering excellence and factory-direct high-retention hardware.',
     }
   },
 
@@ -89,7 +90,7 @@ const resources = {
       'sol.page.title': 'Soluciones Industriales',
       'sol.gas.title': 'Gasolineras', 'sol.arcade.title': 'Arcades', 'sol.lounge.title': 'Salones de Relax', 'sol.barber.title': 'Barberías',
       'sol.cstore.title': 'Tiendas de Conveniencia', 'sol.tattoo.title': 'Estudios de Tatuaje', 'sol.laundry.title': 'Lavanderías',
-      'sol.distributor.desc': 'Venta al por mayor directa de fábrica y apoyo logístico global para compradores al por mayor.',
+      'sol.distributor.desc': 'Potencie su red de distribución con 28 años de excelencia en ingeniería y hardware de alta calidad directamente de fábrica.',
     }
   },
 
