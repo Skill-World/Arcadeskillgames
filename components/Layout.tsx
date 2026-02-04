@@ -223,13 +223,11 @@ const Layout: React.FC = () => {
         )}
       </nav>
 
-      {/* Main Content */}
-      <main className="flex-grow">
-  {/* ✅ 正确：给外层加 key，这样切换语言时内容会正确刷新 */}
-  <div key={lang}>
-    <Outlet />
-  </div>
-      </main>
+ {/* Main Content */}
+{/* 直接在 main 标签加 key，效果等同且代码更干净 */}
+<main key={lang} className="flex-grow">
+  <Outlet />
+</main>
 
       {/* Footer */}
       <footer className="bg-brand-900 border-t border-slate-800 pt-16 pb-8">
