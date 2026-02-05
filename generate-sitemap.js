@@ -17,7 +17,51 @@ const BLOG_POST_IDS = [
   'trends-in-skill-gaming-2026'
 ];
 
-const PRODUCT_IDS = ['skill-game-board-m8s', 'ultra-high-cabinet', 'game-kits-v2'];
+const PRODUCT_IDS = [
+  // Cabinets
+  '4K-Titan-Vertical-Skill-43-cabinet',
+  'j-curve-43-cabinet',
+  'slant-top-43-curved',
+  'vertical-43-cabinet-pro',
+  'vertical-dual-screen-cabinet',
+  'curved-elite-v2-arc',
+  'slim-vertical-43-v5',
+  'vertical-43-aura-v7',
+  // Fish Tables
+  'fish-table-98-10player',
+  'fish-table-86-10player-dismantle',
+  'fish-table-86-10player-welded',
+  'fish-table-65-10player-royal-welded',
+  'fish-table-86-10player-royal-welded',
+  'fish-table-86-10player-royal-v2-welded',
+  'fish-table-8-classic-welded',
+  // Game Boards & Software
+  'fish-game-board-5in1-elite',
+  'fish-game-board-airstrike-2-elite',
+  'fish-game-board-crab-king-2-elite',
+  'fish-game-board-airstrike-3-elite',
+  'fish-game-board-crab-king-3-ultra',
+  'fish-game-board-crab-king-classic',
+  'fish-game-board-crab-king-plus',
+  'fish-game-board-fire-kirin-2-elite',
+  'fish-game-board-fire-kirin-3-elite',
+  'fish-game-board-fire-kirin-plus',
+  'fish-game-board-fire-kirin-revenge-elite',
+  'fish-game-board-mermaid-warrior-3-elite',
+  'fish-game-board-monkey-king-strike-elite',
+  'fish-game-board-ocean-monster-3-elite',
+  'fish-game-board-panda-vs-alien-elite',
+  'fish-game-board-thunder-wings-elite',
+  'skill-based-game-board-golden-empires-777',
+  'skill-based-game-board-lunars-quest-777',
+  'skill-based-game-board-golden-empires-multi',
+  'universal-game-logic-board-xtreme-skill-777',
+  'nudge-game-board-lunars-quest',
+  'redemption-game-PCB-wild-link',
+  'nudge-game-board-panda-link',
+  'universal-game-logic-board-xtreme-link',
+  'skill-based-game-board-panda-link-ii-777'
+];
 
 function generateSitemap() {
   let xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">`;
