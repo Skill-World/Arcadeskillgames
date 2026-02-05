@@ -1,0 +1,10 @@
+# 允许所有搜索引擎抓取所有内容
+User-agent: *
+Allow: /
+
+# 禁止抓取特定的系统文件夹（如果有的话）
+Disallow: /node_modules/
+Disallow: /dist/
+
+# 💡 这一行最关键：指向你刚生成的站点地图
+Sitemap: https://arcadeskillgames.com/sitemap.xml
